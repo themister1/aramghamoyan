@@ -261,6 +261,9 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
 
+#EXTINF:-1,FOX Sports 1 Nederland
+http://stream.ssh101.com/hls/Sporttvlive.m3u8
+
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 
@@ -287,24 +290,6 @@ http://91.109.20.227:8080/TV4247
 
 #EXTINF:-1,Sky Movies Family HD
 http://91.109.20.227:8080/TV4248
-
-#EXTINF:-1,Sky Sports 1 HD
-rtmp://94.23.53.51/send//ss1hd.stream
-
-#EXTINF:-1,Sky Sports 2 HD
-rtmp://94.23.53.51/send//ss2hd.stream
-
-#EXTINF:-1,Sky Sports 3 HD
-rtmp://94.23.53.51/send//ss3hd.stream
-
-#EXTINF:-1,Sky Sports 4 HD
-rtmp://94.23.53.51/send//ss4hd.stream
-
-#EXTINF:-1,Sky Sports 5 HD
-rtmp://94.23.53.51/send//ss5hd.stream
-
-#EXTINF:-1,Sky News HD
-rtmp://94.23.53.51/send//ssnewshd.stream
 
 #EXTINF:-1,MTV Live HD
 http://89.212.240.49:11980/live/smil:324_0.smil/playlist.m3u8?authorization_key=hNj0mnLtB9O5rfIKuCVsX7oWASQayqZg&stream_id=0
