@@ -1,13 +1,13 @@
 ﻿#EXTM3U
 
 #EXTINF:-1,H1
-http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
+http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
 
 #EXTINF:-1,H2
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/603/index.m3u8
+http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/603/index.m3u8
 
 #EXTINF:-1,H3
-http://s13.streamcp.com:1935/8164/8164/chunklist_w1593161645.m3u8
+http://s13.streamcp.com:1935/8164/8164/chunklist_w1593161645.m3u8
 
 #EXTINF:-1,Shant TV
 rtmp://shanttv.cdnvideo.ru/shanttv-live/shanttv.sdp
@@ -22,28 +22,35 @@ http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/614/index.m3u8
 rtmp://www.tvarm.ru/live/myStream1.sdp
 
 #EXTINF:-1,MTV AM
-http://94.125.187.18/hlsam/hd/playlist.m3u8
+http://mtvam.ru/hlsam/playlist.m3u8
+
+
 
 #EXTINF:-1,ARMnews TV
-http://109.123.95.250/iptv/48G8852YU8/611/index.m3u8
+http://109.123.95.250/iptv/48G8852YU8/611/index.m3u8
+
 
 #EXTINF:-1,Azdarar TV
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/610/index.m3u8
+http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/610/index.m3u8
+
 
 #EXTINF:-1,DAR 21 TV
 http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/602/index.m3u8
 
 #EXTINF:-1,SHOGHAKAT TV
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/613/index.m3u8
+http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/613/index.m3u8
+
 
 #EXTINF:-1,Yerkir Media TV
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/608/index.m3u8
+http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/608/index.m3u8
+
 
 #EXTINF:-1,Kentron TV
 http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/606/index.m3u8
 
 #EXTINF:-1,ATV
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/609/index.m3u8
+http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/609/index.m3u8
+
 
 #EXTINF:-1,Russian Music BOX
 http://92.50.181.6/tv/1155/index.m3u8
@@ -52,16 +59,20 @@ http://92.50.181.6/tv/1155/index.m3u8
 http://92.50.181.6/tv/1156/index.m3u8
 
 #EXTINF:-1,ORT TV Russia
-http://edge.ailetv.net/org11/perviykanal_me/playlist.m3u8
+http://edge.ailetv.net/org11/perviykanal_me/playlist.m3u8
+
 
 #EXTINF:-1,RTR PLANETA
 http://204.107.27.246/live/_definst_/1738.high.stream/chunklist_w2144379510.m3u8?id=0ad5aac39bb13fbe3aa37ab4bae7c552f4a07bf80877a70486c3179fd0672cc0fada02b738c17928384ee449dd6b729207ac7a0b6ecefb2bd79ad7b5684c25da0497cc838e5b0472d01087eeed982118a0166bd31b8c023a8b2ec89130d1dcf51f0a80ce05d16eb9085bf925df37ecee1cc6532103c9e67e77fad271250c7c7fdb8c03bf0518faeb8ce331cbc8fcf28fb069035b1e75d85943c2334d071cb89b
 
 #EXTINF:-1,Russia 1
-http://video.spcdn.ru/701/85/rus1/index.m3u8
+http://video.spcdn.ru/701/85/rus1/index.m3u8
+
 
 #EXTINF:-1,Russia 2
-http://213.186.120.146/hls/rus2.m3u8
+http://213.186.120.146/hls/rus2.m3u8
+
+
 
 #EXTINF:-1,Russia 24
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_RUSSIA24/bw480000/variant.m3u8?version=2
@@ -166,7 +177,8 @@ http://185.38.12.20:8088/eurosport2/
 http://92.50.181.6/tv/1114/index.m3u8
 
 #EXTINF:-1,Sport 1 TV
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_SPORT1/bw480000/variant.m3u8?version=2
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_SPORT1/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,Russia Today
 http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8
@@ -202,40 +214,57 @@ http://92.50.181.6/tv/1201/index.m3u8
 http://92.50.181.6/tv/1206/index.m3u8
 
 #EXTINF:-1,THT TV
-http://213.186.120.146/hls/tnt.m3u8
+http://213.186.120.146/hls/tnt.m3u8
+
 
 #EXTINF:-1,Domashniy TV
-http://213.186.120.146/hls/dom.m3u8
+http://213.186.120.146/hls/dom.m3u8
+
 
 #EXTINF:-1,Ren TV
-http://185.38.12.20:8088/rentv/
+http://185.38.12.20:8088/rentv/
+
 
 #EXTINF:-1,CTC
-http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
+http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
+
 
 #EXTINF:-1,5 kanal TV
-http://185.38.12.20:8088/5kanal_ukr/
+http://185.38.12.20:8088/5kanal_ukr/
+
 
 #EXTINF:-1,TV 3
-http://213.186.120.146/hls/tv3.m3u8
+http://213.186.120.146/hls/tv3.m3u8
+
 
 #EXTINF:-1,2x2 TV
-http://hls.novotelecom.ru/streaming/2x2tv/tvrec/playlist.m3u8
+http://hls.novotelecom.ru/streaming/2x2tv/tvrec/playlist.m3u8
+
 
 #EXTINF:-1,TV Cente
 http://213.186.120.146/hls/tvc.m3u8
 
 #EXTINF:-1,Viasat History TV
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_VIASATHISTORY/bw480000/variant.m3u8?version=2
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_VIASATHISTORY/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,Viasat Explorer TV
-http://hlsstr01.svc.iptv.rt.ru/hls/CH_VIASATEXPLORER/bw480000/variant.m3u8?version=2
+http://hlsstr01.svc.iptv.rt.ru/hls/CH_VIASATEXPLORER/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,illusion Plus TV
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_ULLUSIONPLUS/bw480000/variant.m3u8?version=2
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_ULLUSIONPLUS/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,Cartoon Network RU
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_CN/bw480000/variant.m3u8?version=2
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_CN/bw480000/variant.m3u8?version=2
+
+#EXTINF:-1,Радость Моја
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_RADOSTMOYA/variant.m3u8?version=2
+
+#EXTINF:-1,Moya Planeta
+http://hls01-03.az.myvideo.az/hls-live/livepkgr/myplanet/myplanet/myplanet.m3u8?hasbahcaiptv.com=fb%2Fsimpletvipadresleri
+
 
 #EXTINF:-1,Animal Planet RU
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_ANIMALPLANET/variant.m3u8?version=2
@@ -250,22 +279,29 @@ http://urlcut.org/ngch
 http://92.50.181.6/tv/1143/index.m3u8
 
 #EXTINF:-1,Nederland 1
-http://l2cmb4134218d40055493758000000.ad4a13ef52d4bc7f.kpnsmoote1c.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
+http://l2cmb4134218d40055493758000000.ad4a13ef52d4bc7f.kpnsmoote1c.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
+
+
 
 #EXTINF:-1,Nederland 2
-http://l2cm1a3a8768ea00554936b5000000.b2c1f332842a541f.kpnsmoote1e.npostreaming.nl/d/live/npo/tvlive/ned2/ned2.isml/ned2.m3u8
+http://l2cm1a3a8768ea00554936b5000000.b2c1f332842a541f.kpnsmoote1e.npostreaming.nl/d/live/npo/tvlive/ned2/ned2.isml/ned2.m3u8
+
+
 
 #EXTINF:-1,Nederland 3
-http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
+http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
+
 
 #EXTINF:-1,Z@PP EXTRA
-http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
+http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
+
 
 #EXTINF:-1,FOX Sports 1 Nederland
 http://stream.ssh101.com/hls/Sporttvlive.m3u8
 
 #EXTINF:-1,Slam TV
-http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
+http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
+
 
 #EXTINF:-1,Q-music TV
 rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
