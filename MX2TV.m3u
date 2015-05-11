@@ -45,8 +45,11 @@ http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/606/index.m3u8
 #EXTINF:-1,ATV
 http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/609/index.m3u8
 
-#EXTINF:-1,Russian Music BOX
-http://92.50.181.6/tv/1155/index.m3u8
+#EXTINF:-1,Russian Music BOX 1
+http://46.61.226.18/hls/CH_MUSICBOXRU/bw1500000/variant.m3u8?version=2
+
+#EXTINF:-1,Russian Music Box 2
+http://46.61.226.18/hls/CH_MUSICBOXTV/bw1500000/variant.m3u8?version=2
 
 #EXTINF:-1,Chanson TV
 http://92.50.181.6/tv/1156/index.m3u8
