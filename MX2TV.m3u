@@ -133,7 +133,7 @@ http://hlsstr01.svc.iptv.rt.ru/hls/CH_NTVPLUSNASHEKINO/variant.m3u8?version=2
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_NTVPLUSNOVOEKINO/variant.m3u8?version=2
 
 #EXTINF:-1,Comedy TV RU
-http://92.50.181.6/tv/1210/index.m3u8
+http://hlsstr03.svc.iptv.rt.ru/hls/CH_COMEDYTV/bw480000/variant.m3u8?version=2
 
 #EXTINF:-1,TV1000 HD
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_TV1000/variant.m3u8?version=2
@@ -157,7 +157,7 @@ http://s1.edem.tv/iptv/P9AVTVC47VD8YP/201/index.m3u8
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
 
 #EXTINF:-1,Fight Club RU
-http://92.50.181.6/tv/1118/index.m3u8
+http://hlsstr03.svc.iptv.rt.ru/hls/CH_FIGHTCLUB/bw480000/variant.m3u8?version=2
 
 #EXTINF:-1,Eurosport 1 RU
 http://185.38.12.20:8088/eurosport/
@@ -169,7 +169,7 @@ http://185.38.12.20:8088/eurosport2/
 http://92.50.181.6/tv/1114/index.m3u8
 
 #EXTINF:-1,Sport 1 TV
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_SPORT1/bw480000/variant.m3u8?version=2
+http://4BA9EBDB07C05883:@5.159.96.170:8000/sport1
 
 #EXTINF:-1,Russia Today
 http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8
@@ -184,7 +184,7 @@ http://4BA9EBDB07C05883:@5.159.96.170:8000/mtv
 http://92.50.181.6/tv/1125/index.m3u8
 
 #EXTINF:-1,Russian Novel
-http://92.50.181.6/tv/1124/index.m3u8
+http://hlsstr04.svc.iptv.rt.ru/hls/CH_RUSSINAROMAN/bw480000/variant.m3u8?version=2
 
 #EXTINF:-1,ОТС
 http://hls.novotelecom.ru/streaming/ots/tvrec/playlist.m3u8
@@ -269,9 +269,6 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
-
-#EXTINF:-1,FOX Sports 1 Nederland
-http://stream.ssh101.com/hls/Sporttvlive.m3u8
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
