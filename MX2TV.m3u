@@ -291,6 +291,11 @@ http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 #EXTINF:-1,Q-music TV
 rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
 
+#EXTINF:-1,FOX Sports 2 HD
+
+#EXTINF:-1,FOX Sports 3 HD
+http://fsplive_hls-lh.akamaihd.net/i/fsp_HLSlive05_1@123460/index_1200_av-p.m3u8
+
 #EXTINF:-1,Sky Movies Premiere HD
 http://91.109.20.227:8080/TV4251
 
