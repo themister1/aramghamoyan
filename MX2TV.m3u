@@ -1,6 +1,6 @@
-﻿#EXTM3U
+#EXTM3U
 
-#EXTINF:0 tvg-logo="http://www.lyngsat-logo.com/hires/aa/armenia1_sat.png"group-title="cable",H1
+#EXTINF:-1 tvg-name="HBO" tvg-logo="http://www.satexpat.com/img/cha/am/arm_1_95x95.gif"
 http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
 
 #EXTINF:-1,H2
