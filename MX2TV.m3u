@@ -1,6 +1,7 @@
 ﻿#EXTM3U
 
 #EXTINF:-1,H1
+#EXTINF:-1,tvg-logo="http://www.lyngsat-logo.com/hires/aa/armenia1_sat.png"
 http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
 
 #EXTINF:-1,H2
@@ -121,7 +122,7 @@ http://46.61.226.19/hls/CH_FUTBALL1SD/variant.m3u8?version=2
 http://46.61.226.19/hls/CH_FUTBALL2SD/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 3
-http://46.61.226.19/hls/CH_FUTBALL3SD/variant.m3u8?version=2
+https://46.61.226.19/hls/CH_FUTBALL3SD/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Nash Futboll Plus
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_NASHFUTBOL/bw480000/variant.m3u8?version=2
