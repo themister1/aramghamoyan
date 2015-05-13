@@ -81,6 +81,9 @@ http://btv-net.mediacdn.ru/TVB8/russiahd/playlist.m3u8
 #EXTINF:-1,Russia Kultura
 http://hls.novotelecom.ru/streaming/kultura/tvrec/playlist.m3u8
 
+#EXTINF:-1,Euronews
+http://46.61.226.18/hls/CH_EURONEWS/bw1500000/variant.m3u8?version=2
+
 #EXTINF:-1,HTB
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/bw480000/variant.m3u8?version=2
 
@@ -94,24 +97,27 @@ http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
 http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/544/index.m3u8
 
 #EXTINF:-1,HTB Tennis
-http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/528/index.m3u8
+http://109.123.95.250/iptv/48G8852YU8/528/index.m3u8
 
 #EXTINF:-1,HTB Basketball
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_NTVPLUSBASKETBOL/variant.m3u8?version=2
+http://109.123.95.250/iptv/48G8852YU8/529/index.m3u8
 
 #EXTINF:-1,HTB Sport Plus
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSPORT/variant.m3u8?version=2
 
+#EXTINF:-1,HTB Sport
+http://s2.edem.tv/iptv/TVWR32RK25QRUC/123/index.m3u8
+
 #EXTINF:-1,HTB Futboll 1
-http://46.61.226.19/hls/CH_FUTBALL1SD/variant.m3u8?version=2
+http://109.123.95.250/iptv/48G8852YU8/124/index.m3u8
 
 #EXTINF:-1,HTB Futboll 2
-http://46.61.226.19/hls/CH_FUTBALL2SD/variant.m3u8?version=2
+http://109.123.95.250/iptv/48G8852YU8/530/index.m3u8
 
 #EXTINF:-1,HTB Futboll 3
-https://46.61.226.19/hls/CH_FUTBALL3SD/variant.m3u8?version=2
+http://109.123.95.250/iptv/48G8852YU8/522/index.m3u8
 
-#EXTINF:-1,HTB Nash Futboll Plus
+#EXTINF:-1,NTV Nash Futboll
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_NASHFUTBOL/bw480000/variant.m3u8?version=2
 
 #EXTINF:-1,НТВ Киносоюз Plus
