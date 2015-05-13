@@ -63,9 +63,6 @@ http://92.50.181.6/tv/1156/index.m3u8
 #EXTINF:-1,ORT TV Russia
 http://edge.ailetv.net/org11/perviykanal_me/playlist.m3u8
 
-#EXTINF:-1,RTR PLANETA
-http://204.107.27.246/live/_definst_/1738.high.stream/chunklist_w2144379510.m3u8?id=0ad5aac39bb13fbe3aa37ab4bae7c552f4a07bf80877a70486c3179fd0672cc0fada02b738c17928384ee449dd6b729207ac7a0b6ecefb2bd79ad7b5684c25da0497cc838e5b0472d01087eeed982118a0166bd31b8c023a8b2ec89130d1dcf51f0a80ce05d16eb9085bf925df37ecee1cc6532103c9e67e77fad271250c7c7fdb8c03bf0518faeb8ce331cbc8fcf28fb069035b1e75d85943c2334d071cb89b
-
 #EXTINF:-1,Russia 1
 http://video.spcdn.ru/701/85/rus1/index.m3u8
 
@@ -100,22 +97,19 @@ http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/544/index.m3u8
 http://109.123.95.250/iptv/48G8852YU8/528/index.m3u8
 
 #EXTINF:-1,HTB Basketball
-http://109.123.95.250/iptv/48G8852YU8/529/index.m3u8
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_NTVPLUSBASKETBOL/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Sport Plus
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSPORT/variant.m3u8?version=2
 
-#EXTINF:-1,HTB Sport
-http://s2.edem.tv/iptv/TVWR32RK25QRUC/123/index.m3u8
-
 #EXTINF:-1,HTB Futboll 1
-http://109.123.95.250/iptv/48G8852YU8/124/index.m3u8
+http://hlsstr04.svc.iptv.rt.ru/hls/CH_FUTBALL1HD/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 2
-http://109.123.95.250/iptv/48G8852YU8/530/index.m3u8
+http://hlsstr04.svc.iptv.rt.ru/hls/CH_FUTBALL2HD/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 3
-http://109.123.95.250/iptv/48G8852YU8/522/index.m3u8
+http://hlsstr01.svc.iptv.rt.ru/hls/CH_FUTBALL3HD/variant.m3u8?version=2
 
 #EXTINF:-1,NTV Nash Futboll
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_NASHFUTBOL/bw480000/variant.m3u8?version=2
