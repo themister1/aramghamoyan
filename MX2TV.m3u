@@ -324,7 +324,7 @@ http://91.109.20.227:8080/TV4247
 http://91.109.20.227:8080/TV4248
 
 #EXTINF:-1,MTV Live HD
-http://89.212.240.49:11980/live/smil:324_0.smil/playlist.m3u8?authorization_key=hNj0mnLtB9O5rfIKuCVsX7oWASQayqZg&stream_id=0
+http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
 #EXTINF:-1,MTV Hits
 http://92.50.181.6/tv/1278/index.m3u8
