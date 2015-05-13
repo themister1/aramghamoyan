@@ -21,14 +21,14 @@ http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/614/index.m3u8
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
 
+#EXTINF:-1,MTV AM
+http://mtvam.ru/hlsam/playlist.m3u8
+
 #EXTINF:-1,StarsLife TV - Armenia
 http://188.93.18.238:1935/tv/1968/chunklist.m3u8
 
 #EXTINF:-1,AMC
 http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
-
-#EXTINF:-1,MTV AM
-http://mtvam.ru/hlsam/playlist.m3u8
 
 #EXTINF:-1,ARMnews TV
 http://109.123.95.250/iptv/48G8852YU8/611/index.m3u8
