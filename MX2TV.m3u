@@ -106,13 +106,13 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_NTVPLUSBASKETBOL/variant.m3u8?version=2
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSPORT/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 1
-http://hlsstr04.svc.iptv.rt.ru/hls/CH_FUTBALL1HD/variant.m3u8?version=2
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_FUTBALL1SD/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 2
-http://hlsstr04.svc.iptv.rt.ru/hls/CH_FUTBALL2HD/variant.m3u8?version=2
+http://hlsstr02.svc.iptv.rt.ru/hls/CH_FUTBALL2SD/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 3
-http://hlsstr01.svc.iptv.rt.ru/hls/CH_FUTBALL3HD/variant.m3u8?version=2
+http://hlsstr03.svc.iptv.rt.ru/hls/CH_FUTBALL3SD/variant.m3u8?version=2
 
 #EXTINF:-1,NTV Nash Futboll
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_NASHFUTBOL/bw480000/variant.m3u8?version=2
@@ -325,6 +325,21 @@ http://91.109.20.227:8080/TV4247
 
 #EXTINF:-1,Sky Movies Family HD
 http://91.109.20.227:8080/TV4248
+
+#EXTINF:-1,Sky Sports 1
+http://smarterapps.ddns.net:8080/spTt1One/sp0RT1eK/index.m3u8
+
+#EXTINF:-1,Sky Sports 2
+http://smarterapps.ddns.net:8080/spTfor2T0EwTe/MnSsp2Two/index.m3u8
+
+#EXTINF:-1,Sky Sports 3
+http://smarterapps.ddns.net:8080/spR3/sprT3Ke/index.m3u8
+
+#EXTINF:-1,Sky Sports 4
+http://smarterapps.ddns.net:8080/sp4T/sp4RkkW/index.m3u8
+
+#EXTINF:-1,Sky Sports 5
+http://smarterapps.ddns.net:8080/sTp5/sp5PkeY/index.m3u8
 
 #EXTINF:-1,MTV Live HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
