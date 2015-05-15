@@ -22,7 +22,7 @@ http://iptv5.zargacum.net/iptv/KEKNKTM4T4/614/index.m3u8
 rtmp://www.tvarm.ru/live/myStream1.sdp
 
 #EXTINF:-1,MTV AM
-http://94.125.187.18/hlsam/playlist.m3u8
+http://mtvam.ru/hlsam/playlist.m3u8
 
 #EXTINF:-1,StarsLife TV - Armenia
 http://188.93.18.238:1935/tv/1968/chunklist.m3u8
@@ -301,11 +301,6 @@ http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 
 #EXTINF:-1,Q-music TV
 rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
-
-#EXTINF:-1,FOX 1 HD
-http://200.76.77.237/LIVE/H01/CANAL415/PROFILE03.m3u8?
-
-#EXTINF:-1,FOX Sports 2 HD
 
 #EXTINF:-1,FOX Sports 3 HD
 http://fsplive_hls-lh.akamaihd.net/i/fsp_HLSlive05_1@123460/index_1200_av-p.m3u8
