@@ -162,8 +162,10 @@ http://hls.cn.ru/streaming/yumor_tv/16/tvrec/playlist.m3u8
 #EXTINF:-1,EVROKINO
 http://194.190.78.230/output/eurokino/playlist.m3u8
 
-#EXTINF:-1,Paramount Channel HD
+#EXTINF:-1,Paramount Channel Russia HD
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
+
+#EXTINF:-1,Paramount Comedy Russia HD
 
 #EXTINF:-1,Gulli
 http://185.38.12.20:8088/gulli/
@@ -299,6 +301,9 @@ http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 
 #EXTINF:-1,Q-music TV
 rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
+
+#EXTINF:-1,FOX 1 HD
+http://200.76.77.237/LIVE/H01/CANAL415/PROFILE03.m3u8?
 
 #EXTINF:-1,FOX Sports 2 HD
 
