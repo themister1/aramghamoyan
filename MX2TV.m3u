@@ -273,10 +273,10 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_RADOSTMOYA/variant.m3u8?version=2
 http://hls01-03.az.myvideo.az/hls-live/livepkgr/myplanet/myplanet/myplanet.m3u8?hasbahcaiptv.com=fb%2Fsimpletvipadresleri
 
 #EXTINF:-1,Animal Planet RU
-http://hlsstr01.svc.iptv.rt.ru/hls/CH_ANIMALPLANET/variant.m3u8?version=2
+http://46.61.226.18/hls/CH_C03_ANIMALPLANETHD/bw3000000/variant.m3u8?version=2
 
 #EXTINF:-1,Nat Geo Wild HD RU
-http://s1.edem.tv/iptv/P9AVTVC47VD8YP/133/index.m3u8
+http://hls01-03.az.myvideo.az/hls-live/livepkgr/natgeowild/natgeowild/natgeowild.m3u8?hasbahcaiptv.com=fb%2Fsimpletvipadresleri
 
 #EXTINF:-1,National Geographic HD RU
 http://urlcut.org/ngch
