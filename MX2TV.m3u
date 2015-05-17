@@ -7,7 +7,7 @@ http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.
 http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/603/index.m3u8
 
 #EXTINF:-1,H3
-http://s13.streamcp.com:1935/8164/8164/chunklist_w1593161645.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/612/index.m3u8
 
 #EXTINF:-1,Shant TV
 rtmp://shanttv.cdnvideo.ru/shanttv-live/shanttv.sdp
@@ -16,7 +16,7 @@ rtmp://shanttv.cdnvideo.ru/shanttv-live/shanttv.sdp
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
 #EXTINF:-1,Armenia TV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/614/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/614/index.m3u8
 
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
@@ -31,25 +31,25 @@ http://188.93.18.238:1935/tv/1968/chunklist.m3u8
 http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
 
 #EXTINF:-1,ARMnews TV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/611/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/611/index.m3u8
 
 #EXTINF:-1,Azdarar TV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/610/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/610/index.m3u8
 
 #EXTINF:-1,DAR 21 TV
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/602/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/602/index.m3u8
 
 #EXTINF:-1,SHOGHAKAT TV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/613/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/613/index.m3u8
 
 #EXTINF:-1,Yerkir Media TV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/608/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/608/index.m3u8
 
 #EXTINF:-1,Kentron TV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/606/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/606/index.m3u8
 
 #EXTINF:-1,ATV
-http://iptv5.zargacum.net/iptv/KEKNKTM4T4/609/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/609/index.m3u8
 
 #EXTINF:-1,Russian Music BOX 1
 http://46.61.226.18/hls/CH_MUSICBOXRU/bw1500000/variant.m3u8?version=2
@@ -97,24 +97,24 @@ http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
 http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/544/index.m3u8
 
 #EXTINF:-1,HTB Tennis
-http://109.123.95.250/iptv/48G8852YU8/528/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/528/index.m3u8
 
 #EXTINF:-1,HTB Basketball
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_NTVPLUSBASKETBOL/variant.m3u8?version=2
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/529/index.m3u8
 
 #EXTINF:-1,HTB Sport Plus
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSPORT/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 1
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_FUTBALL1SD/variant.m3u8?version=2
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/124/index.m3u8
 
 #EXTINF:-1,HTB Futboll 2
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_FUTBALL2SD/variant.m3u8?version=2
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/530/index.m3u8
 
 #EXTINF:-1,HTB Futboll 3
 http://fr978.edem.tv/iptv/YGW4K7V9EHK9GG/522/index.m3u8
 
-#EXTINF:-1,NTV Nash Futboll
+#EXTINF:-1,Nash Futboll
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_NASHFUTBOL/bw480000/variant.m3u8?version=2
 
 #EXTINF:-1,НТВ Киносоюз Plus
@@ -142,13 +142,13 @@ http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/202/index.m3u8
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_TV1000ACTION/variant.m3u8?version=2
 
 #EXTINF:-1,TV1000 Comedy HD
-http://iptv6.zargacum.net/iptv/C3E78FQF6K/200/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/200/index.m3u8
 
 #EXTINF:-1,TV1000 Russian Kino HD
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_TV1000RUS/variant.m3u8?version=2
 
 #EXTINF:-1,TV1000 MegaHit HD
-http://s1.edem.tv/iptv/P9AVTVC47VD8YP/201/index.m3u8
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/201/index.m3u8
 
 #EXTINF:-1,Home Cinema RU
 http://edge.ailetv.net/org3/domkino_me/playlist.m3u8
@@ -270,16 +270,22 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_CN/bw480000/variant.m3u8?version=2
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_RADOSTMOYA/variant.m3u8?version=2
 
 #EXTINF:-1,Moya Planeta
-http://hls01-03.az.myvideo.az/hls-live/livepkgr/myplanet/myplanet/myplanet.m3u8?hasbahcaiptv.com=fb%2Fsimpletvipadresleri
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/117/index.m3u8
+
+#EXTINF:-1,Discovery Channel
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/140/index.m3u8
 
 #EXTINF:-1,Animal Planet RU
-http://46.61.226.18/hls/CH_C03_ANIMALPLANETHD/bw3000000/variant.m3u8?version=2
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/137/index.m3u8
 
 #EXTINF:-1,Nat Geo Wild HD RU
-http://hls01-03.az.myvideo.az/hls-live/livepkgr/natgeowild/natgeowild/natgeowild.m3u8?hasbahcaiptv.com=fb%2Fsimpletvipadresleri
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/133/index.m3u8
 
 #EXTINF:-1,National Geographic HD RU
-http://urlcut.org/ngch
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/134/index.m3u8
+
+#EXTINF:-1,Extreme Sports
+http://fr456.edem.tv/iptv/F7QSENYAP29S6L/144/index.m3u8
 
 #EXTINF:-1,3oo TB
 http://92.50.181.6/tv/1143/index.m3u8
