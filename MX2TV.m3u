@@ -3,9 +3,6 @@
 #EXTINF:-1,H1
 http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
 
-#EXTINF:-1,H2
-http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/603/index.m3u8
-
 #EXTINF:-1,H3
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/612/index.m3u8
 
@@ -16,7 +13,7 @@ rtmp://shanttv.cdnvideo.ru/shanttv-live/shanttv.sdp
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
 #EXTINF:-1,Armenia TV
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/614/index.m3u8
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/614/index.m3u8
 
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
@@ -280,16 +277,16 @@ http://fr456.edem.tv/iptv/F7QSENYAP29S6L/117/index.m3u8
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/140/index.m3u8
 
 #EXTINF:-1,Animal Planet RU
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/137/index.m3u8
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/137/index.m3u8
 
 #EXTINF:-1,Nat Geo Wild HD RU
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/133/index.m3u8
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/133/index.m3u8
 
 #EXTINF:-1,National Geographic HD RU
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/134/index.m3u8
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/134/index.m3u8
 
 #EXTINF:-1,Extreme Sports
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/144/index.m3u8
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/144/index.m3u8
 
 #EXTINF:-1,3oo TB
 http://92.50.181.6/tv/1143/index.m3u8
