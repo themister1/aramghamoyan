@@ -256,7 +256,13 @@ http://213.186.120.146/hls/dom.m3u8
 http://185.38.12.20:8088/rentv/
 
 #EXTINF:-1,CTC
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/506/index.m3u8
+
+#EXTINF:-1,CTC MNP
 http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
+
+#EXTINF:-1,CTC LOVE
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/103/index.m3u8
 
 #EXTINF:-1,5 kanal TV
 http://185.38.12.20:8088/5kanal_ukr/
@@ -266,6 +272,9 @@ http://213.186.120.146/hls/tv3.m3u8
 
 #EXTINF:-1,2x2 TV
 http://hls.novotelecom.ru/streaming/2x2tv/tvrec/playlist.m3u8
+
+#EXTINF:-1,Эгоист
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/526/index.m3u8
 
 #EXTINF:-1,TV Cente
 http://213.186.120.146/hls/tvc.m3u8
@@ -366,14 +375,11 @@ http://91.109.20.227:8080/TV4247
 #EXTINF:-1,Sky Movies Family HD
 http://91.109.20.227:8080/TV4248
 
-#EXTINF:-1,MTV Live HD
+#EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
-#EXTINF:-1,MTV Hits
+#EXTINF:-1,MTV Hits HD
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/153/index.m3u8
-
-#EXTINF:-1,MTV Dance
-http://92.50.181.6/tv/1280/index.m3u8
 
 #EXTINF:-1,Real Madrid
 http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1250_av-b.m3u8?sd=10&rebase=on
