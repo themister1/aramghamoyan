@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1,tvg-name="H1" tvg-logo="http://www.satexpat.com/img/cha/am/arm_1_95x95.gif", H1
+#EXTINF:-1,tvg-name="H1", tvg-logo="http://www.satexpat.com/img/cha/am/arm_1_95x95.gif", H1
 http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
 
 #EXTINF:-1,H3
