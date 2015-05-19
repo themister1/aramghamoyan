@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1,tvg-name="H1", tvg-logo="http://www.satexpat.com/img/cha/am/arm_1_95x95.gif", H1
+#EXTINF:-1,H1
 http://91.103.26.50:1935/edge/smil:liveStream.smil/chunklist_w200514344_b978000.m3u8?time=1430748802078
 
 #EXTINF:-1,H3
@@ -370,7 +370,7 @@ http://91.109.20.227:8080/TV4248
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
 #EXTINF:-1,MTV Hits
-http://92.50.181.6/tv/1278/index.m3u8
+http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/153/index.m3u8
 
 #EXTINF:-1,MTV Dance
 http://92.50.181.6/tv/1280/index.m3u8
