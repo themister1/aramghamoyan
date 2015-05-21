@@ -342,6 +342,9 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
 
+#EXTINF:-1,RTV OOST
+http://145.58.83.153/tv/smil:live.smil/playlist.m3u8
+
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 
@@ -351,29 +354,50 @@ rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
 #EXTINF:-1,MAX TV
 http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8
 
-#EXTINF:-1,FOX Sports 3 HD
-http://fsplive_hls-lh.akamaihd.net/i/fsp_HLSlive05_1@123460/index_1200_av-p.m3u8
+#EXTINF:-1,FOX Sports 1 NL
+http://stream6.dyndns.tv:8888/live?channelId=260&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
 
-#EXTINF:-1,Sky Movies Premiere HD
+#EXTINF:-1,Fox Sport 2 ENG
+http://stream6.dyndns.tv:8888/live?channelId=261&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+
+#EXTINF:-1,Fox Sport 3 NL
+http://stream6.dyndns.tv:8888/live?channelId=262&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+
+#EXTINF:-1,Fox Sport 4 NL
+http://stream6.dyndns.tv:8888/live?channelId=263&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+
+#EXTINF:-1,Fox Sport 5 NL
+http://stream6.dyndns.tv:8888/live?channelId=264&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+
+#EXTINF:-1,Sport1 Extra 2 NL
+http://stream1.dyndns.ws:99/live?channelId=266&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+
+#EXTINF:-1,Sky Movies Premiere HD ENG
 http://91.109.20.227:8080/TV4251
 
-#EXTINF:-1,Sky Movies Premiere+ HD
+#EXTINF:-1,Sky Movies Premiere+ HD ENG
 http://91.109.20.227:8080/TV4252
 
-#EXTINF:-1,Sky Movies Select HD
+#EXTINF:-1,Sky Movies Select HD ENG
 http://91.109.20.227:8080/TV4254
 
-#EXTINF:-1,Sky Movies Action & Adventure HD
+#EXTINF:-1,Sky Movies Action & Adventure HD ENG
 http://91.109.20.227:8080/TV4245
 
-#EXTINF:-1,Sky Movies Comedy HD
+#EXTINF:-1,Sky Movies Comedy HD ENG
 http://91.109.20.227:8080/TV4246
 
-#EXTINF:-1,Sky Movies Disney HD
+#EXTINF:-1,Sky Movies Disney HD ENG
 http://91.109.20.227:8080/TV4247
 
-#EXTINF:-1,Sky Movies Family HD
+#EXTINF:-1,Sky Movies Family HD ENG
 http://91.109.20.227:8080/TV4248
+
+#EXTINF:-1,Sky Sport 1 DE
+http://narodnatv.dyndns.tv:2801/live?channelId=207&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+
+#EXTINF:-1,Sky Bundesliga DE
+http://narodnatv.dyndns.tv:2801/live?channelId=209&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
 
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
