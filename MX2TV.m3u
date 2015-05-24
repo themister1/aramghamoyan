@@ -351,9 +351,6 @@ rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
 #EXTINF:-1,MAX TV
 http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8
 
-#EXTINF:-1,HBO HD ENG
-http://113.160.49.34/lives/origin03/hbohd.isml/hbohd-2096k.m3u8
-
 #EXTINF:-1,Sky Movies Premiere HD ENG
 http://91.109.20.227:8080/TV4251
 
@@ -374,15 +371,6 @@ http://91.109.20.227:8080/TV4247
 
 #EXTINF:-1,Sky Movies Family HD ENG
 http://91.109.20.227:8080/TV4248
-
-#EXTINF:-1,Sky Sport 1 DE
-http://195.244.40.213:3002/bysid/221
-
-#EXTINF:-1,Sky Sport 2 DE
-http://195.244.40.213:3002/bysid/222
-
-#EXTINF:-1,Sky Bundesliga 1 DE
-http://195.244.40.213:3002/bysid/223
 
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
