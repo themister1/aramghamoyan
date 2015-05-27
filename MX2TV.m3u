@@ -372,6 +372,21 @@ http://91.109.20.227:8080/TV4247
 #EXTINF:-1,Sky Movies Family HD ENG
 http://91.109.20.227:8080/TV4248
 
+#EXTIF:-1,Sky Sport 1 ENG
+http://195.154.227.38:1935/live/skysports1lsh/playlist.m3u8
+
+#EXTIF:-1,Sky Sport 2 ENG
+http://195.154.227.38:1935/live/skysports2lsh/playlist.m3u8
+
+#EXTIF:-1,Sky Sport 3 ENG
+http://195.154.227.38:1935/live/skysports3lsh/playlist.m3u8
+
+#EXTIF:-1,Sky Sport 4 ENG
+http://195.154.227.38:1935/live/skysports4lsh/playlist.m3u8
+
+#EXTIF:-1,Sky Sport 5 ENG
+http://195.154.227.38:1935/live/skysports5lsh/playlist.m3u8
+
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
