@@ -351,6 +351,9 @@ rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
 #EXTINF:-1,MAX TV
 http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8
 
+#EXTINF:-1,HBO PLUS
+http://192.99.4.70/hls/HBO_PLUS.m3u8
+
 #EXTINF:-1,Sky Movies Premiere HD ENG
 http://91.109.20.227:8080/TV4251
 
