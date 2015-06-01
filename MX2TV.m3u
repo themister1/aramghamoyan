@@ -106,7 +106,7 @@ http://fr456.edem.tv/iptv/F7QSENYAP29S6L/529/index.m3u8
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSPORT/variant.m3u8?version=2
 
 #EXTINF:-1,HTB Futboll 1
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/124/index.m3u8
+http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/124/index.m3u8
 
 #EXTINF:-1,HTB Futboll 2
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/530/index.m3u8
@@ -418,7 +418,7 @@ http://195.154.227.38:1935/live/skysports5lsh/playlist.m3u8
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
 #EXTINF:-1,MTV Hits HD
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/153/index.m3u8
+http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/153/index.m3u8
 
 #EXTINF:-1,Real Madrid
 http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1250_av-b.m3u8?sd=10&rebase=on
