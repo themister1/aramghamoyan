@@ -1,4 +1,4 @@
-#EXTM3U
+﻿#EXTM3U
 
 #EXTINF:-1,H1
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/601/index.m3u8
@@ -66,13 +66,13 @@ http://fr456.edem.tv/iptv/F7QSENYAP29S6L/127/index.m3u8
 #EXTINF:-1,РТР Планета
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/546/index.m3u8
 
-#EXTINF:-1,Russia 1
+#EXTINF:-1,Россия 1
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/504/index.m3u8
 
-#EXTINF:-1,Russia 2
+#EXTINF:-1,Россия 2
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/535/index.m3u8
 
-#EXTINF:-1,Russia 24
+#EXTINF:-1,Россия 24
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/507/index.m3u8
 
 #EXTINF:0, Россия HD
@@ -96,10 +96,10 @@ http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
 #EXTINF:-1,НТВ Мир
 http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/544/index.m3u8
 
-#EXTINF:-1,HTB Tennis
+#EXTINF:-1,НТВ-ПЛЮС Теннис
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/528/index.m3u8
 
-#EXTINF:-1,HTB Basketball
+#EXTINF:-1,НТВ-ПЛЮС Баскетбол
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/529/index.m3u8
 
 #EXTINF:-1,HTB Sport Plus
@@ -114,7 +114,7 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/530/index.m3u8
 #EXTINF:-1,HTB Futboll 3
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/522/index.m3u8
 
-#EXTINF:-1,Nash Futboll
+#EXTINF:-1,НТВ-ПЛЮС Наш Футбол
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/531/index.m3u8
 
 #EXTINF:-1,НТВ Кино союз Plus
@@ -297,34 +297,34 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_CN/bw480000/variant.m3u8?version=2
 #EXTINF:-1,Авто 24
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/538/index.m3u8
 
-#EXTINF:-1,Радость Моја
+#EXTINF:-1,Радость Моя
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_RADOSTMOYA/variant.m3u8?version=2
 
 #EXTINF:-1,Moya Planeta
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/117/index.m3u8
 
-#EXTINF:-1,Discovery Channel RU
+#EXTINF:-1,Discovery Channel
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/140/index.m3u8
 
-#EXTINF:-1,Discovery Science RU
+#EXTINF:-1,Discovery Science
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/136/index.m3u8
 
-#EXTINF:-1,Discovery World RU
+#EXTINF:-1,Discovery World
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/135/index.m3u8
 
-#EXTINF:-1,Animal Planet RU
+#EXTINF:-1,Animal Planet
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/137/index.m3u8
 
-#EXTINF:-1,Nat Geo Wild HD RU
+#EXTINF:-1,Nat Geo WILD
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/133/index.m3u8
 
-#EXTINF:-1,National Geographic HD RU
+#EXTINF:-1,National Geographic
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/134/index.m3u8
 
-#EXTINF:-1,Outdoor Channel RU
+#EXTINF:-1,Outdoor Channel
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/119/index.m3u8
 
-#EXTINF:-1,Extreme Sports RU
+#EXTINF:-1,Extreme Sports
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/144/index.m3u8
 
 #EXTINF:-1,3oo TB
