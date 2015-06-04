@@ -78,13 +78,13 @@ http://fr456.edem.tv/iptv/F7QSENYAP29S6L/507/index.m3u8
 #EXTINF:0, Россия HD
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/205/index.m3u8
 
-#EXTINF:-1,Russia Kultura
+#EXTINF:-1,Россия Культура
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/505/index.m3u8
 
 #EXTINF:-1,Euronews
 http://46.61.226.18/hls/CH_EURONEWS/bw1500000/variant.m3u8?version=2
 
-#EXTINF:-1,HTB
+#EXTINF:-1,НТВ
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/bw480000/variant.m3u8?version=2
 
 #EXTINF:-1,HTB 2
@@ -105,13 +105,13 @@ http://fr456.edem.tv/iptv/F7QSENYAP29S6L/529/index.m3u8
 #EXTINF:-1,HTB Sport Plus
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSPORT/variant.m3u8?version=2
 
-#EXTINF:-1,HTB Futboll 1
+#EXTINF:-1,НТВ-ПЛЮС Футбол 1
 http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/124/index.m3u8
 
-#EXTINF:-1,HTB Futboll 2
+#EXTINF:-1,НТВ-ПЛЮС Футбол 2
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/530/index.m3u8
 
-#EXTINF:-1,HTB Futboll 3
+#EXTINF:-1,НТВ-ПЛЮС Футбол 3
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/522/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
