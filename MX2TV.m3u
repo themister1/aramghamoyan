@@ -94,46 +94,46 @@ http://hls.novotelecom.ru/streaming/ntv/tvrec/playlist.m3u8
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
 
 #EXTINF:-1,НТВ Мир
-http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/544/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/544/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Теннис
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/528/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/528/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Баскетбол
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/529/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/529/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Спорт
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/123/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/123/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/124/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/124/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол 2
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/530/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/530/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол 3
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/522/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/522/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/531/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/531/index.m3u8
 
-#EXTINF:-1,НТВ Кино союз Plus
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/509/index.m3u8
+#EXTINF:-1,КИНОСОЮЗ
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/509/index.m3u8
 
-#EXTINF:-1,HTB Premiere Plus
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/125/index.m3u8
+#EXTINF:-1,Премьера
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/125/index.m3u8
 
 #EXTINF:-1,HTB Cinema Plus
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSKINO/variant.m3u8?version=2
 
-#EXTINF:-1,НТВ Наше кино Plus
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/126/index.m3u8
+#EXTINF:-1,Наше Кино
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/126/index.m3u8
 
-#EXTINF:-1,HTB Кинохит Plus
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/516/index.m3u8
+#EXTINF:-1,Кинохит
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/516/index.m3u8
 
-#EXTINF:-1,HTB Наше новое кино Plus
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/517/index.m3u8
+#EXTINF:-1,Наше новое кино
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/517/index.m3u8
 
 #EXTINF:-1,TV1000 HD
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_TV1000/variant.m3u8?version=2
@@ -159,14 +159,14 @@ http://edge.ailetv.net/org3/domkino_me/playlist.m3u8
 #EXTINF:-1,Много ТВ
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/148/index.m3u8
 
-#EXTINF:-1,Comedy TV RU
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/145/index.m3u8
+#EXTINF:-1,Комедия
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/145/index.m3u8
 
 #EXTINF:-1,Humor TV RU
 http://hls.cn.ru/streaming/yumor_tv/16/tvrec/playlist.m3u8
 
-#EXTINF:-1,EVROKINO
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/549/index.m3u8
+#EXTINF:-1,Еврокино
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/549/index.m3u8
 
 #EXTINF:-1,TV XXI
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/525/index.m3u8
