@@ -1,6 +1,6 @@
 ﻿#EXTM3U
 
-#EXTINF:-1,H1
+#EXTINF:-1,Հ1 International
 http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/601/index.m3u8
 
 #EXTINF:-1,H3
@@ -60,7 +60,7 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/120/index.m3u8
 #EXTINF:-1,Chanson TV
 http://92.50.181.6/tv/1156/index.m3u8
 
-#EXTINF:-1,ORT TV Russia
+#EXTINF:-1,Первый канал
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/127/index.m3u8
 
 #EXTINF:-1,РТР Планета
@@ -162,8 +162,8 @@ http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/148/index.m3u8
 #EXTINF:-1,Комедия
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/145/index.m3u8
 
-#EXTINF:-1,Humor TV RU
-http://hls.cn.ru/streaming/yumor_tv/16/tvrec/playlist.m3u8
+#EXTINF:-1,Комеди ТВ
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/104/index.m3u8
 
 #EXTINF:-1,Еврокино
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/549/index.m3u8
@@ -174,7 +174,7 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/525/index.m3u8
 #EXTINF:-1,Paramount Channel Russia HD
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
 
-#EXTINF:-1,Paramount Comedy Russia HD
+#EXTINF:-1,Paramount Comedy Russia
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/157/index.m3u8
 
 #EXTINF:-1,Gulli
@@ -201,10 +201,10 @@ http://fr456.edem.tv/iptv/F7QSENYAP29S6L/555/index.m3u8
 #EXTINF:-1,Fight Club RU
 http://46.61.226.18/hls/CH_FIGHTCLUB/bw1500000/variant.m3u8?version=2
 
-#EXTINF:-1,Eurosport 1 RU
+#EXTINF:-1,Eurosport
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/141/index.m3u8
 
-#EXTINF:-1,Eurosport 2 RU
+#EXTINF:-1,Eurosport 2
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/539/index.m3u8
 
 #EXTINF:-1,RTR Sport
@@ -246,7 +246,7 @@ http://92.50.181.6/tv/1201/index.m3u8
 #EXTINF:-1,Soldier RU
 http://92.50.181.6/tv/1206/index.m3u8
 
-#EXTINF:-1,THT TV
+#EXTINF:-1,THT
 http://213.186.120.146/hls/tnt.m3u8
 
 #EXTINF:-1,Domashniy TV
@@ -255,13 +255,13 @@ http://213.186.120.146/hls/dom.m3u8
 #EXTINF:-1,Ren TV
 http://185.38.12.20:8088/rentv/
 
-#EXTINF:-1,CTC
+#EXTINF:-1,СТС
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/506/index.m3u8
 
 #EXTINF:-1,CTC MNP
 http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
 
-#EXTINF:-1,CTC LOVE
+#EXTINF:-1,СТС Love
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/103/index.m3u8
 
 #EXTINF:-1,5 kanal TV
@@ -291,14 +291,14 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_ULLUSIONPLUS/bw480000/variant.m3u8?version
 #EXTINF:-1,Russian illusion TV
 http://194.190.78.230/output/illuzionrus/playlist.m3u8
 
-#EXTINF:-1,Cartoon Network RU
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_CN/bw480000/variant.m3u8?version=2
+#EXTINF:-1,Cartoon Network
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/143/index.m3u8
 
 #EXTINF:-1,Авто 24
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/538/index.m3u8
 
-#EXTINF:-1,Радость Моя
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_RADOSTMOYA/variant.m3u8?version=2
+#EXTINF:-1,Моя Планета
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/117/index.m3u8
 
 #EXTINF:-1,Moya Planeta
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/117/index.m3u8
@@ -417,7 +417,7 @@ http://195.154.227.38:1935/live/skysports5lsh/playlist.m3u8
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
-#EXTINF:-1,MTV Hits HD
+#EXTINF:-1,MTV Hits
 http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/153/index.m3u8
 
 #EXTINF:-1,Real Madrid
