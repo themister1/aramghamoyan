@@ -1,6 +1,6 @@
 ﻿#EXTM3U
 
-#EXTINF:-1,Հ1 International
+#EXTINF:-1,H1
 http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/601/index.m3u8
 
 #EXTINF:-1,H3
@@ -54,8 +54,11 @@ http://46.61.226.18/hls/CH_MUSICBOXRU/bw1500000/variant.m3u8?version=2
 #EXTINF:-1,Russian Music Box 2
 http://46.61.226.18/hls/CH_MUSICBOXTV/bw1500000/variant.m3u8?version=2
 
+#EXTINF:-1,МУЗ
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/116/index.m3u8
+
 #EXTINF:-1,RUSONG TV
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/120/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/120/index.m3u8
 
 #EXTINF:-1,Chanson TV
 http://92.50.181.6/tv/1156/index.m3u8
@@ -175,7 +178,7 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/525/index.m3u8
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
 
 #EXTINF:-1,Paramount Comedy Russia
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/157/index.m3u8
+hhttp://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/157/index.m3u8
 
 #EXTINF:-1,Gulli
 http://fr456.edem.tv/iptv/F7QSENYAP29S6L/109/index.m3u8
@@ -300,32 +303,29 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/538/index.m3u8
 #EXTINF:-1,Моя Планета
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/117/index.m3u8
 
-#EXTINF:-1,Moya Planeta
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/117/index.m3u8
-
 #EXTINF:-1,Discovery Channel
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/140/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/140/index.m3u8
 
 #EXTINF:-1,Discovery Science
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/136/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/136/index.m3u8
 
 #EXTINF:-1,Discovery World
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/135/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/135/index.m3u8
 
 #EXTINF:-1,Animal Planet
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/137/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/137/index.m3u8
 
 #EXTINF:-1,Nat Geo WILD
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/133/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/133/index.m3u8
 
 #EXTINF:-1,National Geographic
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/134/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/134/index.m3u8
 
 #EXTINF:-1,Outdoor Channel
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/119/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/119/index.m3u8
 
 #EXTINF:-1,Extreme Sports
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/144/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/144/index.m3u8
 
 #EXTINF:-1,3oo TB
 http://92.50.181.6/tv/1143/index.m3u8
