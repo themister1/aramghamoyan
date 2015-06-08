@@ -294,6 +294,9 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_ULLUSIONPLUS/bw480000/variant.m3u8?version
 #EXTINF:-1,Russian illusion TV
 http://194.190.78.230/output/illuzionrus/playlist.m3u8
 
+#EXTINF:-1,Русская Ночь
+http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/147/index.m3u8
+
 #EXTINF:-1,Cartoon Network
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/143/index.m3u8
 
