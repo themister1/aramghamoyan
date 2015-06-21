@@ -28,25 +28,25 @@ http://188.93.18.238:1935/tv/1968/chunklist.m3u8
 http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
 
 #EXTINF:-1,ARM-News-Film-Music TV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/611/index.m3u8
+
 
 #EXTINF:-1,Azdarar TV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/610/index.m3u8
+
 
 #EXTINF:-1,DAR 21 TV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/602/index.m3u8
+
 
 #EXTINF:-1,SHOGHAKAT TV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/613/index.m3u8
+
 
 #EXTINF:-1,Yerkir Media TV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/608/index.m3u8
+
 
 #EXTINF:-1,Kentron TV
 http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/606/index.m3u8
 
 #EXTINF:-1,ATV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/609/index.m3u8
+
 
 #EXTINF:-1,Russian Music BOX 1
 http://46.61.226.18/hls/CH_MUSICBOXRU/bw1500000/variant.m3u8?version=2
@@ -64,25 +64,25 @@ http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/120/index.m3u8
 http://92.50.181.6/tv/1156/index.m3u8
 
 #EXTINF:-1,Первый канал
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/127/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/127/index.m3u8
 
 #EXTINF:-1,РТР Планета
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/546/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/546/index.m3u8
 
 #EXTINF:-1,Россия 1
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/504/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/504/index.m3u8
 
 #EXTINF:-1,Россия 2
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/535/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/535/index.m3u8
 
 #EXTINF:-1,Россия 24
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/507/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/507/index.m3u8
 
 #EXTINF:0, Россия HD
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/205/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/205/index.m3u8
 
 #EXTINF:-1,Россия Культура
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/505/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/505/index.m3u8
 
 #EXTINF:-1,Euronews
 http://46.61.226.18/hls/CH_EURONEWS/bw1500000/variant.m3u8?version=2
@@ -148,13 +148,13 @@ http://fr456.edem.tv/iptv/MMLF6E3V48A2C7/202/index.m3u8
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_TV1000ACTION/variant.m3u8?version=2
 
 #EXTINF:-1,TV1000 Comedy HD
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/200/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/200/index.m3u8
 
 #EXTINF:-1,TV1000 Russian Kino HD
 http://hlsstr01.svc.iptv.rt.ru/hls/CH_TV1000RUS/variant.m3u8?version=2
 
 #EXTINF:-1,TV1000 MegaHit HD
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/201/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/201/index.m3u8
 
 #EXTINF:-1,Home Cinema RU
 http://edge.ailetv.net/org3/domkino_me/playlist.m3u8
@@ -178,10 +178,10 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/525/index.m3u8
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
 
 #EXTINF:-1,Paramount Comedy Russia
-hhttp://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/157/index.m3u8
+http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/157/index.m3u8
 
 #EXTINF:-1,Gulli
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/109/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/109/index.m3u8
 
 #EXTINF:-1,Кинорейс 1
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/101/index.m3u8
@@ -193,22 +193,22 @@ http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/110/index.m3u8
 http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/118/index.m3u8
 
 #EXTINF:-1,Amedia 1
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/554/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/554/index.m3u8
 
 #EXTINF:-1,Amedia 2
-http://fr456.edem.tv/iptv/2SGYXADFETFABY/510/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/510/index.m3u8
 
 #EXTINF:-1,Amedia Premium HD
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/555/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/555/index.m3u8
 
 #EXTINF:-1,Fight Club RU
 http://46.61.226.18/hls/CH_FIGHTCLUB/bw1500000/variant.m3u8?version=2
 
 #EXTINF:-1,Eurosport
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/141/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/141/index.m3u8
 
 #EXTINF:-1,Eurosport 2
-http://fr456.edem.tv/iptv/F7QSENYAP29S6L/539/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/539/index.m3u8
 
 #EXTINF:-1,RTR Sport
 http://92.50.181.6/tv/1114/index.m3u8
