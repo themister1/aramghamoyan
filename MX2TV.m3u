@@ -1,10 +1,10 @@
 ﻿#EXTM3U
 
 #EXTINF:-1,H1
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/601/index.m3u8
+http://91.103.26.50:1935/edge/smil:liveStream.smil/playlist.m3u8
 
 #EXTINF:-1,H3
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/612/index.m3u8
+
 
 #EXTINF:-1,Shant TV
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/604/index.m3u8
