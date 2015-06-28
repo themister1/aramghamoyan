@@ -363,65 +363,56 @@ rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
 #EXTINF:-1,MAX TV
 http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8
 
-#EXTINF:-1,HBO Plus ENG
-http://192.99.4.70/hls/HBO_PLUS.m3u8
-
-#EXTINF:-1,HBO Signature ENG
-http://192.99.4.70/hls/hbo_signature.m3u8
-
-#EXTINF:-1,FOX MOVIES ENG
-rtmp://162.212.176.107:1935/fox_movies/globaltv-fox_movies.stream
-
 #EXTINF:-1,Pink Premium ENG
-http://str108.setplex.net/fastv_2psh/PinkPremiumglobal_rly_greece_103/playlist.m3u8
+
 
 #EXTINF:-1,Pink Horror ENG
-http://str108.setplex.net/fastv_2psh/PinkHorrorglobal_rly_greece_103/playlist.m3u8
+
 
 #EXTINF:-1,Pink Movies ENG
-http://str108.setplex.net/fastv_2psh/PinkMoviesglobal_rly_greece_109/playlist.m3u8
+
 
 #EXTINF:-1,Pink Kids ENG
-http://str108.setplex.net/fastv_2psh/PinkKidsglobal_rly_greece_103/playlist.m3u8
+
 
 #EXTINF:-1,Pink Comedy ENG
-http://str108.setplex.net/fastv_2psh/PinkComedyglobal_rly_greece_103/playlist.m3u8 
+ 
 
 #EXTINF:-1,Sky Movies Premiere HD ENG
-http://91.109.20.227:8080/TV4251
+
 
 #EXTINF:-1,Sky Movies Premiere+ HD ENG
-http://91.109.20.227:8080/TV4252
+
 
 #EXTINF:-1,Sky Movies Select HD ENG
-http://91.109.20.227:8080/TV4254
+
 
 #EXTINF:-1,Sky Movies Action & Adventure HD ENG
-http://91.109.20.227:8080/TV4245
+
 
 #EXTINF:-1,Sky Movies Comedy HD ENG
-http://91.109.20.227:8080/TV4246
+
 
 #EXTINF:-1,Sky Movies Disney HD ENG
-http://91.109.20.227:8080/TV4247
+
 
 #EXTINF:-1,Sky Movies Family HD ENG
-http://91.109.20.227:8080/TV4248
+
 
 #EXTINF:-1,Sky Sport 1 ENG
-http://195.154.227.38:1935/live/skysports1lsh/playlist.m3u8
+
 
 #EXTINF:-1,Sky Sport 2 ENG
-http://195.154.227.38:1935/live/skysports2lsh/playlist.m3u8
+
 
 #EXTINF:-1,Sky Sport 3 ENG
-http://195.154.227.38:1935/live/skysports3lsh/playlist.m3u8
+
 
 #EXTINF:-1,Sky Sport 4 ENG
-http://195.154.227.38:1935/live/skysports4lsh/playlist.m3u8
+
 
 #EXTINF:-1,Sky Sport 5 ENG
-http://195.154.227.38:1935/live/skysports5lsh/playlist.m3u8
+
 
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
