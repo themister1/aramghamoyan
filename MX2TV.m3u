@@ -28,7 +28,7 @@ http://188.93.18.237:1935/tv/3611/playlist.m3u8
 http://94.125.187.18/hlsam/playlist.m3u8
 
 #EXTINF:-1,StarsLife TV - Armenia
-http://188.93.18.238:1935/tv/1968/chunklist.m3u8
+http://pp1.tvevt.com:1935/tv/_definst_/1968/playlist.m3u8
 
 #EXTINF:-1,AMC
 http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
