@@ -10,13 +10,13 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/603/index.m3u8
 http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/612/index.m3u8
 
 #EXTINF:-1,Shant TV
-http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/604/index.m3u8
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/604/index.m3u8
 
 #EXTINF:-1,ARTN SHANT TV
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
 #EXTINF:-1,Armenia TV
-http://62.210.91.25:8080/hls1/ArmeniaTV4.m3u8?token=bIYk4sPpwFFwuOgYhK0Iyg&e=1435784718
+
 
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
