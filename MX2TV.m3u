@@ -16,13 +16,13 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/604/index.m3u8
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
 #EXTINF:-1,Armenia TV
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/614/index.m3u8
 
+#EXTINF:-1,ATV
+http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/609/index.m3u8
 
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
-
-#EXTINF:-1,Armenian Music
-http://188.93.18.237:1935/tv/3611/playlist.m3u8
 
 #EXTINF:-1,MTV AM
 http://94.125.187.18/hlsam/playlist.m3u8
@@ -50,9 +50,6 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/608/index.m3u8
 
 #EXTINF:-1,Kentron TV
 http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/606/index.m3u8
-
-#EXTINF:-1,ATV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/609/index.m3u8
 
 #EXTINF:-1,Russian Music BOX 1
 http://46.61.226.18/hls/CH_MUSICBOXRU/bw1500000/variant.m3u8?version=2
