@@ -348,6 +348,78 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
 
+#EXTINF:-1,RTL 4
+http://istariptv1.dyndns-ip.com:2200/NL/RTL4/index.m3u8
+
+#EXTINF:-1,RTL 5
+http://istariptv1.dyndns-ip.com:2200/NL/RTL5-HD/index.m3u8
+
+#EXTINF:-1,SBS 6
+http://istariptv1.dyndns-ip.com:2200/NL/SBS6-HD/index.m3u8
+
+#EXTINF:-,RTL 7
+http://istariptv1.dyndns-ip.com:2200/NL/RTL7-HD/index.m3u8
+
+#EXTINF:-,RTL 8
+http://istariptv1.dyndns-ip.com:2200/NL/RTL8/index.m3u8
+
+#EXTINF:-1,NET 5
+http://istariptv1.dyndns-ip.com:2200/NL/NET5/index.m3u8
+
+#EXTINF:-1,Veronica-Disney-XD-HD
+http://istariptv1.dyndns-ip.com:2200/NL/Veronica-Disney-XD-HD/index.m3u8
+
+#EXTINF:-1,Disney channel
+http://istariptv1.dyndns-ip.com:2200/NL/Disney-Channel/index.m3u8
+
+#EXTINF:-1,SBS 9
+http://istariptv1.dyndns-ip.com:2200/NL/SBS9/index.m3u8
+
+#EXTINF:-1,HBO HD
+http://istariptv1.dyndns-ip.com:2200/NL/HBO-HD/index.m3u8
+
+#EXTINF:-1,HBO 3
+http://istariptv1.dyndns-ip.com:2200/NL/HBO3/index.m3u8
+
+#EXTINF:-1,HB0 2
+http://istariptv1.dyndns-ip.com:2200/NL/HBO2/index.m3u8
+
+#EXTINF:-1,Film1 SpotLight
+http://istariptv1.dyndns-ip.com:2200/NL/Film1-SpotLight/index.m3u8
+
+#EXTINF:-1,Film1-Premiere
+http://istariptv1.dyndns-ip.com:2200/NL/Film1-Premiere-HD/index.m3u8
+
+#EXTINF:-1,Film1-Comedy-and-Kids
+http://istariptv1.dyndns-ip.com:2200/NL/Film1-Comedy-and-Kids/index.m3u8
+
+#EXTINF:-1,FILM 1 ACTION
+http://istariptv1.dyndns-ip.com:2200/NL/Film-1-Action/index.m3u8
+
+#EXTINF:-1,Comedy cental 
+http://istariptv1.dyndns-ip.com:2200/NL/Comedy-Central/index.m3u8
+
+#EXTINF:-1,Fox sports 1
+http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports1/index.m3u8
+
+#EXTINF:-1,Fox sports 2
+http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports2/index.m3u8
+
+#EXTINF:-1,Fox Sports 3
+http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports3/index.m3u8
+
+#EXTINF:-1,Fox Sports 4
+http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports4/index.m3u8
+
+#EXTINF:-1,fox sports 5
+http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports5/index.m3u8
+
+#EXTINF:-1,Sport 1
+http://istariptv1.dyndns-ip.com:2200/NL/Sport1-Voetbal-HD/index.m3u8
+
+#EXTINF:-1,NL Sport1-Select-HD
+http://istariptv1.dyndns-ip.com:2200/NL/Sport1-Select-HD/index.m3u8
+
 #EXTINF:-1,RTV OOST
 http://145.58.83.153/tv/smil:live.smil/playlist.m3u8
 
@@ -359,57 +431,6 @@ rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
 
 #EXTINF:-1,MAX TV
 http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8
-
-#EXTINF:-1,Pink Premium ENG
-
-
-#EXTINF:-1,Pink Horror ENG
-
-
-#EXTINF:-1,Pink Movies ENG
-
-
-#EXTINF:-1,Pink Kids ENG
-
-
-#EXTINF:-1,Pink Comedy ENG
- 
-
-#EXTINF:-1,Sky Movies Premiere HD ENG
-
-
-#EXTINF:-1,Sky Movies Premiere+ HD ENG
-
-
-#EXTINF:-1,Sky Movies Select HD ENG
-
-
-#EXTINF:-1,Sky Movies Action & Adventure HD ENG
-
-
-#EXTINF:-1,Sky Movies Comedy HD ENG
-
-
-#EXTINF:-1,Sky Movies Disney HD ENG
-
-
-#EXTINF:-1,Sky Movies Family HD ENG
-
-
-#EXTINF:-1,Sky Sport 1 ENG
-
-
-#EXTINF:-1,Sky Sport 2 ENG
-
-
-#EXTINF:-1,Sky Sport 3 ENG
-
-
-#EXTINF:-1,Sky Sport 4 ENG
-
-
-#EXTINF:-1,Sky Sport 5 ENG
-
 
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
