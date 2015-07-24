@@ -40,7 +40,7 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/611/index.m3u8
 http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/610/index.m3u8
 
 #EXTINF:-1,DAR 21 TV
-http://cdn.livestream.com/grid/LSPlayer.swf?channel=21tvam&clip=&time=&height=400&width=640&autoplay=true
+swfurl=http://cdn.livestream.com/grid/LSPlayer.swf?channel=21tvam&clip=&time=&height=400&width=640&autoplay=true
 
 #EXTINF:-1,SHOGHAKAT TV
 http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/613/index.m3u8
