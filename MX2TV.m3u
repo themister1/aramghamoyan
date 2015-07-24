@@ -18,6 +18,9 @@ http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 #EXTINF:-1,Armenia TV
 http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/614/index.m3u8
 
+#EXTINF:-1,PAN Armenian
+http://original.livestream.com/newchannel/popoutplayer?channel=panarmeniantv
+
 #EXTINF:-1,ATV
 http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/609/index.m3u8
 
