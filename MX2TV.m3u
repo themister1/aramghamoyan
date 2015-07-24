@@ -4,25 +4,22 @@
 http://91.103.26.50:1935/edge/smil:liveStream.smil/playlist.m3u8
 
 #EXTINF:-1,H2
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/603/index.m3u8
+
 
 #EXTINF:-1,H3
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/612/index.m3u8
+
 
 #EXTINF:-1,Shant TV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/604/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/604/index.m3u8
 
 #EXTINF:-1,ARTN SHANT TV
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
 #EXTINF:-1,Armenia TV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/614/index.m3u8
-
-#EXTINF:-1,PAN Armenian
-http://cdn.livestream.com/embed/panarmeniantv?layout=4&amp;height=340&amp;width=560&amp;autoplay=true
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/614/index.m3u8
 
 #EXTINF:-1,ATV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/609/index.m3u8
+
 
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
@@ -36,23 +33,20 @@ http://pp1.tvevt.com:1935/tv/_definst_/1968/playlist.m3u8
 #EXTINF:-1,AMC
 http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
 
-#EXTINF:-1,ARM-News-Film-Music TV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/611/index.m3u8
-
 #EXTINF:-1,Azdarar TV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/610/index.m3u8
+
 
 #EXTINF:-1,DAR 21 TV
-http://cdn.livestream.com/grid/LSPlayer.swf?channel=21tvam&clip=&time=&height=400&width=640&autoplay=true
+
 
 #EXTINF:-1,SHOGHAKAT TV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/613/index.m3u8
+
 
 #EXTINF:-1,Yerkir Media TV
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/608/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/608/index.m3u8
 
 #EXTINF:-1,Kentron TV
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/606/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/606/index.m3u8
 
 #EXTINF:-1,Russian Music BOX 1
 http://46.61.226.18/hls/CH_MUSICBOXRU/bw1500000/variant.m3u8?version=2
@@ -211,10 +205,10 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/555/index.m3u8
 http://46.61.226.18/hls/CH_FIGHTCLUB/bw1500000/variant.m3u8?version=2
 
 #EXTINF:-1,Eurosport
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/141/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/141/index.m3u8
 
 #EXTINF:-1,Eurosport 2
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/539/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/539/index.m3u8
 
 #EXTINF:-1,RTR Sport
 http://92.50.181.6/tv/1114/index.m3u8
@@ -307,34 +301,34 @@ http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/147/index.m3u8
 http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/143/index.m3u8
 
 #EXTINF:-1,Авто 24
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/538/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/538/index.m3u8
 
 #EXTINF:-1,Моя Планета
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/117/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/117/index.m3u8
 
 #EXTINF:-1,Discovery Channel
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/140/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/140/index.m3u8
 
 #EXTINF:-1,Discovery Science
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/136/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/136/index.m3u8
 
 #EXTINF:-1,Discovery World
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/135/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/135/index.m3u8
 
 #EXTINF:-1,Animal Planet
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/137/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/137/index.m3u8
 
 #EXTINF:-1,Nat Geo WILD
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/133/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/133/index.m3u8
 
 #EXTINF:-1,National Geographic
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/134/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/134/index.m3u8
 
 #EXTINF:-1,Outdoor Channel
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/119/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/119/index.m3u8
 
 #EXTINF:-1,Extreme Sports
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/144/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/144/index.m3u8
 
 #EXTINF:-1,3oo TB
 http://92.50.181.6/tv/1143/index.m3u8
@@ -350,78 +344,6 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
-
-#EXTINF:-1,RTL 4
-http://istariptv1.dyndns-ip.com:2200/NL/RTL4/index.m3u8
-
-#EXTINF:-1,RTL 5
-http://istariptv1.dyndns-ip.com:2200/NL/RTL5-HD/index.m3u8
-
-#EXTINF:-1,SBS 6
-http://istariptv1.dyndns-ip.com:2200/NL/SBS6-HD/index.m3u8
-
-#EXTINF:-,RTL 7
-http://istariptv1.dyndns-ip.com:2200/NL/RTL7-HD/index.m3u8
-
-#EXTINF:-,RTL 8
-http://istariptv1.dyndns-ip.com:2200/NL/RTL8/index.m3u8
-
-#EXTINF:-1,NET 5
-http://istariptv1.dyndns-ip.com:2200/NL/NET5/index.m3u8
-
-#EXTINF:-1,Veronica-Disney-XD-HD
-http://istariptv1.dyndns-ip.com:2200/NL/Veronica-Disney-XD-HD/index.m3u8
-
-#EXTINF:-1,Disney channel
-http://istariptv1.dyndns-ip.com:2200/NL/Disney-Channel/index.m3u8
-
-#EXTINF:-1,SBS 9
-http://istariptv1.dyndns-ip.com:2200/NL/SBS9/index.m3u8
-
-#EXTINF:-1,HBO HD
-http://istariptv1.dyndns-ip.com:2200/NL/HBO-HD/index.m3u8
-
-#EXTINF:-1,HBO 3
-http://istariptv1.dyndns-ip.com:2200/NL/HBO3/index.m3u8
-
-#EXTINF:-1,HB0 2
-http://istariptv1.dyndns-ip.com:2200/NL/HBO2/index.m3u8
-
-#EXTINF:-1,Film1 SpotLight
-http://istariptv1.dyndns-ip.com:2200/NL/Film1-SpotLight/index.m3u8
-
-#EXTINF:-1,Film1-Premiere
-http://istariptv1.dyndns-ip.com:2200/NL/Film1-Premiere-HD/index.m3u8
-
-#EXTINF:-1,Film1-Comedy-and-Kids
-http://istariptv1.dyndns-ip.com:2200/NL/Film1-Comedy-and-Kids/index.m3u8
-
-#EXTINF:-1,FILM 1 ACTION
-http://istariptv1.dyndns-ip.com:2200/NL/Film-1-Action/index.m3u8
-
-#EXTINF:-1,Comedy cental 
-http://istariptv1.dyndns-ip.com:2200/NL/Comedy-Central/index.m3u8
-
-#EXTINF:-1,Fox sports 1
-http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports1/index.m3u8
-
-#EXTINF:-1,Fox sports 2
-http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports2/index.m3u8
-
-#EXTINF:-1,Fox Sports 3
-http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports3/index.m3u8
-
-#EXTINF:-1,Fox Sports 4
-http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports4/index.m3u8
-
-#EXTINF:-1,fox sports 5
-http://istariptv1.dyndns-ip.com:2200/NL/Fox-Sports5/index.m3u8
-
-#EXTINF:-1,Sport 1
-http://istariptv1.dyndns-ip.com:2200/NL/Sport1-Voetbal-HD/index.m3u8
-
-#EXTINF:-1,NL Sport1-Select-HD
-http://istariptv1.dyndns-ip.com:2200/NL/Sport1-Select-HD/index.m3u8
 
 #EXTINF:-1,RTV OOST
 http://145.58.83.153/tv/smil:live.smil/playlist.m3u8
