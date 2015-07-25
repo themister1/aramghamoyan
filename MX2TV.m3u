@@ -4,13 +4,13 @@
 http://91.103.26.50:1935/edge/smil:liveStream.smil/playlist.m3u8
 
 #EXTINF:-1,H2
-
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/603/index.m3u8
 
 #EXTINF:-1,H3
-
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/612/index.m3u8
 
 #EXTINF:-1,Shant TV
-http://31.3.245.58/iptv/2Q3MQQBHRTZECN/604/index.m3u8
+http://shanttv.cdnvideo.ru:1935/shanttv-live/shanttv.sdp/chunklist.m3u8
 
 #EXTINF:-1,ARTN SHANT TV
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
@@ -19,7 +19,7 @@ http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/614/index.m3u8
 
 #EXTINF:-1,ATV
-
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/609/index.m3u8
 
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
@@ -34,13 +34,13 @@ http://pp1.tvevt.com:1935/tv/_definst_/1968/playlist.m3u8
 http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
 
 #EXTINF:-1,Azdarar TV
-
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/610/index.m3u8
 
 #EXTINF:-1,DAR 21 TV
-
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/602/index.m3u8
 
 #EXTINF:-1,SHOGHAKAT TV
-
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/613/index.m3u8
 
 #EXTINF:-1,Yerkir Media TV
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/608/index.m3u8
