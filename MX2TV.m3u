@@ -1,4 +1,4 @@
-﻿#EXTM3U
+#EXTM3U
 
 #EXTINF:-1,H1
 http://91.103.26.50:1935/edge/smil:liveStream.smil/playlist.m3u8
@@ -64,25 +64,25 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/120/index.m3u8
 http://92.50.181.6/tv/1156/index.m3u8
 
 #EXTINF:-1,Первый канал
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/127/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/127/index.m3u8
 
 #EXTINF:-1,РТР Планета
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/546/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/546/index.m3u8
 
 #EXTINF:-1,Россия 1
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/504/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/504/index.m3u8
 
 #EXTINF:-1,Россия 2
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/535/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/535/index.m3u8
 
 #EXTINF:-1,Россия 24
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/507/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/507/index.m3u8
 
 #EXTINF:0, Россия HD
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/205/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/205/index.m3u8
 
 #EXTINF:-1,Россия Культура
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/505/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/505/index.m3u8
 
 #EXTINF:-1,Euronews
 http://46.61.226.18/hls/CH_EURONEWS/bw1500000/variant.m3u8?version=2
@@ -97,52 +97,52 @@ http://hls.novotelecom.ru/streaming/ntv/tvrec/playlist.m3u8
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
 
 #EXTINF:-1,НТВ Мир
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/544/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/544/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Теннис
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/528/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/528/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Баскетбол
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/529/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/529/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Спорт
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/123/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/123/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/124/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/124/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол 2
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/530/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/530/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол 3
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/522/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/522/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/531/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/531/index.m3u8
 
 #EXTINF:-1,КИНОСОЮЗ
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/509/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/509/index.m3u8
 
 #EXTINF:-1,Премьера
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/125/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/125/index.m3u8
 
 #EXTINF:-1,HTB Cinema Plus
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTVPLUSKINO/variant.m3u8?version=2
 
 #EXTINF:-1,Наше Кино
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/126/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/126/index.m3u8
 
 #EXTINF:-1,Кинохит
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/516/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/516/index.m3u8
 
 #EXTINF:-1,Наше новое кино
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/517/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/517/index.m3u8
 
 #EXTINF:-1,TV1000 HD
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_TV1000/variant.m3u8?version=2
 
 #EXTINF:-1,TV1000 Premium HD
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/202/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/202/index.m3u8
 
 #EXTINF:-1,TV1000 Action HD
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_TV1000ACTION/variant.m3u8?version=2
@@ -160,46 +160,46 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/201/index.m3u8
 http://edge.ailetv.net/org3/domkino_me/playlist.m3u8
 
 #EXTINF:-1,Много ТВ
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/148/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/148/index.m3u8
 
 #EXTINF:-1,Комедия
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/145/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/145/index.m3u8
 
 #EXTINF:-1,Комеди ТВ
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/104/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/104/index.m3u8
 
 #EXTINF:-1,Еврокино
 http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/549/index.m3u8
 
 #EXTINF:-1,TV XXI
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/525/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/525/index.m3u8
 
 #EXTINF:-1,Paramount Channel Russia HD
 http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
 
 #EXTINF:-1,Paramount Comedy Russia
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/157/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/157/index.m3u8
 
 #EXTINF:-1,Gulli
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/109/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/109/index.m3u8
 
 #EXTINF:-1,Кинорейс 1
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/101/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/101/index.m3u8
 
 #EXTINF:-1,Кинорейс 2
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/110/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/110/index.m3u8
 
 #EXTINF:-1,Наука 2.0
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/118/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/118/index.m3u8
 
 #EXTINF:-1,Amedia 1
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/554/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/554/index.m3u8
 
 #EXTINF:-1,Amedia 2
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/510/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/510/index.m3u8
 
 #EXTINF:-1,Amedia Premium HD
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/555/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/555/index.m3u8
 
 #EXTINF:-1,Fight Club RU
 http://46.61.226.18/hls/CH_FIGHTCLUB/bw1500000/variant.m3u8?version=2
@@ -259,13 +259,13 @@ http://213.186.120.146/hls/dom.m3u8
 http://185.38.12.20:8088/rentv/
 
 #EXTINF:-1,СТС
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/506/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/506/index.m3u8
 
 #EXTINF:-1,CTC MNP
 http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
 
 #EXTINF:-1,СТС Love
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/103/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/103/index.m3u8
 
 #EXTINF:-1,5 kanal TV
 http://185.38.12.20:8088/5kanal_ukr/
@@ -277,7 +277,7 @@ http://213.186.120.146/hls/tv3.m3u8
 http://hls.novotelecom.ru/streaming/2x2tv/tvrec/playlist.m3u8
 
 #EXTINF:-1,Эгоист
-http://sftr89en.edem.tv/iptv/F7QSENYAP29S6L/526/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/526/index.m3u8
 
 #EXTINF:-1,TV Cente
 http://213.186.120.146/hls/tvc.m3u8
@@ -295,10 +295,10 @@ http://hlsstr02.svc.iptv.rt.ru/hls/CH_ULLUSIONPLUS/bw480000/variant.m3u8?version
 http://194.190.78.230/output/illuzionrus/playlist.m3u8
 
 #EXTINF:-1,Русская Ночь
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/147/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/147/index.m3u8
 
 #EXTINF:-1,Cartoon Network
-http://sftr89en.edem.tv/iptv/LU6QFTGK9ZFHL9/143/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/143/index.m3u8
 
 #EXTINF:-1,Авто 24
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/538/index.m3u8
@@ -345,23 +345,17 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
 
-#EXTINF:-1,RTV OOST
-http://145.58.83.153/tv/smil:live.smil/playlist.m3u8
+#EXTINF:-1,Sport 1 Voetbal
+http://ziggo.cdn.sport1.triple-it.nl/sport1voetbalhd.isml/QualityLevels(696000)/manifest(format=m3u8-aapl).m3u8
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
-
-#EXTINF:-1,Q-music TV
-rtmp://vmmaeventlivefs.fplive.net:1935/vmmaeventlive-live/vmma.radio-sdh
-
-#EXTINF:-1,MAX TV
-http://63.237.48.23/ios/MBC_MAX/MBC_MAX.m3u8
 
 #EXTINF:-1,MTV HD
 http://200.76.77.237/LIVE/H01/CANAL701/PROFILE05.m3u8?
 
 #EXTINF:-1,MTV Hits
-http://fr456.edem.tv/iptv/LU6QFTGK9ZFHL9/153/index.m3u8
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/153/index.m3u8
 
 #EXTINF:-1,Real Madrid
 http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1250_av-b.m3u8?sd=10&rebase=on
