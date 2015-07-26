@@ -6,49 +6,46 @@ http://31.3.245.58/iptv/2Q3MQQBHRTZECN/601/index.m3u8
 #EXTINF:-1, tvg-name="H1 International" tvg-logo="https://edem.tv/public/images/129.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/615/index.m3u8
 
-#EXTINF:-1,H2
+#EXTINF:-1, tvg-name="H2" tvg-logo="https://edem.tv/public/images/102.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/603/index.m3u8
 
-#EXTINF:-1,H3
+#EXTINF:-1, tvg-name="H3" tvg-logo="https://edem.tv/public/images/111.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/612/index.m3u8
 
-#EXTINF:-1,Shant TV
+#EXTINF:-1, tvg-name="Shant TV" tvg-logo="https://edem.tv/public/images/103.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/604/index.m3u8
 
-#EXTINF:-1,ARTN SHANT TV
+#EXTINF:-1, tvg-name="ARTN Shant TV" tvg-logo="https://edem.tv/public/images/103.png"
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
-#EXTINF:-1,Armenia TV
+#EXTINF:-1, tvg-name="Armenia TV" tvg-logo="https://edem.tv/public/images/121.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/614/index.m3u8
 
-#EXTINF:-1,ATV
+#EXTINF:-1, tvg-name="ATV" tvg-logo="https://edem.tv/public/images/108.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/609/index.m3u8
 
-#EXTINF:-1,ARM TV
+#EXTINF:-1, tvg-name="ARM TV" tvg-logo="http://www.tv14.net/wp-content/uploads/2010/10/TV-ARM.jpg"
 rtmp://www.tvarm.ru/live/myStream1.sdp
 
-#EXTINF:-1,MTV AM
+#EXTINF:-1, tvg-name="MTV AM" tvg-logo="https://edem.tv/public/images/131.png"
 http://94.125.187.18/hlsam/playlist.m3u8
 
-#EXTINF:-1,StarsLife TV - Armenia
+#EXTINF:-1, tvg-name="Starslife TV - Armenia" tvg-logo="http://www.starslife.am/Starslife_logo-Banner.gif"
 http://pp1.tvevt.com:1935/tv/_definst_/1968/playlist.m3u8
 
-#EXTINF:-1,AMC
-http://edge.ailetv.net/org11/mgmchannel_me/playlist.m3u8
-
-#EXTINF:-1,Azdarar TV
+#EXTINF:-1, tvg-name="Azdarar TV" tvg-logo="https://edem.tv/public/images/109.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/610/index.m3u8
 
-#EXTINF:-1,DAR 21 TV
+#EXTINF:-1, tvg-name="DAR 21 TV" tvg-logo="https://edem.tv/public/images/101.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/602/index.m3u8
 
-#EXTINF:-1,SHOGHAKAT TV
+#EXTINF:-1, tvg-name="SHOGHAKAT TV" tvg-logo="https://edem.tv/public/images/112.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/613/index.m3u8
 
-#EXTINF:-1,Yerkir Media TV
+#EXTINF:-1, tvg-name="Yerkir Media TV" tvg-logo="https://edem.tv/public/images/107.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/608/index.m3u8
 
-#EXTINF:-1,Kentron TV
+#EXTINF:-1, tvg-name="Kentron TV" tvg-logo="https://edem.tv/public/images/105.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/606/index.m3u8
 
 #EXTINF:-1,Russian Music BOX 1
