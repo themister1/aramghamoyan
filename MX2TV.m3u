@@ -33,6 +33,9 @@ http://94.125.187.18/hlsam/playlist.m3u8
 #EXTINF:-1, tvg-name="Starslife TV - Armenia" tvg-logo="http://www.starslife.am/Starslife_logo-Banner.gif"
 http://pp1.tvevt.com:1935/tv/_definst_/1968/playlist.m3u8
 
+#EXTINF:-1, tvg-name="ARM NEWS" tvg-logo="https://edem.tv/public/images/110.png"
+http://31.3.245.58/iptv/2Q3MQQBHRTZECN/611/index.m3u8
+
 #EXTINF:-1, tvg-name="Azdarar TV" tvg-logo="https://edem.tv/public/images/109.png"
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/610/index.m3u8
 
