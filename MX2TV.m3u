@@ -91,16 +91,13 @@ http://31.3.245.58/iptv/2Q3MQQBHRTZECN/505/index.m3u8
 http://46.61.226.18/hls/CH_EURONEWS/bw1500000/variant.m3u8?version=2
 
 #EXTINF:-1,НТВ
-http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/bw480000/variant.m3u8?version=2
+http://195.189.246.131/ntv_250k.m3u8
 
 #EXTINF:-1,HTB 2
 http://hls.novotelecom.ru/streaming/ntv/tvrec/playlist.m3u8
 
 #EXTINF:-1,HTB 3
 http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
-
-#EXTINF:-1,НТВ Мир
-http://31.3.245.58/iptv/2Q3MQQBHRTZECN/544/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Теннис
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/528/index.m3u8
