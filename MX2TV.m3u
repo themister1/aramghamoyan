@@ -345,6 +345,57 @@ http://l2cma4ef7a320d00554935e6000000.3d10eabc828f6064.kpnsmoote1b.npostreaming.
 #EXTINF:-1,Z@PP EXTRA
 http://l2cm4cd98c6c67005549379d000000.6c01d216a7e932c1.kpnsmoote1c.npostreaming.nl/d/live/npo/thematv/zappelin24/zappelin24.isml/zappelin24-audio=128000-video=900000.m3u8
 
+#EXTINF:-1,RTL 4
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/443.ch
+
+#EXTINF:-1,RTL 5
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/442.ch
+
+#EXTINF:-1,DISNEY CHANNEL
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/438.ch
+
+#EXTINF:-1,Comedy Central
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/434.ch
+
+#EXTINF:-1,NAT GEOGRAPHIC HD
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/435.ch
+
+#EXTINF:-1,SUNDANCE
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/424.ch
+
+#EXTINF:-1,HBO 1
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/436.ch
+
+#EXTINF:-1,HBO 2
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/426.ch
+
+#EXTINF:-1,HBO 3
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/425.ch
+
+#EXTINF:-1,Film 1 Action
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/433.ch
+
+#EXTINF:-1,Film 1 Comedy and Kids
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/432.ch
+
+#EXTINF:-1,Film 1 Premiere HD
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/431.ch
+
+#EXTINF:-1,FOX
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/437.ch
+
+#EXTINF:-1,Fox Sport 1 Eredivisie
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/430.ch
+
+#EXTINF:-1,Fox Sport 2 Eredivisie
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/429.ch
+
+#EXTINF:-1,Fox Sport 3 Eredivisie
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/428.ch
+
+#EXTINF:-1,Fox Sport 4 Eredivisie
+http://62.210.248.96:11000/aramgamojan@gmail.com_neth/aramgamojan@gmail.com_neth/427.ch
+
 #EXTINF:-1,Sport 1 Voetbal
 http://ziggo.cdn.sport1.triple-it.nl/sport1voetbalhd.isml/QualityLevels(696000)/manifest(format=m3u8-aapl).m3u8
 
