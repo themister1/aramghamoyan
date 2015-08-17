@@ -108,6 +108,9 @@ http://31.3.245.58/iptv/2Q3MQQBHRTZECN/529/index.m3u8
 #EXTINF:-1,НТВ-ПЛЮС Спорт
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/123/index.m3u8
 
+#EXTINF:-1,Sport 1 TV
+http://hls.svc.moyo.tv/hls/CH_SPORT1HD/bw3378000/variant.m3u8?version=2
+
 #EXTINF:-1,НТВ-ПЛЮС Футбол
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/124/index.m3u8
 
@@ -212,9 +215,6 @@ http://31.3.245.58/iptv/2Q3MQQBHRTZECN/539/index.m3u8
 
 #EXTINF:-1,RTR Sport
 http://92.50.181.6/tv/1114/index.m3u8
-
-#EXTINF:-1,Sport 1 TV
-http://4BA9EBDB07C05883:@5.159.96.170:8000/sport1
 
 #EXTINF:-1,Russia Today
 http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8
