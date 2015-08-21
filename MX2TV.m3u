@@ -34,7 +34,7 @@ rtmp://www.tvarm.ru/live/myStream1.sdp
 http://94.125.187.18/hlsam/playlist.m3u8
 
 #EXTINF:-1,Stars Life TV - Armenia
-http://pp1.tvevt.com:1935/tv/_definst_/1968/playlist.m3u8
+
 
 #EXTINF:-1,ARM NEWS-FILMS-MUSIC
 http://31.3.245.58/iptv/2Q3MQQBHRTZECN/611/index.m3u8
