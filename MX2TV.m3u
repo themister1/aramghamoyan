@@ -33,8 +33,8 @@ rtmp://www.tvarm.ru/live/myStream1.sdp
 #EXTINF:-1,MTV AM
 http://94.125.187.18/hlsam/playlist.m3u8
 
-#EXTINF:-1,Stars Life TV - Armenia
-
+#EXTINF:-1,TOOT TV - ARMENIAN MUSIC
+http://www.dailymotion.com/swf/video/x2gwi1b?autoPlay=1
 
 #EXTINF:-1,ARM NEWS-FILMS-MUSIC
 http://31.3.245.58/iptv/AXD2W293V8RZ56/611/index.m3u8
