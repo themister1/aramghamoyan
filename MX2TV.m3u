@@ -139,25 +139,25 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/516/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/517/index.m3u8
 
 #EXTINF:-1,TV1000 HD
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_TV1000/variant.m3u8?version=2
+
 
 #EXTINF:-1,TV1000 Premium HD
 http://31.3.245.58/iptv/AXD2W293V8RZ56/202/index.m3u8
 
 #EXTINF:-1,TV1000 Action HD
-http://hlsstr03.svc.iptv.rt.ru/hls/CH_TV1000ACTION/variant.m3u8?version=2
+
 
 #EXTINF:-1,TV1000 Comedy HD
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/200/index.m3u8
+
 
 #EXTINF:-1,TV1000 Russian Kino HD
-http://hlsstr01.svc.iptv.rt.ru/hls/CH_TV1000RUS/variant.m3u8?version=2
+
 
 #EXTINF:-1,TV1000 MegaHit HD
-http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/201/index.m3u8
+
 
 #EXTINF:-1,Home Cinema RU
-http://edge.ailetv.net/org3/domkino_me/playlist.m3u8
+
 
 #EXTINF:-1,Много ТВ
 http://31.3.245.58/iptv/AXD2W293V8RZ56/148/index.m3u8
@@ -175,7 +175,7 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/549/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/525/index.m3u8
 
 #EXTINF:-1,Paramount Channel Russia HD
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_C02_PARAMOUNTCHANNELHD/variant.m3u8?version=2
+
 
 #EXTINF:-1,Paramount Comedy Russia
 http://31.3.245.58/iptv/AXD2W293V8RZ56/157/index.m3u8
@@ -202,7 +202,7 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/510/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/555/index.m3u8
 
 #EXTINF:-1,Fight Club RU
-http://46.61.226.18/hls/CH_FIGHTCLUB/bw1500000/variant.m3u8?version=2
+
 
 #EXTINF:-1,Eurosport
 http://31.3.245.58/iptv/AXD2W293V8RZ56/141/index.m3u8
@@ -211,28 +211,28 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/141/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/539/index.m3u8
 
 #EXTINF:-1,RTR Sport
-http://92.50.181.6/tv/1114/index.m3u8
+
 
 #EXTINF:-1,Russia Today
-http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8
+
 
 #EXTINF:-1,Russia Today Documentary
-http://rt.ashttp14.visionip.tv/live/rt-doc-live-HD/playlist.m3u8
+
 
 #EXTINF:-1,Piatnica
-http://4BA9EBDB07C05883:@5.159.96.170:8000/mtv
+
 
 #EXTINF:-1,Phoenix Movie
-http://92.50.181.6/tv/1125/index.m3u8
+
 
 #EXTINF:-1,Russian Novel
-http://hlsstr04.svc.iptv.rt.ru/hls/CH_RUSSINAROMAN/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,ОТС
-http://hls.novotelecom.ru/streaming/ots/tvrec/playlist.m3u8
+
 
 #EXTINF:-1,RZD TV RU
-http://4BA9EBDB07C05883:@5.159.96.170:8000/rzd
+
 
 #EXTINF:-1,Perec
 http://hls.novotelecom.ru/streaming/perec/tvrec/playlist.m3u8
@@ -241,19 +241,19 @@ http://hls.novotelecom.ru/streaming/perec/tvrec/playlist.m3u8
 http://hls.novotelecom.ru/streaming/friday/tvrec/playlist.m3u8
 
 #EXTINF:-1,S TV RU
-http://92.50.181.6/tv/1201/index.m3u8
+
 
 #EXTINF:-1,Soldier RU
-http://92.50.181.6/tv/1206/index.m3u8
+
 
 #EXTINF:-1,THT
-http://213.186.120.146/hls/tnt.m3u8
+
 
 #EXTINF:-1,Domashniy TV
-http://213.186.120.146/hls/dom.m3u8
+
 
 #EXTINF:-1,Ren TV
-http://185.38.12.20:8088/rentv/
+
 
 #EXTINF:-1,СТС
 http://31.3.245.58/iptv/AXD2W293V8RZ56/506/index.m3u8
@@ -265,10 +265,10 @@ http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/103/index.m3u8
 
 #EXTINF:-1,5 kanal TV
-http://185.38.12.20:8088/5kanal_ukr/
+
 
 #EXTINF:-1,TV 3
-http://213.186.120.146/hls/tv3.m3u8
+
 
 #EXTINF:-1,2x2 TV
 http://hls.novotelecom.ru/streaming/2x2tv/tvrec/playlist.m3u8
@@ -280,16 +280,16 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/526/index.m3u8
 http://213.186.120.146/hls/tvc.m3u8
 
 #EXTINF:-1,Viasat History TV
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_VIASATHISTORY/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,Viasat Explorer TV
-http://hlsstr01.svc.iptv.rt.ru/hls/CH_VIASATEXPLORER/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,illusion Plus TV
-http://hlsstr02.svc.iptv.rt.ru/hls/CH_ULLUSIONPLUS/bw480000/variant.m3u8?version=2
+
 
 #EXTINF:-1,Russian illusion TV
-http://194.190.78.230/output/illuzionrus/playlist.m3u8
+
 
 #EXTINF:-1,Русская Ночь
 http://31.3.245.58/iptv/AXD2W293V8RZ56/147/index.m3u8
@@ -328,7 +328,7 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/119/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/144/index.m3u8
 
 #EXTINF:-1,3oo TB
-http://92.50.181.6/tv/1143/index.m3u8
+
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
