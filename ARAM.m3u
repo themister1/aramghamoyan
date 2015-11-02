@@ -1,24 +1,24 @@
 #EXTM3U 
 
-#EXTINF:-1,Հ1
+#EXTINF:-1,H1
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/601/index.m3u8
 
-#EXTINF:-1,Հ1 International
+#EXTINF:-1,H1 International
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/615/index.m3u8
 
-#EXTINF:-1,Հ2
+#EXTINF:-1,H2
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/603/index.m3u8
 
-#EXTINF:-1,Հ3
+#EXTINF:-1,H3
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/612/index.m3u8
 
-#EXTINF:-1,Շանթ
+#EXTINF:-1,Shant
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/604/index.m3u8
 
 #EXTINF:-1,ARTN Shant TV
 http://204.174.104.71:88/ARTN_WEB_1203/artn/index.m3u8
 
-#EXTINF:-1,Արմենիա Tv
+#EXTINF:-1,Armenia Tv
 http://38.140.60.26:17070/C279/index.m3u8?token=Ahswg12oi00094lksue
 
 #EXTINF:-1,PAN Armenian TV
@@ -33,22 +33,22 @@ rtmp://www.tvarm.ru/live/myStream1.sdp
 #EXTINF:-1,MTV AM
 http://94.125.187.18/hlsam/playlist.m3u8
 
-#EXTINF:-1,Արմնյուզ
+#EXTINF:-1,Arm-film-music-news TV
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/611/index.m3u8
 
-#EXTINF:-1,Ար
+#EXTINF:-1,Azdarar Tv
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/610/index.m3u8
 
-#EXTINF:-1,Դար 21
+#EXTINF:-1,DAR 21
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/602/index.m3u8
 
-#EXTINF:-1,Շողակաթ
+#EXTINF:-1,Shoghakat Tv
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/613/index.m3u8
 
-#EXTINF:-1,Երկիր մեդիա
+#EXTINF:-1,Yerkir Media Tv
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/608/index.m3u8
 
-#EXTINF:-1,Կենտրոն
+#EXTINF:-1,Kentron Tv
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/606/index.m3u8
 
 #EXTINF:-1,Russian Music BOX 1
