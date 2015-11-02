@@ -64,7 +64,7 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/116/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/120/index.m3u8
 
 #EXTINF:-1,Chanson TV
-http://92.50.181.6/tv/1156/index.m3u8
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
 
 #EXTINF:-1,Первый канал
 http://31.3.245.58/iptv/AXD2W293V8RZ56/127/index.m3u8
@@ -96,9 +96,6 @@ http://195.189.246.131/ntv_250k.m3u8
 #EXTINF:-1,HTB 2
 http://hls.novotelecom.ru/streaming/ntv/tvrec/playlist.m3u8
 
-#EXTINF:-1,HTB 3
-http://hlsstr03.svc.iptv.rt.ru/hls/CH_NTV/variant.m3u8?version=2
-
 #EXTINF:-1,НТВ-ПЛЮС Теннис
 http://31.3.245.58/iptv/AXD2W293V8RZ56/528/index.m3u8
 
@@ -109,7 +106,7 @@ http://31.3.245.58/iptv/AXD2W293V8RZ56/529/index.m3u8
 http://31.3.245.58/iptv/AXD2W293V8RZ56/123/index.m3u8
 
 #EXTINF:-1,Sport 1 TV
-http://hls.svc.moyo.tv/hls/CH_SPORT1HD/bw3378000/variant.m3u8?version=2
+http://testlivestream.rfn.ru/live/smil:sport1hd.smil/chunklist_b1000000.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол
 http://31.3.245.58/iptv/AXD2W293V8RZ56/124/index.m3u8
