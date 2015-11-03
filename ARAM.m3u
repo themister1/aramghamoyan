@@ -284,8 +284,8 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/119/index.m3u8
 #EXTINF:-1,Extreme Sports
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/144/index.m3u8
 
-#EXTINF:-1,3oo TB
-
+#EXTINF:-1,Nederland 3
+http://l2cm9fbe029c23005638c9f0000000.403cdfae2c5f2df6.kpnsmoote1a.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
