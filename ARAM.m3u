@@ -108,9 +108,6 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/123/index.m3u8
 #EXTINF:-1,Sport 1 TV
 http://testlivestream.rfn.ru/live/smil:sport1hd.smil/chunklist_b1000000.m3u8
 
-#EXTINF:-1,Sport 2 TV
-http://testlivestream.rfn.ru/live/smil:r2.smil/chunklist_b800000.m3u8
-
 #EXTINF:-1,НТВ-ПЛЮС Футбол
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/124/index.m3u8
 
@@ -151,13 +148,13 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/202/index.m3u8
 
 
 #EXTINF:-1,TV1000 Comedy HD
-
+http://31.3.245.58/iptv/RPSGYB7DKP5UR3/200/index.m3u8
 
 #EXTINF:-1,TV1000 Russian Kino HD
 
 
 #EXTINF:-1,TV1000 MegaHit HD
-
+http://31.3.245.58/iptv/RPSGYB7DKP5UR3/201/index.m3u8
 
 #EXTINF:-1,Home Cinema RU
 
@@ -213,29 +210,11 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/141/index.m3u8
 #EXTINF:-1,Eurosport 2
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/539/index.m3u8
 
-#EXTINF:-1,RTR Sport
+#EXTINF:-1,Viasat Sport VALTIC TV
+http://wpc.11eb4.teliasoneracdn.net/8011EB4/origin1/tvplay/smil:VSB.smil/playlist.m3u8
 
-
-#EXTINF:-1,Russia Today
-
-
-#EXTINF:-1,Russia Today Documentary
-
-
-#EXTINF:-1,Piatnica
-
-
-#EXTINF:-1,Phoenix Movie
-
-
-#EXTINF:-1,Russian Novel
-
-
-#EXTINF:-1,ОТС
-
-
-#EXTINF:-1,RZD TV RU
-
+#EXTINF:-1,Viasat Sport TV
+http://3.hls.bolshoe.tv/1/streaming/viasat_sport/tvrec/playlist.m3u8
 
 #EXTINF:-1,Perec
 http://hls.novotelecom.ru/streaming/perec/tvrec/playlist.m3u8
@@ -244,19 +223,9 @@ http://hls.novotelecom.ru/streaming/perec/tvrec/playlist.m3u8
 http://hls.novotelecom.ru/streaming/friday/tvrec/playlist.m3u8
 
 #EXTINF:-1,S TV RU
-
-
 #EXTINF:-1,Soldier RU
-
-
-#EXTINF:-1,THT
-
-
 #EXTINF:-1,Domashniy TV
-
-
 #EXTINF:-1,Ren TV
-
 
 #EXTINF:-1,СТС
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/506/index.m3u8
@@ -266,9 +235,6 @@ http://hls.novotelecom.ru/streaming/sts/tvrec/playlist.m3u8
 
 #EXTINF:-1,СТС Love
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/103/index.m3u8
-
-#EXTINF:-1,5 kanal TV
-
 
 #EXTINF:-1,TV 3
 http://213.186.120.146/hls/tv3.m3u8
@@ -281,18 +247,6 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/526/index.m3u8
 
 #EXTINF:-1,TV Cente
 http://213.186.120.146/hls/tvc.m3u8
-
-#EXTINF:-1,Viasat History TV
-
-
-#EXTINF:-1,Viasat Explorer TV
-
-
-#EXTINF:-1,illusion Plus TV
-
-
-#EXTINF:-1,Russian illusion TV
-
 
 #EXTINF:-1,Русская Ночь
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/147/index.m3u8
