@@ -284,6 +284,12 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/119/index.m3u8
 #EXTINF:-1,Extreme Sports
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/144/index.m3u8
 
+#EXTINF:-1,Nederland 1
+http://l2cmaf5ffdfc44005638cb28000000.36d862a08af9c1f3.kpnsmoote1c.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
+
+#EXTINF:-1,Nederland 2
+http://l2cm93b7b05a5c005638cad3000000.388244a2686ab1d1.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned2/ned2.isml/ned2-audio=128000-video=900000.m3u8
+
 #EXTINF:-1,Nederland 3
 http://l2cm9fbe029c23005638c9f0000000.403cdfae2c5f2df6.kpnsmoote1a.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
 
