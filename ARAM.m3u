@@ -284,6 +284,15 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/119/index.m3u8
 #EXTINF:-1,Extreme Sports
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/144/index.m3u8
 
+#EXTINF:-1,1+1
+http://play.lanet.tv/live/9002.m3u8
+
+#EXTINF:-1,2+2
+http://play.lanet.tv/live/9016.m3u8
+
+#EXTINF:-1,ПлюсПлюс 
+http://play.lanet.tv/live/9017.m3u8 
+
 #EXTINF:-1,Nederland 1
 http://l2cmaf5ffdfc44005638cb28000000.36d862a08af9c1f3.kpnsmoote1c.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
 
