@@ -30,6 +30,9 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/609/index.m3u8
 #EXTINF:-1,ARM TV
 rtmp://www.tvarm.ru/live/myStream1.sdp
 
+#EXTINF:-1,Toot TV (Armenian Music)
+http://www.dailymotion.com/cdn/live/video/x2gwi1b.m3u8?source=true&auth=1447336416-2562-07d3qkbg-2b76a0c0e2c5e24d137ea31ac47f6724
+
 #EXTINF:-1,MTV AM
 http://94.125.187.18/hlsam/playlist.m3u8
 
