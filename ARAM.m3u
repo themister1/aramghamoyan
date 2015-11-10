@@ -120,6 +120,18 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/522/index.m3u8
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/531/index.m3u8
 
+#EXTINF:-1,Eurosport
+http://31.3.245.58/iptv/RPSGYB7DKP5UR3/141/index.m3u8
+
+#EXTINF:-1,Eurosport 2
+http://31.3.245.58/iptv/RPSGYB7DKP5UR3/539/index.m3u8
+
+#EXTINF:-1,Viasat Sport VALTIC TV
+http://wpc.11eb4.teliasoneracdn.net/8011EB4/origin1/tvplay/smil:VSB.smil/playlist.m3u8
+
+#EXTINF:-1,Viasat Sport TV
+http://3.hls.bolshoe.tv/1/streaming/viasat_sport/tvrec/playlist.m3u8
+
 #EXTINF:-1,КИНОСОЮЗ
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/509/index.m3u8
 
@@ -138,26 +150,14 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/516/index.m3u8
 #EXTINF:-1,Наше новое кино
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/517/index.m3u8
 
-#EXTINF:-1,TV1000 HD
-
-
 #EXTINF:-1,TV1000 Premium HD
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/202/index.m3u8
-
-#EXTINF:-1,TV1000 Action HD
-
 
 #EXTINF:-1,TV1000 Comedy HD
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/200/index.m3u8
 
-#EXTINF:-1,TV1000 Russian Kino HD
-
-
 #EXTINF:-1,TV1000 MegaHit HD
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/201/index.m3u8
-
-#EXTINF:-1,Home Cinema RU
-
 
 #EXTINF:-1,Много ТВ
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/148/index.m3u8
@@ -173,9 +173,6 @@ http://sftr89en.edem.tv/iptv/ZYACPDB7H4BA9R/549/index.m3u8
 
 #EXTINF:-1,TV XXI
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/525/index.m3u8
-
-#EXTINF:-1,Paramount Channel Russia HD
-
 
 #EXTINF:-1,Paramount Comedy Russia
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/157/index.m3u8
@@ -204,28 +201,11 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/555/index.m3u8
 #EXTINF:-1,Fight Club RU
 
 
-#EXTINF:-1,Eurosport
-http://31.3.245.58/iptv/RPSGYB7DKP5UR3/141/index.m3u8
-
-#EXTINF:-1,Eurosport 2
-http://31.3.245.58/iptv/RPSGYB7DKP5UR3/539/index.m3u8
-
-#EXTINF:-1,Viasat Sport VALTIC TV
-http://wpc.11eb4.teliasoneracdn.net/8011EB4/origin1/tvplay/smil:VSB.smil/playlist.m3u8
-
-#EXTINF:-1,Viasat Sport TV
-http://3.hls.bolshoe.tv/1/streaming/viasat_sport/tvrec/playlist.m3u8
-
 #EXTINF:-1,Perec
 http://hls.novotelecom.ru/streaming/perec/tvrec/playlist.m3u8
 
 #EXTINF:-1,Пятница
 http://hls.novotelecom.ru/streaming/friday/tvrec/playlist.m3u8
-
-#EXTINF:-1,S TV RU
-#EXTINF:-1,Soldier RU
-#EXTINF:-1,Domashniy TV
-#EXTINF:-1,Ren TV
 
 #EXTINF:-1,СТС
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/506/index.m3u8
@@ -294,13 +274,13 @@ http://play.lanet.tv/live/9016.m3u8
 http://play.lanet.tv/live/9017.m3u8 
 
 #EXTINF:-1,Nederland 1
-http://l2cmaf5ffdfc44005638cb28000000.36d862a08af9c1f3.kpnsmoote1c.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
+http://l2cmaf5ffdfc44005638cb28000000.36d862a08af9c1f3.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
 
 #EXTINF:-1,Nederland 2
 http://l2cm93b7b05a5c005638cad3000000.388244a2686ab1d1.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned2/ned2.isml/ned2-audio=128000-video=900000.m3u8
 
 #EXTINF:-1,Nederland 3
-http://l2cm9fbe029c23005638c9f0000000.403cdfae2c5f2df6.kpnsmoote1a.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
+http://l2cm9fbe029c23005638c9f0000000.403cdfae2c5f2df6.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
@@ -315,10 +295,7 @@ http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8
 http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8
 
 #EXTINF:-1,MTV Hits
-http://31.3.245.58/iptv/RPSGYB7DKP5UR3/153/index.m3u8
+
 
 #EXTINF:-1,Real Madrid
-http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1250_av-b.m3u8?sd=10&rebase=on
 
-#EXTINF:-1,Liverpool TV
-http://bit.ly/1DezdqC
