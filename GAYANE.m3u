@@ -111,29 +111,11 @@ http://31.3.245.58/iptv/ENUMP4EPE8TCDT/123/index.m3u8
 #EXTINF:-1,Sport 1 TV
 http://testlivestream.rfn.ru/live/smil:sport1hd.smil/chunklist_b1000000.m3u8
 
-#EXTINF:-1,НТВ-ПЛЮС Футбол
-http://31.3.245.58/iptv/ENUMP4EPE8TCDT/124/index.m3u8
-
-#EXTINF:-1,НТВ-ПЛЮС Футбол 2
-http://31.3.245.58/iptv/ENUMP4EPE8TCDT/530/index.m3u8
-
-#EXTINF:-1,НТВ-ПЛЮС Футбол 3
-http://31.3.245.58/iptv/ENUMP4EPE8TCDT/522/index.m3u8
-
-#EXTINF:-1,НТВ-ПЛЮС Наш Футбол
-http://31.3.245.58/iptv/ENUMP4EPE8TCDT/531/index.m3u8
-
 #EXTINF:-1,Eurosport
 http://31.3.245.58/iptv/ENUMP4EPE8TCDT/141/index.m3u8
 
 #EXTINF:-1,Eurosport 2
 http://31.3.245.58/iptv/ENUMP4EPE8TCDT/539/index.m3u8
-
-#EXTINF:-1,Viasat Sport VALTIC TV
-http://wpc.11eb4.teliasoneracdn.net/8011EB4/origin1/tvplay/smil:VSB.smil/playlist.m3u8
-
-#EXTINF:-1,Viasat Sport TV
-http://3.hls.bolshoe.tv/1/streaming/viasat_sport/tvrec/playlist.m3u8
 
 #EXTINF:-1,КИНОСОЮЗ
 http://31.3.245.58/iptv/ENUMP4EPE8TCDT/509/index.m3u8
@@ -298,7 +280,3 @@ http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8
 http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8
 
 #EXTINF:-1,MTV Hits
-
-
-#EXTINF:-1,Real Madrid
-
