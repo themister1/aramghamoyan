@@ -120,6 +120,9 @@ http://31.3.245.58/iptv/YKASB3XC5N7QLA/530/index.m3u8
 #EXTINF:-1,НТВ-ПЛЮС Футбол 3
 http://31.3.245.58/iptv/YKASB3XC5N7QLA/522/index.m3u8
 
+#EXTINF:-1,Футбол
+http://hls.peers.tv/streaming/futbol/16/tvrec/playlist.m3u8
+
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
 http://31.3.245.58/iptv/YKASB3XC5N7QLA/531/index.m3u8
 
