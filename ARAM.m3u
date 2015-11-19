@@ -78,7 +78,7 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/546/index.m3u8
 #EXTINF:-1,Россия 1
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/504/index.m3u8
 
-#EXTINF:-1,Россия 2
+#EXTINF:-1,Матч ТВ
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/535/index.m3u8
 
 #EXTINF:-1,Россия 24
@@ -119,6 +119,9 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/530/index.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол 3
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/522/index.m3u8
+
+#EXTINF:-1,Футбол
+http://hls.peers.tv/streaming/futbol/16/tvrec/playlist.m3u8
 
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/531/index.m3u8
