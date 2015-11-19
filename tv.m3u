@@ -91,7 +91,7 @@ http://31.3.245.58/iptv/YKASB3XC5N7QLA/205/index.m3u8
 http://31.3.245.58/iptv/YKASB3XC5N7QLA/505/index.m3u8
 
 #EXTINF:-1,Euronews
-rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/ru_vidan750_rtp.sdp
+http://hls.peers.tv/streaming/euronews/126/tvrec/playlist.m3u8
 
 #EXTINF:-1,НТВ
 http://195.189.246.131/ntv_250k.m3u8
