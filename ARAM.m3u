@@ -279,14 +279,104 @@ http://play.lanet.tv/live/9016.m3u8
 #EXTINF:-1,ПлюсПлюс 
 http://play.lanet.tv/live/9017.m3u8 
 
-#EXTINF:-1,Nederland 1
-http://l2cmaf5ffdfc44005638cb28000000.36d862a08af9c1f3.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned1/ned1.isml/ned1-audio=128000-video=900000.m3u8
+#EXTINF:-1,NL: NPO 1
+http://ipsatpro.com:8000/live/daniel/daniel/715.m3u8
 
-#EXTINF:-1,Nederland 2
-http://l2cm93b7b05a5c005638cad3000000.388244a2686ab1d1.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned2/ned2.isml/ned2-audio=128000-video=900000.m3u8
+#EXTINF:-1,NL: NPO 2
+http://ipsatpro.com:8000/live/daniel/daniel/716.m3u8
 
-#EXTINF:-1,Nederland 3
-http://l2cm9fbe029c23005638c9f0000000.403cdfae2c5f2df6.smoote2e.npostreaming.nl/d/live/npo/tvlive/ned3/ned3.isml/ned3-audio=128000-video=900000.m3u8
+#EXTINF:-1,NL: NPO 3
+http://ipsatpro.com:8000/live/daniel/daniel/717.m3u8
+
+#EXTINF:-1,NL: RTL 4 HD
+http://ipsatpro.com:8000/live/daniel/daniel/699.m3u8
+
+#EXTINF:-1,NL: RTL 5 HD
+http://ipsatpro.com:8000/live/daniel/daniel/695.m3u8
+
+#EXTINF:0,NL: SBS 6 HD
+http://ipsatpro.com:8000/live/daniel/daniel/701.m3u8
+
+#EXTINF:0,NL: RTL 7 HD
+http://ipsatpro.com:8000/live/daniel/daniel/696.m3u8
+
+#EXTINF:0,NL: RTL 8 HD
+http://ipsatpro.com:8000/live/daniel/daniel/697.m3u8
+
+#EXTINF:0,NL: SBS 9
+http://ipsatpro.com:8000/live/daniel/daniel/724.m3u8
+
+#EXTINF:0,NL: Veronica / Disney HD
+http://ipsatpro.com:8000/live/daniel/daniel/726.m3u8
+
+#EXTINF:0,NL: NET 5 HD
+http://ipsatpro.com:8000/live/daniel/daniel/698.m3u8
+
+#EXTINF:0,NL: Nickelodeon
+http://ipsatpro.com:8000/live/daniel/daniel/727.m3u8
+
+#EXTINF:0,NL: Fox Sports 1
+http://ipsatpro.com:8000/live/daniel/daniel/710.m3u8
+
+#EXTINF:0,NL: Fox Sports 2
+http://ipsatpro.com:8000/live/daniel/daniel/711.m3u8
+
+#EXTINF:0,NL: Fox Sports 3
+http://ipsatpro.com:8000/live/daniel/daniel/712.m3u8
+
+#EXTINF:0,NL: Fox Sports 4
+http://ipsatpro.com:8000/live/daniel/daniel/713.m3u8
+
+#EXTINF:0,NL: Fox Sports 5
+http://ipsatpro.com:8000/live/daniel/daniel/714.m3u8
+
+#EXTINF:0,NL: Sport 1 Voetbal HD
+http://ipsatpro.com:8000/live/daniel/daniel/709.m3u8
+
+#EXTINF:0, NL: Sport1 Select HD
+http://ipsatpro.com:8000/live/daniel/daniel/708.m3u8
+
+#EXTINF:0,NL: Sport 1 Racing
+http://ipsatpro.com:8000/live/daniel/daniel/707.m3u8
+
+#EXTINF:0,NL: Film 1 Action
+http://ipsatpro.com:8000/live/daniel/daniel/721.m3u8
+
+#EXTINF:0,NL: Film 1 Comedy and Kids
+http://ipsatpro.com:8000/live/daniel/daniel/722.m3u8
+
+#EXTINF:0,NL: Film1 Spotlight
+http://ipsatpro.com:8000/live/daniel/daniel/702.m3u8
+
+#EXTINF:0,NL: Film1 Premiere HD
+http://ipsatpro.com:8000/live/daniel/daniel/723.m3u8
+
+#EXTINF:0,NL: Comedy Central
+http://ipsatpro.com:8000/live/daniel/daniel/703.m3u8
+
+#EXTINF:0,NL: HBO 1 HD
+http://ipsatpro.com:8000/live/daniel/daniel/718.m3u8
+
+#EXTINF:0,NL: HBO 2 HD
+http://ipsatpro.com:8000/live/daniel/daniel/719.m3u8
+
+#EXTINF:0,NL: HBO 3 HD
+http://ipsatpro.com:8000/live/daniel/daniel/720.m3u8
+
+#EXTINF:0,NL: Fox
+http://ipsatpro.com:8000/live/daniel/daniel/700.m3u8
+
+#EXTINF:0,NL: AT5 HD
+http://ipsatpro.com:8000/live/daniel/daniel/705.m3u8
+
+#EXTINF:0,NL: National Geographic
+http://ipsatpro.com:8000/live/daniel/daniel/725.m3u8
+
+#EXTINF:0,NL: Disney Channel
+http://ipsatpro.com:8000/live/daniel/daniel/706.m3u8
+
+#EXTINF:0,NL: Discovery
+http://ipsatpro.com:8000/live/daniel/daniel/704.m3u8
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
@@ -299,24 +389,3 @@ http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8
 
 #EXTINF:-1,VEVO 3
 http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8
-
-#EXTINF:-1,MTV LIVE 
-http://200.76.77.237/LIVE/H01/CANAL701/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
-
-#EXTINF:-1,FOX 1 HD 
-http://200.76.77.237/LIVE/H01/CANAL415/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
-
-#EXTINF:-1,FOX ACTION HD 
-http://200.76.77.237/LIVE/H01/CANAL416/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
-
-#EXTINF:-1,FOX MOVIES HD 
-http://200.76.77.237/LIVE/H01/CANAL417/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
-
-#EXTINF:-1,FOX CINEMA 
-http://200.76.77.237/LIVE/H01/CANAL421/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
-
-#EXTINF:-1,FOX CLASSIC 
-http://200.76.77.237/LIVE/H01/CANAL424/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
-
-#EXTINF:-1,COMEDY CENTRAL 
-http://200.76.77.237/LIVE/H01/CANAL217/PROFILE03.m3u8?-1332%2F1499-20150816T153535.ts=-1
