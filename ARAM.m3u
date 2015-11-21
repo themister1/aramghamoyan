@@ -309,6 +309,9 @@ http://ipsatpro.com:8000/live/daniel/daniel/724.m3u8
 #EXTINF:0,NL: Veronica / Disney HD
 http://ipsatpro.com:8000/live/daniel/daniel/726.m3u8
 
+#EXTINF:0,NL: Disney XD
+http://ipsatpro.com:8000/live/daniel/daniel/706.m3u8
+
 #EXTINF:0,NL: NET 5 HD
 http://ipsatpro.com:8000/live/daniel/daniel/698.m3u8
 
@@ -317,27 +320,6 @@ http://ipsatpro.com:8000/live/daniel/daniel/727.m3u8
 
 #EXTINF:0,NL: Fox Sports 1
 http://ipsatpro.com:8000/live/daniel/daniel/710.m3u8
-
-#EXTINF:0,NL: Fox Sports 2
-http://ipsatpro.com:8000/live/daniel/daniel/711.m3u8
-
-#EXTINF:0,NL: Fox Sports 3
-http://ipsatpro.com:8000/live/daniel/daniel/712.m3u8
-
-#EXTINF:0,NL: Fox Sports 4
-http://ipsatpro.com:8000/live/daniel/daniel/713.m3u8
-
-#EXTINF:0,NL: Fox Sports 5
-http://ipsatpro.com:8000/live/daniel/daniel/714.m3u8
-
-#EXTINF:0,NL: Sport 1 Voetbal HD
-http://ipsatpro.com:8000/live/daniel/daniel/709.m3u8
-
-#EXTINF:0, NL: Sport1 Select HD
-http://ipsatpro.com:8000/live/daniel/daniel/708.m3u8
-
-#EXTINF:0,NL: Sport 1 Racing
-http://ipsatpro.com:8000/live/daniel/daniel/707.m3u8
 
 #EXTINF:0,NL: Film 1 Action
 http://ipsatpro.com:8000/live/daniel/daniel/721.m3u8
@@ -363,6 +345,24 @@ http://ipsatpro.com:8000/live/daniel/daniel/719.m3u8
 #EXTINF:0,NL: HBO 3 HD
 http://ipsatpro.com:8000/live/daniel/daniel/720.m3u8
 
+#EXTINF:0,NL: Fox Sports 2
+http://ipsatpro.com:8000/live/daniel/daniel/711.m3u8
+
+#EXTINF:0,NL: Fox Sports 4
+http://ipsatpro.com:8000/live/daniel/daniel/713.m3u8
+
+#EXTINF:0,NL: Fox Sports 5
+http://ipsatpro.com:8000/live/daniel/daniel/714.m3u8
+
+#EXTINF:0,NL: Sport 1 Voetbal HD
+http://ipsatpro.com:8000/live/daniel/daniel/709.m3u8
+
+#EXTINF:0, NL: Sport1 Select HD
+http://ipsatpro.com:8000/live/daniel/daniel/708.m3u8
+
+#EXTINF:0,NL: Sport 1 Racing
+http://ipsatpro.com:8000/live/daniel/daniel/707.m3u8
+
 #EXTINF:0,NL: Fox
 http://ipsatpro.com:8000/live/daniel/daniel/700.m3u8
 
@@ -371,9 +371,6 @@ http://ipsatpro.com:8000/live/daniel/daniel/705.m3u8
 
 #EXTINF:0,NL: National Geographic
 http://ipsatpro.com:8000/live/daniel/daniel/725.m3u8
-
-#EXTINF:0,NL: Disney Channel
-http://ipsatpro.com:8000/live/daniel/daniel/706.m3u8
 
 #EXTINF:0,NL: Discovery
 http://ipsatpro.com:8000/live/daniel/daniel/704.m3u8
