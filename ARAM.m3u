@@ -94,7 +94,7 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/505/index.m3u8
 http://hls.peers.tv/streaming/euronews/126/tvrec/playlist.m3u8
 
 #EXTINF:-1,НТВ
-http://195.189.246.131/ntv_250k.m3u8
+http://btv-net.mediacdn.ru/TVB9/ntv/playlist.m3u8
 
 #EXTINF:-1,HTB 2
 http://hls.novotelecom.ru/streaming/ntv/tvrec/playlist.m3u8
