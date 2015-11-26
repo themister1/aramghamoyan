@@ -120,11 +120,11 @@ http://31.3.245.58/iptv/D547CXR5Z9T33Q/530/index.m3u8
 #EXTINF:-1,НТВ-ПЛЮС Футбол 3
 http://31.3.245.58/iptv/D547CXR5Z9T33Q/522/index.m3u8
 
-#EXTINF:-1,Футбол
-http://hls.peers.tv/streaming/futbol/16/tvrec/playlist.m3u8
-
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
 http://31.3.245.58/iptv/D547CXR5Z9T33Q/531/index.m3u8
+
+#EXTINF:-1,RUS:FOOTBALL 2
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3685.ts
 
 #EXTINF:-1,Eurosport
 http://31.3.245.58/iptv/D547CXR5Z9T33Q/141/index.m3u8
@@ -164,6 +164,9 @@ http://31.3.245.58/iptv/D547CXR5Z9T33Q/200/index.m3u8
 
 #EXTINF:-1,TV1000 MegaHit HD
 http://31.3.245.58/iptv/D547CXR5Z9T33Q/201/index.m3u8
+
+#EXTINF:-1,TV 1000 Action
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3675.ts
 
 #EXTINF:-1,Много ТВ
 http://31.3.245.58/iptv/D547CXR5Z9T33Q/148/index.m3u8
