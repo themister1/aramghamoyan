@@ -96,9 +96,6 @@ http://hls.peers.tv/streaming/euronews/126/tvrec/playlist.m3u8
 #EXTINF:-1,НТВ
 http://btv-net.mediacdn.ru/TVB9/ntv/playlist.m3u8
 
-#EXTINF:-1,HTB 2
-http://hls.novotelecom.ru/streaming/ntv/tvrec/playlist.m3u8
-
 #EXTINF:-1,НТВ-ПЛЮС Теннис
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/528/index.m3u8
 
@@ -108,8 +105,11 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/529/index.m3u8
 #EXTINF:-1,НТВ-ПЛЮС Спорт
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/123/index.m3u8
 
-#EXTINF:-1,Sport 1 TV
-http://testlivestream.rfn.ru/live/smil:sport1hd.smil/chunklist_b1000000.m3u8
+#EXTINF:-1,FOOTBALL 1
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3684.ts
+
+#EXTINF:-1,FOOTBALL 2
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3685.ts
 
 #EXTINF:-1,НТВ-ПЛЮС Футбол
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/124/index.m3u8
@@ -120,17 +120,20 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/530/index.m3u8
 #EXTINF:-1,НТВ-ПЛЮС Футбол 3
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/522/index.m3u8
 
-#EXTINF:-1,Футбол
-http://hls.peers.tv/streaming/futbol/16/tvrec/playlist.m3u8
-
 #EXTINF:-1,НТВ-ПЛЮС Наш Футбол
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/531/index.m3u8
+
+#EXTINF:-1,Sport
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3683.ts
 
 #EXTINF:-1,Eurosport
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/141/index.m3u8
 
 #EXTINF:-1,Eurosport 2
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/539/index.m3u8
+
+#EXTINF:-1,Fight Box HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3886.ts
 
 #EXTINF:-1,Viasat Sport VALTIC TV
 http://wpc.11eb4.teliasoneracdn.net/8011EB4/origin1/tvplay/smil:VSB.smil/playlist.m3u8
@@ -156,14 +159,17 @@ http://31.3.245.58/iptv/RPSGYB7DKP5UR3/516/index.m3u8
 #EXTINF:-1,Наше новое кино
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/517/index.m3u8
 
-#EXTINF:-1,TV1000 Premium HD
-http://31.3.245.58/iptv/RPSGYB7DKP5UR3/202/index.m3u8
+#EXTINF:-1,TV 1000 Prenium HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3884.ts
 
-#EXTINF:-1,TV1000 Comedy HD
-http://31.3.245.58/iptv/RPSGYB7DKP5UR3/200/index.m3u8
+#EXTINF:-1,TV 1000 Megahit HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3885.ts
 
-#EXTINF:-1,TV1000 MegaHit HD
-http://31.3.245.58/iptv/RPSGYB7DKP5UR3/201/index.m3u8
+#EXTINF:-1,TV 1000 Comedy HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3887.ts
+
+#EXTINF:-1,TV 1000 Action HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3675.ts
 
 #EXTINF:-1,Много ТВ
 http://31.3.245.58/iptv/RPSGYB7DKP5UR3/148/index.m3u8
@@ -369,16 +375,16 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail
 #EXTINF:-1,Fox Sport 5 HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/2358.ts
 
-#EXTINF:-1,Sport 1 Voetbal HD
+#EXTINF:-1,Sport Sport Voetbal HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/1060.ts
 
 #EXTINF:-1,Ziggo Sport Select HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/2936.ts
 
-#EXTINF:-1,Sport 1 Racing HD
+#EXTINF:-1,Sport Sport Racing HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/2926.ts
 
-#EXTINF:-1,Sport 1 Extra 2
+#EXTINF:-1,Sport Sport Extra 2
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3932.ts
 
 #EXTINF:-1,Nat Geo HD
