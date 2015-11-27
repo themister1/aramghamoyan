@@ -123,6 +123,39 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 
+#EXTINF:-1,Sky Movies Thriller HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/26.ts
+
+#EXTINF:-1,Sky Movies Select HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/20.ts
+
+#EXTINF:-1,Sky Movies Premiere HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/24.ts
+
+#EXTINF:-1,Sky Movies Greats HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/30.ts
+
+#EXTINF:-1,Sky Movies Family HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/28.ts
+
+#EXTINF:-1,Sky Movies Drama & Romance HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/29.ts
+
+#EXTINF:-1,Sky Movies Disney HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/27.ts
+
+#EXTINF:-1,Sky Movies Comedy HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/23.ts
+
+#EXTINF:-1,Sky Movies Action HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/22.ts
+
+#EXTINF:-1,Sky Movie Showcase HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/3255.ts
+
+#EXTINF:-1,Sky Movie Sci-Fi & horror HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paid/aramgamojan@hotmail.com_paid/21.ts
+
 #EXTINF:-1,VEVO 1
 http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8
 
