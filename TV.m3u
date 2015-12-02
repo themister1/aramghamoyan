@@ -33,6 +33,9 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,Veronica / Disney XD HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2932.m3u8
 
+#EXTINF:-1,DISNEY CHANNEL
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/438.m3u8
+
 #EXTINF:-1,Nickelodeon
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3934.m3u8
 
@@ -99,6 +102,9 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,Fox Sport 5 HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2358.m3u8
 
+#EXTINF:-1,Fox Sporm3u8 6 HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/4039.m3u8
+
 #EXTINF:-1,Ziggo Sport Voetbal HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/1060.m3u8
 
@@ -126,7 +132,7 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
 
-#EXTINF:-1,VEVO 1
+#EXTINF:-1,VEVO 
 http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8
 
 #EXTINF:-1,VEVO 2
