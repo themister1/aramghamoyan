@@ -60,6 +60,12 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,24 Kitchen HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/699.m3u8
 
+#EXTINF:-1,Fox HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2931.m3u8
+
+#EXTINF:-1,Fox Life HD
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3941.m3u8
+
 #EXTINF:-1,Fox Life HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/691.m3u8
 
@@ -81,12 +87,6 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,MTV HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3911.m3u8
 
-#EXTINF:-1,Fox HD
-http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2931.m3u8
-
-#EXTINF:-1,Fox Life HD
-http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3941.m3u8
-
 #EXTINF:-1,Fox Sport 1 Eredivisie HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/430.m3u8
 
@@ -102,7 +102,7 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,Fox Sport 5 HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2358.m3u8
 
-#EXTINF:-1,Fox Sporm3u8 6 HD
+#EXTINF:-1,Fox Sport 6 HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/4039.m3u8
 
 #EXTINF:-1,Ziggo Sport Voetbal HD
@@ -110,6 +110,9 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 
 #EXTINF:-1,Ziggo Sport Select HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2936.m3u8
+
+#EXTINF:-1,Ziggo 1 Golf HD
+http://swebstreamer.hopto.me:2709/live/mario/mario/1068.m3u8
 
 #EXTINF:-1,Ziggo Sport Racing HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2926.m3u8
@@ -119,6 +122,9 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 
 #EXTINF:-1,Ziggo Sport Extra 2 HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3932.m3u8
+
+#EXTINF:-1,Edge Sport
+http://swebstreamer.hopto.me:2709/live/mario/mario/1067.m3u8
 
 #EXTINF:-1,Nat Geo HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3937.m3u8
