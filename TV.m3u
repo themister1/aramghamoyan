@@ -129,6 +129,9 @@ http://swebstreamer.hopto.me:2709/live/mario/mario/1066.m3u8
 #EXTINF:-1,Ziggo Sport Select HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2936.m3u8
 
+#EXTINF:-1,Ziggo Sport Select HD
+http://swebstreamer.hopto.me:2709/live/mario/mario/1065.m3u8
+
 #EXTINF:-1,Ziggo 1 Golf HD
 http://swebstreamer.hopto.me:2709/live/mario/mario/1068.m3u8
 
