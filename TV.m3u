@@ -45,6 +45,8 @@ http://87.239.102.40:4022/udp/239.1.254.31:4000
 #EXTINF:-1,Baby TV
 http://87.239.102.40:4022/udp/239.1.254.38:4000
 
+#EXTINF:-1,Boomerang
+http://87.239.102.40:4022/udp/239.1.254.37:4000
 
 #EXTINF:-1,Comedy Central
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3936.m3u8
