@@ -33,14 +33,18 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,Veronica / Disney XD HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2932.m3u8
 
-#EXTINF:-1,DISNEY CHANNEL
-http://85.113.246.195:8001/1:0:16:17B1:C82:3:EB0000:0:0:0:
-
 #EXTINF:-1,Nickelodeon
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3934.m3u8
 
 #EXTINF:-1,Nick Toons
-http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3935.m3u8
+http://87.239.102.40:4022/udp/239.1.254.27:4000
+
+#EXTINF:-1,JimJam
+http://87.239.102.40:4022/udp/239.1.254.31:4000
+
+#EXTINF:-1,Baby TV
+http://87.239.102.40:4022/udp/239.1.254.38:4000
+
 
 #EXTINF:-1,Comedy Central
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3936.m3u8
