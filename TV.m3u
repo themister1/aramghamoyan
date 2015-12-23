@@ -33,15 +33,20 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 #EXTINF:-1,Veronica / Disney XD HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/2932.m3u8
 
+#EXTINF:-1,Disney Junior
+http://portal.rapidiptv.com:8080/live/steph/steph/4141.m3u8
+
 #EXTINF:-1,Nickelodeon
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3934.m3u8
 
+#EXTINF:-1,Cartoon Network
+http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3933.m3u8
+
+#EXTINF:-1,NL: Syfy
+http://portal.rapidiptv.com:8080/live/steph/steph/4139.m3u8
 
 #EXTINF:-1,Comedy Central
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3936.m3u8
-
-#EXTINF:-1,Cartoon Network
-http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/3933.m3u8
 
 #EXTINF:-1,HBO HD
 http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotmail.com_paidxz/692.m3u8
@@ -126,12 +131,6 @@ http://62.210.248.96:11000/live/aramgamojan@hotmail.com_paidxz/aramgamojan@hotma
 
 #EXTINF:-1,Slam TV
 http://hls2.slamfm.nl/content/slamtv/slamtv_0.m3u8
-
-#‎EXTINF‬:-1,3VOOR12
-http://cgi.omroep.nl/cgi-bin/streams?%2Fvpro%2F39673960%2Fwindowsmedia.asf
-
-#EXTINF:-1,JIM TV
-rtmp://rtmp.jim.stream.vmmacdn.be/vmma-jim-rtmplive-live/jim
 
 #EXTINF:-1,VEVO 
 http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8
