@@ -1,0 +1,64 @@
+#EXTM3U
+
+#EXTINF:-1,NPO Radio 1
+http://icecast.omroep.nl/radio1-bb-mp3
+
+#EXTINF:-1,NPO Radio 2
+http://icecast.omroep.nl/radio2-bb-mp3
+
+#EXTINF:-1,NPO 3FM
+http://icecast.omroep.nl/3fm-bb-mp3
+
+#EXTINF:-1,NPO Radio 4
+http://icecast.omroep.nl/radio4-bb-mp3
+
+#EXTINF:-1,NPO Radio 5
+http://icecast.omroep.nl/radio5-bb-mp3
+
+#EXTINF:-1,NPO Radio 6
+http://icecast.omroep.nl/radio6-bb-mp3
+
+#EXTINF:-1,100% NL
+http://stream.100p.nl/100pctnl.mp3
+
+#EXTINF:-1,HotrodRadio
+http://server.hotrodradio.nl/
+
+#EXTINF:-1,Radio Continu!
+http://radiocontinu.ic-stream.nl:7062/
+
+#EXTINF:-1,Radio Yellowbird
+http://server-06.stream-server.nl:8606/
+     
+#EXTINF:-1,TEAM FM
+http://audiostreamen.nl:8190
+
+#EXTINF:-1,Olympia Radio
+http://olympia.gkstreamen.nl/;?1449705556416.mp3
+
+#EXTINF:-1,Puur NL
+http://breedband.hollandio.nl:8804/;
+
+#EXTINF:-1,Lancia-Stuntvogel.NL
+http://stream.stereo-rds.nl:9450/
+
+#EXTINF:-1,Radio Mexico
+http://server-16.stream-server.nl:8586/
+
+#EXTINF:-1,HollandFM
+http://qxjr001.digiplay.nl:9070/;?1449707953899.mp3/
+
+#EXTINF:-1,Bright FM
+http://str1.hollanddata.eu/proxy/bright1?mp=/bfm-mp3
+
+#EXTINF:-1,Classic FM
+http://8573.live.streamtheworld.com:80/CLASSICFMAAC_SC
+
+#EXTINF:-1,Soul Radio
+http://soulradio02.live-streams.nl/live
+
+#EXTINF:-1,Defjay Radio
+http://icepool.silvacast.com/DEFJAYcom.mp3
+
+#EXTINF:-1,Radio Sevillanas
+http://94.75.209.28:8192/
