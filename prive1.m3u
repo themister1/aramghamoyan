@@ -1,117 +1,117 @@
 #EXTM3U
 
-#EXTINF:-1,CANALDIGITAAL NL: NPO 1
+#EXTINF:-1, NL: NPO 1
 http://grandiptv.myftp.org:8000/live/test45/test45/1173.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: NPO 2
+#EXTINF:-1, NL: NPO 2
 http://grandiptv.myftp.org:8000/live/test45/test45/1174.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:NPO 3
+#EXTINF:-1, NL:NPO 3
 http://grandiptv.myftp.org:8000/live/test45/test45/1175.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:RTL 4
+#EXTINF:-1, NL:RTL 4
 http://grandiptv.myftp.org:8000/live/test45/test45/1176.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:RTL 5
+#EXTINF:-1, NL:RTL 5
 http://grandiptv.myftp.org:8000/live/test45/test45/1177.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:SBS 6
+#EXTINF:-1, NL:SBS 6
 http://grandiptv.myftp.org:8000/live/test45/test45/1178.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:RTL 7
+#EXTINF:-1, NL:RTL 7
 http://grandiptv.myftp.org:8000/live/test45/test45/1179.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: RTL 8
+#EXTINF:-1, NL: RTL 8
 http://portal.rapidiptv.com:8080/live/steph/steph/4152.m3u8
-#EXTINF:-1,CANALDIGITAAL NL: SBS 9
+#EXTINF:-1, NL: SBS 9
 http://portal.rapidiptv.com:8080/live/steph/steph/4148.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: Disney Junior
+#EXTINF:-1, NL: Disney Junior
 http://portal.rapidiptv.com:8080/live/steph/steph/4141.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:VERONICA / DISNEY XD
+#EXTINF:-1, NL:VERONICA / DISNEY XD
 http://grandiptv.myftp.org:8000/live/test45/test45/1192.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: Nikelodeon
+#EXTINF:-1, NL: Nikelodeon
 http://portal.rapidiptv.com:8080/live/steph/steph/2461.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: Comedy Central
+#EXTINF:-1, NL: Comedy Central
 http://portal.rapidiptv.com:8080/live/steph/steph/4137.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:HBO
+#EXTINF:-1, NL:HBO
 http://grandiptv.myftp.org:8000/live/test45/test45/1199.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:HBO 2
+#EXTINF:-1, NL:HBO 2
 http://grandiptv.myftp.org:8000/live/test45/test45/1197.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:HBO 3
+#EXTINF:-1, NL:HBO 3
 http://grandiptv.myftp.org:8000/live/test45/test45/1183.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX
+#EXTINF:-1, NL:FOX
 http://grandiptv.myftp.org:8000/live/test45/test45/1196.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX LIFE
+#EXTINF:-1, NL:FOX LIFE
 http://grandiptv.myftp.org:8000/live/test45/test45/1189.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:COMEDY & KIDS
+#EXTINF:-1, NL:COMEDY & KIDS
 http://grandiptv.myftp.org:8000/live/test45/test45/1191.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FILM 1 ACTION
+#EXTINF:-1, NL:FILM 1 ACTION
 http://grandiptv.myftp.org:8000/live/test45/test45/1198.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FILM 1 COMEDY
+#EXTINF:-1, NL:FILM 1 COMEDY
 http://grandiptv.myftp.org:8000/live/test45/test45/1187.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FILM 1 PREMIERE HD
+#EXTINF:-1, NL:FILM 1 PREMIERE HD
 http://grandiptv.myftp.org:8000/live/test45/test45/1185.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FILM 1 SPOOTLIGHT
+#EXTINF:-1, NL:FILM 1 SPOOTLIGHT
 http://grandiptv.myftp.org:8000/live/test45/test45/1195.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FILM 1 SUNDANCE
+#EXTINF:-1, NL:FILM 1 SUNDANCE
 http://grandiptv.myftp.org:8000/live/test45/test45/1194.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX SPORT 1 
+#EXTINF:-1, NL:FOX SPORT 1 
 http://grandiptv.myftp.org:8000/live/test45/test45/1201.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX SPORT 2
+#EXTINF:-1, NL:FOX SPORT 2
 http://grandiptv.myftp.org:8000/live/test45/test45/1202.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX SPORTS 3
+#EXTINF:-1, NL:FOX SPORTS 3
 http://grandiptv.myftp.org:8000/live/test45/test45/1180.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX SPORTS 4
+#EXTINF:-1, NL:FOX SPORTS 4
 http://grandiptv.myftp.org:8000/live/test45/test45/1190.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:FOX SPORT 5
+#EXTINF:-1, NL:FOX SPORT 5
 http://grandiptv.myftp.org:8000/live/test45/test45/1200.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:SPORT 1 VOETBAL HD
+#EXTINF:-1, NL:SPORT 1 VOETBAL HD
 http://grandiptv.myftp.org:8000/live/test45/test45/1203.m3u8
 
-#EXTINF:-1,CANALDIGITAAL L: Sport 1 Racing
+#EXTINF:-1, L: Sport 1 Racing
 http://portal.rapidiptv.com:8080/live/steph/steph/7009.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:SPORT 1 GOLF
+#EXTINF:-1, NL:SPORT 1 GOLF
 http://grandiptv.myftp.org:8000/live/test45/test45/1188.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:SPORT 1 SELECT
+#EXTINF:-1, NL:SPORT 1 SELECT
 http://grandiptv.myftp.org:8000/live/test45/test45/1204.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: Sport 1 Extra 2
+#EXTINF:-1, NL: Sport 1 Extra 2
 http://portal.rapidiptv.com:8080/live/steph/steph/7008.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL: Sport 1 Extra 1
+#EXTINF:-1, NL: Sport 1 Extra 1
 http://portal.rapidiptv.com:8080/live/steph/steph/7007.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:SVT 24
+#EXTINF:-1, NL:SVT 24
 http://grandiptv.myftp.org:8000/live/test45/test45/1193.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:TV3 SVERIGE
+#EXTINF:-1, NL:TV3 SVERIGE
 http://grandiptv.myftp.org:8000/live/test45/test45/1181.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:TV4
+#EXTINF:-1, NL:TV4
 http://grandiptv.myftp.org:8000/live/test45/test45/1182.m3u8
 
-#EXTINF:-1,CANALDIGITAAL NL:TV4 FILM
+#EXTINF:-1, NL:TV4 FILM
 http://grandiptv.myftp.org:8000/live/test45/test45/1184.m3u8
