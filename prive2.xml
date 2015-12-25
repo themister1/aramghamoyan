@@ -1,234 +1,101 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<items>
- 
-<item>
-<title>[COLOR red][B]NL Music TV[/B][/COLOR]</title>
-<link>http://ignoreme</link>
-<fanart></fanart>
-</item>
- 
-<item>
-<title>RADIO 538</title>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_538_Nederland.png</thumbnail>
-<link>http://538hls.lswcdn.triple-it.nl/content/538webcam/538webcam_2.m3u8</link>
-</item>
- 
-<item>
-<title>538 TV</title>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_538_Nederland.png</thumbnail>
-<link>http://538hls.lswcdn.triple-it.nl/content/538tv/538tv_0.m3u8</link>
-</item>
- 
-<item>
-<title>SLAM Studio</title>
-<thumbnail>http://www.broadcastmagazine.nl/wp-content/uploads/2015/08/slam_nwllogo200.jpg</thumbnail>
-<link>http://hls2.slamfm.nl/content/slamwebcam/slamwebcam_1.m3u8</link>
-</item>
- 
-<item>
-<title>SLAM TV</title>
-<thumbnail>https://www.on.nl/Global/Zenderpakketten/SLAMTV.png</thumbnail>
-<link>http://hls2.slamfm.nl/content/slamtv/slamtv.m3u8</link>
-</item>
+#EXTM3U
 
+#EXTINF:-1,RADIO 538
+http://538hls.lswcdn.triple-it.nl/content/538webcam/538webcam_2.m3u8
 
-<item>
-<title>FUN X</title>
-<thumbnail>http://static.skynetblogs.be/media/4087/funx.jpg</thumbnail>
-<npo>live/npo/visualradio/funx/funx.isml/funx.m3u8</npo>
-</item>
- 
-<item>
-<title>RADIO NL</title>
-<thumbnail>http://www.nachtvanhengelo.nl/files/logo14-radionl.jpg</thumbnail>
-<link>http://highvolume04.streampartner.nl:80/radionl/livestream/playlist.m3u8</link>
-</item>
- 
-<item>
-<title>3 FM</title>
-<npo>live/npo/visualradio/3fm/3fm.isml/3fm.m3u8</npo>
-<thumbnail>http://www.stukafest.nl/wp-content/uploads/2015/02/3FM.jpeg</thumbnail>
-</item>
- 
-<item>
-<title>XITE TV</title>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Xitelogo.jpg/266px-Xitelogo.jpg</thumbnail>
-<link>http://highvolume02.streampartner.nl:1935/vleugels/livestream/playlist.m3u8</link>
-</item>
+#EXTINF:-1,538 TV
+http://538hls.lswcdn.triple-it.nl/content/538tv/538tv_0.m3u8
 
-<item>
-<title>Sterren.nl Webcam</title>
-<thumbnail>https://pbs.twimg.com/profile_images/552033110137634817/67uADOst.png</thumbnail>
-<link>http://l2cm8b37372827005676bb4a000000.789483e1395fac0e.kpnsmoote1h.npostreaming.nl/d/live/tros/sterrennl/studio/studio.isml/studio-audio=128000-video=900000.m3u8</link>
-</item>
+#EXTINF:-1,SLAM Studio
+http://hls2.slamfm.nl/content/slamwebcam/slamwebcam_1.m3u8
 
-<item>
-<title>[COLOR red][B]World Music TV[/B][/COLOR]</title>
-<link>http://ignoreme</link>
-<fanart></fanart>
-</item>
+#EXTINF:-1,SLAM TV
+http://hls2.slamfm.nl/content/slamtv/slamtv.m3u8
 
-<item>
-<title>MTV</title>
-<thumbnail>http://speechismyhammer.com/wp-content/uploads/2011/12/644px-MTV_Logo.svg_.png</thumbnail>
-<link>rtmp://83.218.202.202/live swfUrl=http://webtv.md/swf/WebTV.swf playpath=wt_mtv.stream</link>
-</item>
+#EXTINF:-1,RADIO NL
+http://highvolume04.streampartner.nl:80/radionl/livestream/playlist.m3u8
 
-<item>
-<title>MTV LIVE</title>
-<thumbnail></thumbnail>
-<link>http://37.21.148.142:1234/udp/225.54.41.10:5000</link>
-</item
+#EXTINF:-1,XITE TV
+http://highvolume02.streampartner.nl:1935/vleugels/livestream/playlist.m3u8
 
-<item>
-<title>MTV RUSSIA</title>
-<thumbnail></thumbnail>
-<link>http://37.21.148.142:1234/udp/225.54.23.112:5000</link>
-</item
+#EXTINF:-1,Sterren.nl Webcam
+http://l2cm8b37372827005676bb4a000000.789483e1395fac0e.kpnsmoote1h.npostreaming.nl/d/live/tros/sterrennl/studio/studio.isml/studio-audio=128000-video=900000.m3u8
 
-<item>
-<title>MTV HITS</title>
-<thumbnail>https://pbs.twimg.com/profile_images/1813177034/mtv-hits_400x400.gif</thumbnail>
-<link>http://5.136.75.119:7777/udp/225.54.23.125:5000</link>
-</item
+#EXTINF:-1,MTV
+rtmp://83.218.202.202/live swfUrl=http://webtv.md/swf/WebTV.swf playpath=wt_mtv.stream
 
-<item>
-<title>MTV DANCE</title>
-<thumbnail>http://www.kabelkiosk.de/uploads/tx_nlkkprogramme/kk_MTV_Dance.jpg</thumbnail>
-<link>http://5.136.75.119:7777/udp/225.54.23.124:5000</link>
-</item>
+#EXTINF:-1,MTV LIVE
+http://37.21.148.142:1234/udp/225.54.41.10:5000
 
-<item>
-<title>MTV ROCKS</title>
-<thumbnail>http://teve.ba/img/content/mtv-rocks.gif</thumbnail>
-<link>http://90.188.119.22:4321/udp/225.54.23.126:5000</link>
-</item>
+#EXTINF:-1,MTV RUSSIA
+http://37.21.148.142:1234/udp/225.54.23.112:5000
 
-<item>
-<title>MTV USA HD</title>
-<link>http://tv-tikilive-hls-live.hls.adaptive.level3.net/hls/156.m3u8</link>
-</item>
+#EXTINF:-1,MTV HITS
+http://5.136.75.119:7777/udp/225.54.23.125:5000
 
-<item>
-<title>MUSIC VOX TV OLD S'COOL</title>
-<thumbnail>http://t-tv.com.ua/wp-content/uploads/2015/03/eska-music-vox-oldschool-hd.jpg</thumbnail>
-<link>rtmp://stream.smcloud.net/live2/vox/vox_720p</link>
-</item>
+#EXTINF:-1,MTV DANCE
+http://5.136.75.119:7777/udp/225.54.23.124:5000
 
-<item>
-<title>VH1</title>
-<thumbnail></thumbnail>
-<link>http://37.21.149.37:1234/udp/225.54.23.120:5000</link>
-</item>
+#EXTINF:-1,MTV ROCKS
+http://90.188.119.22:4321/udp/225.54.23.126:5000
 
-<item>
-<title>VH1 CLASSIC</title>
-<thumbnail></thumbnail>
-<link>http://5.136.127.170:1234/udp/225.54.23.127:5000</link>
-</item>
+#EXTINF:-1,MTV USA HD
+http://tv-tikilive-hls-live.hls.adaptive.level3.net/hls/156.m3u8
 
+#EXTINF:-1,MUSIC VOX TV OLD S'COOL
+rtmp://stream.smcloud.net/live2/vox/vox_720p
 
-<item>
-<title>1 Music HD</title>
-<link>http://109.239.142.62:1935/live/livestream3/playlist.m3u8</link>
-</item>
+#EXTINF:-1,VH1
+http://37.21.149.37:1234/udp/225.54.23.120:5000
 
-<item>
-<title>POLO TV</title>
-<thumbnail>http://c01.common.smcloud.net/s/1014333f0Lw.png</thumbnail>
-<link>rtmp://stream.smcloud.net/live/polotv</link>
-</item>
+#EXTINF:-1,VH1 CLASSIC
+http://5.136.127.170:1234/udp/225.54.23.127:5000
 
-<item>
-<title>ESKA BEST MUSIC TV HD</title>
-<thumbnail>http://televisaoaovivo.com/icones/grande/aberto/eska-best-music-online-ao-vivo-gratis-55e1e0e65df98.jpeg</thumbnail>
-<link>rtmp://stream.smcloud.net/live2/best/best_720p</link>
-</item>
+#EXTINF:-1,VH1 Music HD
+http://109.239.142.62:1935/live/livestream3/playlist.m3u8
 
-<item>
-<title>ESKA ROCK TV HD</title>
-<thumbnail>http://vignette2.wikia.nocookie.net/logopedia/images/7/7c/Eska.rock.jpg</thumbnail>
-<link>rtmp://stream.smcloud.net/live2/eska_rock/eska_rock_720p</link>
-</item>
+#EXTINF:-1,POLO TV
+rtmp://stream.smcloud.net/live/polotv
 
+#EXTINF:-1,ESKA BEST MUSIC TV HD
+rtmp://stream.smcloud.net/live2/best/best_720p
 
-<item>
-<title>ESKA PARTY TV HD</title>
-<thumbnail>http://t-tv.com.ua/wp-content/uploads/2015/03/eska-party-tv-hd.jpg</thumbnail>
-<link>rtmp://stream.smcloud.net/live2/eska_party/eska_party_720p</link>
-</item>
+#EXTINF:-1,ESKA ROCK TV HD
+rtmp://stream.smcloud.net/live2/eska_rock/eska_rock_720p
 
+#EXTINF:-1,ESKA PARTY TV HD
+rtmp://stream.smcloud.net/live2/eska_party/eska_party_720p
 
-<item>
-<title>KISS TV</title>
-<thumbnail>http://www.worldtvpc.com/onlinevideosites/img/KissTV.jpg</thumbnail>
-<link>rtmp://tst.es.flash.glb.ipercast.net/tst.es-live/live</link>
-</item>
+#EXTINF:-1,KISS TV
+rtmp://tst.es.flash.glb.ipercast.net/tst.es-live/live
 
-<item>
-<title>VEVO 1</title>
-<thumbnail>http://assets.noisey.com/content-images/contentimage/19293/unnamed.jpg</thumbnail>
-<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8</link>
-</item>
+#EXTINF:-1,VEVO 1
+http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8
 
-<item>
-<title>VEVO 2</title>
-<thumbnail>http://assets.noisey.com/content-images/contentimage/19293/unnamed.jpg</thumbnail>
-<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/06/prog_index.m3u8</link>
-</item>
+#EXTINF:-1,VEVO 2
+http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/06/prog_index.m3u8
 
-<item>
-<title>VEVO Country</title>
-<thumbnail>http://assets.noisey.com/content-images/contentimage/19293/unnamed.jpg</thumbnail>
-<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8</link>
-</item>
+#EXTINF:-1,VEVO Country
+http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8
 
-<item>
-<title>MTV AM HD</title>
-<thumbnail>https://pbs.twimg.com/profile_images/539840174503383040/jMtssqD9.png</thumbnail>
-<link>http://mtvam.ru/hlsam/playlist.m3u8</link>
-</item>
+#EXTINF:-1,MTV AM HD
+http://mtvam.ru/hlsam/playlist.m3u8
 
-<item>
-<title>DJING DANS</title>
-<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>
-<link>http://cdn.djing.com/tv/d-05.m3u8</link>
-</item>
+#EXTINF:-1,DJING DANS
+http://cdn.djing.com/tv/d-05.m3u8
 
-<item>
-<title>ONE BY HD</title>
-<thumbnail>http://www.one.by/images/logo.png</thumbnail>
-<link>http://rtmp.one.by:1300</link>
-</item>
+#EXTINF:-1,ONE BY HD
+http://rtmp.one.by:1300
 
-<item>
-<title>ONE BY 2HD</title>
-<thumbnail></thumbnail>
-<link>http://rtmp.one.by:2300</link>
-</item>
+#EXTINF:-1,ONE BY 2HD
+http://rtmp.one.by:2300
 
-<item>
-<title>DREAM TV</title>
-<thumbnail>https://pbs.twimg.com/profile_images/696859456/dream-eski-logo.JPG</thumbnail>
-<link>http://live.netd.com.tr/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8</link>
-</item>
+#EXTINF:-1,DREAM TV
+http://live.netd.com.tr/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8
 
-<item>
-<title>3 FM</title>
-live/npo/visualradio/3fm/3fm.isml/3fm.m3u8
-<thumbnail>http://www.stukafest.nl/wp-content/uploads/2015/02/3FM.jpeg</thumbnail>
-</item>
+#EXTINF:-1,CLUBBING TV
+http://204.107.26.252:1935/live/691.high.stream/chunklist_w485913695.m3u8
 
-<item>
-<title>CLUBBING TV</title>
-<thumbnail>https://a2-images.myspacecdn.com/images02/44/c272eb77bc894ea2a13764aea523012b/300x300.jpg</thumbnail>
-<link>http://204.107.26.252:1935/live/691.high.stream/chunklist_w485913695.m3u8</link>
-</item>
+#EXTINF:-1,DELUXE MUSIC TV
+http://flash3.ipercast.net/deluxemusic.tv-live/smil:deluxe.smil/chunklist_w1972828081_b850000.m3u8
 
-<item>
-<title>DELUXE MUSIC TV</title>
-<thumbnail>http://s30.postimg.org/n5rydnsox/71d47366f5fc.jpg</thumbnail>
-<link>http://flash3.ipercast.net/deluxemusic.tv-live/smil:deluxe.smil/chunklist_w1972828081_b850000.m3u8</link>
-</item>
-
-</items>
