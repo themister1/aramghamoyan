@@ -75,6 +75,11 @@ http://icecast.omroep.nl/radio6-world-bb-mp3
 #EXTINF:-1,Radio 6 Zwarte Lijst
 http://icecast.omroep.nl/radio6-zwartelijst-bb-mp3
 
+#EXTINF:-1,Radio Veronica (720p)
+http://b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/1600.m3u8
+#EXTINF:-1,Radio Veronica (1080p)
+http://b2b.rr.kpnstreaming.nl/hls/live/b2b/skyradio/live/skyradio/veronica/4000.m3u8
+
 #EXTINF:-1,Radio Continu!
 http://radiocontinu.ic-stream.nl:7062/
 
