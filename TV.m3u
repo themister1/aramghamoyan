@@ -1,3 +1,120 @@
-#EXTM3U 
+#EXTM3U
 
-binnekort
+#EXTINF:-1,[COLOR red]****NEDERLANDSE KANALEN****[/COLOR]
+http://ignoreme
+
+#EXTINF:-1, NL: NPO 1
+http://grandiptv.myftp.org:8000/live/test45/test45/1173.m3u8
+
+#EXTINF:-1, NL: NPO 2
+http://grandiptv.myftp.org:8000/live/test45/test45/1174.m3u8
+
+#EXTINF:-1, NL:NPO 3
+http://grandiptv.myftp.org:8000/live/test45/test45/1175.m3u8
+
+#EXTINF:-1, NL:RTL 4
+http://grandiptv.myftp.org:8000/live/test45/test45/1176.m3u8
+
+#EXTINF:-1, NL:RTL 5
+http://grandiptv.myftp.org:8000/live/test45/test45/1177.m3u8
+
+#EXTINF:-1, NL:SBS 6
+http://grandiptv.myftp.org:8000/live/test45/test45/1178.m3u8
+
+#EXTINF:-1, NL:RTL 7
+http://grandiptv.myftp.org:8000/live/test45/test45/1179.m3u8
+
+#EXTINF:-1, NL: RTL 8
+http://portal.rapidiptv.com:8080/live/steph/steph/4152.m3u8
+#EXTINF:-1, NL: SBS 9
+http://portal.rapidiptv.com:8080/live/steph/steph/4148.m3u8
+
+#EXTINF:-1, NL: Disney Junior
+http://portal.rapidiptv.com:8080/live/steph/steph/4141.m3u8
+
+#EXTINF:-1, NL:VERONICA / DISNEY XD
+http://grandiptv.myftp.org:8000/live/test45/test45/1192.m3u8
+
+#EXTINF:-1, NL: Nikelodeon
+http://portal.rapidiptv.com:8080/live/steph/steph/2461.m3u8
+
+#EXTINF:-1, NL: Comedy Central
+http://portal.rapidiptv.com:8080/live/steph/steph/4137.m3u8
+
+#EXTINF:-1, NL:HBO
+http://grandiptv.myftp.org:8000/live/test45/test45/1199.m3u8
+
+#EXTINF:-1, NL:HBO 2
+http://grandiptv.myftp.org:8000/live/test45/test45/1197.m3u8
+
+#EXTINF:-1, NL:HBO 3
+http://grandiptv.myftp.org:8000/live/test45/test45/1183.m3u8
+
+#EXTINF:-1, NL:FOX
+http://grandiptv.myftp.org:8000/live/test45/test45/1196.m3u8
+
+#EXTINF:-1, NL:FOX LIFE
+http://grandiptv.myftp.org:8000/live/test45/test45/1189.m3u8
+
+#EXTINF:-1, NL:COMEDY & KIDS
+http://grandiptv.myftp.org:8000/live/test45/test45/1191.m3u8
+
+#EXTINF:-1, NL:FILM 1 ACTION
+http://grandiptv.myftp.org:8000/live/test45/test45/1198.m3u8
+
+#EXTINF:-1, NL:FILM 1 COMEDY
+http://grandiptv.myftp.org:8000/live/test45/test45/1187.m3u8
+
+#EXTINF:-1, NL:FILM 1 PREMIERE HD
+http://grandiptv.myftp.org:8000/live/test45/test45/1185.m3u8
+
+#EXTINF:-1, NL:FILM 1 SPOOTLIGHT
+http://grandiptv.myftp.org:8000/live/test45/test45/1195.m3u8
+
+#EXTINF:-1, NL:FILM 1 SUNDANCE
+http://grandiptv.myftp.org:8000/live/test45/test45/1194.m3u8
+
+#EXTINF:-1, NL:FOX SPORT 1 
+http://grandiptv.myftp.org:8000/live/test45/test45/1201.m3u8
+
+#EXTINF:-1, NL:FOX SPORT 2
+http://grandiptv.myftp.org:8000/live/test45/test45/1202.m3u8
+
+#EXTINF:-1, NL:FOX SPORTS 3
+http://grandiptv.myftp.org:8000/live/test45/test45/1180.m3u8
+
+#EXTINF:-1, NL:FOX SPORTS 4
+http://grandiptv.myftp.org:8000/live/test45/test45/1190.m3u8
+
+#EXTINF:-1, NL:FOX SPORT 5
+http://grandiptv.myftp.org:8000/live/test45/test45/1200.m3u8
+
+#EXTINF:-1, NL:SPORT 1 VOETBAL HD
+http://grandiptv.myftp.org:8000/live/test45/test45/1203.m3u8
+
+#EXTINF:-1, L: Sport 1 Racing
+http://portal.rapidiptv.com:8080/live/steph/steph/7009.m3u8
+
+#EXTINF:-1, NL:SPORT 1 GOLF
+http://grandiptv.myftp.org:8000/live/test45/test45/1188.m3u8
+
+#EXTINF:-1, NL:SPORT 1 SELECT
+http://grandiptv.myftp.org:8000/live/test45/test45/1204.m3u8
+
+#EXTINF:-1, NL: Sport 1 Extra 2
+http://portal.rapidiptv.com:8080/live/steph/steph/7008.m3u8
+
+#EXTINF:-1, NL: Sport 1 Extra 1
+http://portal.rapidiptv.com:8080/live/steph/steph/7007.m3u8
+
+#EXTINF:-1, NL:SVT 24
+http://grandiptv.myftp.org:8000/live/test45/test45/1193.m3u8
+
+#EXTINF:-1, NL:TV3 SVERIGE
+http://grandiptv.myftp.org:8000/live/test45/test45/1181.m3u8
+
+#EXTINF:-1, NL:TV4
+http://grandiptv.myftp.org:8000/live/test45/test45/1182.m3u8
+
+#EXTINF:-1, NL:TV4 FILM
+http://grandiptv.myftp.org:8000/live/test45/test45/1184.m3u8
