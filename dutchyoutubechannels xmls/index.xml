@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<channels>
+
+<channel>
+<name>[COLOR red]*****SPORTS Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/sport.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****PRANKS Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/pranks.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****VLOGS Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/vlogs.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****TV Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/tv.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****KIDS Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/kids.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****MUSIC Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/music.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****TECH Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/tech.xml</externallink>
+</channel>
+
+<channel>
+<name>[COLOR red]*****OVERIGE Channels*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
+<link></link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/overige.xml</externallink>
+</channel>
+
+</channels>
