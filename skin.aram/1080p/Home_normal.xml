@@ -20,7 +20,7 @@
             <height>10</height>
 			<font>size28</font>
             <textcolor>white</textcolor>
-            <label>[COLOR lime]VERSIE: 17-05-2016[/COLOR]</label>
+            <label>[COLOR lime]VERSIE: 24-05-2016[/COLOR]</label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-295" time="220">Conditonal</animation>
@@ -209,8 +209,8 @@
 					<thumb>special://home/addons\skin.aram\icons\hay.png</thumb>
 					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.6.label))][/COLOR]</label2>
 					<label></label>
-					<onclick>PlayMedia(&quot;plugin://plugin.program.hayboxinstaller/?url=http%3A%2F%2Faram-design.nl%2Fupdate.zip&amp;mode=5&amp;name=HAYbox+Updaten&amp;iconimage=C%3A%5CUsers%5CAram+Ghamoyan%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.hayboxinstaller%5Cresources%5Cart%5Cicon.png&amp;fanart=C%3A%5CUsers%5CAram+Ghamoyan%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.hayboxinstaller%5Cfanart.jpg&amp;description=&quot;)</onclick>
-				</item>	
+					<onclick>PlayMedia(&quot;plugin://plugin.program.hayboxinstaller/?url=http%3A%2F%2Faram-design.nl%2Fupdate.zip&amp;mode=1&amp;name=HAYbox+Updaten&amp;iconimage=https%3A%2F%2Fgithub.com%2Faramghamoyan%2Faramghamoyan%2Fblob%2Fmaster%2Fplugin.program.hayboxinstaller%2Ficon.png&amp;fanart=https%3A%2F%2Fignorme&amp;description=HAYbox+by+Aram+Ghamoyan&quot;)</onclick>
+				</item>
                
 				<item id="352">
                     <visible>!Skin.HasSetting(hidefav)</visible>

@@ -356,7 +356,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="9997.9997.9997" name="HAYbox Skin" provider-name="ArmoGuy">
+<addon id="skin.aram" version="9999.9999.9999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />
@@ -369,7 +369,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary></summary>
-        <description>HAYbox Skin by ArmoGuy</description>
+        <description>HAYbox Skin by Aram Ghamoyan</description>
 		<disclaimer>HAYbox Skin</disclaimer>
         <platform>all</platform>
         <licence></licence>

@@ -13,22 +13,14 @@
 				<orientation>vertical</orientation>
             </control>
             </control>
-			<control type="image">
-				<left>0</left>
-				<top>1046</top>
-                <width>35</width>
-                <height>35</height>
-                <texture colordiffuse="x9">x9-35x35.png</texture>
-                <aspectratio>keep</aspectratio>
-            </control>	
 			<control type="label">
 			<right>-30</right>
 			<top>1060</top>
-            <width>130</width>
+            <width>300</width>
             <height>10</height>
 			<font>size9</font>
             <textcolor>black</textcolor>
-            <label>v2.10.9</label>
+            <label>[COLOR lime]VERSIE: 17-05-2016[/COLOR]</label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,0" time="220">Conditonal</animation>
@@ -137,134 +129,116 @@
                 </control>
             </focusedlayout>
             <content>
-                <item id="601" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav1)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.1.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.1.Path)]</onclick>
-                </item>
-                <item id="602" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav2)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.2.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.2.Path)]</onclick>
-                </item>
-                <item id="355">
-                    <thumb>icons/Icon_TV.png</thumb>
-                    <label>31059</label>
-                    <property name="color">icons/Icon_TV.png</property>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
-                </item>
-                <item id="355">
-                    <thumb>icons/LiveTVrec.png</thumb>
-                    <label>$INFO[Pvr.NowRecordingTitle]</label>
-                    <property name="color">icons/green3.png</property>
-                    <onclick>ActivateWindow(1718)</onclick>
-                    <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+				<item id="502" description="Custom script">
+					<thumb>special://home/addons\skin.aram\icons\TV.png</thumb>
+					<label></label>
+					<onclick>ActivateWindow(TvChannels)</onclick>
+					<visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
 				</item>
-                <item id="603" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav3)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.3.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.3.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.3.Path)]</onclick>
+				<item id="403" description="Custom addon">
+                    <visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
+                    <thumb>special://home/addons\skin.aram\icons\\toot.png</thumb>
+                    <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.3.label))][/COLOR]</label2>
+                    <label></label>
+                    <onclick>PlayMedia(&quot;plugin://plugin.video.dailymotion_com/?url=x2gwi1b&amp;mode=playVideo&quot;)</onclick>
+                </item>	
+				<item id="401" description="Custom addon">
+                    <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
+                    <thumb>special://home/addons\skin.aram\icons\\merojax.png</thumb>
+                    <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.1.label))][/COLOR]</label2>
+                    <label></label>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.merojax.tv/&quot;,return))</onclick>
+                </item>			   
+				<item id="402" description="Custom addon">
+                    <visible>!IsEmpty(Skin.String(HomeAddon.2.Label))</visible>
+                    <thumb>special://home/addons\skin.aram\icons\haymusic.png</thumb>
+                    <label2>[COLOR white][COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.2.label))][/COLOR][/COLOR]</label2>
+                    <label></label>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.youtube/channel/UCj6mCP82RqPIYKTF2-valew/playlist/PLqQyBObAWfy-fEfk26siQhXwMFMq_vf62/&quot;,return)</onclick>
                 </item>
-                <item id="604" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav4)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.4.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.4.Path)]</onclick>
+				<item id="404" description="Custom addon">
+                    <visible>!IsEmpty(Skin.String(HomeAddon.4.Label))</visible>
+                    <thumb>special://home/addons\skin.aram\icons\\rus.png</thumb>
+                    <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.4.label))][/COLOR]</label2>
+                    <label></label>
+                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
                 </item>
-                <item id="345">
-                    <visible>!Skin.HasSetting(hidewtr)</visible> 
-					<property name="weatherthumb">$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</property>
-                    <label>$INFO[Weather.Temperature]</label>
-                    <property name="color">icons/Icon_Weather.png</property>
-                    <onclick>ActivateWindow(MyWeather)</onclick>
-                </item>
-                <item id="605" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav5)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.5.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.5.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.5.Path)]</onclick>
-                </item>
-                <item id="606" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav6)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.6.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.6.Path)]</onclick>
-                </item>
-                <item id="607" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav7)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.7.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.7.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.7.Path)]</onclick>
+				<item id="405" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\armo.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.5.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=ArmoGuy ADD-ONS&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CArmoGuy%20ADD-ONS&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
 				</item>
-                <item id="608" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav8)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.8.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.8.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.8.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.8.Path)]</onclick>
+				<item id="500" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\films.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.7.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Films &amp; Series&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CFilms%20%26%20Series&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.exodus%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
 				</item>
-				<item id="610" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav10)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.10.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.10.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.10.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.10.Path)]</onclick>
-                </item>
-                <item id="611" description="Custom Fvourite">
-					<visible>!Skin.HasSetting(hidehomefav11)</visible>
-                    <visible>!IsEmpty(Skin.String(HomeFav.11.Label))</visible>
-                    <thumb>$INFO[Skin.String(HomeFav.11.Icon)]</thumb>
-                    <label>$INFO[Skin.String(HomeFav.11.Label)]</label>
-                    <onclick>$INFO[Skin.String(HomeFav.11.Path)]</onclick>
-                </item>
+				<item id="408" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\kids.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.8.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Kids&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CKids&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.tbh.kidswb%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>
+				<item id="409" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\Sports.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.9.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Sport&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CSport&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.clubtv%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>
+				<item id="410" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\music.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.10.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Muziek&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CMuziek&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>
+				<item id="411" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\program.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.11.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Programma&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CProgramma&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>					
+				<item id="406" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\hay.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.6.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>PlayMedia(&quot;plugin://plugin.program.hayboxinstaller/?url=http%3A%2F%2Faram-design.nl%2Fupdate.zip&amp;mode=5&amp;name=HAYbox+Updaten&amp;iconimage=C%3A%5CUsers%5CAram+Ghamoyan%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.hayboxinstaller%5Cresources%5Cart%5Cicon.png&amp;fanart=C%3A%5CUsers%5CAram+Ghamoyan%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.hayboxinstaller%5Cfanart.jpg&amp;description=&quot;)</onclick>
+				</item>	
+               
 				<item id="352">
                     <visible>!Skin.HasSetting(hidefav)</visible>
                     <thumb>icons/favs.png</thumb>
-                    <label>$LOCALIZE[1036]</label>
+                    <label></label>
                     <property name="color">icons/red.png</property>
                     <onclick>ActivateWindow(134)</onclick>
                 </item>
-				<item id="347">
-                    <visible>!Skin.HasSetting(hideSources)</visible>
-                    <thumb>icons/Media locaties.png</thumb>
-                    <label>20094</label>
-                    <onclick>activatewindow(1115)</onclick>
+				<item id="353">
+					<visible>!Skin.HasSetting(hidebro)</visible>
+					<thumb>special://home/addons\skin.aram\icons\usb.png</thumb>
+					<label></label>
+					<onclick>ActivateWindow(3)</onclick>
 				</item>
 				<item id="348">
-                    <thumb>icons/settings.png</thumb>
-                    <label>5</label>
+                    <thumb>special://home/addons\skin.aram\icons\settings.png</thumb>
+                    <label></label>
                     <onclick>ActivateWindow(1120)</onclick>
                 </item>
                 <item id="349">
                     <visible>Player.HasMedia</visible>
-                    <thumb>icons/Ga terug.png</thumb>
-                    <label>Ga terug</label>
+                    <thumb>special://home/addons\skin.aram\icons\Gaterug.png</thumb>
+                    <label></label>
                     <onclick condition="Player.HasMedia">Fullscreen</onclick>
                 </item>
-                <item id="349">
-                    <visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>
-                    <thumb>icons/Zet uit.png</thumb>
-                    <label>351</label>
-                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
-                </item>
-                <item id="349">
-                    <visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>
-                    <thumb>icons/Zet uit.png</thumb>
-                    <label>351</label>
-                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
-                </item>
             </content>
+        
         </control>
         <control type="group" description="RSS">
             <control type="rss" description="RSS Feed">
