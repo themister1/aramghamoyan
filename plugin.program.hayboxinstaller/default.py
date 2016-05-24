@@ -1,97 +1,44 @@
-import xbmc, xbmcaddon, xbmcgui, xbmcplugin,os,base64,sys,xbmcvfs
+import xbmc, xbmcaddon, xbmcgui, xbmcplugin,os,sys
 import shutil
 import urllib2,urllib
 import re
 import extract
-import downloader
 import time
+import downloader
 import plugintools
-from addon.common.addon import Addon
-from addon.common.net import Net
+import zipfile
+import ntpath
 
 
 USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
-addon_id = 'plugin.program.hayboxinstaller'
-ADDON = xbmcaddon.Addon(id=addon_id)
-AddonID = 'plugin.program.hayboxinstaller'
-AddonTitle = "HAYbox Installer/Updater"
-dialog = xbmcgui.Dialog()
-net = Net()
-U = ADDON.getSetting('User')
-FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
-ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
-ART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id + '/resources/art/'))
-VERSION = "1.0.1"
-DBPATH = xbmc.translatePath('special://database')
-TNPATH = xbmc.translatePath('special://thumbnails');
-PATH = "HAYbox Installer"            
-BASEURL = "http://install.armoguy.ga"
-H = 'http://'
-EXCLUDES = ['plugin.program.hayboxinstaller','script.module.addon.common']
+base='http://www.dokitv.nl'
+ADDON=xbmcaddon.Addon(id='plugin.program.dokiinstaller')
+dialog = xbmcgui.Dialog()    
+VERSION = "1.0.0"
+PATH = "Dokitv"       
 
-def INDEX():
-    addDir('HAYbox Installatie/Update',BASEURL,2,ART+'icon.png',FANART,'')
+    
+def index():
+    addDir('HAYbox Install','',2,'','https://github.com/aramghamoyan/aramghamoyan/blob/master/plugin.program.hayboxinstaller/icon.png','')
+    addDir('HAYbox Update','',3,'','https://github.com/aramghamoyan/aramghamoyan/blob/master/plugin.program.hayboxinstaller/icon.png','')	
+    setView('movies', 'MAIN')
+	
+def install():
+    link = OPEN_URL('https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/installeren.xml').replace('\n','').replace('\r','')
+    match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
+    for name,url,iconimage,fanart,description in match:
+        addDir(name,url,1,iconimage,fanart,description, folder=False)
     setView('movies', 'MAIN')
 
-def BUILDMENU():
-    addDir('HAYbox Installeren','http://aram-design.nl/full.zip',5,ART+'icon.png',FANART,'')
-    addDir('HAYbox Updaten','http://aram-design.nl/update.zip',5,ART+'icon.png',FANART,'')
-    setView('movies', 'MAIN')
-
-def MAINTENANCE():
-    addDir('HAYbox Updaten','-',5,ART+'icon.png',FANART,'')
+def update():
+    link = OPEN_URL('https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/update.xml').replace('\n','').replace('\r','')
+    match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
+    for name,url,iconimage,fanart,description in match:
+        addDir(name,url,1,iconimage,fanart,description, folder=False)
     setView('movies', 'MAIN')
 	
 
-#################################
-####### POPUP TEXT BOXES ########
-#################################
-
-def TextBoxes(heading,announce):
-  class TextBox():
-    WINDOW=10147
-    CONTROL_LABEL=1
-    CONTROL_TEXTBOX=5
-    def __init__(self,*args,**kwargs):
-      xbmc.executebuiltin("ActivateWindow(%d)" % (self.WINDOW, )) # activate the text viewer window
-      self.win=xbmcgui.Window(self.WINDOW) # get window
-      xbmc.sleep(500) # give window time to initialize
-      self.setControls()
-    def setControls(self):
-      self.win.getControl(self.CONTROL_LABEL).setLabel(heading) # set heading
-      try: f=open(announce); text=f.read()
-      except: text=announce
-      self.win.getControl(self.CONTROL_TEXTBOX).setText(str(text))
-      return
-  TextBox()
-
-def facebook():
-    TextBoxes('HAYbox Installer (NL)', '[COLOR=red]DOKI [/COLOR]')
-        
-
-def WIZARD(name,url,description):
-    path = xbmc.translatePath(os.path.join('special://home/addons','packages'))
-    dp = xbmcgui.DialogProgress()
-    dp.create("HAYbox Installer/Updater","Downloaden ",'', 'Even geduld A.U.B.')
-    lib=os.path.join(path, name+'.zip')
-    try:
-       os.remove(lib)
-    except:
-       pass
-    downloader.download(url, lib, dp)
-    addonfolder = xbmc.translatePath(os.path.join('special://','home'))
-    time.sleep(2)
-    dp.update(0,"", "ZIP wordt uitgepakt - even geduld A.U.B.")
-    print '======================================='
-    print addonfolder
-    print '======================================='
-    extract.all(lib,addonfolder,dp)
-    dialog = xbmcgui.Dialog()
-    dialog.ok("HAYbox Installer/Updater", "Om alle instellingen goed te installeren moet HAYbox worden gesloten (force close). Klik op OK om HAYbox te sluiten.")
-    killxbmc()
-
- 
-        
+    
 def OPEN_URL(url):
     req = urllib2.Request(url)
     req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
@@ -99,13 +46,38 @@ def OPEN_URL(url):
     link=response.read()
     response.close()
     return link
+    
+    
+def wizard(name,url,description):
+    path = xbmc.translatePath(os.path.join('special://home/','temp'))
+    
+    if not os.path.exists(path):
+        os.makedirs(path)    
 
-###############################################################
-###FORCE CLOSE KODI - ANDROID ONLY WORKS IF ROOTED#############
-#######LEE @ COMMUNITY BUILDS##################################
+    lib=os.path.join(path, name+'.zip')
+    try:
+       os.remove(lib)
+    except:
+       pass
+    downloader.download(url, lib)
+    if os.path.exists(lib):
+        addonfolder = xbmc.translatePath(os.path.join('special://','home'))
+        time.sleep(2)
+        dp = xbmcgui.DialogProgress()
+        dp.create("HAYbox Installer","Downloaden gereeed..",'', 'Nu uitpakken')    
+        dp.update(0,"", "Extracting Zip Please Wait")
 
+        extract.all(lib,addonfolder,dp)
+        dp.close()
+        try: os.remove(lib)
+        except: pass        
+        dialog.ok("DOWNLOAD COMPLETE", 'Unfortunately the only way to get the new changes to stick is', 'to force close kodi. Click ok to force Kodi to close,', 'DO NOT use the quit/exit options in Kodi., If the Force close does not close for some reason please Restart Device or kill task manaully')
+        killxbmc()
+        
+      
+        
 def killxbmc():
-    choice = xbmcgui.Dialog().yesno('Sluit (Force Close) Kodi', 'HAYbox wordt nu gesloten', 'Wil je doorgaan?', nolabel='Nee, Annuleer',yeslabel='Ja, Sluiten')
+    choice = dialog.yesno('Force Close Kodi', 'You are about to close Kodi', 'Would you like to continue?', nolabel='No, Cancel',yeslabel='Yes, Close')
     if choice == 0:
         return
     elif choice == 1:
@@ -118,7 +90,7 @@ def killxbmc():
         except: pass
         try: os.system('killall -9 Kodi')
         except: pass
-        dialog.ok("[COLOR=red][B]LET OP!!![/COLOR][/B]", "Als je deze melding ziet is het niet gelukt om HAYbox te sluiten.", "Sluit HAYbox handmatig door de voeding van de box te halen.",'')
+        dialog.ok("[COLOR=red][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu.",'')
     elif myplatform == 'linux': #Linux
         print "############   try linux force close  #################"
         try: os.system('killall XBMC')
@@ -129,7 +101,7 @@ def killxbmc():
         except: pass
         try: os.system('killall -9 kodi.bin')
         except: pass
-        dialog.ok("[COLOR=red][B]LET OP!!![/COLOR][/B]", "Als je deze melding ziet is het niet gelukt om HAYbox te sluiten.", "Sluit HAYbox handmatig door de voeding van de box te halen.",'')
+        dialog.ok("[COLOR=red][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu.",'')
     elif myplatform == 'android': # Android  
         print "############   try android force close  #################"
         try: os.system('adb shell am force-stop org.xbmc.kodi')
@@ -140,7 +112,7 @@ def killxbmc():
         except: pass
         try: os.system('adb shell am force-stop org.xbmc')
         except: pass        
-        dialog.ok("[COLOR=yellow][B]INSTALLATIE HAYbox AFRONDEN[/COLOR][/B]", "Klik de HOME toets op je afstandsbediening en [COLOR=red][B]SLUIT[/COLOR][/B] KODI via Android Instellingen en herstart KODI")
+        dialog.ok("[COLOR=red][B]WARNING  !!![/COLOR][/B]", "Your system has been detected as Android, you ", "[COLOR=yellow][B]MUST[/COLOR][/B] force close XBMC/Kodi. [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu.","Either close using Task Manager (If unsure pull the plug).")
     elif myplatform == 'windows': # Windows
         print "############   try windows force close  #################"
         try:
@@ -159,7 +131,7 @@ def killxbmc():
             os.system('@ECHO off')
             os.system('TASKKILL /im XBMC.exe /f')
         except: pass
-        dialog.ok("[COLOR=red][B]LET OP!!![/COLOR][/B]", "Als je deze melding ziet is het niet gelukt om Kodi te sluiten.", "Sluit Kodi via de task manager en NIET via ALT F4",'')
+        dialog.ok("[COLOR=red][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lime]DO NOT[/COLOR] exit cleanly via the menu.","Use task manager and NOT ALT F4")
     else: #ATV
         print "############   try atv force close  #################"
         try: os.system('killall AppleTV')
@@ -169,9 +141,8 @@ def killxbmc():
         except: pass
         try: os.system('sudo initctl stop xbmc')
         except: pass
-        dialog.ok("[COLOR=red][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lime]DO NOT[/COLOR] exit via the menu.","iOS detected.  Press and hold both the Sleep/Wake and Home button for at least 10 seconds, until you see the Apple logo.")    
+        dialog.ok("[COLOR=red][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lime]DO NOT[/COLOR] exit via the menu.","Your platform could not be detected so just pull the power cable.")    
 
-        
 def platform():
     if xbmc.getCondVisibility('system.platform.android'):
         return 'android'
@@ -185,33 +156,18 @@ def platform():
         return 'atv2'
     elif xbmc.getCondVisibility('system.platform.ios'):
         return 'ios'
-    
 
-def FRESHSTART(params):
-    plugintools.log("freshstart.main_list "+repr(params)); yes_pressed=plugintools.message_yes_no(AddonTitle,"Wil je de standaard instellingen terug zetten van je Kodi installatie?")
-    if yes_pressed:
-        addonPath=xbmcaddon.Addon(id=AddonID).getAddonInfo('path'); addonPath=xbmc.translatePath(addonPath); 
-        xbmcPath=os.path.join(addonPath,"..",".."); xbmcPath=os.path.abspath(xbmcPath); plugintools.log("freshstart.main_list xbmcPath="+xbmcPath); failed=False
-        try:
-            for root, dirs, files in os.walk(xbmcPath,topdown=True):
-                dirs[:] = [d for d in dirs if d not in EXCLUDES]
-                for name in files:
-                    try: os.remove(os.path.join(root,name))
-                    except:
-                        if name not in ["Addons15.db","MyVideos75.db","Textures13.db","xbmc.log"]: failed=True
-                        plugintools.log("Error removing "+root+" "+name)
-                for name in dirs:
-                    try: os.rmdir(os.path.join(root,name))
-                    except:
-                        if name not in ["Database","userdata"]: failed=True
-                        plugintools.log("Error removing "+root+" "+name)
-            if not failed: plugintools.log("freshstart.main_list All user files removed, you now have a clean install"); plugintools.message(AddonTitle,"Schone Installatie is klaar, je hebt nu een verse Kodi configuratie met KAOSbox Install. Herstart nu je box!")
-            else: plugintools.log("freshstart.main_list User files partially removed"); plugintools.message(AddonTitle,"Schone Installatie is klaar, je hebt nu een verse Kodi configuratie met KAOSbox Install. Herstart nu je box!")
-        except: plugintools.message(AddonTitle,"Problem found","Your settings has not been changed"); import traceback; plugintools.log(traceback.format_exc()); plugintools.log("freshstart.main_list NOT removed")
-        plugintools.add_item(action="",title="Kodi Sluiten",folder=False)
-    else: plugintools.message(AddonTitle,"Er is geen schone installatie gedaan."); plugintools.add_item(action="",title="Klaar",folder=False)
 
-          
+def addDir(name,url,mode,iconimage,fanart,description,folder=True):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&fanart="+urllib.quote_plus(fanart)+"&description="+urllib.quote_plus(description)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name, "Plot": description } )
+        liz.setProperty( "Fanart_Image", fanart )
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=folder)
+        return ok
+        
+       
         
 def get_params():
         param=[]
@@ -230,23 +186,6 @@ def get_params():
                                 param[splitparams[0]]=splitparams[1]
                                 
         return param
-
-N = base64.decodestring('')
-T = base64.decodestring('L2FkZG9ucy50eHQ=')
-B = base64.decodestring('')
-F = base64.decodestring('')
-def addDir(name,url,mode,iconimage,fanart,description):
-        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&fanart="+urllib.quote_plus(fanart)+"&description="+urllib.quote_plus(description)
-        ok=True
-        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
-        liz.setInfo( type="Video", infoLabels={ "Title": name, "Plot": description } )
-        liz.setProperty( "Fanart_Image", fanart )
-        if mode==5 :
-            ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-        else:
-            ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-        return ok
-
         
                       
 params=get_params()
@@ -298,26 +237,18 @@ def setView(content, viewType):
     if ADDON.getSetting('auto-view')=='true':
         xbmc.executebuiltin("Container.SetViewMode(%s)" % ADDON.getSetting(viewType) )
         
-
-if mode==None or url==None or len(url)<1:
-        INDEX()
-
-elif mode==2:
-        BUILDMENU()
-
-elif mode==3:
-        MAINTENANCE()
+        
+if mode==None:
+	index()
 		
-	
-elif mode==5:
-        WIZARD(name,url,description)
-
-elif mode==6:        
-	FRESHSTART(params)
-	
-elif mode==8:
-       facebook()
-       
-
+elif mode==1:
+	wizard(name,url,description)
+ 
+elif mode==2:
+	install()
+		
+elif mode==3:
+	update()		
         
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
+

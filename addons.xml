@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.hayboxinstaller" name="HAYbox Installer/Updater" version="1.0.1" provider-name="ArmoGuy">
+<addon id="plugin.program.hayboxinstaller" name="HAYbox Installer/Updater" version="1.0.2" provider-name="Aram Ghamoyan">
   <requires>
     	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">HAYbox Installer</summary>
-    <description lang="en">Installeer de build HAYbox by ArmoGuy ||| REPO: http://install.armoguy.ga</description>
+    <description lang="en">Installeer de build HAYbox by Aram Ghamoyan</description>
     <platform>all</platform>
   </extension>
 </addon>
