@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="Scrollanim">
+        <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="250" reversible="true">Conditional</animation>
+    </include>
+    <include name="Keyboardbuttons">
+        <width>130</width>
+        <height>50</height>
+        <texturenofocus border="3">keyb/plain.png</texturenofocus>
+        <texturefocus border="3" colordiffuse="$VAR[diffusekey]">keyb/selectedalt.png</texturefocus>
+        <alttexturenofocus border="3">keyb/plainalt.png</alttexturenofocus>
+        <alttexturefocus border="3" colordiffuse="$VAR[diffusekey]">keyb/selectedalt.png</alttexturefocus>
+        <align>center</align>
+        <aligny>center</aligny>
+        <textoffsetx>0</textoffsetx>
+        <font>size36B</font>
+		<textcolor>keys</textcolor>
+		<focusedcolor>keys2</focusedcolor>
+    </include>
+    <!--PANEL FOR BIG LIST-->
+	<include name="left_Panel_list1">
+        <control type="group" description="ICON no PLOT">
+            <visible>Skin.HasSetting(plotinfolist1)</visible>
+            <animation effect="fade" time="400">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <control type="image" description="Thumb">
+                <centerleft>480</centerleft>
+                <centertop>540</centertop>
+                <width>800</width>
+                <height>900</height>
+                <include>Icon_Fade</include>
+                <bordersize>4</bordersize>
+                <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+                <aspectratio aligny="center">keep</aspectratio>
+            </control>
+            <control type="image">
+                <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                <posx>640</posx>
+                <top>850</top>
+                <height>100</height>
+                <width>100</width>
+                <aspectratio>keep</aspectratio>
+                <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+            </control>
+        </control>
+        <control type="group" description="ICON + PLOT">
+            <top>100</top>
+            <visible>!Skin.HasSetting(plotinfolist1)</visible>
+            <animation effect="fade" time="400">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <control type="group">
+                <visible>!Container.Content(episodes)</visible>
+                <control type="image" description="Thumb">
+                    <top>-45</top>
+		    <centerleft>496</centerleft>
+                    <width>376</width>
+                    <height>515</height>
+                    <include>Icon_Fade</include>
+                    <texture background="true">$VAR[Locandine]</texture>
+                    <bordersize>4</bordersize>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Container.Content(episodes)</visible>
+                <control type="image" description="Thumb">
+                    <top>-45</top>
+		    <centerleft>480</centerleft>
+                    <width>756</width>
+                    <height>515</height>
+                    <include>Icon_Fade</include>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <bordersize>4</bordersize>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="group" description="EPISODES BADGES">
+                <top>435</top>
+                <left>285</left>
+                <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <animation effect="fade" time="160" delay="100">Visible</animation>
+                <animation effect="fade" end="0">Hidden</animation>
+                <control type="image">
+                    <height>55</height>
+                    <width>70</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>badges/Badgecount.png</texture>
+                </control>
+                <control type="label" description="Label2">
+                    <top>6</top>
+		    <left>-6</left>
+		    <height>40</height>
+                    <width>80</width>
+                    <font>size30</font>
+                    <align>center</align>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <top>523</top>
+                <centerleft>490</centerleft>
+                <width>840</width>
+                <height>50</height>
+                <orientation>horizontal</orientation>
+                <itemgap>6</itemgap>
+                <align>center</align>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.FileExtension,badges/Video/,.png]</texture>
+                </control>
+            </control>
+            <control type="image">
+                <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                <left>828</left>
+                <top>498</top>
+                <height>58</height>
+                <width>58</width>
+                <aspectratio>keep</aspectratio>
+                <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+            </control>
+            <control type="image" description="Stars">
+                <visible>!IsEmpty(ListItem.Rating)</visible>
+                <centerleft>490</centerleft>
+                <top>455</top>
+                <height>80</height>
+                <width>250</width>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="White">$INFO[ListItem.Rating,badges/,.png]</texture>
+            </control>
+            <!--control type="image">
+                <centerleft>500</centerleft>
+                <top>566</top>
+                <width>756</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+            </control-->
+            <control type="textbox" description="plot">
+                <centerleft>480</centerleft>
+                <top>585</top>
+                <width>800</width>
+                <height>275</height>
+                <align>justify</align>
+                <font>size26</font>
+                <label>[COLOR=$VAR[diffusetext]]$INFO[ListItem.Plot][/COLOR]</label>
+            </control>
+            <!--control type="image">
+                <centerleft>480</centerleft>
+                <top>886</top>
+                <width>756</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+            </control-->
+        </control>
+    </include>
+    <include name="left_Panel_list3">
+        <control type="group" description="ICON + PLOT">
+            <top>100</top>
+            <visible>!Skin.HasSetting(plotinfolist1)</visible>
+            <animation effect="fade" time="400">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <control type="group">
+                <visible>!Container.Content(episodes)</visible>
+                <control type="image" description="Thumb">
+                    <top>-45</top>
+		    <centerleft>496</centerleft>
+                    <width>376</width>
+                    <height>515</height>
+                    <include>Icon_Fade</include>
+                    <texture background="true">$VAR[Locandine]</texture>
+                    <bordersize>4</bordersize>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Container.Content(episodes)</visible>
+                <control type="image" description="Thumb">
+                    <top>-45</top>
+		    <centerleft>480</centerleft>
+                    <width>756</width>
+                    <height>515</height>
+                    <include>Icon_Fade</include>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <bordersize>4</bordersize>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="group" description="EPISODES BADGES">
+                <top>435</top>
+                <left>285</left>
+                <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <animation effect="fade" time="160" delay="100">Visible</animation>
+                <animation effect="fade" end="0">Hidden</animation>
+                <control type="image">
+                    <height>55</height>
+                    <width>70</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>badges/Badgecount.png</texture>
+                </control>
+                <control type="label" description="Label2">
+                    <top>6</top>
+		    <left>-6</left>
+		    <height>40</height>
+                    <width>80</width>
+                    <font>size30</font>
+                    <align>center</align>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <top>523</top>
+                <centerleft>490</centerleft>
+                <width>840</width>
+                <height>50</height>
+                <orientation>horizontal</orientation>
+                <itemgap>6</itemgap>
+                <align>center</align>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(tvshows) | Container.Content(Seasons)]</visible>
+                    <height>35</height>
+                    <width>91</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.FileExtension,badges/Video/,.png]</texture>
+                </control>
+            </control>
+            <control type="image">
+                <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                <left>828</left>
+                <top>498</top>
+                <height>58</height>
+                <width>58</width>
+                <aspectratio>keep</aspectratio>
+                <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+            </control>
+            <control type="image" description="Stars">
+                <visible>!IsEmpty(ListItem.Rating)</visible>
+                <centerleft>490</centerleft>
+                <top>455</top>
+                <height>80</height>
+                <width>250</width>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="White">$INFO[ListItem.Rating,badges/,.png]</texture>
+            </control>
+            <!--control type="image">
+                <centerleft>500</centerleft>
+                <top>566</top>
+                <width>756</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+            </control-->
+            <control type="textbox" description="plot">
+                <centerleft>480</centerleft>
+                <top>585</top>
+                <width>800</width>
+                <height>275</height>
+                <align>justify</align>
+                <font>size26</font>
+                <label>[COLOR=$VAR[diffusetext]]$INFO[ListItem.Plot][/COLOR]</label>
+            </control>
+            <!--control type="image">
+                <centerleft>480</centerleft>
+                <top>886</top>
+                <width>756</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+            </control-->
+        </control>
+    </include>
+    <include name="left_Panel_livetv">
+        <control type="group" description="Thumbs with info">
+            <top>80</top>
+            <posx>120</posx>
+            <animation effect="fade" time="400">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <include>Unwatched</include>
+            <control type="image">
+                <top>550</top>
+                <width>756</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+            </control>
+            <control type="textbox" description="plot">
+                <top>550</top>
+                <width>756</width>
+                <height>350</height>
+                <align>justify</align>
+                <label>[COLOR=$VAR[diffusetext]]$INFO[ListItem.Plot][/COLOR]</label>
+            </control>
+            <control type="image">
+                <top>900</top>
+                <width>756</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+            </control>
+        </control>
+    </include>
+    <include name="left_Panel_music">
+        <control type="group" description="Thumbs info">
+            <visible>![Container.Content(Songs)]</visible>
+            <visible>[!IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
+            <animation effect="fade" time="400">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <control type="image" description="Fanart">
+                <visible>Container.Content(artists)</visible>
+                <centerleft>480</centerleft>
+                <centertop>280</centertop>
+                <width>800</width>
+                <height>430</height>
+                <include>Icon_Fade</include>
+                <bordersize>2</bordersize>
+                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image" description="AlbumCover">
+                <visible>Container.Content(Albums)</visible>
+                <centerleft>480</centerleft>
+                <centertop>280</centertop>
+                <width>430</width>
+                <height>430</height>
+                <include>Icon_Fade</include>
+                <bordersize>2</bordersize>
+                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="textbox">
+                <centerleft>480</centerleft>
+                <top>540</top>
+                <width>800</width>
+                <height>480</height>
+                <align>justify</align>
+                <font>size26</font>
+                <autoscroll delay="6000" time="5000" repeat="10000"></autoscroll>
+                <label>[COLOR=$VAR[diffusetext]]$VAR[Plots][/COLOR]</label>
+            </control>
+            <control type="image">
+               <centerleft>480</centerleft>
+                <top>539</top>
+                <width>880</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+            </control>
+             <control type="image">
+               <centerleft>480</centerleft>
+                <top>1020</top>
+                <width>880</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+            </control>
+        </control>
+        <control type="group" description="Thumbs no info">
+            <visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
+            <visible>IsEmpty(ListItem.Property(Album_Description))</visible>
+            <animation effect="fade" delay="100" time="300">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <control type="image" description="Thumb">
+                <animation effect="slide" end="0,-130" condition="Container.content(Songs)">Conditional</animation>
+                <centerleft>480</centerleft>
+                <centertop>540</centertop>
+                <width>660</width>
+                <height>660</height>
+                <include>Icon_Fade</include>
+                <bordersize>2</bordersize>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio aligny="center">keep</aspectratio>
+            </control>
+        </control>
+    </include>
+    <include name="left_Panel_square">
+    <control type="group" description="Thumbs info">
+      <visible>![Container.Content(Movies) | Container.Content(Seasons) | Container.Content(tvshows) | Container.Content(Songs)]</visible>
+      <visible>[!IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
+      <left>151</left>
+      <animation effect="fade" time="400">Visible</animation>
+      <animation effect="fade" time="0">Hidden</animation>
+      <control type="image" description="Fanart">
+        <visible>Container.Content(artists)</visible>
+        <left>0</left>
+        <width>693</width>
+        <height>705</height>
+        <include>Icon_Fade</include>
+        <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+        <aspectratio aligny="bottom">keep</aspectratio>
+      </control>
+      <control type="image">
+        <visible>Container.Content(Albums)</visible>
+        <top>46</top>
+        <width>693</width>
+        <height>705</height>
+        <include>Icon_Fade</include>
+        <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="bottom">keep</aspectratio>
+      </control>
+      <control type="textbox">
+	<posx>-5</posx>
+        <top>760</top>
+        <width>705</width>
+        <height>269</height>
+        <align>left</align>
+        <autoscroll delay="3000" time="5000" repeat="10000"></autoscroll>
+        <label>$VAR[Plots]</label>
+      </control>
+    </control>
+    <control type="group" description="Thumbs no info">
+      <left>153</left>
+      <top>54</top>
+      <visible>!container.content(songs)</visible>
+      <visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
+      <visible>IsEmpty(ListItem.Property(Album_Description))</visible>
+      <animation effect="fade" delay="100" time="300">Visible</animation>
+      <animation effect="fade" time="0">Hidden</animation>
+      <control type="image" description="Thumb">
+        <left>0</left>
+        <width>688</width>
+        <height>699</height>
+        <include>Icon_Fade</include>
+        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <aspectratio aligny="center">keep</aspectratio>
+      </control>
+    </control>
+    <control type="group" description="Songs">
+      <visible>Container.content(Songs) + !ListItem.IsFolder</visible>
+      <animation effect="fade" time="400">Visible</animation>
+      <animation effect="fade" time="0">Hidden</animation>
+      <left>0</left>
+      <control type="group" description="Music Square">
+        <left>153</left>
+        <top>49</top>
+        <!--control type="image" description="Thumb Reflection">
+          <visible>!IsEmpty(ListItem.Thumb)</visible>
+          <top>600</top>
+          <width>650</width>
+          <height>650</height>
+          <include>Icon_Fade</include>
+          <texture background="true" diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+          <aspectratio>keep</aspectratio>
+        </control-->
+        <control type="image" description="Thumb">
+	  <width>688</width>
+          <height>699</height>
+          <include>Icon_Fade</include>
+          <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Thumb]</texture>
+          <aspectratio aligny="bottom">keep</aspectratio>
+        </control>
+      </control>
+    </control>
+  </include>
+    <include name="left_Panel_music_player">
+
+
+				<control type="group" description="LEFT PANEL DEFAULT">
+					<visible>!Player.HasAudio</visible>
+					<control type="group" description="Thumbs info">
+						<visible>![Container.Content(Songs)]</visible>
+						<visible>[!IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
+						<animation effect="fade" time="400">Visible</animation>
+						<animation effect="fade" time="0">Hidden</animation>
+						<control type="image" description="Fanart">
+							<visible>Container.Content(artists)</visible>
+							<centerleft>480</centerleft>
+							<centertop>280</centertop>
+							<width>800</width>
+							<height>430</height>
+							<include>Icon_Fade</include>
+							
+							<bordersize>2</bordersize>
+							<texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="image" description="AlbumCover">
+							<visible>Container.Content(Albums)</visible>
+							<centerleft>480</centerleft>
+							<centertop>280</centertop>
+							<width>430</width>
+							<height>430</height>
+							<include>Icon_Fade</include>
+							<bordersize>2</bordersize>
+							<texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<centerleft>480</centerleft>
+							<top>540</top>
+							<width>800</width>
+							<height>480</height>
+							<align>justify</align>
+							<font>size26</font>
+							<autoscroll delay="6000" time="5000" repeat="10000"></autoscroll>
+							<label>[COLOR=$VAR[diffusetext]]$VAR[Plots][/COLOR]</label>
+						</control>
+						<control type="image">
+							<centerleft>480</centerleft>
+							<top>539</top>
+							<width>880</width>
+							<height>1</height>
+							<texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+						</control>
+						<control type="image">
+							<centerleft>480</centerleft>
+							<top>1020</top>
+							<width>880</width>
+							<height>1</height>
+							<texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+						</control>
+					</control>
+					<control type="group" description="Thumbs no info">
+						<visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
+						<visible>IsEmpty(ListItem.Property(Album_Description))</visible>
+						<animation effect="fade" delay="100" time="300">Visible</animation>
+						<animation effect="fade" time="0">Hidden</animation>
+						<control type="image" description="Thumb">
+							<animation effect="slide" end="0,-130" condition="Container.content(Songs)">Conditional</animation>
+							<centerleft>480</centerleft>
+							<centertop>540</centertop>
+							<width>660</width>
+							<height>660</height>
+							<include>Icon_Fade</include>
+							<bordersize>2</bordersize>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center">keep</aspectratio>
+						</control>
+					</control>
+				</control>
+
+
+
+				<control type="group" description="LEFT PANEL - PLAYER">
+					<visible>Player.HasAudio</visible>
+					<control type="visualisation" id="2" description="Visualisation">
+						<posx>20</posx>
+						<top>400</top>
+						<width>920</width>
+						<height>518</height>
+					</control>
+
+					
+					<control type="image">
+						<posx>-2</posx>
+						<top>840</top>
+						<width>962</width>
+						<height>240</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="AA000000">$VAR[OSDbgimg]</texture>					
+					</control>
+					
+					
+					<control type="label">
+                        <posx>20</posx>
+                        <top>970</top>
+                        <height>30</height>
+                        <width>70</width>
+                        <align>left</align>
+                        <label>$INFO[Player.Time]</label>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                        <font>size21</font>
+                    </control>
+					<control type="progress" description="Progress Bar">
+						<posx>100</posx>
+						<top>980</top>
+						<width>750</width>
+						<height>26</height>
+						<texturebg>Seekbar/ProgressBG.png</texturebg>
+						<midtexture colordiffuse="$VAR[osdprogresscolor]">Seekbar/ProgressM.png</midtexture>
+						<righttexture colordiffuse="$VAR[osdmarkercolor]">Seekbar/ProgressR.png</righttexture>
+						<overlaytexture>-</overlaytexture>
+						<info>Player.Progress</info>
+						<visible>true</visible>
+					</control>                       
+					<control type="label">
+                        <posx>936</posx>
+                        <top>970</top>
+                        <height>30</height>
+                        <width>70</width>
+                        <align>right</align>
+                        <label>$INFO[Player.TimeRemaining,-]</label>
+                        <font>size21</font>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                    </control>
+
+					
+                    <control type="label" description="Title label">
+                        <posx>20</posx>
+                        <top>860</top>
+                        <width>920</width>
+                        <scroll>true</scroll>
+                        <align>center</align>
+                        <font>size33</font>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                        <animation effect="fade" time="200">VisibleChange</animation>
+                        <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
+                    </control>
+                    <control type="label" description="Album">
+                        <posx>20</posx>
+                        <top>890</top>
+                        <width>920</width>
+                        <label>$INFO[MusicPlayer.Album]</label>
+                        <align>center</align>
+                        <font>size26</font>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                    </control>
+                    <control type="label" description="Track position">
+                        <posx>850</posx>
+                        <top>920</top>
+                        <width>100</width>
+                        <align>center</align>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                        <animation effect="fade" time="200">VisibleChange</animation>
+                        <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
+                        <font>size21</font>
+                    </control>
+
+					
+					<control type="group" id="101">
+						<posx>66</posx>
+						<top>886</top>
+						<control type="list" id="102">
+							<onright>102</onright>
+							<onleft>102</onleft>
+							<onup>51</onup>
+							<ondown>51</ondown>
+							<width>920</width>
+							<height>230</height>
+							<orientation>horizontal</orientation>
+							<itemlayout width="90">
+								<control type="image">
+									<posx>0</posx>
+									<top>100</top>
+									<width>90</width>
+									<height>98</height>
+									<texture>$INFO[ListItem.thumb]</texture>
+								</control>
+							</itemlayout>
+							<focusedlayout width="90">
+								<control type="image">
+									<animation effect="zoom" center="auto" end="130" time="200" reversible="true">Focus</animation>
+									<animation effect="zoom" center="auto" start="130" end="100" time="100" reversible="true">unFocus</animation>					
+									<posx>0</posx>
+									<top>100</top>
+									<width>90</width>
+									<height>98</height>
+									<texture>$INFO[ListItem.label]</texture>
+								</control>
+							</focusedlayout>
+							<content>
+								<item id="3">
+									<thumb>Seekbar/OSDPreviousNF.png</thumb>
+									<label>Seekbar/OSDPreviousFO.png</label>
+									<onclick>Playlist.PlayOffset(-1)</onclick>
+								</item>
+								<item id="4">
+									<thumb>Seekbar/OSDRWNF.png</thumb>
+									<label>Seekbar/OSDRWFO.png</label>
+									<onclick>PlayerControl(Rewind)</onclick>
+								</item>
+								<item id="5">
+									<visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
+									<thumb>Seekbar/OSDPauseNF.png</thumb>
+									<label>Seekbar/OSDPauseFO.png</label>
+									<onclick>PlayerControl(Play)</onclick>
+								</item>
+								<item id="5">
+									<visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+									<thumb>Seekbar/OSDPlayNF.png</thumb>
+									<label>Seekbar/OSDPlayFO.png</label>
+									<onclick>PlayerControl(Play)</onclick>
+								</item>
+								<item id="6">
+									<thumb>Seekbar/OSDStopNF.png</thumb>
+									<label>Seekbar/OSDStopFO.png</label>
+									<onclick>PlayerControl(Stop)</onclick>
+								</item>
+								<item id="7">
+									<thumb>Seekbar/OSDFWNF.png</thumb>
+									<label>Seekbar/OSDFWFO.png</label>
+									<onclick>PlayerControl(Forward)</onclick>
+								</item>
+								<item id="8">
+									<thumb>Seekbar/OSDNextNF.png</thumb>
+									<label>Seekbar/OSDNextFO.png</label>
+									<onclick>Playlist.PlayOffset(1)</onclick>
+								</item>
+								<item id="2">
+									<visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
+									<thumb>MusicOSD/OSDRepeatNF.png</thumb>
+									<label>MusicOSD/OSDRepeatFO.png</label>
+									<onclick>XBMC.PlayerControl(Repeat)</onclick>
+								</item>
+								<item id="2">
+									<thumb>MusicOSD/OSDRepeatOneNF.png</thumb>
+									<label>MusicOSD/OSDRepeatOneFO.png</label>
+									<onclick>XBMC.PlayerControl(Repeat)</onclick>
+									<visible>Playlist.IsRepeatOne</visible>
+								</item>
+								<item id="2">
+									<thumb>MusicOSD/OSDRepeatAllNF.png</thumb>
+									<label>MusicOSD/OSDRepeatAllFO.png</label>
+									<onclick>XBMC.PlayerControl(Repeat)</onclick>
+									<visible>Playlist.IsRepeat</visible>
+								</item>					
+								<item id="9">
+									<visible>Playlist.IsRandom</visible>
+									<thumb>MusicOSD/OSDRandomOnNF.png</thumb>
+									<label>MusicOSD/OSDRandomOnFO.png</label>
+									<onclick>PlayerControl(Random)</onclick>
+								</item>
+								<item id="9">
+									<visible>!Playlist.IsRandom</visible>
+									<thumb>MusicOSD/OSDRandomOffNF.png</thumb>
+									<label>MusicOSD/OSDRandomOffFO.png</label>
+									<onclick>PlayerControl(Random)</onclick>
+								</item>	
+								<item id="254">
+									<thumb>Seekbar/OSDMenuNF.png</thumb>
+									<label>Seekbar/OSDMenuFO.png</label>
+									<onclick>SetFocus(9000)</onclick>
+								</item>
+							</content>
+						</control>
+					</control>
+				</control>	
+		
+		
+    </include>		
+    <include name="SlimListItemCount">
+        <animation effect="slide" start="0,0" end="0,-405" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-324" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-324" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-243" time="0" condition="StringCompare(Container.NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-243" time="0" condition="StringCompare(Container.NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-162" time="0" condition="StringCompare(Container.NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-162" time="0" condition="StringCompare(Container.NumItems,7)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,8)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,9)">conditional</animation>
+    </include>
+    <include name="LargeListItemCount">
+        <animation effect="slide" start="0,0" end="0,-333" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container.NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container.NumItems,5)">conditional</animation>
+    </include>
+    <include name="LargeListSlider">
+    <control type="group" description="Slider">
+      <include>Scrollanim</include>
+      <include>Slider2</include>
+      <animation condition="Container.Position(0)" effect="slide" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(1)" effect="slide" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(2)" effect="slide" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(4)" effect="slide" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(5)" effect="slide" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(6)" effect="slide" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(7)" effect="slide" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
+    </control>
+  </include>
+  <include name="SlimListSlider">
+    <control type="group" description="Slider">
+      <include>Scrollanim</include>
+      <include>slider</include>
+      <animation condition="Container.Position(0)" effect="slide" end="0,-405" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(1)" effect="slide" end="0,-324" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(2)" effect="slide" end="0,-243" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(3)" effect="slide" end="0,-162" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(4)" effect="slide" end="0,-81" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(6)" effect="slide" end="0,81" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(7)" effect="slide" end="0,162" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(8)" effect="slide" end="0,243" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(9)" effect="slide" end="0,324" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(10)" effect="slide" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
+      </control>
+    </include>
+    <include name="FullscreenInfoLabel">
+        <posx>400</posx>
+        <width>1120</width>
+        <scroll>false</scroll>
+        <align>center</align>
+        <font>size42</font>
+        <textcolor>White</textcolor>
+    </include>
+    <include name="MusicInfo">
+        <control type="group" description="Songs and Music Videos">
+            <visible>!ListItem.IsFolder</visible>
+            <control type="group">
+                <top>785</top>
+                <control type="label" description="Title">
+                    <posx>111</posx>
+                    <font>size33</font>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <width>880</width>
+                    <height>36</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Title]</label>
+                </control>
+                <control type="image" description="Rating">
+                    <posx>111</posx>
+                    <top>42</top>
+                    <height>27</height>
+                    <width>150</width>
+                    <colordiffuse>black</colordiffuse>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture colordiffuse="White">$INFO[ListItem.StarRating]</texture>
+                </control>
+                <control type="image" description="Separator">
+                    <top>80</top>
+                    <posx>60</posx>
+                    <height>1</height>
+                    <width>880</width>
+                    <aspectratio>stretch</aspectratio>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+                </control>
+		<control type="image" description="Separator">
+                    <top>230</top>
+                    <posx>60</posx>
+                    <height>1</height>
+                    <width>880</width>
+                    <aspectratio>stretch</aspectratio>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line1.png</texture>
+                </control>
+                <control type="grouplist" description="Labels">
+                    <posx>111</posx>
+                    <top>85</top>
+                    <width>880</width>
+                    <orientation>vertical</orientation>
+                    <control type="label" description="Album">
+                        <font>size26</font>
+                        <width>880</width>
+                        <height>30</height>
+			<align>left</align>
+                        <scroll>false</scroll>
+                        <label>  $LOCALIZE[558]:  [COLOR=White]$INFO[ListItem.Album][/COLOR]</label>
+                    </control>
+                    <control type="label" description="Genre">
+                        <font>size26</font>
+                        <width>880</width>
+                        <height>30</height>
+			<align>left</align>
+                        <label>   $LOCALIZE[515]:  [COLOR=White]$INFO[ListItem.Genre][/COLOR]</label>
+                    </control>
+                    <control type="label" description="Type">
+                        <font>size26</font>
+                        <width>880</width>
+                        <height>30</height>
+			<align>left</align>
+                        <label>     $LOCALIZE[564]:  [COLOR=White]$INFO[ListItem.FileExtension][/COLOR]</label>
+                    </control>
+                    <control type="label" description="Duration">
+                        <font>size26</font>
+			<posx>150</posx>
+                        <width>880</width>
+                        <height>30</height>
+			<align>left</align>
+                        <label> Length:  [COLOR=White]$INFO[ListItem.Duration][/COLOR]</label>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="MusicRating">
+        <height>24</height>
+        <width>135</width>
+        <aspectratio align="right">keep</aspectratio>
+        <texture colordiffuse="White">$INFO[ListItem.StarRating]</texture>
+    </include>
+    <include name="52MainLabel">
+        <posx>30</posx>
+        <height>81</height>
+        <width>900</width>
+        <aligny>center</aligny>
+        <scroll>false</scroll>
+        <font>size28</font>
+        <textcolor>$VAR[diffusetext]</textcolor>
+        <shadowcolor>-</shadowcolor>
+    </include>
+    <include name="52Label2">
+        <posx>42r</posx>
+        <height>81</height>
+        <width>120</width>
+        <font>size28</font>
+        <scroll>false</scroll>
+        <align>right</align>
+    </include>
+    <include name="52Label2FO">
+        <posx>42r</posx>
+        <height>81</height>
+        <width>120</width>
+        <font>size28</font>
+        <scroll>false</scroll>
+        <textcolor>$VAR[diffusetext]</textcolor>
+        <align>right</align>
+    </include>
+    <include name="BigListTitle">
+        <posx>128</posx>
+        <top>12</top>
+        <height>50</height>
+        <width>720</width>
+        <aligny>center</aligny>
+        <font>size30</font>
+        <scroll>false</scroll>
+        <textcolor>$VAR[diffusetext]</textcolor>
+    </include>
+    <include name="BigListTitleFO">
+        <posx>128</posx>
+        <top>12</top>
+        <height>50</height>
+        <width>720</width>
+        <aligny>center</aligny>
+        <font>size30</font>
+        <scroll>true</scroll>
+        <textcolor>$VAR[textfo]</textcolor>
+    </include>
+    <include name="BigListDetails">
+        <posx>128</posx>
+        <top>63</top>
+        <height>33</height>
+        <width>350</width>
+        <font>size28</font>
+        <textcolor>$VAR[diffusetext]</textcolor>
+        <scroll>false</scroll>
+    </include>
+    <include name="BigListDetailsFO">
+        <posx>128</posx>
+        <top>63</top>
+        <height>33</height>
+        <width>350</width>
+        <font>size28</font>
+        <textcolor>$VAR[diffusetext]</textcolor>
+    </include>
+    <include name="Watched_Marks">
+        <control type="image">
+            <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+            <height>81</height>
+            <width>30</width>
+            <texture>$VAR[WatchStatus,overlay/List/]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+    </include>	
+    <include name="Watched_Marks2">
+        <control type="image">
+            <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+            <posx>20r</posx>
+            <height>81</height>
+            <width>30</width>
+            <texture>$VAR[WatchStatus,overlay/List/]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+    </include>		
+    <include name="Watched_MarksLW">
+        <control type="image">
+            <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+            <posx>8</posx>
+            <height>111</height>
+            <width>30</width>
+            <texture>$VAR[WatchStatus,overlay/List/]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+    </include>
+    <include name="HD_Badge">
+        <control type="image">
+            <animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
+            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+            <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+            <posx>42r</posx>
+            <height>50</height>
+            <width>42</width>
+            <aspectratio>keep</aspectratio>
+            <texture>badges/720.png</texture>
+        </control>
+        <control type="image">
+            <visible>ListItem.IsStereoscopic</visible>
+            <top>33</top>
+            <posx>42r</posx>
+            <height>50</height>
+            <width>42</width>
+            <aspectratio>keep</aspectratio>
+            <texture>badges/3d.png</texture>
+        </control>
+    </include>
+    <include name="HD_Badge_LL">
+        <control type="image">
+            <animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
+            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+            <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+            <top>14</top>
+            <posx>42r</posx>
+            <height>50</height>
+            <width>42</width>
+            <aspectratio>keep</aspectratio>
+            <texture>badges/720.png</texture>
+        </control>
+        <control type="image">
+            <visible>ListItem.IsStereoscopic</visible>
+            <top>50</top>
+            <posx>42r</posx>
+            <height>50</height>
+            <width>42</width>
+            <aspectratio>keep</aspectratio>
+            <texture>badges/3d.png</texture>
+        </control>
+        <control type="image">
+            <visible>SubString(ListItem.path,videodb://movies/sets/) + !SubString(ListItem.Label,..)</visible>
+            <top>28</top>
+            <posx>42r</posx>
+            <height>50</height>
+            <width>42</width>
+            <aspectratio>keep</aspectratio>
+            <texture>badges/sets.png</texture>
+        </control>
+    </include>
+    <include name="Unwatched">
+        <control type="group">
+            <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+            <animation effect="fade" time="160" delay="300">Visible</animation>
+            <animation effect="fade" end="0">Hidden</animation>
+            <control type="image">
+                <top>480</top>
+                <posx>140</posx>
+                <height>55</height>
+                <width>80</width>
+                <aspectratio>keep</aspectratio>
+                <texture>badges/Badgecount.png</texture>
+            </control>
+            <control type="label" description="Label2">
+                <top>480</top>
+                <posx>140</posx>
+                <height>44</height>
+                <width>80</width>
+                <font>size30</font>
+                <align>center</align>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+            </control>
+        </control>
+    </include>
+    <include name="Sets">
+        <control type="image" description="Sets">
+            <visible>Window.IsActive(MyVideoNav.xml)</visible>
+            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <posx>82r</posx>
+            <height>81</height>
+            <width>45</width>
+            <aspectratio align="right">keep</aspectratio>
+            <texture>badges/sets.png</texture>
+        </control>
+    </include>
+    <include name="SetsFO">
+        <control type="image" description="Sets">
+            <visible>Window.IsActive(MyVideoNav.xml)</visible>
+            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <posx>82r</posx>
+            <height>81</height>
+            <width>45</width>
+            <aspectratio align="right">keep</aspectratio>
+            <texture>badges/setsFO.png</texture>
+        </control>
+    </include>
+    <include name="SetsLW">
+        <control type="image" description="Sets">
+            <visible>Window.IsActive(MyVideoNav.xml)</visible>
+            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <posx>82r</posx>
+            <height>111</height>
+            <width>45</width>
+            <aspectratio align="right">keep</aspectratio>
+            <texture>badges/sets.png</texture>
+        </control>
+    </include>
+    <include name="SetsFOLW">
+        <control type="image" description="Sets">
+            <visible>Window.IsActive(MyVideoNav.xml)</visible>
+            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <posx>82r</posx>
+            <height>111</height>
+            <width>45</width>
+            <aspectratio align="right">keep</aspectratio>
+            <texture>badges/setsFO.png</texture>
+        </control>
+    </include>
+    <include name="LargeListAddonsLayout">
+        <itemlayout condition="container.content(addons)" width="802" height="111">
+            <control type="group">
+                <control type="image">
+                    <posx>9</posx>
+                    <top>9</top>
+                    <height>93</height>
+                    <width>93</width>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="label" description="Main Label">
+                <top>27</top>
+                <width>600</width>
+                <include>BigListTitle</include>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label" description="Label2">
+                <width>600</width>
+                <include>BigListDetails</include>
+                <label>$INFO[ListItem.Label2]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout condition="container.content(addons)" width="802" height="111">
+            <include>LargeSelector</include>
+            <control type="group">
+                <control type="image">
+                    <posx>9</posx>
+                    <top>9</top>
+                    <height>93</height>
+                    <width>93</width>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="label" description="Main Label">
+                <top>27</top>
+                <width>600</width>
+                <include>BigListTitleFO</include>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label" description="Label2">
+                <width>600</width>
+                <include>BigListDetailsFO</include>
+                <label>$INFO[ListItem.Label2]</label>
+            </control>
+            <control type="image">
+                <width>900</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="LargeListLayout">
+        <itemlayout width="890" height="111">
+            <include>Watched_MarksLW</include>
+            <include>HD_Badge_LL</include>
+            <control type="group">
+                <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>
+                <control type="label" description="Main Label">
+                    <posx>45</posx>
+                    <width>825</width>
+                    <include>BigListTitle</include>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+            </control>
+            <control type="group">
+                <control type="label" description="Label2">
+                    <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                    <posx>45</posx>
+                    <include>BigListDetails</include>
+                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+                </control>
+                <control type="label" description="Label2">
+                    <visible>container.content(episodes)</visible>
+                    <posx>0r</posx>
+                    <align>right</align>
+                    <include>BigListDetails</include>
+                    <label>$INFO[ListItem.Premiered]</label>
+                </control>
+                <control type="label" description="Label2">
+                    <visible>container.content(episodes) | Container.Content(songs)</visible>
+                    <posx>45</posx>
+                    <align>left</align>
+                    <include>BigListDetails</include>
+                    <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
+                </control>
+            </control>
+        </itemlayout>
+        <focusedlayout width="890" height="111">
+            <include>LargeSelector</include>
+            <include>Watched_MarksLW</include>
+            <include>HD_Badge_LL</include>
+            <control type="group">
+                <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                <control type="label" description="Main Label">
+                    <posx>45</posx>
+                    <width>815</width>
+					<textcolor>$VAR[textfo]</textcolor>
+                    <include>BigListTitleFO</include>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+            </control>
+            <control type="label" description="Label2">
+                <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                <posx>45</posx>
+                <width>630</width>
+				<textcolor>$VAR[textfo]</textcolor>
+                <include>BigListDetailsFO</include>
+                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+            </control>
+            <control type="label" description="Label2">
+                <visible>container.content(episodes) | Container.Content(songs)</visible>
+                <posx>45</posx>
+                <align>left</align>
+				<textcolor>$VAR[textfo]</textcolor>
+                <include>BigListDetailsFO</include>
+                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
+            </control>
+            <control type="label" description="Label2">
+                <visible>container.content(episodes)</visible>
+                <posx>0r</posx>
+                <width>480</width>
+                <align>right</align>
+                <include>BigListDetailsFO</include>
+				<textcolor>$VAR[textfo]</textcolor>
+                <label>$INFO[ListItem.Premiered]</label>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="ButtonMenu">
+        <description>used in Music slidup menu</description>
+        <width>525</width>
+        <height>69</height>
+        <font>size36</font>
+        <align>center</align>
+        <textoffsetx>20</textoffsetx>
+    </include>
+    <include name="SmallButt">
+        <width>200</width>
+        <height>40</height>
+        <font>size22</font>
+        <align>center</align>
+    </include>
+    <include name="DialogGLs">
+        <centerleft>960</centerleft>
+        <top>8</top>
+        <width>470</width>
+        <height>1064</height>
+        <itemgap>3</itemgap>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <align>center</align>
+        <scrolltime>200</scrolltime>
+    </include>
+	    <include name="DialogGLs2">
+        <centerleft>960</centerleft>
+        <top>8</top>
+        <width>470</width>
+        <height>1064</height>
+        <itemgap>3</itemgap>
+        <onleft>close</onleft>
+        <onright>close</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <align>center</align>
+        <scrolltime>200</scrolltime>
+    </include>
+    <include name="DialogButt">
+        <width>470</width>
+        <height>56</height>
+        <textoffsetx>0</textoffsetx>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>size33</font>
+    </include>
+    <include name="Genre51Commons">
+        <width>758</width>
+        <height>40</height>
+        <align>left</align>
+        <scroll>false</scroll>
+    </include>
+    <include name="TitleCommons">
+        <font>size39B</font>
+        <textcolor>$VAR[diffusetext]</textcolor>
+    </include>
+    <include name="DetailsVideoInfoCommons">
+        <posx>0</posx>
+        <width>270</width>
+        <height>38</height>
+        <align>left</align>
+        <scroll>false</scroll>
+        <font>size26</font>
+    </include>
+    <include name="Genre52Commons">
+        <top>-24</top>
+        <font>size27</font>
+        <textcolor>$VAR[diffusetext]</textcolor>
+        <width>762</width>
+        <height>36</height>
+        <align>left</align>
+        <scroll>false</scroll>
+    </include>
+    <include name="FlagsAudioInfo">
+        <control type="group" description="Furniture">
+            <control type="grouplist">
+                <posx>0</posx>
+                <width>690</width>
+                <height>36</height>
+                <itemgap>30</itemgap>
+                <orientation>horizontal</orientation>
+                <align>left</align>
+                <aligny>center</aligny>
+                <control type="image" description="Rating">
+                    <posx>102</posx>
+                    <top>1035</top>
+                    <height>36</height>
+                    <width>150</width>
+                    <colordiffuse>White</colordiffuse>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture colordiffuse="White">$INFO[ListItem.StarRating]</texture>
+                </control>
+                <control type="image">
+                    <visible>Container.content(songs) + !IsEmpty(ListItem.FileExtension)</visible>
+                    <posx>777</posx>
+                    <top>1034</top>
+                    <height>45</height>
+                    <width>90</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <colordiffuse>White</colordiffuse>
+                    <texture>$INFO[ListItem.FileExtension,badges/audio/,.png]</texture>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="SettingsSubmenuButtons">
+        <width>720</width>
+        <textoffsetx>22</textoffsetx>
+        <height>54</height>
+        <align>left</align>
+        <font>size30</font>
+        <disabledcolor>Disabled</disabledcolor>
+    </include>
+    <include name="Help_Panel">
+        <animation effect="fade" time="200">VisibleChange</animation>
+        <width>460</width>
+        <height>380</height>
+        <aspectratio align="center" aligny="bottom">keep</aspectratio>
+    </include>
+    <include name="Help_Panel2">
+        <centerleft>460</centerleft> 
+        <top>120</top>	
+        <animation effect="fade" time="200">VisibleChange</animation>
+        <width>460</width>
+        <height>260</height>
+        <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+    </include>	
+    <include name="CustomizerList">
+        <include>ShelfFade</include>
+        <onup>303</onup>
+        <ondown>50</ondown>
+        <posx>72</posx>
+        <top>120</top>
+        <width>1776</width>
+        <height>402</height>
+        <orientation>horizontal</orientation>
+        <scrolltime>400</scrolltime>
+        <itemlayout height="357" width="354">
+            <control type="label">
+                <posx>27</posx>
+                <top>178</top>
+                <width>303</width>
+                <height>30</height>
+                <font>size26</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <label>+ $INFO[ListItem.label2]</label>
+                <align>center</align>
+            </control>
+            <!--control type="image" description="Reflection">
+                <posx>27</posx>
+                <top>330</top>
+                <width>303</width>
+                <height>303</height>
+                <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+            </control-->
+            <control type="image">
+                <posx>27</posx>
+                <top>27</top>
+                <width>303</width>
+                <height>303</height>
+                <texture background="true">default$INFO[ListItem.label2].png</texture>
+                <colordiffuse>33FFFFFF</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>27</posx>
+                <top>27</top>
+                <width>303</width>
+                <height>303</height>
+                <texture background="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout height="357" width="354">
+            <control type="label">
+                <posx>27</posx>
+                <top>178</top>
+                <width>303</width>
+                <height>30</height>
+                <font>size26</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <label>+ $INFO[ListItem.Label2]</label>
+                <align>center</align>
+            </control>
+            <control type="image">
+                <posx>27</posx>
+                <top>27</top>
+                <width>303</width>
+                <height>303</height>
+                <texture background="true">default$INFO[ListItem.label2].png</texture>
+                <colordiffuse>33FFFFFF</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>27</posx>
+                <top>27</top>
+                <width>303</width>
+                <height>303</height>
+                <texture background="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>17</posx>
+                <top>17</top>
+                <width>323</width>
+                <height>323</height>
+                <texture border="10" colordiffuse="$VAR[diffuseslider]">images/GeneralSlider.png</texture>
+            </control>
+            <control type="label" description="title">
+                <posx>27</posx>
+                <top>310</top>
+                <width>303</width>
+                <align>center</align>
+                <label>$INFO[ListItem.label]</label>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="Left_Panel_Addons">
+        <control type="group" description="Stage">
+            <visible>IsEmpty(Container.FolderPath)</visible>
+            <control type="image" description="Thumb">
+                <posx>230</posx>
+                <top>195</top>
+                <width>495</width>
+                <height>495</height>
+                <include>Icon_Fade</include>
+                <texture background="true">DefaultAddonsSidepanel.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>125</posx>
+                <top>670</top>
+                <width>682</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label" description="Updates">
+                <posx>300</posx>
+                <top>668</top>
+                <width>750</width>
+                <height>81</height>
+                <align>left</align>
+                <textcolor>red</textcolor>
+                <label>$INFO[Control.GetLabel(5)]</label>
+            </control>
+            <control type="label" description="Notifications">
+                <posx>310</posx>
+                <top>708</top>
+                <width>750</width>
+                <height>81</height>
+                <align>left</align>
+                <textcolor>red</textcolor>
+                <label>$INFO[Control.GetLabel(6)]</label>
+            </control>
+        </control>
+        <control type="group" description="Thumbs no info">
+            <top>170</top>
+            <visible>ListItem.IsFolder + !IsEmpty(Container.FolderPath)</visible>
+            <animation effect="fade" time="200">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <control type="image" description="Thumb">
+                <posx>240</posx>
+                <top>0</top>
+                <width>500</width>
+                <height>500</height>
+                <include>Icon_Fade</include>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+        </control>
+        <control type="group" description="Faded Info thumbs">
+            <visible>!ListItem.IsFolder</visible>
+            <animation effect="fade" time="200">Visible</animation>
+            <animation effect="fade" time="10">Hidden</animation>
+            <control type="group">
+                <posx>240</posx>
+                <top>170</top>
+                <!--control type="image" description="Thumb Reflection">
+                    <top>500</top>
+                    <width>500</width>
+                    <height>500</height>
+                    <include>Icon_Fade</include>
+                    <texture background="true" diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control-->
+                <control type="image" description="Thumb">
+                    <width>500</width>
+                    <height>500</height>
+                    <include>Icon_Fade</include>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio aligny="bottom">keep</aspectratio>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="statusbiglist">
+        <!--control type="image">
+            <posx>710</posx>
+            <top>15</top>
+            <width>81</width>
+            <height>81</height>
+            <texture>$INFO[ListItem.Icon]</texture>
+            <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+        </control-->
+        <control type="image">
+            <posx>610</posx>
+            <top>15</top>
+            <width>81z</width>
+            <height>81</height>
+            <texture>$INFO[ListItem.Icon]</texture>
+            <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
+        </control>		
+        <control type="image" description="rec">
+            <posx>720</posx>
+            <top>15</top>
+            <height>81</height>
+            <width>81</width>
+            <texture>pvr/rec.png</texture>
+            <visible>ListItem.IsRecording</visible>
+        </control>
+        <control type="image" description="timer">
+            <posx>720</posx>
+            <top>15</top>
+            <height>81</height>
+            <width>81</width>
+            <texture>pvr/timer.png</texture>
+            <visible>!ListItem.IsRecording + ListItem.HasTimer</visible>
+        </control>
+    </include>
+    <include name="Linemiddle">
+        <control type="image">
+            <posx>959</posx>
+            <top>-300</top>
+            <width>1</width>
+            <height>1680</height>
+            <texture colordiffuse="$VAR[diffuselines]">lines/LineV.png</texture>
+        </control>
+    </include>
+    <include name="SmallSelector">
+        <control type="image">
+            <animation effect="fade" end="0" time="30">UnFocus</animation>
+            <width>920</width>
+            <height>81</height>
+            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+        </control>
+    </include>
+    <include name="LargeSelector">
+        <control type="image">
+            <animation effect="fade" end="0" time="30">UnFocus</animation>
+            <width>920</width>
+            <height>111</height>
+            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+        </control>
+    </include>
+    <include name="listline">
+        <control type="image">
+            <width>900</width>
+            <height>1</height>
+            <texture colordiffuse="$VAR[diffuselines]">lines/LineL.png</texture>
+        </control>
+    </include>
+</includes>

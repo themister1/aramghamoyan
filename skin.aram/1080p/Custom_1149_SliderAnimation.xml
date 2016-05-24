@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1149">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back border">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>ZOOM</label>
+                    <onclick>Skin.ToggleSetting(sliderzoom)</onclick>					
+                    <selected>Skin.HasSetting(sliderzoom)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Rotate/Spin</label>
+                    <onclick>Skin.ToggleSetting(sliderrotate)</onclick>					
+                    <selected>Skin.HasSetting(sliderrotate)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Fade</label>
+                    <onclick>Skin.ToggleSetting(sliderfade)</onclick>					
+                    <selected>Skin.HasSetting(sliderfade)</selected>				
+                </control>								
+                <!--control type="radiobutton" id="4">
+                    <label>Empty 1</label>
+                    <onclick>Skin.ToggleSetting(empty1)</onclick>					
+                    <selected>Skin.HasSetting(empty1)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Empty 2</label>
+                    <onclick>Skin.ToggleSetting(empty2)</onclick>					
+                    <selected>Skin.HasSetting(empty2)</selected>				
+                </control-->								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

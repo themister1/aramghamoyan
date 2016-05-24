@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1133">
+    <defaultcontrol always="true">1133</defaultcontrol>
+            <animation effect="slide" start="1200,0" end="0,0" time="700"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="1200,0" time="700" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">							
+                <top>96</top>				
+                <posx>775</posx>
+                <width>1200</width>
+                <height>880</height>				
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back border">
+                <top>96</top>
+                <posx>775</posx>
+                <width>1200</width>
+                <height>880</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenu.png</texture>
+            </control>	
+            <control type="image" description="BKGRND Popup">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(1)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="BKGRND Popup Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(1)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="BKGRND Popup">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(2)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="BKGRND Popup Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(2)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>			
+            <control type="image" description="BKGRND Keyboard">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(4)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusekeyboard]">$VAR[bgimgkeyboard]</texture>
+            </control>
+            <control type="image" description="BKGRND Keyboard Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(4)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="BKGRND Keyboard">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(5)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusekeyboard]">$VAR[bgimgkeyboard]</texture>
+            </control>
+            <control type="image" description="BKGRND Keyboard Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(5)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>			
+            <control type="image" description="NAV BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(7)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>
+            <control type="image" description="NAV BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(7)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="NAV BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(8)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>
+            <control type="image" description="NAV BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(8)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>			
+            <control type="image" description="FAV BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(10)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusefav]">$VAR[bgimgfav]</texture>
+            </control>
+            <control type="image" description="FAV BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(10)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="FAV BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(11)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusefav]">$VAR[bgimgfav]</texture>
+            </control>
+            <control type="image" description="FAV BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(11)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>			
+            <control type="image" description="Weather BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(13)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffuseweather]">$VAR[bgimgweather]</texture>
+            </control>
+            <control type="image" description="Weather BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(13)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="Weather BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(14)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffuseweather]">$VAR[bgimgweather]</texture>
+            </control>
+            <control type="image" description="Weather BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(14)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+<!-- DIFFUSE BACKGROUND -->			
+            <control type="image" description="BKGRND Popup">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(3)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="BKGRND Popup Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(3)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="BKGRND Keyboard">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(6)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusekeyboard]">$VAR[bgimgkeyboard]</texture>
+            </control>
+            <control type="image" description="BKGRND Keyboard Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(6)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="NAV BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(9)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>
+            <control type="image" description="NAV BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(9)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="FAV BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(12)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffusefav]">$VAR[bgimgfav]</texture>
+            </control>
+            <control type="image" description="FAV BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(12)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>
+            <control type="image" description="WEATHER BKGRND">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(15)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>		
+                <width>456</width>
+                <height>256</height>
+                <aspectratio align="center" aligny="bottom">scale</aspectratio>																
+                <texture colordiffuse="$VAR[diffuseweather]">$VAR[bgimgweather]</texture>
+            </control>
+            <control type="image" description="WEATHER BKGRND Border">
+                <top>410</top>
+                <posx>830</posx>
+                <visible>Controlgroup(1133).HasFocus(15)</visible>			
+                <animation effect="fade" time="200">VisibleChange</animation>
+                 <width>456</width>
+                 <height>256</height>
+				 <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/advbkgdmenubg.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="1133">
+                <left>1340</left>				
+                <centerleft>960</centerleft>
+                <top>8</top>
+                <width>580</width>
+                <height>1064</height>
+                <itemgap>3</itemgap>
+                <onleft>close</onleft>
+                <onright>close</onright>
+                <onup>1133</onup>
+                <ondown>1133</ondown>
+                <align>center</align>
+                <scrolltime>200</scrolltime>				
+                <control type="radiobutton" id="1">
+				    <visible></visible>
+                    <label>$LOCALIZE[31097]</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome2))">Skin.SetFile(CustomBgHome2,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome2))">Skin.Reset(CustomBgHome2)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHome2))</selected>
+                </control>												
+                <control type="button" id="3">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Popup BG Darkness</label>
+                    <onclick>ActivateWindow(1138)</onclick>
+                </control>								
+                <control type="image" id="61">
+                    <width>1000</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>				
+                <control type="radiobutton" id="7">
+				    <visible></visible>				
+                    <label>Custom Navigation Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome4))">Skin.SetFile(CustomBgHome4,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome4))">Skin.Reset(CustomBgHome4)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHome4))</selected>
+                </control>												
+                <control type="button" id="9">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Nav BG Darkness</label>
+                    <onclick>ActivateWindow(1136)</onclick>
+                </control>								
+                <control type="image" id="62">
+                    <width>1000</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>				
+                <control type="radiobutton" id="10">
+				    <visible></visible>				
+                    <label>Custom Favorites Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome5))">Skin.SetFile(CustomBgHome5,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome5))">Skin.Reset(CustomBgHome5)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHome5))</selected>
+                </control>								
+                <control type="button" id="12">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Favs BG Darkness</label>
+                    <onclick>ActivateWindow(1139)</onclick>
+                </control>
+                <control type="image" id="60">
+                    <width>1000</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>									
+                <control type="radiobutton" id="4">
+				    <visible></visible>				
+                    <label>Custom Keyboard Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome3))">Skin.SetFile(CustomBgHome3,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome3))">Skin.Reset(CustomBgHome3)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHome3))</selected>
+                </control>				
+                <control type="button" id="6">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Keyboard BG Darkness</label>
+                    <onclick>ActivateWindow(1137)</onclick>
+                </control>				
+                <control type="image" id="63">
+                    <width>1000</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>				
+                <control type="radiobutton" id="13">
+				    <visible></visible>				
+                    <label>Custom Weather Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome6))">Skin.SetFile(CustomBgHome6,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome6))">Skin.Reset(CustomBgHome6)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHome6))</selected>
+                </control>				
+                <control type="button" id="15">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Weather BG Darkness</label>
+                    <onclick>ActivateWindow(1140)</onclick>
+                </control>									
+                </control>													
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="Programviews">
+        <!--LIST1-->
+        <control type="group" description="Base Addons List">
+            <visible>Control.IsVisible(50)</visible>
+            <include>Left_Panel_Addons</include>
+            <control type="group" description="BigList">
+                <posx>960</posx>
+                <top>131</top>
+                <control type="fixedlist" id="50">
+                    <width>920</width>
+                    <height>888</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="50">Big list</viewtype>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <include>LargeListLayout</include>
+                </control>
+            </control>
+            <include>Linemiddle</include>
+            <control type="group">
+                <top>92</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>$VAR[bgimg2]</texture>
+					<colordiffuse>$VAR[diffusemenu]</colordiffuse>
+                </control>				
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>borders/scrollbg.png</texture>
+                </control>				
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>24</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>
+        </control>	
+        <!--LIST2-->
+        <control type="group" description="LIST2">
+            <visible>Control.IsVisible(52)</visible>
+            <control type="fixedlist" id="52">
+                <posx>60</posx>
+                <top>100</top>
+                <width>1920</width>
+                <height>979</height>
+                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="List2">List</viewtype>
+                <focusposition>2</focusposition>
+                <movement>2</movement>
+                <preloaditems>4</preloaditems>
+                <scrolltime>250</scrolltime>
+                <itemlayout height="140">
+                    <control type="image">
+                        <posx>1320</posx>
+                        <centertop>70</centertop>
+                        <width>460</width>
+                        <height>100</height>
+                        <texture>$VAR[Locandine]</texture>
+                        <aspectratio align="right">keep</aspectratio>
+                    </control>
+                    <control type="textbox">
+                        <posx>1310</posx>
+                        <top>20</top>
+                        <width>340</width>
+                        <height>140</height>
+                        <font>size24B</font>
+                        <align>right</align>
+                        <label>[COLOR=$VAR[diffusetext]]$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)][/COLOR]</label>
+                    </control>
+                    <control type="image">
+                        <posx>1280</posx>
+                        <width>440</width>
+                        <height>1</height>
+                        <texture colordiffuse="$VAR[diffuselines]">lines/LineL.png</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="140">
+                    <control type="image">
+                        <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <posx>1280</posx>
+                        <width>560</width>
+                        <height>140</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>1320</posx>
+                        <centertop>70</centertop>
+                        <width>460</width>
+                        <height>100</height>
+                        <texture>$VAR[Locandine]</texture>
+                        <aspectratio align="right">keep</aspectratio>
+                    </control>
+                    <control type="textbox">
+                        <posx>1310</posx>
+                        <top>20</top>
+                        <width>340</width>
+                        <height>140</height>
+                        <font>size24B</font>
+                        <align>right</align>
+                        <label>[COLOR=$VAR[textfo]]$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)][/COLOR]</label>
+                    </control>
+                    <control type="image">
+                        <posx>1280</posx>
+                        <width>440</width>
+                        <height>1</height>
+                        <texture colordiffuse="$VAR[diffuselines]">lines/LineL.png</texture>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="label">
+                <posx>100</posx>
+                <top>42</top>
+                <width>1140</width>
+                <height>80</height>
+                <font>size42B</font>
+                <align>center</align>
+                <label>$INFO[ListItem.label]</label>
+            </control>
+            <control type="textbox">
+                <posx>240</posx>
+                <top>110</top>
+                <width>860</width>
+                <height>50</height>
+                <font>size30</font>
+                <align>center</align>
+                <label>$LOCALIZE[19114] : [COLOR=red]$INFO[ListItem.Property(Addon.Version)][/COLOR]</label>
+            </control>
+            <control type="textbox" description="plots">
+                <posx>140</posx>
+                <top>600</top>
+                <width>1060</width>
+                <height>420</height>
+                <font>size30</font>
+                <align>justify</align>
+                <label>[COLOR=$VAR[diffusetext]]$VAR[Plots][/COLOR]</label>
+            </control>
+            <control type="image">
+                <centerleft>670</centerleft>
+                <top>180</top>
+                <height>400</height>
+                <width>1060</width>
+                <info>ListItem.Art(fanart)</info>
+                <bordertexture border="5" colordiffuse="black">images/white.png</bordertexture>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>1340</posx>
+                <top>-100</top>
+                <height>1280</height>
+                <width>1</width>
+                <texture colordiffuse="$VAR[diffuselines]">lines/LineV.png</texture>
+            </control>
+            <control type="image">
+                <top>600</top>
+                <height>1</height>
+                <width>1340</width>
+                <texture colordiffuse="$VAR[diffuselines]">lines/LineR.png</texture>
+            </control>
+            <control type="group" description="EPISODES BLADE">
+                <visible>Container.Content(episodes)</visible>
+                <control type="image">
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+                    <width>1340</width>
+                    <height>1080</height>
+                    <!--texture>images/black.png</texture-->
+					<texture colordiffuse="$VAR[diffusemenu]" diffuse="images/white.png">$VAR[bgimg]</texture>
+                </control>
+                <control type="image">
+                    <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
+                    <fadetime>200</fadetime>
+                    <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+                    <width>1340</width>
+                    <height>1080</height>
+                    <texture background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio align="left">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
+                    <fadetime>200</fadetime>
+                    <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+                    <posx>720</posx>
+                    <top>820</top>
+                    <width>600</width>
+                    <height>80</height>
+                    <texture background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
+                    <colordiffuse>88FFFFFF</colordiffuse>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="label">
+                    <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
+                    <posx>1330</posx>
+                    <top>980</top>
+                    <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+                    <font>size42B</font>
+                    <width>1280</width>
+                    <height>80</height>
+                    <align>right</align>
+                    <label>$LOCALIZE[20359]: $INFO[ListItem.label]</label>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(ListItem.Art(fanart)) + IsEmpty(ListItem.Plot)</visible>
+                    <fadetime>200</fadetime>
+                    <width>1340</width>
+                    <height>1080</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio align="left">scale</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <visible>!Container.Content(episodes)</visible>
+                <control type="image">
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+                    <width>1340</width>
+                    <height>1080</height>
+                    <!--texture>images/black.png</texture-->
+					<texture colordiffuse="$VAR[diffusemenu]" diffuse="images/white.png">$VAR[bgimg]</texture>
+                </control>
+                <control type="image">
+                    <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
+                    <fadetime>200</fadetime>
+                    <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
+                    <width>1340</width>
+                    <height>1080</height>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                    <aspectratio align="left">scale</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(ListItem.Art(fanart)) + IsEmpty(ListItem.Plot)</visible>
+                    <fadetime>200</fadetime>
+                    <width>1340</width>
+                    <height>1080</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio align="left">scale</aspectratio>
+                </control>
+            </control>
+            <control type="group">
+                <top>92</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <!--control type="image">
+                    <left>1912</left>
+                    <height>910</height>
+                    <width>120</width>
+                    <texture border="50" colordiffuse="$VAR[bgcolor1]">sidepanel/Back.png</texture>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>30</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control-->
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>$VAR[bgimg2]</texture>
+					<colordiffuse>$VAR[diffusemenu]</colordiffuse>
+                </control>				
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>borders/scrollbg.png</texture>
+                </control>				
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>24</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>				
+            </control>
+        </control>
+        <!--ICONE-->
+        <control type="group">
+            <visible>Control.IsVisible(53)</visible>
+            <control type="group" description="Container and frame">
+                <control type="panel" id="53" description="Panel">
+                    <viewtype label="536">Icons</viewtype>
+                    <left>13</left>
+                    <top>60</top>
+                    <width>1920</width>
+                    <height>1020</height>
+                    <orientation>vertical</orientation>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">53</onright>
+                    <preloaditems>4</preloaditems>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime>400</scrolltime>
+                    <itemlayout height="228" width="228">
+                        <control type="image">
+                            <posx>35</posx>
+                            <top>24</top>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddon.png" background="true">$VAR[Locandine]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="228" width="228">
+                        <control type="group">
+                            <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                            <include>Scrollanim</include>
+                            <control type="image">
+                                <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <posx>19</posx>
+                                <top>9</top>
+                                <width>256</width>
+                                <height>256</height>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <posx>35</posx>
+                                <top>24</top>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddon.png" background="true">$VAR[Locandine]</texture>
+                                <aspectratio>scale</aspectratio>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="image" description="Line Split">
+                <centerleft>960</centerleft>
+                <top>60</top>
+                <width>1500</width>
+                <height>1</height>
+                <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+            </control>
+            <control type="group">
+                <visible>!Container.Content(episodes)</visible>
+                <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
+                <posx>1220</posx>
+                <top>960</top>
+                <animation effect="slide" start="710,0" end="0,0" time="450" delay="200">visiblechange</animation>
+                <control type="image" description="Dialog Slide BG">
+			
+                    <width>700</width>
+                    <height>120</height>
+                    <texture border="30" colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+                    <aspectratio>scale</aspectratio>>
+                </control>
+                <control type="image" description="Dialog Slide border">
+                    <width>700</width>
+                    <height>120</height>
+                    <texture border="30" colordiffuse="$VAR[diffuseborder]">borders/Dialogslideborder.png</texture>
+                    <aspectratio>stretch</aspectratio>					
+                </control>
+				
+                <control type="label" description="Title">
+                    <top>5</top>
+                    <width>650</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size42</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" description="Version">
+                    <top>44</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size28</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="label" description="Media details">
+                    <top>72</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size24</font>
+                    <label>$VAR[TopLabel]</label>
+                </control>
+                <!--control type="image">
+                    <top>140</top>
+                    <centerleft>350</centerleft>
+                    <width>600</width>
+                    <height>400</height>
+                    <texture background="true">$VAR[bgimg]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordersize>5</bordersize>
+                </control-->
+            </control>
+            <control type="group">
+                <visible>Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)</visible>
+                <posx>0</posx>
+                <top>960</top>
+                <animation effect="slide" start="-710,0" end="0,0" time="450" delay="200">visiblechange</animation>
+                <control type="image" description="Dialog Slider">
+			
+                    <width>700</width>
+                    <height>120</height>
+                    <texture border="30" flipx="true" colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+					<aspectratio>scale</aspectratio>
+                </control>
+                <control type="image" description="Dialog Slide border">
+                    <width>700</width>
+                    <height>120</height>
+                    <texture border="30" flipx="true" colordiffuse="$VAR[diffuseborder]">borders/Dialogslideborder.png</texture>
+                    <aspectratio>stretch</aspectratio>					
+                </control>				
+                <control type="label" description="Title">
+                    <centerleft>350</centerleft>
+                    <top>4</top>
+                    <width>650</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size42</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" description="Version">
+                    <top>44</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size28</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="label" description="Media details">
+                    <top>72</top>
+                    <width>700</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size24</font>
+                    <label>$VAR[TopLabel]</label>
+                </control>
+                <!--control type="image">
+                    <top>140</top>
+                    <centerleft>350</centerleft>
+                    <width>600</width>
+                    <height>400</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$VAR[bgimg]</texture>
+                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordersize>5</bordersize>
+                </control-->
+            </control>
+            <control type="group">
+	            <top>92</top>		
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <!--control type="image">
+                    <posx>-8r</posx>
+                    <top>90</top>
+                    <height>910</height>
+                    <texture border="50" colordiffuse="$VAR[bgcolor1]">sidepanel/Back.png</texture>
+                </control>
+                <control type="scrollbar" id="60">
+                    <posx>-37r</posx>
+                    <top>120</top>
+                    <height>850</height>
+                    <onleft>53</onleft>
+                    <onright>noop</onright>
+                </control-->
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>$VAR[bgimg2]</texture>
+					<colordiffuse>$VAR[diffusemenu]</colordiffuse>
+                </control>				
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>borders/scrollbg.png</texture>
+                </control>				
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>24</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>				
+            </control>
+        </control>
+        <!--FANART-->
+        <control type="group">
+            <visible>Control.IsVisible(500)</visible>
+            <control type="fixedlist" id="500" description="Fanart">
+                <onup>9000</onup>
+                <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
+                <ondown>noop</ondown>
+                <onleft>500</onleft>
+                <onright>500</onright>
+                <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
+                <posx>-282</posx>
+                <top>690</top>
+                <width>2484</width>
+                <height>402</height>
+                <orientation>horizontal</orientation>
+                <scrolltime>400</scrolltime>
+                <focusposition>3</focusposition>
+                <movement>0</movement>
+                <preloaditems>4</preloaditems>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout height="357" width="354">
+                    <control type="image" description="Reflection">
+                        <posx>27</posx>
+                        <top>330</top>
+                        <width>303</width>
+                        <height>303</height>
+                        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>25</posx>
+                        <top>25</top>
+                        <width>304</width>
+                        <height>304</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="357" width="354">
+                    <control type="group">
+                        <control type="image" description="Thumb">
+                            <posx>7</posx>
+                            <top>7</top>
+                            <width>340</width>
+                            <height>340</height>
+                            <bordertexture colordiffuse="$VAR[diffuseselect]">images/white.png</bordertexture>
+                            <bordersize>20</bordersize>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="group" description="Media Info">
+                <control type="label" description="Item Title">
+                    <centerleft>960</centerleft>
+                    <top>602</top>
+                    <font>size39B</font>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <width>1760</width>
+                    <align>center</align>
+                    <include>Genre51Commons</include>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" description="Item Title">
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
+                    <centerleft>960</centerleft>
+                    <top>35</top>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <width>1260</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <label>$INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[24051] [COLOR=red]$INFO[ListItem.Label2][/COLOR]</label>
+                </control>
+                <control type="image" description="Line Split">
+                    <centerleft>960</centerleft>
+                    <top>90</top>
+                    <width>1920</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image" description="Line Split">
+                    <centerleft>960</centerleft>
+                    <top>590</top>
+                    <width>1920</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image" description="Line Split">
+                    <centerleft>960</centerleft>
+                    <top>657</top>
+                    <width>1920</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="textbox">
+                    <top>90</top>
+                    <centerleft>960</centerleft>
+                    <width>1760</width>
+                    <height>500</height>
+                    <align>justify</align>
+                    <autoscroll delay="3000" time="5000" repeat="10000"></autoscroll>
+                    <label>[COLOR=$VAR[diffusetext]]$VAR[Plots][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <width>1760</width>
+                    <height>20</height>
+                    <label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre]</label>
+                </control>
+            </control>
+            <control type="list" id="428">
+                <posx>20</posx>
+                <top>40</top>
+                <width>460</width>
+                <height>450</height>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <pagecontrol>-</pagecontrol>
+                <itemlayout height="42">
+                    <control type="label">
+                        <posx>150</posx>
+                        <top>0</top>
+                        <width>150</width>
+                        <height>45</height>
+                        <font>size28</font>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor></textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <info>ListItem.Label</info>
+                    </control>
+                    <control type="label">
+                        <posx>171</posx>
+                        <top>0</top>
+                        <width>279</width>
+                        <height>45</height>
+                        <font>size28</font>
+                        <aligny>center</aligny>
+                        <textcolor>2</textcolor>
+                        <selectedcolor>2</selectedcolor>
+                        <info>ListItem.Label2</info>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="42">
+                    <control type="label">
+                        <posx>150</posx>
+                        <top>0</top>
+                        <width>150</width>
+                        <height>45</height>
+                        <font>size28</font>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor></textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <info>ListItem.Label</info>
+                    </control>
+                    <control type="label">
+                        <posx>171</posx>
+                        <top>0</top>
+                        <width>279</width>
+                        <height>45</height>
+                        <font>size28</font>
+                        <aligny>center</aligny>
+                        <textcolor>2</textcolor>
+                        <selectedcolor>2</selectedcolor>
+                        <info>ListItem.Label2</info>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item>
+                        <visible>!IsEmpty(ListItem.Property(Artist_Genre))</visible>
+                        <label>515</label>
+                        <label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item>
+                        <visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
+                        <label>21894</label>
+                        <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item>
+                        <visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
+                        <label>21896</label>
+                        <label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item>
+                        <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
+                        <label>21893</label>
+                        <label2>$INFO[ListItem.Property(Artist_Born)]</label2>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item>
+                        <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
+                        <label>21897</label>
+                        <label2>$INFO[ListItem.Property(Artist_Died)]</label2>
+                        <onclick>noop</onclick>
+                    </item>
+                </content>
+            </control>
+            <control type="scrollbar" id="60">
+                <animation effect="fade" delay="200" time="300">VisibleChange</animation>
+                <posx>198</posx>
+                <top>1045</top>
+                <width>1525</width>
+                <height>9</height>
+                <onup>500</onup>
+                <ondown>500</ondown>
+                <orientation>horizontal</orientation>
+                <texturesliderbackground border="6">Scrollbar/HScrollbarBG.png</texturesliderbackground>
+                <texturesliderbar border="6">Scrollbar/HScrollerNF.png</texturesliderbar>
+                <texturesliderbarfocus border="6" colordiffuse="buttonselect2">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
+                <showonepage>false</showonepage>
+            </control>
+        </control>
+    </include>
+</includes>

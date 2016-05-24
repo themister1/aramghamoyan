@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1160">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back border">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>									
+                <control type="radiobutton" id="1">
+                    <label>Shelf BG Darkness1</label>
+                    <onclick>Skin.ToggleSetting(shelfdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse2)">Skin.ToggleSetting(shelfdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse3)">Skin.ToggleSetting(shelfdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse4)">Skin.ToggleSetting(shelfdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse5)">Skin.ToggleSetting(shelfdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(shelfdiffuse1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Shelf BG Darkness2</label>
+                    <onclick>Skin.ToggleSetting(shelfdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse1)">Skin.ToggleSetting(shelfdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse3)">Skin.ToggleSetting(shelfdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse4)">Skin.ToggleSetting(shelfdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse5)">Skin.ToggleSetting(shelfdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(shelfdiffuse2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Shelf BG Darkness3</label>
+                    <onclick>Skin.ToggleSetting(shelfdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse1)">Skin.ToggleSetting(shelfdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse2)">Skin.ToggleSetting(shelfdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse4)">Skin.ToggleSetting(shelfdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse5)">Skin.ToggleSetting(shelfdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(shelfdiffuse3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>Shelf BG Darkness4</label>
+                    <onclick>Skin.ToggleSetting(shelfdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse1)">Skin.ToggleSetting(shelfdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse2)">Skin.ToggleSetting(shelfdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse3)">Skin.ToggleSetting(shelfdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse5)">Skin.ToggleSetting(shelfdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(shelfdiffuse4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Shelf BG Darkness5</label>
+                    <onclick>Skin.ToggleSetting(shelfdiffuse5)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse1)">Skin.ToggleSetting(shelfdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse2)">Skin.ToggleSetting(shelfdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse3)">Skin.ToggleSetting(shelfdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(shelfdiffuse4)">Skin.ToggleSetting(shelfdiffuse4)</onclick>					
+                    <selected>Skin.HasSetting(shelfdiffuse5)</selected>				
+                </control>								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

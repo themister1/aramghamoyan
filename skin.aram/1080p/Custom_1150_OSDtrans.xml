@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1150">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture diffuse="Seekbar/OSDBackground.png">$VAR[OSDbgimg]</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>OSD Transparency1</label>
+                    <onclick>Skin.ToggleSetting(osdtrans1)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans2)">Skin.ToggleSetting(osdtrans2)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans3)">Skin.ToggleSetting(osdtrans3)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans4)">Skin.ToggleSetting(osdtrans4)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans5)">Skin.ToggleSetting(osdtrans5)</onclick>					
+                    <selected>Skin.HasSetting(osdtrans1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>OSD Transparency2</label>
+                    <onclick>Skin.ToggleSetting(osdtrans2)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans1)">Skin.ToggleSetting(osdtrans1)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans3)">Skin.ToggleSetting(osdtrans3)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans4)">Skin.ToggleSetting(osdtrans4)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans5)">Skin.ToggleSetting(osdtrans5)</onclick>					
+                    <selected>Skin.HasSetting(osdtrans2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>OSD Transparency3</label>
+                    <onclick>Skin.ToggleSetting(osdtrans3)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans1)">Skin.ToggleSetting(osdtrans1)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans2)">Skin.ToggleSetting(osdtrans2)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans4)">Skin.ToggleSetting(osdtrans4)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans5)">Skin.ToggleSetting(osdtrans5)</onclick>					
+                    <selected>Skin.HasSetting(osdtrans3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>OSD Transparency4</label>
+                    <onclick>Skin.ToggleSetting(osdtrans4)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans1)">Skin.ToggleSetting(osdtrans1)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans2)">Skin.ToggleSetting(osdtrans2)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans3)">Skin.ToggleSetting(osdtrans3)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans5)">Skin.ToggleSetting(osdtrans5)</onclick>					
+                    <selected>Skin.HasSetting(osdtrans4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>OSD Transparency5</label>
+                    <onclick>Skin.ToggleSetting(osdtrans5)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans1)">Skin.ToggleSetting(osdtrans1)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans2)">Skin.ToggleSetting(osdtrans2)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans3)">Skin.ToggleSetting(osdtrans3)</onclick>
+					<onclick condition="Skin.HasSetting(osdtrans4)">Skin.ToggleSetting(osdtrans4)</onclick>					
+                    <selected>Skin.HasSetting(osdtrans5)</selected>				
+                </control>								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

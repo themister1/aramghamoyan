@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1121">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group" description="All dialog content">
+            <control type="image">
+                <posx>444</posx>
+                <top>105</top>
+                <width>1023</width>
+                <height>800</height>
+                <texture border="150" colordiffuse="$VAR[bgcolor1]">images/Dialog.png</texture>
+            </control>
+            <control type="label" description="Dialog heading">
+                <posx>615</posx>
+                <top>281</top>
+                <width>690</width>
+                <height>52</height>
+                <label>[B]$LOCALIZE[31053][/B]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>size36</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+            </control>
+            <control type="group">
+                <posx>442</posx>
+                <top>216</top>
+                <control type="grouplist" id="9000">
+                    <posx>255</posx>
+                    <top>150</top>
+                    <width>525</width>
+                    <height>450</height>
+                    <onleft>noop</onleft>
+                    <onright>noop</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <itemgap>0</itemgap>
+                    <font>size33</font>
+                    <scrolltime>260</scrolltime>
+                    <defaultcontrol always="true">701</defaultcontrol>
+                    <control type="button" id="700">
+            <include>DialogButt</include>
+            <label>Mediaplayer X9 Instellingen</label>
+            <onclick>Close</onclick>
+           <onclick>ActivateWindow(SkinSettings)</onclick>
+		   </control>
+		  <control type="button" id="703">
+            <include>DialogButt</include>
+            <label>Start menu layout aanpassen</label>
+            <onclick>Close</onclick>
+           <onclick>ActivateWindow(1117)</onclick>
+         </control>
+         	<control type="button" id="702">
+          <include>DialogButt</include>
+          <label>Systeem Informatie</label>
+          <onclick>Close</onclick>
+	  <onclick>activatewindow(systeminfo)</onclick>
+        </control>
+	<control type="button" id="705" description="Addons">
+          <include>DialogButt</include>
+          <label>Add-ons</label>
+          <onclick>Close</onclick>
+          <onclick>ActivateWindow(1118)</onclick>
+		  </control>
+	      <control type="button" id="706" description="Update">
+          <include>DialogButt</include>
+          <label>Update</label>
+          <onclick>Close</onclick>
+          <onclick>RunAddon($INFO[Skin.String(HomeAddon.1.Label)])</onclick>
+        </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

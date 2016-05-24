@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+    <variable name="homeslideranimation">
+        <value condition="Skin.HasSetting(Black-Green)">special://skin/backgrounds/android.jpg</value>
+        <value condition="Skin.HasSetting(Louis_Vuitton)">special://skin/backgrounds/louis_vuitton.jpg</value>		
+        <value>special://skin/backgrounds/- Black.png</value>
+    </variable>
+
+    <variable name="OSDbgimg">
+        <value condition="!IsEmpty(Skin.String(CustomBgOSD)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgOSD)]</value>		
+        <value>special://skin/backgrounds/- OSDBackground.png</value>
+    </variable>
+
+	<!--variable name="OSDtrans">
+        <value condition="Skin.HasSetting(osddiffuse5)">22565656</value>	
+        <value condition="Skin.HasSetting(osddiffuse4)">33565656</value>
+        <value condition="Skin.HasSetting(osddiffuse3)">44565656</value>
+        <value condition="Skin.HasSetting(osddiffuse2)">55565656</value>
+        <value condition="Skin.HasSetting(osddiffuse1)">66565656</value>					
+        <value>DD565656</value>		
+    </variable-->
+
+	<variable name="diffuseosdtrans">
+        <value condition="Skin.HasSetting(osdtrans5)">88</value>	
+        <value condition="Skin.HasSetting(osdtrans4)">99</value>
+        <value condition="Skin.HasSetting(osdtrans3)">AA</value>
+        <value condition="Skin.HasSetting(osdtrans2)">BB</value>
+        <value condition="Skin.HasSetting(osdtrans1)">CC</value>					
+        <value condition="!IsEmpty(Skin.String(CustomBgOSD))">FF</value>
+        <value condition="IsEmpty(Skin.String(CustomBgOSD))">CC</value>			
+    </variable>	
+	
+	<variable name="OSDtrans">					
+        <value>$VAR[diffuseosdtrans]$VAR[diffuseosd]</value>		
+    </variable>	
+	
+	<variable name="diffuseosd">
+        <value condition="Skin.HasSetting(osddiffuse1)">969696</value>	
+        <value condition="Skin.HasSetting(osddiffuse2)">878787</value>
+        <value condition="Skin.HasSetting(osddiffuse3)">6A6A6A</value>
+        <value condition="Skin.HasSetting(osddiffuse4)">5B5B5B</value>
+        <value condition="Skin.HasSetting(osddiffuse5)">494949</value>	
+        <value condition="Skin.HasSetting(osddiffuseblk)">000000</value>		
+        <value>FFFFFF</value>		
+    </variable>	
+	
+    <variable name="bgimghomeshelf">
+        <value condition="!IsEmpty(Skin.String(CustomBgHomeSHELF)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHomeSHELF)]</value>	
+
+    </variable>	
+
+    <variable name="bgimghome">
+        <value condition="!IsEmpty(Skin.String(CustomBgHomeMAIN)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHomeMAIN)]</value>	
+		<!--value>special://skin/backgrounds/- iOS.jpg</value-->
+        <value>special://skin/backgrounds/default-home.jpg</value>
+    </variable>	
+	
+    <variable name="bgimg">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="!IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(disablefanart)">$INFO[ListItem.Art(fanart)]</value>
+        <value>special://skin/backgrounds/- Black.png</value>		
+    </variable>
+	
+    <variable name="bgimg2">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome2)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome2)]</value>
+		<!--value condition="Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x)">images/SiO2_03.png</value-->		
+		<!--value>special://skin/backgrounds/- Black.png</value-->
+        <value>$VAR[bgimg3]</value>	
+    </variable>
+	
+    <variable name="bgimg3">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome)]</value>		
+        <value>special://skin/backgrounds/- BlackTrans.png</value>
+    </variable>
+
+    <variable name="bgimgkeyboard">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome3)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome3)]</value>
+		<!--value>special://skin/backgrounds/- Black.png</value-->		
+        <value>special://skin/backgrounds/- Black.png</value>	
+    </variable>
+	
+    <variable name="bgimgnav">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome4)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome4)]</value>
+		<!--value>special://skin/backgrounds/- Black.png</value-->
+        <value>special://skin/backgrounds/- Black.png</value>	
+    </variable>		
+	
+    <variable name="bgimgfav">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome5)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome5)]</value>
+		<!--value>special://skin/backgrounds/- Black.png</value-->
+        <value>special://skin/backgrounds/- Black.png</value>	
+    </variable>
+
+    <variable name="bgimgweather">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome6)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome6)]</value>
+		<!--value>special://skin/backgrounds/- Black.png</value-->
+        <value>$VAR[bgimg3]</value>	
+    </variable>	
+	
+    <variable name="bgimgEPG">
+        <value condition="!IsEmpty(Skin.String(CustomBgEPG)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgEPG)]</value>	
+        <value>special://skin/backgrounds/- Black.png</value>
+    </variable>	
+	
+    <variable name="bgimgtoprow">
+        <value condition="!IsEmpty(Skin.String(CustomBgHomeTOPROW)) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHomeTOPROW)]</value>	
+	<value>special://skin/backgrounds/- toprow.png</value>
+    </variable>	
+
+	<variable name="diffusehome">
+        <value condition="Skin.HasSetting(homediffuse1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(homediffuse2)">FFA8A8A8</value>
+        <value condition="Skin.HasSetting(homediffuse3)">FF878787</value>
+        <value condition="Skin.HasSetting(homediffuse4)">FF636363</value>
+        <value condition="Skin.HasSetting(homediffuse5)">FF494949</value>
+		<value>FFFFFFFF</value>
+    </variable>	
+	
+	<variable name="diffusetoprow">
+        <value condition="Skin.HasSetting(toprowbgdiffuse1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(toprowbgdiffuse2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(toprowbgdiffuse3)">FF878787</value>
+        <value condition="Skin.HasSetting(toprowbgdiffuse4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(toprowbgdiffuse5)">FF5B5B5B</value>		
+        <value>$VAR[diffusehome]</value>		
+    </variable>	
+
+	<variable name="diffuseshelf">
+        <value condition="Skin.HasSetting(shelfdiffuse1)">FFD3D3D3</value>
+        <value condition="Skin.HasSetting(shelfdiffuse2)">FFA8A8A8</value>
+        <value condition="Skin.HasSetting(shelfdiffuse3)">FF878787</value>
+        <value condition="Skin.HasSetting(shelfdiffuse4)">FF636363</value>
+        <value condition="Skin.HasSetting(shelfdiffuse5)">FF151515</value>	
+        <!--value condition="IsEmpty(Skin.String(CustomBgHomeMAIN))">FFD3D3D3</value-->		
+        <value>FFFFFFFF</value>		
+    </variable>
+	
+	<variable name="diffusebg">
+        <value condition="Skin.HasSetting(bgdiffuse1)">FFD3D3D3</value>
+        <value condition="Skin.HasSetting(bgdiffuse2)">FFA8A8A8</value>
+        <value condition="Skin.HasSetting(bgdiffuse3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffuse4)">FF636363</value>
+        <value condition="Skin.HasSetting(bgdiffuse5)">FF151515</value>	
+        <!--value condition="IsEmpty(Skin.String(CustomBgHomeMAIN))">FFD3D3D3</value-->		
+        <value>FFFFFFFF</value>		
+    </variable>
+	
+	<variable name="diffusefanartbg">
+        <value condition="Skin.HasSetting(fanartbgdiffuse1)">FFAAAAAA</value>
+        <value condition="Skin.HasSetting(fanartbgdiffuse2)">FF767676</value>
+        <value condition="Skin.HasSetting(fanartbgdiffuse3)">FF494949</value>
+        <value condition="Skin.HasSetting(fanartbgdiffuse4)">FF363636</value>
+        <value condition="Skin.HasSetting(fanartbgdiffuse5)">FF151515</value>			
+        <value>FF191919</value>		
+    </variable>	
+
+	<variable name="diffusemenu">
+        <value condition="Skin.HasSetting(bgdiffusemenu1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(bgdiffusemenu2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(bgdiffusemenu3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffusemenu4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(bgdiffusemenu5)">FF151515</value>		
+        <!--value condition="IsEmpty(Skin.String(CustomBgHomeMAIN))">FFE6E6E6</value-->	
+        <value>$VAR[diffusebg]</value>		
+    </variable>
+	
+	<variable name="diffusenav">
+        <value condition="Skin.HasSetting(bgdiffusenav1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(bgdiffusenav2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(bgdiffusenav3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffusenav4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(bgdiffusenav5)">FF151515</value>			
+        <value>EEFFFFFF</value>
+    </variable>
+	
+	<variable name="diffuseicon4view">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome4))">$VAR[diffusenav]</value>			
+        <value>BBFFFFFF</value>
+    </variable>	
+	
+	<variable name="diffusedialogslider">
+        <value condition="!IsEmpty(Skin.String(CustomBgHome2))">$VAR[diffusemenu]</value>			
+        <value>CCFFFFFF</value>
+    </variable>	
+
+	<variable name="diffusekeyboard">
+        <value condition="Skin.HasSetting(bgdiffusekey1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(bgdiffusekey2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(bgdiffusekey3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffusekey4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(bgdiffusekey5)">FF5B5B5B</value>			
+        <value>$VAR[diffusebg]</value>
+    </variable>	
+	
+	<variable name="diffusefav">
+        <value condition="Skin.HasSetting(bgdiffusefav1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(bgdiffusefav2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(bgdiffusefav3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffusefav4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(bgdiffusefav5)">FF5B5B5B</value>			
+        <value>$VAR[diffusebg]</value>
+    </variable>	
+	
+	<variable name="diffuseEPG">
+        <value condition="Skin.HasSetting(bgdiffuseEPG1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(bgdiffuseEPG2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(bgdiffuseEPG3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffuseEPG4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(bgdiffuseEPG5)">FF5B5B5B</value>			
+        <value>$VAR[diffusemenu]</value>
+    </variable>	
+
+	<variable name="diffuseweather">
+        <value condition="Skin.HasSetting(bgdiffusewtr1)">FFD3D3D3</value>	
+        <value condition="Skin.HasSetting(bgdiffusewtr2)">FFA3A3A3</value>
+        <value condition="Skin.HasSetting(bgdiffusewtr3)">FF878787</value>
+        <value condition="Skin.HasSetting(bgdiffusewtr4)">FF6A6A6A</value>
+        <value condition="Skin.HasSetting(bgdiffusewtr5)">FF5B5B5B</value>			
+        <value>$VAR[diffusebg]</value>		
+    </variable>
+	
+	<variable name="diffuseicons">
+        <value condition="Skin.HasSetting(icondiffuse5)">22</value>	
+        <value condition="Skin.HasSetting(icondiffuse4)">33</value>
+        <value condition="Skin.HasSetting(icondiffuse3)">44</value>
+        <value condition="Skin.HasSetting(icondiffuse2)">55</value>
+        <value condition="Skin.HasSetting(icondiffuse1)">66</value>					
+        <value>88</value>		
+    </variable>	
+	
+	<variable name="diffuseicons2">					
+        <value>$VAR[diffuseicons]$VAR[iconcolor]</value>		
+    </variable>	
+	
+	<variable name="iconcolor">
+		<value condition="Skin.HasSetting(green1iconcolor)">33FF33</value>
+		<value condition="Skin.HasSetting(green2iconcolor)">00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3iconcolor)">00CC00</value>
+		<value condition="Skin.HasSetting(green4iconcolor)">009900</value>
+		<value condition="Skin.HasSetting(green5iconcolor)">006600</value>		
+		<value condition="Skin.HasSetting(blue1iconcolor)">0099FF</value>
+		<value condition="Skin.HasSetting(blue2iconcolor)">0066CC</value>   
+		<value condition="Skin.HasSetting(blue3iconcolor)">0068FF</value>
+		<value condition="Skin.HasSetting(blue4iconcolor)">0101DF</value>
+		<value condition="Skin.HasSetting(blue5iconcolor)">000099</value>		
+		<value condition="Skin.HasSetting(red1iconcolor)">FF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2iconcolor)">ED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3iconcolor)">F30000</value>
+		<value condition="Skin.HasSetting(red4iconcolor)">C60404</value>
+		<value condition="Skin.HasSetting(red5iconcolor)">A50303</value>		
+		<value condition="Skin.HasSetting(pink1iconcolor)">FF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2iconcolor)">FF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3iconcolor)">FF0091</value>
+		<value condition="Skin.HasSetting(pink4iconcolor)">FF1D7C</value>
+		<value condition="Skin.HasSetting(pink5iconcolor)">E60084</value>	
+		<value condition="Skin.HasSetting(purple1iconcolor)">CE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2iconcolor)">D100D1</value>  
+		<value condition="Skin.HasSetting(purple3iconcolor)">920092</value>
+		<value condition="Skin.HasSetting(purple4iconcolor)">600060</value>
+		<value condition="Skin.HasSetting(purple5iconcolor)">370037</value>		
+		<value condition="Skin.HasSetting(teal1iconcolor)">8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2iconcolor)">00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3iconcolor)">00EFD4</value>
+		<value condition="Skin.HasSetting(teal4iconcolor)">00B2AB</value>
+		<value condition="Skin.HasSetting(teal5iconcolor)">009698</value>		
+		<value condition="Skin.HasSetting(yellow1iconcolor)">FFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2iconcolor)">FEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3iconcolor)">FEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4iconcolor)">FFFF00</value>
+		<value condition="Skin.HasSetting(yellow5iconcolor)">FFEB01</value>			
+		<value condition="Skin.HasSetting(orange1iconcolor)">FF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2iconcolor)">FF5A30</value>  
+		<value condition="Skin.HasSetting(orange3iconcolor)">FF4515</value>
+		<value condition="Skin.HasSetting(orange4iconcolor)">FF3600</value>
+		<value condition="Skin.HasSetting(orange5iconcolor)">FF0000</value>	
+		<value condition="Skin.HasSetting(grayiconcolor)">909090</value>		
+		<value condition="Skin.HasSetting(blackiconcolor)">000000</value>
+		<value condition="Skin.HasSetting(whiteiconcolor)">FFFFFF</value>	
+        <value>000000</value>		
+    </variable>
+	
+	<variable name="diffusehomeiconborder">
+        <value condition="Skin.HasSetting(homeiconborderdiffuse1)">DD$VAR[homeiconbordercolor]</value>	
+        <value condition="Skin.HasSetting(homeiconborderdiffuse2)">AA$VAR[homeiconbordercolor]</value>
+        <value condition="Skin.HasSetting(homeiconborderdiffuse3)">99$VAR[homeiconbordercolor]</value>
+        <value condition="Skin.HasSetting(homeiconborderdiffuse4)">66$VAR[homeiconbordercolor]</value>
+        <value condition="Skin.HasSetting(homeiconborderdiffuse5)">33$VAR[homeiconbordercolor]</value>					
+        <value>FF$VAR[homeiconbordercolor]</value>		
+    </variable>	
+
+	<variable name="homeiconbordercolor">
+		<value condition="Skin.HasSetting(green1homeiconborder)">33FF33</value>
+		<value condition="Skin.HasSetting(green2homeiconborder)">00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3homeiconborder)">00CC00</value>
+		<value condition="Skin.HasSetting(green4homeiconborder)">009900</value>
+		<value condition="Skin.HasSetting(green5homeiconborder)">006600</value>		
+		<value condition="Skin.HasSetting(blue1homeiconborder)">0099FF</value>
+		<value condition="Skin.HasSetting(blue2homeiconborder)">0066CC</value>   
+		<value condition="Skin.HasSetting(blue3homeiconborder)">0068FF</value>
+		<value condition="Skin.HasSetting(blue4homeiconborder)">0101DF</value>
+		<value condition="Skin.HasSetting(blue5homeiconborder)">000099</value>		
+		<value condition="Skin.HasSetting(red1homeiconborder)">FF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2homeiconborder)">ED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3homeiconborder)">F30000</value>
+		<value condition="Skin.HasSetting(red4homeiconborder)">C60404</value>
+		<value condition="Skin.HasSetting(red5homeiconborder)">A50303</value>		
+		<value condition="Skin.HasSetting(pink1homeiconborder)">FF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2homeiconborder)">FF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3homeiconborder)">FF0091</value>
+		<value condition="Skin.HasSetting(pink4homeiconborder)">FF1D7C</value>
+		<value condition="Skin.HasSetting(pink5homeiconborder)">E60084</value>	
+		<value condition="Skin.HasSetting(purple1homeiconborder)">CE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2homeiconborder)">D100D1</value>  
+		<value condition="Skin.HasSetting(purple3homeiconborder)">920092</value>
+		<value condition="Skin.HasSetting(purple4homeiconborder)">600060</value>
+		<value condition="Skin.HasSetting(purple5homeiconborder)">370037</value>		
+		<value condition="Skin.HasSetting(teal1homeiconborder)">8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2homeiconborder)">00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3homeiconborder)">00EFD4</value>
+		<value condition="Skin.HasSetting(teal4homeiconborder)">00B2AB</value>
+		<value condition="Skin.HasSetting(teal5homeiconborder)">009698</value>		
+		<value condition="Skin.HasSetting(yellow1homeiconborder)">FFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2homeiconborder)">FEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3homeiconborder)">FEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4homeiconborder)">FFFF00</value>
+		<value condition="Skin.HasSetting(yellow5homeiconborder)">FFEB01</value>			
+		<value condition="Skin.HasSetting(orange1homeiconborder)">FF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2homeiconborder)">FF5A30</value>  
+		<value condition="Skin.HasSetting(orange3homeiconborder)">FF4515</value>
+		<value condition="Skin.HasSetting(orange4homeiconborder)">FF3600</value>
+		<value condition="Skin.HasSetting(orange5homeiconborder)">FF0000</value>	
+		<value condition="Skin.HasSetting(grayhomeiconborder)">909090</value>		
+		<value condition="Skin.HasSetting(blackhomeiconborder)">000000</value>
+		<value condition="Skin.HasSetting(whitehomeiconborder)">FFFFFF</value>	
+        <value>FFFFFF</value>		
+    </variable>	
+	
+	<variable name="diffuseslider">
+		<value condition="Skin.HasSetting(green1select)">EE33FF33</value>
+		<value condition="Skin.HasSetting(green2select)">EE00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3select)">EE00CC00</value>
+		<value condition="Skin.HasSetting(green4select)">EE009900</value>
+		<value condition="Skin.HasSetting(green5select)">EE006600</value>		
+		<value condition="Skin.HasSetting(blue1select)">EE0099FF</value>
+		<value condition="Skin.HasSetting(blue2select)">EE0066CC</value>   
+		<value condition="Skin.HasSetting(blue3select)">EE0068FF</value>
+		<value condition="Skin.HasSetting(blue4select)">EE0101DF</value>
+		<value condition="Skin.HasSetting(blue5select)">EE000099</value>		
+		<value condition="Skin.HasSetting(red1select)">EEFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2select)">EEED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3select)">EEF30000</value>
+		<value condition="Skin.HasSetting(red4select)">EEC60404</value>
+		<value condition="Skin.HasSetting(red5select)">EEA50303</value>		
+		<value condition="Skin.HasSetting(pink1select)">EEFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2select)">EEFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3select)">EEFF0091</value>
+		<value condition="Skin.HasSetting(pink4select)">EEFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5select)">EEE60084</value>	
+		<value condition="Skin.HasSetting(purple1select)">EECE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2select)">EED100D1</value>  
+		<value condition="Skin.HasSetting(purple3select)">EE920092</value>
+		<value condition="Skin.HasSetting(purple4select)">EE600060</value>
+		<value condition="Skin.HasSetting(purple5select)">EE370037</value>		
+		<value condition="Skin.HasSetting(teal1select)">EE8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2select)">EE00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3select)">EE00EFD4</value>
+		<value condition="Skin.HasSetting(teal4select)">EE00B2AB</value>
+		<value condition="Skin.HasSetting(teal5select)">EE009698</value>		
+		<value condition="Skin.HasSetting(yellow1select)">EEFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2select)">EEFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3select)">EEFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4select)">EEFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5select)">EEFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1select)">EEFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2select)">EEFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3select)">EEFF4515</value>
+		<value condition="Skin.HasSetting(orange4select)">EEFF3600</value>
+		<value condition="Skin.HasSetting(orange5select)">EEFF0000</value>	
+		<value condition="Skin.HasSetting(grayselect)">EE909090</value>		
+		<value condition="Skin.HasSetting(blackselect)">EE000000</value>
+		<value condition="Skin.HasSetting(whiteselect)">EEFFFFFF</value>	
+        <value>EEFFFFFF</value>		
+    </variable>	
+
+	<variable name="diffusekey">
+		<value condition="Skin.HasSetting(green1select)">EE33FF33</value>
+		<value condition="Skin.HasSetting(green2select)">EE00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3select)">EE00CC00</value>
+		<value condition="Skin.HasSetting(green4select)">EE009900</value>
+		<value condition="Skin.HasSetting(green5select)">EE006600</value>		
+		<value condition="Skin.HasSetting(blue1select)">EE0099FF</value>
+		<value condition="Skin.HasSetting(blue2select)">EE0066CC</value>   
+		<value condition="Skin.HasSetting(blue3select)">EE0068FF</value>
+		<value condition="Skin.HasSetting(blue4select)">EE0101DF</value>
+		<value condition="Skin.HasSetting(blue5select)">EE000099</value>		
+		<value condition="Skin.HasSetting(red1select)">EEFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2select)">EEED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3select)">EEF30000</value>
+		<value condition="Skin.HasSetting(red4select)">EEC60404</value>
+		<value condition="Skin.HasSetting(red5select)">EEA50303</value>		
+		<value condition="Skin.HasSetting(pink1select)">EEFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2select)">EEFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3select)">EEFF0091</value>
+		<value condition="Skin.HasSetting(pink4select)">EEFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5select)">EEE60084</value>	
+		<value condition="Skin.HasSetting(purple1select)">EECE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2select)">EED100D1</value>  
+		<value condition="Skin.HasSetting(purple3select)">EE920092</value>
+		<value condition="Skin.HasSetting(purple4select)">EE600060</value>
+		<value condition="Skin.HasSetting(purple5select)">EE370037</value>		
+		<value condition="Skin.HasSetting(teal1select)">EE8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2select)">EE00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3select)">EE00EFD4</value>
+		<value condition="Skin.HasSetting(teal4select)">EE00B2AB</value>
+		<value condition="Skin.HasSetting(teal5select)">EE009698</value>		
+		<value condition="Skin.HasSetting(yellow1select)">EEFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2select)">EEFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3select)">EEFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4select)">EEFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5select)">EEFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1select)">EEFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2select)">EEFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3select)">EEFF4515</value>
+		<value condition="Skin.HasSetting(orange4select)">EEFF3600</value>
+		<value condition="Skin.HasSetting(orange5select)">EEFF0000</value>	
+		<value condition="Skin.HasSetting(grayselect)">EE9E9E9E</value>		
+		<value condition="Skin.HasSetting(blackselect)">EE000000</value>
+		<value condition="Skin.HasSetting(whiteselect)">EEFFFFFF</value>	
+        <value>EE9E9E9E</value>		
+    </variable>	
+	
+	<variable name="diffuseselect">
+		<value condition="Skin.HasSetting(green1select)">AA33FF33</value>
+		<value condition="Skin.HasSetting(green2select)">AA00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3select)">AA00CC00</value>
+		<value condition="Skin.HasSetting(green4select)">AA009900</value>
+		<value condition="Skin.HasSetting(green5select)">AA006600</value>		
+		<value condition="Skin.HasSetting(blue1select)">AA0099FF</value>
+		<value condition="Skin.HasSetting(blue2select)">AA0066CC</value>   
+		<value condition="Skin.HasSetting(blue3select)">AA0068FF</value>
+		<value condition="Skin.HasSetting(blue4select)">AA0101DF</value>
+		<value condition="Skin.HasSetting(blue5select)">AA000099</value>		
+		<value condition="Skin.HasSetting(red1select)">AAFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2select)">AAED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3select)">AAF30000</value>
+		<value condition="Skin.HasSetting(red4select)">AAC60404</value>
+		<value condition="Skin.HasSetting(red5select)">AAA50303</value>		
+		<value condition="Skin.HasSetting(pink1select)">AAFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2select)">AAFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3select)">AAFF0091</value>
+		<value condition="Skin.HasSetting(pink4select)">AAFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5select)">AAE60084</value>	
+		<value condition="Skin.HasSetting(purple1select)">AACE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2select)">AAD100D1</value>  
+		<value condition="Skin.HasSetting(purple3select)">AA920092</value>
+		<value condition="Skin.HasSetting(purple4select)">AA600060</value>
+		<value condition="Skin.HasSetting(purple5select)">AA370037</value>		
+		<value condition="Skin.HasSetting(teal1select)">AA8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2select)">AA00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3select)">AA00EFD4</value>
+		<value condition="Skin.HasSetting(teal4select)">AA00B2AB</value>
+		<value condition="Skin.HasSetting(teal5select)">AA009698</value>		
+		<value condition="Skin.HasSetting(yellow1select)">AAFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2select)">AAFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3select)">AAFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4select)">AAFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5select)">AAFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1select)">AAFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2select)">AAFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3select)">AAFF4515</value>
+		<value condition="Skin.HasSetting(orange4select)">AAFF3600</value>
+		<value condition="Skin.HasSetting(orange5select)">AAFF0000</value>	
+		<value condition="Skin.HasSetting(grayselect)">AA909090</value>		
+		<value condition="Skin.HasSetting(blackselect)">AA000000</value>
+		<value condition="Skin.HasSetting(whiteselect)">AAFFFFFF</value>	
+        <value>AAFFFFFF</value>		
+    </variable>
+
+	<variable name="diffuseborder">
+		<value condition="Skin.HasSetting(green1border)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2border)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3border)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4border)">FF009900</value>
+		<value condition="Skin.HasSetting(green5border)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1border)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2border)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3border)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4border)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5border)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1border)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2border)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3border)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4border)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5border)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1border)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2border)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3border)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4border)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5border)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1border)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2border)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3border)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4border)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5border)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1border)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2border)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3border)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4border)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5border)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1border)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2border)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3border)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4border)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5border)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1border)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2border)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3border)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4border)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5border)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(grayborder)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackborder)">FF000000</value>
+		<value condition="Skin.HasSetting(whiteborder)">FFFFFFFF</value>	
+        <value>FFFFFFFF</value>		
+    </variable>
+		
+	<variable name="diffuselines">
+		<value condition="Skin.HasSetting(green1lines)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2lines)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3lines)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4lines)">FF009900</value>
+		<value condition="Skin.HasSetting(green5lines)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1lines)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2lines)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3lines)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4lines)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5lines)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1lines)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2lines)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3lines)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4lines)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5lines)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1lines)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2lines)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3lines)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4lines)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5lines)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1lines)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2lines)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3lines)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4lines)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5lines)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1lines)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2lines)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3lines)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4lines)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5lines)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1lines)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2lines)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3lines)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4lines)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5lines)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1lines)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2lines)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3lines)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4lines)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5lines)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(graylines)">FF909090</value>		
+		<value condition="Skin.HasSetting(blacklines)">FF000000</value>
+		<value condition="Skin.HasSetting(whitelines)">FFFFFFFF</value>	
+        <value>FFFFFFFF</value>		
+    </variable>	
+	
+	<variable name="bgcolor1">
+		<value condition="Skin.HasSetting(green1bgcolor1)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2bgcolor1)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3bgcolor1)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4bgcolor1)">FF009900</value>
+		<value condition="Skin.HasSetting(green5bgcolor1)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1bgcolor1)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2bgcolor1)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3bgcolor1)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4bgcolor1)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5bgcolor1)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1bgcolor1)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2bgcolor1)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3bgcolor1)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4bgcolor1)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5bgcolor1)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1bgcolor1)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2bgcolor1)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3bgcolor1)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4bgcolor1)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5bgcolor1)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1bgcolor1)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2bgcolor1)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3bgcolor1)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4bgcolor1)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5bgcolor1)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1bgcolor1)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2bgcolor1)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3bgcolor1)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4bgcolor1)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5bgcolor1)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1bgcolor1)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2bgcolor1)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3bgcolor1)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4bgcolor1)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5bgcolor1)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1bgcolor1)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2bgcolor1)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3bgcolor1)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4bgcolor1)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5bgcolor1)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(graybgcolor1)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackbgcolor1)">FF000000</value>
+		<value condition="Skin.HasSetting(whitebgcolor1)">FFFFFFFF</value>		
+        <value>FF000000</value>		
+    </variable>		
+
+	<variable name="bgcolor2">
+		<value condition="Skin.HasSetting(green1select)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2select)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3select)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4select)">FF009900</value>
+		<value condition="Skin.HasSetting(green5select)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1select)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2select)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3select)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4select)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5select)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1select)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2select)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3select)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4select)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5select)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1select)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2select)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3select)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4select)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5select)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1select)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2select)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3select)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4select)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5select)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1select)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2select)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3select)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4select)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5select)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1select)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2select)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3select)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4select)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5select)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1select)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2select)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3select)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4select)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5select)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(grayselect)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackselect)">FF000000</value>
+		<value condition="Skin.HasSetting(whiteselect)">FFFFFFFF</value>		
+        <value>FFFFFFFF</value>		
+    </variable>		
+
+	<variable name="osdprogresscolor">
+		<value condition="Skin.HasSetting(green1osdprogress)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2osdprogress)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3osdprogress)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4osdprogress)">FF009900</value>
+		<value condition="Skin.HasSetting(green5osdprogress)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1osdprogress)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2osdprogress)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3osdprogress)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4osdprogress)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5osdprogress)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1osdprogress)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2osdprogress)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3osdprogress)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4osdprogress)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5osdprogress)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1osdprogress)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2osdprogress)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3osdprogress)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4osdprogress)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5osdprogress)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1osdprogress)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2osdprogress)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3osdprogress)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4osdprogress)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5osdprogress)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1osdprogress)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2osdprogress)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3osdprogress)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4osdprogress)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5osdprogress)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1osdprogress)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2osdprogress)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3osdprogress)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4osdprogress)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5osdprogress)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1osdprogress)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2osdprogress)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3osdprogress)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4osdprogress)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5osdprogress)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(grayosdprogress)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackosdprogress)">FF000000</value>
+		<value condition="Skin.HasSetting(whiteosdprogress)">FFFFFFFF</value>			
+        <value>FF0060FF</value>		
+    </variable>
+
+	<variable name="osdcachecolor">
+		<value condition="Skin.HasSetting(green1osdcache)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2osdcache)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3osdcache)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4osdcache)">FF009900</value>
+		<value condition="Skin.HasSetting(green5osdcache)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1osdcache)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2osdcache)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3osdcache)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4osdcache)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5osdcache)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1osdcache)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2osdcache)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3osdcache)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4osdcache)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5osdcache)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1osdcache)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2osdcache)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3osdcache)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4osdcache)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5osdcache)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1osdcache)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2osdcache)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3osdcache)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4osdcache)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5osdcache)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1osdcache)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2osdcache)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3osdcache)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4osdcache)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5osdcache)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1osdcache)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2osdcache)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3osdcache)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4osdcache)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5osdcache)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1osdcache)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2osdcache)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3osdcache)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4osdcache)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5osdcache)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(grayosdcache)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackosdcache)">FF000000</value>
+		<value condition="Skin.HasSetting(whiteosdcache)">FFFFFFFF</value>		
+        <value>FFED0C0C</value>		
+    </variable>			
+
+	<variable name="osdmarkercolor">
+		<value condition="Skin.HasSetting(green1osdmarker)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2osdmarker)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3osdmarker)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4osdmarker)">FF009900</value>
+		<value condition="Skin.HasSetting(green5osdmarker)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1osdmarker)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2osdmarker)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3osdmarker)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4osdmarker)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5osdmarker)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1osdmarker)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2osdmarker)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3osdmarker)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4osdmarker)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5osdmarker)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1osdmarker)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2osdmarker)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3osdmarker)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4osdmarker)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5osdmarker)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1osdmarker)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2osdmarker)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3osdmarker)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4osdmarker)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5osdmarker)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1osdmarker)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2osdmarker)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3osdmarker)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4osdmarker)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5osdmarker)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1osdmarker)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2osdmarker)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3osdmarker)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4osdmarker)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5osdmarker)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1osdmarker)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2osdmarker)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3osdmarker)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4osdmarker)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5osdmarker)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(grayosdmarker)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackosdmarker)">FF000000</value>
+		<value condition="Skin.HasSetting(whiteosdmarker)">FFFFFFFF</value>		
+        <value>FF0060FF</value>		
+    </variable>
+	
+	<variable name="EPGtextcolor">
+		<value condition="Skin.HasSetting(green1epgtext)">FF33FF33</value>
+		<value condition="Skin.HasSetting(green2epgtext)">FF00FF00</value>  <!-- PREVIOUS EMERALD -->  
+		<value condition="Skin.HasSetting(green3epgtext)">FF00CC00</value>
+		<value condition="Skin.HasSetting(green4epgtext)">FF009900</value>
+		<value condition="Skin.HasSetting(green5epgtext)">FF006600</value>		
+		<value condition="Skin.HasSetting(blue1epgtext)">FF0099FF</value>
+		<value condition="Skin.HasSetting(blue2epgtext)">FF0066CC</value>   
+		<value condition="Skin.HasSetting(blue3epgtext)">FF0068FF</value>
+		<value condition="Skin.HasSetting(blue4epgtext)">FF0101DF</value>
+		<value condition="Skin.HasSetting(blue5epgtext)">FF000099</value>		
+		<value condition="Skin.HasSetting(red1epgtext)">FFFF1D1D</value> 		
+		<value condition="Skin.HasSetting(red2epgtext)">FFED0C0C</value>  <!-- Previous Red -->
+		<value condition="Skin.HasSetting(red3epgtext)">FFF30000</value>
+		<value condition="Skin.HasSetting(red4epgtext)">FFC60404</value>
+		<value condition="Skin.HasSetting(red5epgtext)">FFA50303</value>		
+		<value condition="Skin.HasSetting(pink1epgtext)">FFFF4DB1</value> 		
+		<value condition="Skin.HasSetting(pink2epgtext)">FFFF00AA</value>  <!-- Previous Pink -->
+		<value condition="Skin.HasSetting(pink3epgtext)">FFFF0091</value>
+		<value condition="Skin.HasSetting(pink4epgtext)">FFFF1D7C</value>
+		<value condition="Skin.HasSetting(pink5epgtext)">FFE60084</value>	
+		<value condition="Skin.HasSetting(purple1epgtext)">FFCE00AE</value> 		
+		<value condition="Skin.HasSetting(purple2epgtext)">FFD100D1</value>  
+		<value condition="Skin.HasSetting(purple3epgtext)">FF920092</value>
+		<value condition="Skin.HasSetting(purple4epgtext)">FF600060</value>
+		<value condition="Skin.HasSetting(purple5epgtext)">FF370037</value>		
+		<value condition="Skin.HasSetting(teal1epgtext)">FF8FFFED</value> 		
+		<value condition="Skin.HasSetting(teal2epgtext)">FF00FFDF</value>  
+		<value condition="Skin.HasSetting(teal3epgtext)">FF00EFD4</value>
+		<value condition="Skin.HasSetting(teal4epgtext)">FF00B2AB</value>
+		<value condition="Skin.HasSetting(teal5epgtext)">FF009698</value>		
+		<value condition="Skin.HasSetting(yellow1epgtext)">FFFFFD88</value> 		
+		<value condition="Skin.HasSetting(yellow2epgtext)">FFFEFE67</value>  
+		<value condition="Skin.HasSetting(yellow3epgtext)">FFFEFF2D</value>
+		<value condition="Skin.HasSetting(yellow4epgtext)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(yellow5epgtext)">FFFFEB01</value>			
+		<value condition="Skin.HasSetting(orange1epgtext)">FFFF7D37</value> 		
+		<value condition="Skin.HasSetting(orange2epgtext)">FFFF5A30</value>  
+		<value condition="Skin.HasSetting(orange3epgtext)">FFFF4515</value>
+		<value condition="Skin.HasSetting(orange4epgtext)">FFFF3600</value>
+		<value condition="Skin.HasSetting(orange5epgtext)">FFFF0000</value>	
+		<value condition="Skin.HasSetting(grayepgtext)">FF909090</value>		
+		<value condition="Skin.HasSetting(blackepgtext)">FF000000</value>	
+        <value>FFFFFFFF</value>		
+    </variable>	
+	
+	<variable name="diffuseEPGline">	
+        <value>FF000000</value>		
+    </variable>
+
+	<variable name="diffusetext">
+		<value condition="Skin.HasSetting(whitetext)">FFFFFFFF</value>	
+        <value condition="Skin.HasSetting(blacktext)">FF000000</value>	
+        <value condition="Skin.HasSetting(greentext)">FF7FFF00</value>
+        <value condition="Skin.HasSetting(limetext)">FFBFFF00</value>
+        <value condition="Skin.HasSetting(emeraldtext)">FF00FF00</value>
+        <value condition="Skin.HasSetting(foresttext)">FF228B22</value>		
+        <value condition="Skin.HasSetting(bluetext)">FF0000CD</value>
+		<value condition="Skin.HasSetting(ltbluetext)">FF33FFFF</value>
+		<value condition="Skin.HasSetting(dbluetext)">FF084C9E</value>
+		<value condition="Skin.HasSetting(redtext)">FFED0C0C</value>
+		<value condition="Skin.HasSetting(pinktext)">FFFC0FC0</value>
+		<value condition="Skin.HasSetting(purpletext)">FFB57EDC</value>
+		<value condition="Skin.HasSetting(indigotext)">FF4B0082</value>
+		<value condition="Skin.HasSetting(aquamarinetext)">FF7FFFD4</value>
+		<value condition="Skin.HasSetting(yellowtext)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(orangetext)">FFFF6600</value>
+		<value condition="Skin.HasSetting(coraltext)">FFFF7F50</value>		
+        <value>FFFFFFFF</value>		
+    </variable>
+	
+	<variable name="textfo">
+		<value condition="Skin.HasSetting(focusedblack)">FF000000</value>			
+        <value>FFFFFFFF</value>		
+    </variable>	
+		
+	<variable name="diffusetext2">
+		<value condition="Skin.HasSetting(whitetext)">FFFFFFFF</value>	
+        <value condition="Skin.HasSetting(blacktext)">FF000000</value>	
+        <value condition="Skin.HasSetting(greentext)">FF7FFF00</value>
+        <value condition="Skin.HasSetting(limetext)">FFBFFF00</value>
+        <value condition="Skin.HasSetting(emeraldtext)">FF00FF00</value>
+        <value condition="Skin.HasSetting(foresttext)">FF228B22</value>		
+        <value condition="Skin.HasSetting(bluetext)">FF0000CD</value>
+		<value condition="Skin.HasSetting(ltbluetext)">FF33FFFF</value>
+		<value condition="Skin.HasSetting(dbluetext)">FF084C9E</value>
+		<value condition="Skin.HasSetting(redtext)">FFED0C0C</value>
+		<value condition="Skin.HasSetting(pinktext)">FFFC0FC0</value>
+		<value condition="Skin.HasSetting(purpletext)">FFB57EDC</value>
+		<value condition="Skin.HasSetting(indigotext)">FF4B0082</value>
+		<value condition="Skin.HasSetting(aquamarinetext)">FF7FFFD4</value>
+		<value condition="Skin.HasSetting(yellowtext)">FFFFFF00</value>
+		<value condition="Skin.HasSetting(orangetext)">FFFF6600</value>
+		<value condition="Skin.HasSetting(coraltext)">FFFF7F50</value>		
+        <value>FFFFFFFF</value>		
+    </variable>	
+	
+    <variable name="QuitLabel" description="Label for skin settings Quit function item">
+        <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
+        <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
+        <value condition="StringCompare(Skin.String(shutdown),hibernate)">$LOCALIZE[13010]</value>
+        <value condition="StringCompare(Skin.String(shutdown),suspend)">$LOCALIZE[13011]</value>
+        <value condition="StringCompare(Skin.String(shutdown),reboot)">$LOCALIZE[13013]</value>
+    </variable>
+
+    <variable name="ShelfLogo">
+        <value condition="System.Date(01-01,01-02)">holidays/newyear.png</value>
+        <value condition="System.Date(02-19,02-20)">holidays/batman.png</value>
+        <value condition="System.Date(03-17,03-18)">holidays/stpatrick.png</value>
+        <value condition="System.Date(04-15,04-16)">holidays/leonardo.png</value>
+        <value condition="System.Date(10-31,11-01)">holidays/halloween.png</value>
+        <value condition="System.Date(12-25,12-26)">holidays/xmas.png</value>
+        <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
+        <value>$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
+        <!--value>images/XBMCHomeLogo.png</value-->
+    </variable>
+
+    <variable name="Fanartdisplaystatus" description="Label2 for music playing FA">
+        <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[20445] : $LOCALIZE[449]</value>
+        <value>$LOCALIZE[20445] : $LOCALIZE[13113]</value>
+    </variable>
+
+    <variable name="WatchStatus" description="status">
+        <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
+        <value>$INFO[ListItem.Overlay]</value>
+    </variable>
+
+    <variable name="RootLabel" description="Windows Name and Items details">
+        <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
+        <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
+        <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
+        <value condition="Window.IsActive(SkinSettings)">Skin $LOCALIZE[5]</value>
+        <value condition="Window.IsActive(Settings.xml)">$LOCALIZE[5]</value>
+        <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31037]</value>
+        <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
+        <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
+        <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
+        <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(albums)">$LOCALIZE[13351]</value>
+        <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(artists)">$LOCALIZE[21891]</value>
+        <value condition="Window.IsActive(DialogSongInfo.xml) + container.content(songs)">$LOCALIZE[658]</value>
+        <value condition="Window.IsActive(DialogAddonInfo.xml)">$LOCALIZE[24003]</value>
+        <value condition="Window.IsActive(weather)">$INFO[Window(Weather)]</value>
+        <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
+        <value condition="Window.IsActive(MyPVR.xml) + [Control.HasFocus(13) | Control.HasFocus(34) | Control.HasFocus(14) | Control.HasFocus(35) | Control.HasFocus(17) | Control.HasFocus(36)]">$INFO[Control.GetLabel(29)]</value>
+        <value condition="Window.IsActive(MyPVR.xml)">$INFO[Control.GetLabel(30)]</value>
+        <value condition="Window.IsActive(1717)">$LOCALIZE[31069]</value>
+        <value condition="Window.IsActive(1113)">Watchlists</value>
+        <value condition="IsEmpty(Container.FolderName)">$INFO[System.CurrentWindow]</value>
+        <value>$INFO[Container.FolderName]</value>
+    </variable>
+
+    <variable name="TopLabel" description="INFOS">
+        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
+        <value condition="Container.content(Albums)">$INFO[ListItem.Label]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+        <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator)]</value>
+        <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
+        <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
+        <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$INFO[ListItem.Year]</value>
+        <value condition="Container.Content(Movies) + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.MPAA, • ]</value>
+        <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]] • $LOCALIZE[20410, • ]$INFO[ListItem.MPAA, • ]</value>
+        <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
+        <value>$INFO[ListItem.Label2]</value>
+    </variable>
+
+    <!--variable name="MPAAS">
+     <value condition="substring(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
+     <value condition="substring(ListItem.MPAA,PG-13)">PG-13</value>
+     <value condition="substring(ListItem.MPAA,Rated R)">R</value>
+     <value condition="StringCompare(ListItem.MPAA,R)">R</value>
+     <value condition="substring(ListItem.MPAA,PG)">PG</value>
+     <value condition="substring(ListItem.MPAA,NC-17)">NC-17</value>
+     <value condition="substring(ListItem.MPAA,G)">G</value>
+     <value>NA</value>
+   </variable-->
+
+    <variable name="Plots">
+        <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
+        <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
+        <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+        <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
+        <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+        <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+        <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+    </variable>
+
+    <variable name="pvrosd" description="pvrOSDchoiche">
+        <value condition="Skin.HasSetting(osdch)">$LOCALIZE[19069]</value>
+        <value >$LOCALIZE[19019]</value>
+    </variable>
+
+    <variable name="helptext">
+        <value condition="Controlgroup(1122).HasFocus(1)">$LOCALIZE[31018]</value>
+        <value condition="Controlgroup(1122).HasFocus(2)">$LOCALIZE[21383]</value>
+        <value condition="Controlgroup(1122).HasFocus(3)">$LOCALIZE[31017]</value>
+        <!--value condition="Controlgroup(575).HasFocus(4)">$LOCALIZE[31086]</value-->
+        <value condition="Controlgroup(575).HasFocus(6)">$LOCALIZE[31046]</value>
+        <!--<value condition="Controlgroup(575).HasFocus(7)">$LOCALIZE[31086]</value>-->
+        <value condition="Controlgroup(1122).HasFocus(8)">$LOCALIZE[31022]</value>
+        <value condition="Controlgroup(1122).HasFocus(9)">$LOCALIZE[31019]</value>
+        <value condition="Controlgroup(1122).HasFocus(10)">$LOCALIZE[31003]</value>
+        <value condition="Controlgroup(575).HasFocus(11)">$LOCALIZE[31029]</value>
+        <value condition="Controlgroup(575).HasFocus(71)">$LOCALIZE[31029]</value>		
+        <value condition="Controlgroup(1122).HasFocus(12)">$LOCALIZE[31031]</value>
+        <value condition="Controlgroup(1122).HasFocus(13)">$LOCALIZE[31039]</value>
+        <value condition="Controlgroup(1122).HasFocus(15)">$LOCALIZE[31089]</value>
+        <value condition="Controlgroup(1122).HasFocus(16)">$LOCALIZE[31102]</value>
+        <value condition="Controlgroup(1122).HasFocus(17)">$LOCALIZE[31103]</value>		
+        <value condition="Controlgroup(575).HasFocus(18)">$LOCALIZE[31101]</value>
+        <value condition="Controlgroup(1122).HasFocus(19)">$LOCALIZE[31104]</value>
+        <value condition="Controlgroup(1122).HasFocus(20)">$LOCALIZE[31105]</value>		
+        <value condition="Controlgroup(575).HasFocus(21)">$LOCALIZE[31106]</value>
+        <value condition="Controlgroup(1122).HasFocus(22)">$LOCALIZE[31125]</value>
+        <value condition="Controlgroup(1122).HasFocus(23)">$LOCALIZE[31127]</value>		
+        <value condition="Controlgroup(575).HasFocus(25)">$LOCALIZE[31107]</value>		
+        <value condition="Controlgroup(575).HasFocus(26)">$LOCALIZE[31108]</value>
+        <value condition="Controlgroup(575).HasFocus(27)">$LOCALIZE[31109]</value>
+        <value condition="Controlgroup(575).HasFocus(28)">$LOCALIZE[31110]</value>
+        <value condition="Controlgroup(575).HasFocus(29)">$LOCALIZE[31111]</value>
+        <value condition="Controlgroup(575).HasFocus(30) + !Window.IsVisible(1148)">$LOCALIZE[31130]</value>						
+        <value condition="Controlgroup(575).HasFocus(33)">$LOCALIZE[31112]</value>
+        <value condition="Controlgroup(575).HasFocus(34)">$LOCALIZE[31115]</value>
+        <value condition="Controlgroup(575).HasFocus(35)">$LOCALIZE[31116]</value>
+        <value condition="Controlgroup(575).HasFocus(38)">$LOCALIZE[31121]</value>
+        <value condition="Controlgroup(575).HasFocus(72)">$LOCALIZE[31131]</value>
+        <value condition="Controlgroup(575).HasFocus(73)">$LOCALIZE[31131]</value>
+        <value condition="Controlgroup(1122).HasFocus(45)">$LOCALIZE[31135]</value>
+        <value condition="Controlgroup(1122).HasFocus(47)">$LOCALIZE[31136]</value>
+        <value condition="Controlgroup(1122).HasFocus(48)">$LOCALIZE[31137]</value>	
+        <value condition="Controlgroup(1122).HasFocus(25)">Changes the Loading Image</value>
+        <value condition="Controlgroup(1122).HasFocus(30)">$LOCALIZE[31138]</value>
+        <value condition="Controlgroup(1122).HasFocus(31)">$LOCALIZE[31138]</value>	
+        <value condition="Controlgroup(1122).HasFocus(33)">$LOCALIZE[31140]</value>				
+        <value condition="Controlgroup(1122).HasFocus(34)">$LOCALIZE[31139]</value>
+
+
+
+		
+<!-- HOMEICON MENU -->		
+        <value condition="Controlgroup(9000).HasFocus(1) + Window.IsVisible(1148)">$LOCALIZE[31128]</value>
+		<value condition="Controlgroup(9000).HasFocus(2) + Window.IsVisible(1148)">$LOCALIZE[31122]</value>		
+		<value condition="Controlgroup(9000).HasFocus(3) + Window.IsVisible(1148)">$LOCALIZE[31118]</value>		
+		<value condition="Controlgroup(9000).HasFocus(4) + Window.IsVisible(1148)">$LOCALIZE[31119]</value>			
+		<value condition="Controlgroup(9000).HasFocus(5) + Window.IsVisible(1148)">$LOCALIZE[31113]</value>
+		<value condition="Controlgroup(9000).HasFocus(6) + Window.IsVisible(1148)">$LOCALIZE[31117]</value>	
+		<value condition="Controlgroup(9000).HasFocus(7) + Window.IsVisible(1148)">$LOCALIZE[31114]</value>		
+		<value condition="Controlgroup(9000).HasFocus(8) + Window.IsVisible(1148)">$LOCALIZE[31008]</value>
+		<value condition="Controlgroup(9000).HasFocus(9) + Window.IsVisible(1148)">$LOCALIZE[31132]</value>  
+		<value condition="Controlgroup(9000).HasFocus(10) + Window.IsVisible(1148)">$LOCALIZE[31129]</value>
+		<value condition="Controlgroup(9000).HasFocus(11) + Window.IsVisible(1148)">$LOCALIZE[31133]</value>
+		<value condition="Controlgroup(9000).HasFocus(12) + Window.IsVisible(1148)">$LOCALIZE[31134]</value>		
+    </variable>
+
+    <variable name="settingsmain">
+        <value condition="Container(575).HasFocus(1)">$LOCALIZE[31079]</value>
+        <value condition="Container(575).HasFocus(3)">$LOCALIZE[31077]</value>
+        <value condition="Container(575).HasFocus(4)">$LOCALIZE[31063]</value>
+        <value condition="Container(575).HasFocus(5)">$LOCALIZE[31091]</value>
+        <value condition="Container(575).HasFocus(8)">$LOCALIZE[31092]</value>
+        <value condition="Container(575).HasFocus(9)">$LOCALIZE[31093]</value>
+        <value condition="Container(575).HasFocus(10)">$LOCALIZE[31094]</value>
+        <value condition="Container(575).HasFocus(14)">$LOCALIZE[31090]</value>
+        <value condition="Container(575).HasFocus(2)">$LOCALIZE[31095]</value>
+        <value condition="Container(575).HasFocus(15)">$LOCALIZE[32100]</value>		
+    </variable>
+
+    <variable name="settingsmainico">
+        <value condition="Container(575).HasFocus(1)">help/appearence.png</value>
+        <value condition="Container(575).HasFocus(3)">icons/movies.png</value>
+        <value condition="Container(575).HasFocus(4)">icons/music.png</value>
+        <value condition="Container(575).HasFocus(14)">icons/tvshows.png</value>
+        <value condition="Container(575).HasFocus(5)">icons/photos.png</value>
+        <value condition="Container(575).HasFocus(8)">help/weather.png</value>
+        <value condition="Container(575).HasFocus(9)">help/wireless.png</value>
+        <value condition="Container(575).HasFocus(10)">icons/settings2.png</value>
+        <value condition="Container(575).HasFocus(2)">icons/iconhome.png</value>
+        <value condition="Container(575).HasFocus(13)">icons/addons.png</value>
+        <value condition="Container(575).HasFocus(6)">help/systeminfo.png</value>
+        <value condition="Container(575).HasFocus(7)">help/Warning.png</value>
+        <value condition="Container(575).HasFocus(15)">help/openelec.png</value>		
+    </variable>
+
+    <variable name="nowplay">
+        <value condition="Pvr.IsPlayingTV">$INFO[]</value>
+        <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
+        <value>$INFO[Player.Art(tvshow.poster)]</value>
+    </variable>
+
+    <variable name="Locandine">
+        <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+        <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+        <value>$INFO[ListItem.Icon]</value>
+    </variable>
+
+    <variable name="dvdbox">
+        <value condition="ListItem.IsStereoscopic">images/dvdbox3d.png</value>
+        <value>images/dvdbox.png</value>
+    </variable>
+
+    <variable name="fanart">
+        <value condition="StringCompare(ListItem.Label,..) + !IsEmpty(Skin.String(CustomBgHome))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
+        <value>$INFO[ListItem.Art(fanart)]</value>
+    </variable>
+					
+    <variable name="filebrowserthumb">
+        <value condition="SubString(Control.GetLabel(412),jpg) | SubString(Control.GetLabel(412),png)">$INFO[Control.GetLabel(412)]</value>
+        <value>$INFO[ListItem.Icon]</value>
+    </variable>
+
+    <variable name="diffuseselectold">
+        <value condition="StringCompare(ListItem.MPAA,R) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
+        <value condition="SubString(ListItem.MPAA,PG) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
+        <value condition="StringCompare(ListItem.MPAA,PG-13) | StringCompare(ListItem.MPAA,12) | StringCompare(ListItem.MPAA,15) | SubString(ListItem.MPAA,14)">88FF8800</value>
+        <value>buttonselect</value>
+    </variable>
+
+    <variable name="diffuseselectshelf">
+        <value condition="!Control.IsVisible(311)">black</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,R) | SubString(Container(311).ListItem.MPAA,18) | StringCompare(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG) | StringCompare(Container(311).ListItem.MPAA,G) | StringCompare(Container(311).ListItem.MPAA,U) | StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13) | StringCompare(Container(311).ListItem.MPAA,12) | StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
+        <value>$VAR[diffuseselect]</value>
+    </variable>	
+
+    <variable name="shelfmovies">
+        <!--value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">plugin://plugin.video.itunes_trailers/</value-->
+        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
+		
+
+		<value condition="Container(8001).HasFocus(601)">$INFO[Skin.String(HomeShelfFav.1.List)]</value>
+		<value condition="Container(8001).HasFocus(602)">$INFO[Skin.String(HomeShelfFav.2.List)]</value>
+		<value condition="Container(8001).HasFocus(603)">$INFO[Skin.String(HomeShelfFav.3.List)]</value>
+		<value condition="Container(8001).HasFocus(604)">$INFO[Skin.String(HomeShelfFav.4.List)]</value>
+		<value condition="Container(8001).HasFocus(605)">$INFO[Skin.String(HomeShelfFav.5.List)]</value>
+		<value condition="Container(8001).HasFocus(606)">$INFO[Skin.String(HomeShelfFav.6.List)]</value>
+		<value condition="Container(8001).HasFocus(401)">$INFO[Skin.String(HomeShelfFav.7.List)]</value>
+		<value condition="Container(8001).HasFocus(402)">$INFO[Skin.String(HomeShelfFav.8.List)]</value>
+		<value condition="Container(8001).HasFocus(403)">$INFO[Skin.String(HomeShelfFav.9.List)]</value>
+		<value condition="Container(8001).HasFocus(404)">$INFO[Skin.String(HomeShelfFav.10.List)]</value>
+		<value condition="Container(8001).HasFocus(501)">$INFO[Skin.String(HomeShelfFav.11.List)]</value>
+		<value condition="Container(8001).HasFocus(501)">$INFO[Skin.String(HomeShelfFav.12.List)]</value>
+		<value condition="Container(8001).HasFocus(370)">$INFO[Skin.String(HomeShelfFav.13.List)]</value>
+		<value condition="Container(8001).HasFocus(371)">$INFO[Skin.String(HomeShelfFav.14.List)]</value>
+		<value condition="Container(8001).HasFocus(372)">$INFO[Skin.String(HomeShelfFav.15.List)]</value>
+		<value condition="Container(8001).HasFocus(373)">$INFO[Skin.String(HomeShelfFav.16.List)]</value>
+		<value condition="Container(8001).HasFocus(374)">$INFO[Skin.String(HomeShelfFav.17.List)]</value>
+		<value condition="Container(8001).HasFocus(375)">$INFO[Skin.String(HomeShelfFav.18.List)]</value>
+		
+		
+		<value condition="Container(8001).HasFocus(405)">plugin://plugin.video.(Skin.String(HomeShelfAddon.1.Label))</value>
+		<value condition="Container(8001).HasFocus(406)">plugin://plugin.video.(Skin.String(HomeShelfAddon.2.Label))</value>
+		<value condition="Container(8001).HasFocus(505)">$INFO[Skin.String(HomeShelfAddon.3.List)]</value>
+		<value condition="Container(8001).HasFocus(506)">$INFO[Skin.String(HomeShelfAddon.4.List)]</value>
+		<value condition="Container(8001).HasFocus(701)">$INFO[Skin.String(HomeShelfAddon.5.List)]</value>
+		<value condition="Container(8001).HasFocus(702)">$INFO[Skin.String(HomeShelfAddon.6.List)]</value>
+		<value condition="Container(8001).HasFocus(901)">$INFO[Skin.String(HomeShelfAddon.7.List)]</value>
+		<value condition="Container(8001).HasFocus(902)">$INFO[Skin.String(HomeShelfAddon.8.List)]</value>
+		<value condition="Container(8001).HasFocus(903)">$INFO[Skin.String(HomeShelfAddon.9.List)]</value>
+		<value condition="Container(8001).HasFocus(904)">$INFO[Skin.String(HomeShelfAddon.10.List)]</value>
+		<value condition="Container(8001).HasFocus(905)">$INFO[Skin.String(HomeShelfAddon.11.List)]</value>
+		<value condition="Container(8001).HasFocus(906)">$INFO[Skin.String(HomeShelfAddon.12.List)]</value>
+		<value condition="Container(8001).HasFocus(801)">$INFO[Skin.String(HomeShelfAddon.13.List)]</value>
+		<value condition="Container(8001).HasFocus(802)">$INFO[Skin.String(HomeShelfAddon.14.List)]</value>
+		<value condition="Container(8001).HasFocus(803)">$INFO[Skin.String(HomeShelfAddon.15.List)]</value>
+		<value condition="Container(8001).HasFocus(804)">$INFO[Skin.String(HomeShelfAddon.16.List)]</value>
+		<value condition="Container(8001).HasFocus(805)">$INFO[Skin.String(HomeShelfAddon.17.List)]</value>
+		<value condition="Container(8001).HasFocus(806)">$INFO[Skin.String(HomeShelfAddon.18.List)]</value>		
+	
+		
+        <value condition="Container(9000).HasFocus(370)">$INFO[Skin.String(HomeFav.13.List)]</value>
+        <value condition="Container(9000).HasFocus(371)">$INFO[Skin.String(HomeFav.14.List)]</value>
+        <value condition="Container(9000).HasFocus(372)">$INFO[Skin.String(HomeFav.15.List)]</value>
+        <value condition="Container(9000).HasFocus(373)">$INFO[Skin.String(HomeFav.16.List)]</value>
+        <value condition="Container(9000).HasFocus(374)">$INFO[Skin.String(HomeFav.17.List)]</value>
+        <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
+        <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
+        <value>-</value>
+    </variable>
+
+    <variable name="musicshelftitle">
+        <value condition="StringCompare(Skin.String(musicshelf),custom)"> $LOCALIZE[1038]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top)"> $LOCALIZE[10504]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),topalbum)"> $LOCALIZE[10505]</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)"> $LOCALIZE[20011]</value>-->
+        <value> $LOCALIZE[359]</value>
+    </variable>
+
+    <variable name="musicshelfcontent">
+        <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),topalbum) + Library.HasContent(Music)">musicdb://top100/albums/</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists) + Library.HasContent(Music)">special://musicplaylists/</value>-->
+        <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
+    </variable>
+
+    
+
+    <variable name="nextairedfanart">
+        <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(203)">$INFO[Container(203).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(207)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(208)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(209)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(210)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(201)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(202)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(203)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(204)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(205)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value>$VAR[bgimg]</value>
+    </variable>
+	
+<!-- HOME ICONS -->	
+	<variable name="icontheme">
+        <value condition="Skin.HasSetting(fabricicon)">icons/themes/fabric</value>
+        <value condition="Skin.HasSetting(fibericon)">icons/themes/fiber</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons/themes/ios7</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons/themes/grunge</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons/themes/gucci</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons/themes/vector</value>
+        <value condition="Skin.HasSetting(diagicon)">icons/themes/diagonal</value>
+        <value condition="Skin.HasSetting(papericon)">icons/themes/paper</value>
+        <value condition="Skin.HasSetting(metalicon)">icons/themes/metal</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons/themes/metal-blk</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons/themes/diagonal2</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons/themes/diagonal3</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons/themes/nano-blk</value>
+        <value condition="Skin.HasSetting(fireicon)">icons/themes/fire</value>	
+		<value condition="Skin.HasSetting(homeiconsio2)">icons/themes/ios7</value>		
+        <value>icons/themes/ios7</value>		
+    </variable>
+
+	<variable name="lightblue">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		
+        <value>$VAR[icontheme]/lightblue.png</value>		
+    </variable>
+	
+	<variable name="purple">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		
+        <value>$VAR[icontheme]/purple.png</value>		
+    </variable>
+	
+	<variable name="orange">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/Orange.png</value>		
+    </variable>
+	
+	<variable name="green">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/Green.png</value>		
+    </variable>
+	
+	<variable name="red">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/red.png</value>		
+    </variable>
+	
+	<variable name="teak">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/teak.png</value>		
+    </variable>
+	
+	<variable name="darkblue">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/darkblue.png</value>		
+    </variable>
+	
+	<variable name="green3">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/green3.png</value>		
+    </variable>
+	
+	<variable name="dvdcolor">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/dvdcolor.png</value>		
+    </variable>
+	
+	<variable name="progcolor">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/progcolor.png</value>		
+    </variable>
+	
+	<variable name="bluegray">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/bluegray.png</value>		
+    </variable>	
+	
+	<variable name="lightyellow">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/lightyellow.png</value>		
+    </variable>	
+	
+	<variable name="pink">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/pink.png</value>		
+    </variable>
+	
+	<variable name="darkorange">
+        <value condition="Skin.HasSetting(lightblueicon)">$VAR[icontheme]/lightblue.png</value>
+	    <value condition="Skin.HasSetting(darkblueicon)">$VAR[icontheme]/darkblue.png</value>
+        <value condition="Skin.HasSetting(purpleicon)">$VAR[icontheme]/purple.png</value>
+        <value condition="Skin.HasSetting(orangeicon)">$VAR[icontheme]/Orange.png</value>
+        <value condition="Skin.HasSetting(greenicon)">$VAR[icontheme]/Green.png</value>
+		<value condition="Skin.HasSetting(green3icon)">$VAR[icontheme]/green3.png</value>
+        <value condition="Skin.HasSetting(redicon)">$VAR[icontheme]/red.png</value>
+        <value condition="Skin.HasSetting(teakicon)">$VAR[icontheme]/teak.png</value>
+        <value condition="Skin.HasSetting(dvdcoloricon)">$VAR[icontheme]/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(progcoloricon)">$VAR[icontheme]/progcolor.png</value>
+        <value condition="Skin.HasSetting(bluegrayicon)">$VAR[icontheme]/bluegray.png</value>      
+        <value condition="Skin.HasSetting(lightyellowicon)">$VAR[icontheme]/lightyellow.png</value>
+        <value condition="Skin.HasSetting(pinkicon)">$VAR[icontheme]/pink.png</value>		       		
+        <value>$VAR[icontheme]/DarkOrange.png</value>		
+    </variable>
+
+	<!--variable name="bluegray">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/bluegray</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/bluegray.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/bluegray.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/bluegray.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/bluegray.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/bluegray.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/bluegray.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/bluegray.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/bluegray.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/bluegray.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/bluegray.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/bluegray.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/bluegray.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/bluegray.png</value>		       		
+        <value>icons/bluegray.png</value>		
+    </variable>
+	
+	<variable name="darkblue">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/darkblue.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/darkblue.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/darkblue.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/darkblue.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/darkblue.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/darkblue.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/darkblue.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/darkblue.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/darkblue.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/darkblue.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/darkblue.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/darkblue.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/darkblue.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/darkblue.png</value>		       		
+        <value>icons/darkblue.png</value>		
+    </variable>
+
+	<variable name="darkorange">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/DarkOrange.png</value>	
+        <value condition="Skin.HasSetting(papericon)">icons-paper/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/DarkOrange.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/DarkOrange.png</value>		        		
+        <value>icons/DarkOrange.png</value>		
+    </variable>
+
+	<variable name="dvdcolor">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/dvdcolor.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/dvdcolor.png</value>				
+        <value>icons/dvdcolor.png</value>		
+    </variable>
+
+	<variable name="green">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/Green.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/Green.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/Green.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/Green.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/Green.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/Green.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/Green.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/Green.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/Green.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/Green.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/Green.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/Green.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/Green.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/Green.png</value>		       		
+        <value>icons/Green.png</value>		
+    </variable>
+
+	<variable name="green3">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/green3.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/green3.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/green3.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/green3.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/green3.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/green3.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/green3.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/green3.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/green3.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/green3.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/green3.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/green3.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/green3.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/green3.png</value>		       		
+        <value>icons/green3.png</value>		
+    </variable>	
+	
+	<variable name="lightblue">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/lightblue.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/lightblue.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/lightblue.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/lightblue.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/lightblue.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/lightblue.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/lightblue.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/lightblue.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/lightblue.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/lightblue.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/lightblue.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/lightblue.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/lightblue.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/lightblue.png</value>		       		
+        <value>icons/lightblue.png</value>		
+    </variable>
+
+	<variable name="lightyellow">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/lightyellow.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/lightyellow.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/lightyellow.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/lightyellow.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/lightyellow.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/lightyellow.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/lightyellow.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/lightyellow.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/lightyellow.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/lightyellow.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/lightyellow.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/lightyellow.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/lightyellow.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/lightyellow.png</value>		       		
+        <value>icons/lightyellow.png</value>		
+    </variable>
+
+	<variable name="orange">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/Orange.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/Orange.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/Orange.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/Orange.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/Orange.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/Orange.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/Orange.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/Orange.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/Orange.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/Orange.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/Orange.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/Orange.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/Orange.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/Orange.png</value>		       		
+        <value>icons/Orange.png</value>		
+    </variable>
+
+	<variable name="pink">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/pink.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/pink.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/pink.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/pink.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/pink.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/pink.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/pink.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/pink.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/pink.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/pink.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/pink.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/pink.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/pink.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/pink.png</value>		        		
+        <value>icons/pink.png</value>		
+    </variable>
+
+	<variable name="progcolor">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/progcolor.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/progcolor.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/progcolor.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/progcolor.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/progcolor.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/progcolor.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/progcolor.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/progcolor.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/progcolor.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/progcolor.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/progcolor.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/progcolor.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/progcolor.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/progcolor.png</value>		        		
+        <value>icons/progcolor.png</value>		
+    </variable>
+
+	<variable name="purple">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/purple.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/purple.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/purple.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/purple.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/purple.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/purple.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/purple.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/purple.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/purple.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/purple.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/purple.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/purple.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/purple.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/purple.png</value>		        		
+        <value>icons/purple.png</value>		
+    </variable>
+
+	<variable name="red">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/red.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/red.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/red.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/red.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/red.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/red.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/red.png</value>	
+        <value condition="Skin.HasSetting(papericon)">icons-paper/red.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/red.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/red.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/red.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/red.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/red.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/red.png</value>		        		
+        <value>icons/red.png</value>		
+    </variable>
+
+	<variable name="teak">
+        <value condition="Skin.HasSetting(fabricicon)">icons-fabric/teak.png</value>
+        <value condition="Skin.HasSetting(fibericon)">icons-fiber/teak.png</value>
+        <value condition="Skin.HasSetting(ios7icon)">icons-ios7/teak.png</value>
+        <value condition="Skin.HasSetting(grungeicon)">icons-grunge/teak.png</value>
+        <value condition="Skin.HasSetting(gucciicon)">icons-gucci/teak.png</value>
+        <value condition="Skin.HasSetting(vectoricon)">icons-vector/teak.png</value>
+        <value condition="Skin.HasSetting(diagicon)">icons-diagonal/teak.png</value>
+        <value condition="Skin.HasSetting(papericon)">icons-paper/teak.png</value>
+        <value condition="Skin.HasSetting(metalicon)">icons-metal/teak.png</value>
+        <value condition="Skin.HasSetting(metalblkicon)">icons-metal-blk/teak.png</value>
+        <value condition="Skin.HasSetting(diagonal2icon)">icons-diagonal2/teak.png</value>
+        <value condition="Skin.HasSetting(diagonal3icon)">icons-diagonal3/teak.png</value>
+        <value condition="Skin.HasSetting(nanoblkicon)">icons-nano-blk/teak.png</value>
+        <value condition="Skin.HasSetting(fireicon)">icons-fire/teak.png</value>		        		
+        <value>icons/teak.png</value>		
+    </variable-->			
+
+</includes>

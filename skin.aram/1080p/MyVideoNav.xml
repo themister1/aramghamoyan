@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="25">
+    <defaultcontrol always="true">50</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <!--backgroundcolor>background</backgroundcolor-->
+    <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
+    <views>50,51,52,53,54,55,57,58,59,500,501,502,503</views>
+    <!--
+   50 List1-Plain (List) (changed from 51) 
+   52 List2-Slider
+   51 List3-Info (Biglist) (changed from 50) 
+   60 List4-Media
+   53 Icons1-NoLabel
+  500 Icons2-Label (Thumbnail) (changed from 59)
+   54 Icons3-Shader   
+  501 Icons4-Info
+  502 Icons5-Big
+   58 Showcase
+   59 Fanart (changed from 500)
+   55 Banners  
+   --> 
+    <include>OpenClose</include>
+    <controls>
+
+        <!--VIEWS-->
+		<include>BlackBackground</include>		
+        <include>list1</include>
+        <include>list2</include>		
+        <include>list3</include>
+		<include>list4</include>		
+        <include>fanart</include>
+        <include>icons1</include>		
+        <include>icons2</include>
+        <include>icons3</include>
+        <include>icons4</include>
+		<include>icons5</include>		
+        <include>banners</include>
+        <!--VIEWSEND-->
+        <include>WindowsTopInfos</include>
+        <control type="group" description="Side menu 9000 group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
+            <include>9000slide</include>
+            <control type="image" description="List back">
+                <top>-10</top>
+                <posx>1430</posx>
+                <width>550</width>
+                <height>1100</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>			
+            <!--control type="image" description="List back border">
+                <posx>1426</posx>
+                <width>2</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>				
+                <texture colordiffuse="$VAR[diffuseborder]">images/DialoglineV.png</texture>
+            </control-->			
+            <control type="grouplist" id="9000">			    
+                <left>1450</left>
+                <centerleft>960</centerleft>
+				<top>18</top>
+				<width>470</width>
+				<height>1054</height>
+				<itemgap>2</itemgap>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<scrolltime>200</scrolltime>
+                <control type="button" id="607">
+                    <!--enable>false</enable-->
+                    <texturenofocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>[COLOR=textcolor]•• $LOCALIZE[33063] ••[/COLOR]</label>
+                </control>
+                <control type="togglebutton" id="14" description="Toggle Watched">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
+                    <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
+                </control>
+                <control type="radiobutton" id="98" description="Filter">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <enable>Container.CanFilterAdvanced</enable>
+                    <include>DialogButt</include>
+                    <onclick>Filter</onclick>
+                    <label>587</label>
+                </control>
+                <control type="button" id="3" description="Sort">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                </control>
+                <control type="togglebutton" id="4" description="SortOrder">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="button" id="8" description="search">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>137</label>
+                </control>
+                <control type="button" id="698" description="Browse files">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
+                    <onclick>ActivateWindow(Videos,files)</onclick>
+                </control>
+                <control type="button" id="1501">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <visible>System.HasAddon(script.trakt) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+                    <label>Trakt</label>
+                    <onclick>XBMC.RunScript(script.trakt,action=contextmenu)</onclick>
+                </control>
+                <control type="togglebutton" id="699" description="Playing">
+                    <enable>Player.HasMedia</enable>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[16003]</label>
+                    <altlabel>$LOCALIZE[31055]</altlabel>
+                    <usealttexture>Player.HasMedia</usealttexture>
+                    <onclick>fullscreen</onclick>
+                    <altclick>fullscreen</altclick>
+                </control>
+				<!--control type="button" id="699">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>[COLOR=textcolor]Hide Plot Menu[/COLOR]</label>
+                    <onclick>ActivateWindow(1146)</onclick>
+                </control-->
+                <control type="togglebutton" id="20">
+                    <description>Update library</description>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningvideo</usealttexture>
+                </control>								
+                <control type="button" id="599">
+                    <!--enable>false</enable-->
+                    <texturenofocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>[COLOR=textcolor]•• $LOCALIZE[582] •[/COLOR]•</label>
+                </control>
+                <control type="radiobutton" id="602" description="List1">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(50)</onclick>
+                    <selected>Control.IsVisible(50)</selected>
+                    <label>List1 - Plain</label>
+                </control>				
+                <control type="radiobutton" id="600" description="List2">
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(52)</onclick>
+                    <selected>Control.IsVisible(52)</selected>
+                    <label>List2 - Slider</label>
+                </control>				
+                <control type="radiobutton" id="601" description="List3">
+                    <include>DialogButt</include>
+                    <enable>!IsEmpty(Container.FolderPath)</enable>
+                    <onclick>Container.SetViewMode(51)</onclick>
+                    <selected>Control.IsVisible(51)</selected>
+                    <label>List3 - Info</label>
+                </control>
+				<control type="radiobutton" id="614" description="List4">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(503)</onclick>
+                    <selected>Control.IsVisible(503)</selected>
+                    <label>List4 - Media</label>
+                </control>				
+                <control type="radiobutton" id="603" description="Icons1">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(53)</onclick>
+                    <selected>Control.IsVisible(53)</selected>
+                    <label>$LOCALIZE[536]1 - No Label</label>
+                </control>
+                <control type="radiobutton" id="609" description="Icons2">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(500)</onclick>
+                    <selected>Control.IsVisible(500)</selected>
+                    <label>$LOCALIZE[536]2 - Label</label>
+                </control>				
+                <control type="radiobutton" id="610" description="Icons3">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(54)</onclick>
+                    <selected>Control.IsVisible(54)</selected>
+                    <label>$LOCALIZE[536]3 - Shader</label>
+                </control>
+                <control type="radiobutton" id="611" description="Icons4">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(501)</onclick>
+                    <selected>Control.IsVisible(501)</selected>
+                    <label>$LOCALIZE[536]4 - Info</label>
+                </control>
+                <control type="radiobutton" id="612" description="Icons5">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(502)</onclick>
+                    <selected>Control.IsVisible(502)</selected>
+                    <label>$LOCALIZE[536]5 - Big</label>
+                </control>				
+                <control type="radiobutton" id="605" description="Fanart">
+                    <enable>Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(59)</onclick>
+                    <selected>Control.IsVisible(59)</selected>
+                    <label>$LOCALIZE[20445]</label>
+                </control>
+                <control type="radiobutton" id="606" description="Banners">
+                    <enable>Container.Content(tvshows)</enable>
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(55)</onclick>
+                    <selected>Control.IsVisible(55)</selected>
+                    <label>Banners</label>
+                </control>				
+                <!--control type="button" id="598">
+                    <texturenofocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>[COLOR=textcolor]•• Background Settings ••[/COLOR]</label>
+                </control>
+                <control type="button" id="42">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Fanart Darkness</label>
+                    <onclick>ActivateWindow(1130)</onclick>
+                </control>				
+                <control type="button" id="40">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Custom 'Nav' Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome4))">Skin.SetFile(CustomBgHome4,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome4))">Skin.SetFile(CustomBgHome4,.jpg|.png,special://skin/backgrounds)</onclick>
+                </control>
+                <control type="button" id="41">
+                    <width>auto</width>
+                    <align>center</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <label>Change Bkgd Darkness</label>
+                    <onclick>ActivateWindow(1136)</onclick>
+                </control-->			
+            </control>
+        </control>
+    </controls>
+</window>

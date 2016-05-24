@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+    <include name="ShelfTitle">
+        <posx>30</posx>
+        <top>20</top>
+        <height>45</height>
+        <width>750</width>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>size27</font>
+	<textcolor>black</textcolor>
+    </include>
+    
+   
+    <include name="FAV01">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(502)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\TV.png</texture>
+            </control>           
+        </control>
+    </include>
+	
+
+    <include name="FAV02">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(405)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\eigen.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV03">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(404)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\rus.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV04">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(403)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\toot.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV05">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(402)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\hay.png</texture>
+            </control>           
+        </control>
+    </include>
+	
+	<include name="PVR">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(401)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\merojax.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV06">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(408)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\kids.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV07">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(409)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\sports.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV08">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(410)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\music.png</texture>
+            </control>           
+        </control>
+    </include>
+
+    <include name="FAV10">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(411)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\program.png</texture>
+            </control>           
+        </control>
+    </include>
+
+	<include name="FAV11">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(406)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\update.png</texture>
+            </control>           
+        </control>
+    </include>
+
+
+    <include name="SETBACK">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(500)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\films.png</texture>
+            </control>           
+        </control>
+    </include>
+
+	<include name="MEDLOC">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(347)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">images/media_banner.jpg</texture>
+            </control>           
+        </control>
+    </include>
+
+  
+	
+	<include name="EXITBACK">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(349)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\terug.png</texture>
+            </control>           
+        </control>
+    </include>
+
+	<include name="DOORGAAN">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(348)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\settings.png</texture>
+            </control>           
+        </control>
+    </include>
+
+
+
+	
+	
+	<include name="favourites">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(353)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width> 
+                <height>490</height>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\usb.png</texture>
+            </control>           
+        </control>
+    </include>
+
+
+
+
+    
+
+
+
+</includes>

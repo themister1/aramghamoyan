@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1156">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <include>DialogOpenCloseVisible</include>
+            <!--ORIGINAL--control type="image" description="List back">
+                <posx>540</posx>
+                <top>310</top>
+                <width>840</width>
+                <height>460</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="150" colordiffuse="$VAR[bgcolor1]">images/Dialog.png</texture>
+            </control-->								  
+			<include condition="![Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5) | Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6) | Skin.HasSetting(hideshelf) | Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x) | Skin.HasSetting(homeiconios)]">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow7)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow6)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow5)">dialogdefault</include>				
+			<include condition="Skin.HasSetting(hideshelf)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeiconsio2)">dialogdefault</include>					
+			<include condition="Skin.HasSetting(homeiconsio2x)">dialogdefault</include>	
+			<include condition="Skin.HasSetting(homeiconroundrow8)">dialogdefault</include>						
+			<include condition="Skin.HasSetting(homeiconroundrow7)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeiconroundrow6)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeiconios)">dialogdefault</include>
+            <control type="scrollbar" id="60">
+                <posx>1160</posx>
+                <top>390</top>
+                <height>300</height>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+            </control>			
+            <control type="grouplist" id="9000">
+				<centerleft>960</centerleft>
+				<top>385</top>
+				<width>440</width>
+				<height>310</height>
+				<itemgap>3</itemgap>
+				<onleft>close</onleft>
+				<onright>close</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<pagecontrol>60</pagecontrol>				
+				<scrolltime>200</scrolltime>
+                <control type="radiobutton" id="1">
+				    <visible></visible>				
+                    <label>EPG Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgEPG))">Skin.SetFile(CustomBgEPG,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgEPG))">Skin.Reset(CustomBgEPG)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgEPG))</selected>
+                </control>
+				<control type="button" id="3">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>Timeline BG Darkness</label>
+                    <onclick>ActivateWindow(1157)</onclick>
+                </control>
+				<control type="button" id="4">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>EPG Title Color</label>
+                    <onclick>ActivateWindow(1159)</onclick>
+                </control>				
+				<!--control type="button" id="5">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>EPG Line Color</label>
+                    <onclick>ActivateWindow(1158)</onclick>
+                </control-->				
+            </control>
+        </control>
+    </controls>
+</window>

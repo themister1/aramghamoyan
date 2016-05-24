@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1130">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>	
+                <control type="radiobutton" id="6">
+                    <label>Fanart Uit</label>
+                    <onclick>Skin.ToggleSetting(disablefanart)</onclick>
+                    <selected>Skin.HasSetting(disablefanart)</selected>
+                </control>				
+                <control type="radiobutton" id="1">
+                    <label>Fanart tint 1</label>
+                    <onclick>Skin.ToggleSetting(fanartbgdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse2)">Skin.ToggleSetting(fanartbgdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse3)">Skin.ToggleSetting(fanartbgdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse4)">Skin.ToggleSetting(fanartbgdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse5)">Skin.ToggleSetting(fanartbgdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(fanartbgdiffuse1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Fanart tint 2</label>
+                    <onclick>Skin.ToggleSetting(fanartbgdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse1)">Skin.ToggleSetting(fanartbgdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse3)">Skin.ToggleSetting(fanartbgdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse4)">Skin.ToggleSetting(fanartbgdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse5)">Skin.ToggleSetting(fanartbgdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(fanartbgdiffuse2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Fanart tint 3</label>
+                    <onclick>Skin.ToggleSetting(fanartbgdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse1)">Skin.ToggleSetting(fanartbgdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse2)">Skin.ToggleSetting(fanartbgdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse4)">Skin.ToggleSetting(fanartbgdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse5)">Skin.ToggleSetting(fanartbgdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(fanartbgdiffuse3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>Fanart tint 4</label>
+                    <onclick>Skin.ToggleSetting(fanartbgdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse1)">Skin.ToggleSetting(fanartbgdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse2)">Skin.ToggleSetting(fanartbgdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse3)">Skin.ToggleSetting(fanartbgdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse5)">Skin.ToggleSetting(fanartbgdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(fanartbgdiffuse4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Fanart tint 5</label>
+                    <onclick>Skin.ToggleSetting(fanartbgdiffuse5)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse1)">Skin.ToggleSetting(fanartbgdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse2)">Skin.ToggleSetting(fanartbgdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse3)">Skin.ToggleSetting(fanartbgdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(fanartbgdiffuse4)">Skin.ToggleSetting(fanartbgdiffuse4)</onclick>					
+                    <selected>Skin.HasSetting(fanartbgdiffuse5)</selected>				
+                </control>				
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

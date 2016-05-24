@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="101">
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <include>DialogOpenClose</include>
+    <controls>
+	<control type="group">
+	<visible>!Window.IsActive(1190)</visible>
+        <control type="image">
+            <posx>476</posx>
+            <top>348</top>
+            <width>948</width>
+            <height>414</height>
+            <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+			<aspectratio>scale</aspectratio>
+        </control>	
+        <control type="image">
+            <posx>476</posx>
+            <top>348</top>
+            <width>948</width>
+            <height>414</height>
+            <texture colordiffuse="$VAR[diffuseborder]">borders/Dialogborder.png</texture>
+        </control>		
+        <control type="group">
+            <posx>527</posx>
+            <top>375</top>
+            <align>center</align>
+            <control type="label" id="1" description="Heading">
+                <width>850</width>
+                <label>-</label>
+                <font>size33</font>
+				<textcolor>$VAR[diffusetext]</textcolor>
+                <align>center</align>
+            </control>
+            <control type="textbox" id="9" description="content">
+                <posx>0</posx>
+                <top>100</top>
+                <label>-</label>
+                <width>850</width>
+                <height>135</height>
+				<font>size33</font>
+				<textcolor>$VAR[diffusetext]</textcolor>				
+                <align>center</align>
+                <autoscroll>false</autoscroll>
+            </control>
+            <control type="progress" description="Progressbar">
+                <posx>0</posx>
+                <top>235</top>
+                <width>850</width>
+                <height>9</height>
+                <align>center</align>				
+                <texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
+                <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
+                <righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
+                <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
+                <info>System.Progressbar</info>
+            </control>
+            <control type="button" id="10" description="Cancel">
+                <posx>275</posx>
+                <top>285</top>
+                <width>300</width>
+                <label>222</label>
+		<align>center</align>
+            </control>
+        </control>
+		</control>
+    </controls>
+</window>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="501">
+    <defaultcontrol always="true">51</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <views>51,50,52,53,500</views>
+    <!--
+  50 Big List
+  52 List2-Slider  
+  missing 50 List
+  53 Icons
+  500 Fanart
+  -->
+    <include>OpenClose</include>
+    <controls>
+        <include>BlackBackground</include>	
+        <include>Musicviews</include>
+        <include>WindowsTopInfos</include>
+        <control type="group" description="Side menu 9000 group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <include>9000slide</include>
+            <!--control type="image" description="List back">
+                <top>-10</top>
+                <posx>1430</posx>
+                <width>550</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50" colordiffuse="$VAR[bgcolor1]">sidepanel/Back.png</texture>
+            </control-->
+            <control type="image" description="List back">
+                <top>-10</top>
+                <posx>1430</posx>
+                <width>550</width>
+                <height>1100</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="Miniplayer BG">
+                <posx>1440</posx>
+				<top>110</top>
+                <width>480</width>
+                <height>70</height>
+                <aspectratio>stretch</aspectratio>				
+                <texture>MusicOSD/miniplayerbg.png</texture>
+            </control>			
+            <control type="label" description="Player Time">
+                <posx>1522</posx>
+                <top>144</top>
+                <height>30</height>
+                <width>123</width>
+                <align>right</align>
+                <label>[B]$INFO[Player.Time][/B]</label>
+                <font>size26</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+            </control>						
+            <control type="label" description="Player Time Remaining">
+                <posx>1901</posx>
+                <top>144</top>
+                <height>30</height>
+                <width>123</width>
+                <align>right</align>
+                <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
+                <font>size26</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+            </control>			
+            <control type="grouplist" id="9000">
+                <left>1450</left>
+                <!--include>DialogGLs</include-->
+				<centerleft>960</centerleft>
+                <top>8</top>
+                <width>470</width>
+                <height>1064</height>
+                <itemgap>2</itemgap>
+                <onleft>50</onleft>
+                <onright>50</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <align>center</align>
+                <scrolltime>200</scrolltime>				
+                <control type="button" id="801">
+                    <texturenofocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• Player Control ••</label>
+                </control>				
+                <control type="label" id="802">
+                    <include>DialogButt</include>
+                    <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
+                </control>				
+                <!--control type="image" id="799">
+                     <width>480</width>
+                     <height>50</height>
+                     <aspectratio>stretch</aspectratio>				
+                     <texture>MusicOSD/miniplayerbg.png</texture>
+                </control-->				
+                <control type="progress" id="800">
+                     <posx>20</posx>
+                     <width>450</width>
+                     <height>13</height>
+                     <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
+                     <midtexture border="6,0,6,0">MusicOSD/ProgressM.png</midtexture>
+                     <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
+                     <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
+                     <overlaytexture>-</overlaytexture>
+                     <info>Player.Progress</info>
+                     <visible>true</visible>
+                </control>				
+                <control type="button" id="803" description="Pause">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>Pause</label>
+                    <onclick>PlayerControl(Play)</onclick>
+                </control>
+                <control type="button" id="804" description="Next Song">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>Next Song</label>
+                    <onclick>Playlist.PlayOffset(1)</onclick>
+                </control>
+                <control type="button" id="805" description="Previous Song">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>Previous Song</label>
+                    <onclick>Playlist.PlayOffset(-1)</onclick>
+                </control>
+                <control type="button" id="806" description="Stop">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>Stop</label>
+                    <onclick>PlayerControl(Stop)</onclick>
+                </control>								
+                <control type="button" id="607">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[33063] ••</label>
+                </control>				
+                <control type="button" id="3" description="Sort">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                </control>
+                <control type="togglebutton" id="4" description="SortOrder">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="togglebutton" id="16" description="PartyMode">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[589]: $LOCALIZE[1223]</label>
+                    <altlabel>$LOCALIZE[589]: $LOCALIZE[305]</altlabel>
+                </control>
+                <control type="button" id="8" description="Search">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>137</label>
+                </control>
+                <control type="button" id="698" description="Files">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
+                    <onclick>ActivateWindow(MusicFiles,root)</onclick>
+                </control>
+                <control type="togglebutton" id="699" description="Playing">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <enable>Player.HasMedia</enable>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[16003]</label>
+                    <altlabel>$LOCALIZE[31055]</altlabel>
+                    <usealttexture>Player.HasMedia</usealttexture>
+                    <onclick>fullscreen</onclick>
+                    <altclick>fullscreen</altclick>
+                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
+                </control>
+                <control type="togglebutton" id="20">
+                    <description>Update library</description>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningvideo</usealttexture>
+                </control>
+                <control type="button" id="599">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[582] ••</label>
+                </control>
+                <control type="radiobutton" id="601" description="View Big List">
+                    <include>DialogButt</include>
+                    <!--enable>!IsEmpty(Container.FolderPath)</enable-->
+                    <onclick>Container.SetViewMode(50)</onclick>
+                    <selected>Control.IsVisible(50)</selected>
+                    <label>$LOCALIZE[537]</label>
+                </control>
+                <control type="radiobutton" id="604" description="List Player">
+                    <include>DialogButt</include>
+                    <enable>!IsEmpty(Container.FolderPath)</enable>
+                    <onclick>Container.SetViewMode(51)</onclick>
+                    <selected>Control.IsVisible(51)</selected>
+                    <label>List - Player</label>
+                </control>				
+                <control type="radiobutton" id="600" description="List2-Slider">
+                    <include>DialogButt</include>
+                    <enable>!Container.Content(files) + !Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
+                    <onclick>Container.SetViewMode(52)</onclick>
+                    <selected>Control.IsVisible(52)</selected>
+                    <label>List2 - Slider</label>
+                </control>				
+                <control type="radiobutton" id="603" description="Icons">
+                    <enable>!Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(53)</onclick>
+                    <selected>Control.IsVisible(53)</selected>
+                    <label>$LOCALIZE[536]</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
