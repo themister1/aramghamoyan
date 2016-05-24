@@ -1,0 +1,14 @@
+v1.0.4
+script.module.simple.downloader fix
+
+v1.0.3
+Bug Fixes
+
+v1.0.2
+YouTube toegevoed aan afhankelijkheden
+
+v1.0.1
+Depedences FIX
+
+v1.0.0
+Dutch YouTube Channels Release
