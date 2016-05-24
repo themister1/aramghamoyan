@@ -1,0 +1,5 @@
+name="HAYbox Installeren"
+url="http://aram-design.nl/full.zip"
+img="https://github.com/aramghamoyan/aramghamoyan/blob/master/plugin.program.hayboxinstaller/icon.png"
+fanart="https://ignorme"
+description="HAYbox by Aram Ghamoyan"
