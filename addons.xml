@@ -14,6 +14,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.brettus.streams" name="[COLOR white]B[/COLOR][COLOR dodgerblue]rettus [/COLOR][COLOR white]S[/COLOR][COLOR dodgerblue]treams[/COLOR]" version="1.0.3" provider-name="Biggy_Ozz">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Brettus-Streams</summary>
+		<description lang="en">Brettus-Streams</description>
+		<platform>all</platform>
+		<forum>Brettus-Streams</forum>
+		<website>Brettus-Streams</website>
+	</extension>
+</addon>
+
 <addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="2.1.6" provider-name="AddonScriptorDE (Modified by ArmoGuy)">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -67,6 +87,34 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en"></summary>
     <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nlzone"
+       name="[COLOR red]NL[/COLOR]Zone"
+       version="1.0.0"
+       provider-name="Aram Ghamoyan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="plugin.video.veetle" version="0.3.1" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">NLZone</summary>
     <platform>all</platform>
   </extension>
 </addon>
