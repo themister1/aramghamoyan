@@ -1,69 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<channels>
+<items>
 
-<channel>
+<item>
 <name>[COLOR red]*****SPORTS Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/sport.xml</externallink>
-</channel>
+</item>
 
-<channel>
+<item>
 <name>[COLOR red]*****PRANKS Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/pranks.xml</externallink>
-</channel>
+</item>
 
-<channel>
+<item>
 <name>[COLOR red]*****VLOGS Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/vlogs.xml</externallink>
-</channel>
+</item>
 
-<channel>
+<item>
 <name>[COLOR red]*****TV Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/tv.xml</externallink>
-</channel>
-
-<channel>
+</item>
+  
+<item>
 <name>[COLOR red]*****KIDS Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/kids.xml</externallink>
-</channel>
+</item>
 
-<channel>
+<item>
 <name>[COLOR red]*****MUSIC Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/music.xml</externallink>
-</channel>
+</item>
 
-<channel>
+<item>
 <name>[COLOR red]*****TECH Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/tech.xml</externallink>
-</channel>
+</item>
 
-<channel>
+<item>
 <name>[COLOR red]*****OVERIGE Channels*****[/COLOR]</name>
 <thumbnail>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/fanart.jpg</fanart>
 <link></link>
 <externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/dutchyoutubechannels%20xmls/overige.xml</externallink>
-</channel>
+</item>
 
-</channels>
+<item>
+<name>[COLOR lime]*****DOKI HOLLAND*****[/COLOR] [COLOR red*****Channel*****[/COLOR]</name>
+<thumbnail>https://raw.githubusercontent.com/doki1/build/master/plugin.program.dokiinstaller/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/doki1/build/master/plugin.program.dokiinstaller/fanart.jpg</fanart>
+<ytch>UCAIB9JsLfsleqmsbLDpIlzg</ytch>
+<externallink>https://ignorme</externallink>
+</item>
+
+<item>
+<name>[COLOR lime]*****XvBMC Nederland*****[/COLOR] [COLOR red*****Channel*****[/COLOR]</name>
+<thumbnail>https://yt3.ggpht.com/-Kyyiux7fXFo/AAAAAAAAAAI/AAAAAAAAAAA/YdLc90hVGO8/s100-c-k-no-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart>https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/12733411_935231533239439_3372156148203112944_n.jpg?oh=7464e637c2dbecd787a63e9c1f9cac7d&oe=580BBD0E</fanart>
+<ytch>UC6eXWQMFBVvASRag_VKfIBQ</ytch>
+<externallink>https://ignorme</externallink>
+</item>
+
+</items>
