@@ -14,7 +14,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/
 base='http://www.haybox.nl'
 ADDON=xbmcaddon.Addon(id='plugin.program.hayboxinstaller')
 dialog = xbmcgui.Dialog()    
-VERSION = "1.0.3"
+VERSION = "1.0.4"
 PATH = "haybox"       
 
     
@@ -24,14 +24,14 @@ def index():
     setView('movies', 'MAIN')
 	
 def install():
-    link = OPEN_URL('https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/installeren.xml').replace('\n','').replace('\r','')
+    link = OPEN_URL('http://pastebin.com/raw/eLuRmEkW').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description, folder=False)
     setView('movies', 'MAIN')
 
 def update():
-    link = OPEN_URL('https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/update.xml').replace('\n','').replace('\r','')
+    link = OPEN_URL('http://pastebin.com/raw/jaXpv90w').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description, folder=False)
