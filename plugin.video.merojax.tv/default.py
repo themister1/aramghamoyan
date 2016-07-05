@@ -16,12 +16,19 @@ metaset = selfAddon.getSetting('enable_meta')
 dialog = xbmcgui.Dialog()
 
 def CATEGORIES(): 
-    addDir2('[COLOR red]*****ARMENIAN MOVIES*****[/COLOR]','http://ignorme',1,icon,fanart)
+	addDir2('[COLOR white]Armenian Movies[/COLOR]','http://ignorme',4,icon,fanart)
+	addDir2('[COLOR white]Armenian Serial[/COLOR]','http://ignorme',5,icon,fanart)
+	addDir2('[COLOR white]Armenian TV Shows[/COLOR]','http://ignorme',6,icon,fanart)
+	addDir2('[COLOR white]MultFilmer[/COLOR]','http://ignorme',7,icon,fanart)
+	addDir2('[COLOR white]Armenian Music[/COLOR]','http://ignorme',8,icon,fanart)
+	addDir2('[COLOR white]News[/COLOR]','http://ignorme',9,icon,fanart)
+	
+
+def MOVIES():
     addDir2('[COLOR white]- Movies[/COLOR]','http://merojax.tv/online-movies/armenian-movies',1,icon,fanart)
-    addDir2('[COLOR white]- Comedy[/COLOR]','http://merojax.tv/online-movies/arm-comedy',1,icon,fanart)    
-    addDir2('[COLOR red][/COLOR]','http://ignorme/',1,icon,fanart)
-    
-    addDir2('[COLOR red]*****ARMENIAN SERIES*****[/COLOR]','http://ignorme/',1,icon,fanart)    
+    addDir2('[COLOR white]- Comedy[/COLOR]','http://merojax.tv/online-movies/arm-comedy',1,icon,fanart)  
+	
+def SERIALS():
     addDir2('[COLOR white]- Cart Blansh[/COLOR]','http://merojax.tv/tv-series/cart-blansh',1,icon,fanart)
     addDir2('[COLOR white]- Full House 4[/COLOR]','http://merojax.tv/tv-series/fulhaus',1,icon,fanart)    
     addDir2('[COLOR white]- Domino 2[/COLOR]','http://merojax.tv/tv-series/domino',1,icon,fanart)    
@@ -76,10 +83,9 @@ def CATEGORIES():
     addDir2('[COLOR white]- Veradardz[/COLOR]','http://merojax.tv/tv-series/itemlist/category/16-veradardz',1,icon,fanart)
     addDir2('[COLOR white]- Xaxic Durz[/COLOR]','http://merojax.tv/tv-series/xaxic-durs',1,icon,fanart)
     addDir2('[COLOR white]- Kargin Serial[/COLOR]','http://merojax.tv/kargin-serial-6',1,icon,fanart)
-    addDir2('[COLOR white]- Russakan Serialner[/COLOR]','http://merojax.tv/tv-series/2014-04-11-11-55-45',1,icon,fanart)    
-    addDir2('[COLOR white][/COLOR]','http://ignorme',1,icon,fanart)  
-    addDir2('[COLOR red]*****ARMENIAN TV SHOWS*****[/COLOR]','http://ignorme',1,icon,fanart)
+    addDir2('[COLOR white]- Russakan Serialner[/COLOR]','http://merojax.tv/tv-series/2014-04-11-11-55-45',1,icon,fanart)
 
+def SHOWS():
     addDir2('[COLOR white]- Mixes TV Shows (Armenian)[/COLOR]','http://merojax.tv/tv-shows/mixes-tv-shows',1,icon,fanart)  
     addDir2('[COLOR white]- Kisabac Lusamutner[/COLOR]','http://merojax.tv/tv-shows/kisabac-lusamutner',1,icon,fanart)  
     addDir2('[COLOR white]- Gushakir Mexedin[/COLOR]','http://merojax.tv/tv-shows/gushakir-mexedin',1,icon,fanart)  
@@ -134,30 +140,18 @@ def CATEGORIES():
     addDir2('[COLOR white]- Hayelu Araj[/COLOR]','http://merojax.tv/hayelu-araj',1,icon,fanart)  
     addDir2('[COLOR white]- Lracucich Jamanak[/COLOR]','http://merojax.tv/lracucich-jjamanak',1,icon,fanart)  
     addDir2('[COLOR white]- Amanor 2016[/COLOR]','http://merojax.tv/tv-shows/amanor-2016',1,icon,fanart)  
-    addDir2('[COLOR white]- datakhazi stugum[/COLOR]','http://merojax.tv/2013-12-10-00-34-12',1,icon,fanart)    
-    addDir2('[COLOR red][/COLOR]','http://ignoreme',1,icon,fanart)
-    
-    addDir2('[COLOR red]*****MULTFILMER*****[/COLOR]','http://ignorme',1,icon,fanart)
+    addDir2('[COLOR white]- datakhazi stugum[/COLOR]','http://merojax.tv/2013-12-10-00-34-12',1,icon,fanart)  
+
+def MULTFILMER():
     addDir2('[COLOR white]- Mr Bean[/COLOR]','http://merojax.tv/online-movies/multfilmer-cartoons/mr-bean',1,icon,fanart)     
-    addDir2('[COLOR white]- Masha I Medved[/COLOR]','http://merojax.tv/online-movies/multfilmer-cartoons/masha-i-medved',1,icon,fanart)     
-    addDir2('[COLOR red][/COLOR]','http://ignoreme',1,icon,fanart)
-    
-    addDir2('[COLOR red]*****AREMNIAN MUSIC*****[/COLOR]','http://ignorme',1,icon,fanart)
-    addDir2('[COLOR white]- Video[/COLOR]','http://merojax.tv/music-videos/videos',1,icon,fanart)     
-    addDir2('[COLOR red][/COLOR]','http://ignoreme',1,icon,fanart)
-    
-    addDir2('[COLOR red]*****NEWS*****[/COLOR]','http://ignorme',1,icon,fanart)
+    addDir2('[COLOR white]- Masha I Medved[/COLOR]','http://merojax.tv/online-movies/multfilmer-cartoons/masha-i-medved',1,icon,fanart)    
+
+def MUSIC():
+    addDir2('[COLOR white]- Video[/COLOR]','http://merojax.tv/music-videos/videos',1,icon,fanart)  
+
+def NEWS():
     addDir2('[COLOR white]- News Video[/COLOR]','http://merojax.tv/news-sport/news-video',1,icon,fanart) 
-    addDir2('[COLOR red][/COLOR]','http://ignoreme',1,icon,fanart)
-        
-    link = net.http_GET('http://merojax.tv/').content
-    genres=re.compile('<li class="cat-item cat-item-.+?"><a href="(.+?)">(.+?)</a><i>').findall(link)
-    genres=list(set(genres))
-    genres=sorted(genres)
-    for url,name in genres:
-        addDir2(name,url,1,icon,fanart)
-
-
+	
 def GETMOVIES(url,name):
     metaset = selfAddon.getSetting('enable_meta')
     link = cleanHex(net.http_GET(url).content.replace('\n',''))
@@ -184,6 +178,7 @@ def PLAYLINK(name,url,iconimage):
         ytids = re.compile(r"(?://|\.)(?:youtube.com|youtu.be)/(?:embed/|.+?\?v=|.+?&v=)([0-9A-Za-z_\-]+)", re.DOTALL | re.IGNORECASE).findall(videohtml)
         if len(ytids) > 1:
             vh = dialog.select('Select Episode:', ytids)
+			
         else:
             vh = 0
         videourl = 'plugin://plugin.video.youtube/play/?video_id=' + ytids[vh]
@@ -304,6 +299,13 @@ if mode==None or url==None or len(url)<1: CATEGORIES()
 elif mode==1: GETMOVIES(url,name)
 elif mode==2: GETLINKS(url,name,iconimage)
 elif mode==3: SEARCH()
+
+elif mode==4: MOVIES()
+elif mode==5: SERIALS()
+elif mode==6: SHOWS()
+elif mode==7: MUSIC()
+elif mode==8: MULTFILMER()
+elif mode==9: NEWS()
 
 elif mode==100: PLAYLINK(name,url,iconimage)
 
