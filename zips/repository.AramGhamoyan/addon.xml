@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.6" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.7" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
+			<import addon="plugin.video.AwesomeStreams" />
+			<import addon="repository.dokinl" />
         </requires>
         <extension point="xbmc.addon.repository" name="Galaxy Repo">
             <info compressed="false">https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/addons.xml</info>
