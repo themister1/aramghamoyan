@@ -20,7 +20,7 @@
             <height>10</height>
 			<font>size9</font>
             <textcolor>black</textcolor>
-            <label>[COLOR lime]VERSIE: 17-05-2016[/COLOR]</label>
+            <label>[COLOR lime]VERSIE: 25-05-2016[/COLOR]</label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,0" time="220">Conditonal</animation>

@@ -422,7 +422,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="9999.9999.9999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="99999.99999.99999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />

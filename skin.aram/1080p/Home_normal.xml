@@ -20,7 +20,7 @@
             <height>10</height>
 			<font>size28</font>
             <textcolor>white</textcolor>
-            <label>[COLOR lime]VERSIE: 24-05-2016[/COLOR]</label>
+            <label>[COLOR red]VERSIE: 04-08-2016[/COLOR]</label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-295" time="220">Conditonal</animation>
@@ -169,6 +169,13 @@
 					<label></label>
 					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=ArmoGuy ADD-ONS&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CArmoGuy%20ADD-ONS&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
 				</item>
+				<item id="347" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\nlzone.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.7.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.nlzone/&quot;,return)</onclick>
+				</item>				
 				<item id="500" description="Custom addon">
 					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
 					<thumb>special://home/addons\skin.aram\icons\films.png</thumb>
@@ -327,7 +334,7 @@
 				<centerright>-88</centerright>
                 <height>45</height>
                 <font>size30</font>
-                <label>[COLOR red]$INFO[System.Time] $INFO[System.Date][/COLOR]</label>
+                <label>[COLOR black]$INFO[System.Time] $INFO[System.Date][/COLOR]</label>
             </control>
         <control type="label" description="Top Label">
             <include>ShelfFade</include>

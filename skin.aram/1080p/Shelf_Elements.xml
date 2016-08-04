@@ -21,7 +21,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\TV.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -35,7 +35,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\eigen.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -48,7 +48,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\rus.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -61,7 +61,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\toot.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -74,7 +74,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\hay.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -87,7 +87,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\merojax.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -100,7 +100,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\kids.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -113,7 +113,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\sports.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -126,7 +126,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\music.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -139,7 +139,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\program.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -152,7 +152,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\update.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -166,7 +166,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\films.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -179,7 +179,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">images/media_banner.jpg</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -194,7 +194,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\terug.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -207,7 +207,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\settings.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
@@ -224,7 +224,7 @@
                 <top>0</top>
                 <width>1920</width> 
                 <height>490</height>
-                <texture background="true">special://home/addons\skin.aram\backgrounds\usb.png</texture>
+                <texture background="true">special://home/addons\skin.aram\backgrounds\banner.png</texture>
             </control>           
         </control>
     </include>
