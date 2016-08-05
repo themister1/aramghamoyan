@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aram" version="999999.999999.999999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="9999999.9999999.9999999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />	
         <import addon="plugin.video.merojax.tv" />
