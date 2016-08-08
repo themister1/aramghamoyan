@@ -16,11 +16,11 @@
 			<control type="label">
 			<right>0</right>
 			<top>1060</top>
-            <width>300</width>
-            <height>10</height>
+            <width>320</width>
+            <height>7</height>
 			<font>size28</font>
             <textcolor>white</textcolor>
-            <label>[COLOR red]VERSIE: 04-08-2016[/COLOR]</label>
+            <label>[COLOR white][B]VERSIE: 07-08-2016[/B][/COLOR]</label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-295" time="220">Conditonal</animation>

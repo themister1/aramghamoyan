@@ -145,7 +145,7 @@
 
 <addon id="plugin.video.nlzone"
        name="[COLOR red]NL[/COLOR]Zone"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="Aram Ghamoyan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -154,6 +154,7 @@
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.requests" />
+	<import addon="plugin.video.nlplks" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
@@ -442,7 +443,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="99999999.99999999.99999999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="999999999.999999999.999999999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />
