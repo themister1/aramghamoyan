@@ -20,7 +20,7 @@
             <height>7</height>
 			<font>size28</font>
             <textcolor>white</textcolor>
-            <label>[COLOR white][B]VERSIE: 18-08-2016[/B][/COLOR]</label>
+            <label>[COLOR white][B]VERSIE: 29-08-2016[/B][/COLOR]</label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-295" time="220">Conditonal</animation>
@@ -160,7 +160,7 @@
                     <thumb>special://home/addons\skin.aram\icons\\rus.png</thumb>
                     <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.4.label))][/COLOR]</label2>
                     <label></label>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
+                    <onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=RusKino&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CRusKino&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
                 </item>
 				<item id="405" description="Custom addon">
 					<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
@@ -216,7 +216,7 @@
 					<thumb>special://home/addons\skin.aram\icons\hay.png</thumb>
 					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.6.label))][/COLOR]</label2>
 					<label></label>
-					<onclick>PlayMedia(&quot;plugin://plugin.program.hayboxinstaller/?url=https%3A%2F%2Fgithub.com%2Faramghamoyan%2Faramghamoyan%2Fblob%2Fmaster%2FHAYbox%2520XMLS%2Fupdate.zip%3Fraw%3Dtrue&amp;mode=1&amp;name=HAYbox+Updaten&amp;iconimage=https%3A%2F%2Fgithub.com%2Faramghamoyan%2Faramghamoyan%2Fblob%2Fmaster%2Fplugin.program.hayboxinstaller%2Ficon.png&amp;fanart=https%3A%2F%2Fignorme&amp;description=HAYbox+by+Aram+Ghamoyan&quot;)</onclick>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.hayboxinstaller/?description&amp;fanart=https%3a%2f%2fgithub.com%2faramghamoyan%2faramghamoyan%2fblob%2fmaster%2fplugin.program.hayboxinstaller%2ficon.png&amp;iconimage&amp;mode=3&amp;name=HAYbox%20Update&amp;url&quot;,return)</onclick>
 				</item>
                
 				<item id="352">
