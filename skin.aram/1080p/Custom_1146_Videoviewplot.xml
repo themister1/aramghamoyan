@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1146">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>365</top>
+                <posx>1335</posx>
+                <width>640</width>
+                <height>350</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back border">
+                <top>365</top>
+                <posx>1335</posx>
+                <width>640</width>
+                <height>350</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1350</left>
+				<centerleft>960</centerleft>
+				<top>8</top>
+				<width>570</width>
+				<height>1064</height>
+				<itemgap>3</itemgap>
+				<onleft>close</onleft>
+				<onright>close</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<scrolltime>200</scrolltime>					
+                <control type="radiobutton" id="23">
+                    <label>Hide Plot in List1-Plain</label>
+                    <onclick>Skin.ToggleSetting(plotinfolist1)</onclick>
+                    <selected>Skin.HasSetting(plotinfolist1)</selected>
+                </control>
+				<control type="radiobutton" id="24">
+                    <label>Hide Plot in List2-Slider</label>
+                    <onclick>Skin.ToggleSetting(plotinfolist2)</onclick>
+                    <selected>Skin.HasSetting(plotinfolist2)</selected>
+                </control>
+				<control type="radiobutton" id="25">
+                    <label>Hide Plot in List3-info</label>
+                    <onclick>Skin.ToggleSetting(plotinfolist3)</onclick>
+                    <selected>Skin.HasSetting(plotinfolist3)</selected>
+                </control>
+				
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

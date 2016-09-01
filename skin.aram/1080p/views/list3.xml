@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="list3">
+<control type="group" description="List3">
+            <visible>Control.IsVisible(51)</visible>
+            <include>left_Panel_list1</include>
+            <control type="group">
+                <include>LargeListItemCount</include>
+                <posx>960</posx>
+                <top>125</top>
+                <control type="fixedlist" id="51">
+                    <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
+                    <width>920</width>
+                    <height>890</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onup>51</onup>
+                    <ondown>51</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="537">List3</viewtype>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <include>LargeListLayout</include>
+                </control>
+            </control>
+            <include>Linemiddle</include>
+            <control type="scrollbar" id="60">
+                <posx>24r</posx>
+                <top>135</top>
+                <height>870</height>
+                <onleft>51</onleft>
+                <onright>noop</onright>
+            </control>
+        </control>
+        </include>
+</includes>

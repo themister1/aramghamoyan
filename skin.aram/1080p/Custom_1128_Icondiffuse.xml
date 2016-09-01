@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1128">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>Transperancy1</label>
+                    <onclick>Skin.ToggleSetting(icondiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse2)">Skin.ToggleSetting(icondiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse3)">Skin.ToggleSetting(icondiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse4)">Skin.ToggleSetting(icondiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse5)">Skin.ToggleSetting(icondiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(icondiffuse1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Transperancy2</label>
+                    <onclick>Skin.ToggleSetting(icondiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse1)">Skin.ToggleSetting(icondiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse3)">Skin.ToggleSetting(icondiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse4)">Skin.ToggleSetting(icondiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse5)">Skin.ToggleSetting(icondiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(icondiffuse2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Transperancy3</label>
+                    <onclick>Skin.ToggleSetting(icondiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse1)">Skin.ToggleSetting(icondiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse2)">Skin.ToggleSetting(icondiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse4)">Skin.ToggleSetting(icondiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse5)">Skin.ToggleSetting(icondiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(icondiffuse3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>Transperancy4</label>
+                    <onclick>Skin.ToggleSetting(icondiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse1)">Skin.ToggleSetting(icondiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse2)">Skin.ToggleSetting(icondiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse3)">Skin.ToggleSetting(icondiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse5)">Skin.ToggleSetting(icondiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(icondiffuse4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Transperancy5</label>
+                    <onclick>Skin.ToggleSetting(icondiffuse5)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse1)">Skin.ToggleSetting(icondiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse2)">Skin.ToggleSetting(icondiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse3)">Skin.ToggleSetting(icondiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(icondiffuse4)">Skin.ToggleSetting(icondiffuse4)</onclick>					
+                    <selected>Skin.HasSetting(icondiffuse5)</selected>				
+                </control>								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

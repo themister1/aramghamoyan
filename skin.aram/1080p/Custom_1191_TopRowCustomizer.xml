@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1191">
+    <defaultcontrol always="true">8003</defaultcontrol>		
+    <controls>	
+			<include condition="![Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5) | Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6) | Skin.HasSetting(hideshelf) | Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x) | Skin.HasSetting(homeiconios)]">customtoprowdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow7)">customtoprowdefault7row</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow6)">customtoprowdefault6row</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow5)">customtoprowdefault5row</include>				
+			<include condition="Skin.HasSetting(hideshelf)">customtoprowdefault</include>
+			<include condition="Skin.HasSetting(homeiconsio2)">customtoprowsio2</include>					
+			<include condition="Skin.HasSetting(homeiconsio2x)">customtoprowsio2x</include>	
+			<include condition="Skin.HasSetting(homeiconroundrow8)">customtoprowroundsquare8row</include>						
+			<include condition="Skin.HasSetting(homeiconroundrow7)">customtoprowroundsquare7row</include>
+			<include condition="Skin.HasSetting(homeiconroundrow6)">customtoprowroundsquare6row</include>
+			<include condition="Skin.HasSetting(homeiconios)">customtoprowios</include>	
+        <control type="group" description="Options">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
+            <control type="image">
+                <posx>525</posx>
+                <top>180</top>
+                <width>870</width>
+                <height>660</height>
+                <texture border="150" colordiffuse="$VAR[bgcolor1]">images/Dialog.png</texture>
+            </control>
+            <control type="label" description="Dialog heading">
+                <posx>550</posx>
+                <top>360</top>
+                <width>820</width>
+                <height>52</height>
+                <label>[B]•• Options ••[/B]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>size36</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+            </control>
+            <control type="grouplist" id="9000">
+                <visible>!ControlGroup(9001).HasFocus()</visible>
+				<centerleft>960</centerleft>
+				<top>8</top>
+				<width>470</width>
+				<height>1064</height>
+				<itemgap>3</itemgap>
+				<onleft>8003</onleft>
+				<onright>8003</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<scrolltime>200</scrolltime>				
+                <control type="button" id="666">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31057]</label>
+					<onclick condition="Container(8003).Hasfocus(601)">RunScript(script.favourites,property=HomeShelfFav.1)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(602)">RunScript(script.favourites,property=HomeShelfFav.2)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(603)">RunScript(script.favourites,property=HomeShelfFav.3)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(604)">RunScript(script.favourites,property=HomeShelfFav.4)</onclick>
+					<onclick condition="Container(8003).Hasfocus(605)">RunScript(script.favourites,property=HomeShelfFav.5)</onclick>
+					<onclick condition="Container(8003).Hasfocus(606)">RunScript(script.favourites,property=HomeShelfFav.6)</onclick>			
+					<onclick condition="Container(8003).Hasfocus(405)">Skin.SetAddon(HomeShelfAddon.1.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(405)">Skin.Reset(HomeShelfAddon.1.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(406)">Skin.SetAddon(HomeShelfAddon.2.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(406)">Skin.Reset(HomeShelfAddon.2.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(505)">Skin.SetAddon(HomeShelfAddon.3.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(505)">Skin.Reset(HomeShelfAddon.3.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(506)">Skin.SetAddon(HomeShelfAddon.4.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(506)">Skin.Reset(HomeShelfAddon.4.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(701)">Skin.SetAddon(HomeShelfAddon.5.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(701)">Skin.Reset(HomeShelfAddon.5.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(702)">Skin.SetAddon(HomeShelfAddon.6.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(702)">Skin.Reset(HomeShelfAddon.6.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(401)">RunScript(script.favourites,property=HomeShelfFav.7)</onclick>
+					<onclick condition="Container(8003).Hasfocus(402)">RunScript(script.favourites,property=HomeShelfFav.8)</onclick>
+					<onclick condition="Container(8003).Hasfocus(403)">RunScript(script.favourites,property=HomeShelfFav.9)</onclick>
+					<onclick condition="Container(8003).Hasfocus(404)">RunScript(script.favourites,property=HomeShelfFav.10)</onclick>
+					<onclick condition="Container(8003).Hasfocus(501)">RunScript(script.favourites,property=HomeShelfFav.11)</onclick>
+					<onclick condition="Container(8003).Hasfocus(502)">RunScript(script.favourites,property=HomeShelfFav.12)</onclick>
+					<onclick condition="Container(8003).Hasfocus(901)">Skin.SetAddon(HomeShelfAddon.7.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(901)">Skin.Reset(HomeShelfAddon.7.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(902)">Skin.SetAddon(HomeShelfAddon.8.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(902)">Skin.Reset(HomeShelfAddon.8.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(903)">Skin.SetAddon(HomeShelfAddon.9.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(903)">Skin.Reset(HomeShelfAddon.9.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(904)">Skin.SetAddon(HomeShelfAddon.10.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(904)">Skin.Reset(HomeShelfAddon.10.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(905)">Skin.SetAddon(HomeShelfAddon.11.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(905)">Skin.Reset(HomeShelfAddon.11.Icon)</onclick>
+					<onclick condition="Container(8003).Hasfocus(906)">Skin.SetAddon(HomeShelfAddon.12.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(906)">Skin.Reset(HomeShelfAddon.12.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(801)">Skin.SetAddon(HomeShelfAddon.13.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(801)">Skin.Reset(HomeShelfAddon.13.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(802)">Skin.SetAddon(HomeShelfAddon.14.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(802)">Skin.Reset(HomeShelfAddon.14.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(803)">Skin.SetAddon(HomeShelfAddon.15.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(803)">Skin.Reset(HomeShelfAddon.15.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(804)">Skin.SetAddon(HomeShelfAddon.16.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(804)">Skin.Reset(HomeShelfAddon.16.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(805)">Skin.SetAddon(HomeShelfAddon.17.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(805)">Skin.Reset(HomeShelfAddon.17.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(806)">Skin.SetAddon(HomeShelfAddon.18.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(806)">Skin.Reset(HomeShelfAddon.18.Icon)</onclick>				
+					<onclick condition="Container(8003).Hasfocus(380)">Skin.SetAddon(HomeShelfAddon.19.Label,xbmc.python.pluginsource)</onclick>
+					<onclick condition="Container(8003).Hasfocus(380)">Skin.Reset(HomeShelfAddon.19.Icon)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(370)">RunScript(script.favourites,property=HomeShelfFav.13)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(371)">RunScript(script.favourites,property=HomeShelfFav.14)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(372)">RunScript(script.favourites,property=HomeShelfFav.15)</onclick>
+                    <onclick condition="Container(8003).Hasfocus(373)">RunScript(script.favourites,property=HomeShelfFav.16)</onclick>
+					<onclick condition="Container(8003).Hasfocus(374)">RunScript(script.favourites,property=HomeShelfFav.17)</onclick>
+					<onclick condition="Container(8003).Hasfocus(375)">RunScript(script.favourites,property=HomeShelfFav.18)</onclick>					
+                    <onclick>SetFocus(8003)</onclick>
+                </control>																
+                <control type="button" id="667">
+					<visible>![Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x)]</visible>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31056]</label>
+					<onclick condition="Container(8003).Hasfocus(601)">Skin.SetFile(HomeShelfFav.1.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(602)">Skin.SetFile(HomeShelfFav.2.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(603)">Skin.SetFile(HomeShelfFav.3.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(604)">Skin.SetFile(HomeShelfFav.4.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(605)">Skin.SetFile(HomeShelfFav.5.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(606)">Skin.SetFile(HomeShelfFav.6.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(405)">Skin.SetFile(HomeShelfAddon.1.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(406)">Skin.SetFile(HomeShelfAddon.2.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(505)">Skin.SetFile(HomeShelfAddon.3.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(506)">Skin.SetFile(HomeShelfAddon.4.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(701)">Skin.SetFile(HomeShelfAddon.5.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(702)">Skin.SetFile(HomeShelfAddon.6.Icon,,special://skin/icons)</onclick>						
+					<onclick condition="Container(8003).Hasfocus(401)">Skin.SetFile(HomeShelfFav.7.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(402)">Skin.SetFile(HomeShelfFav.8.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(403)">Skin.SetFile(HomeShelfFav.9.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(404)">Skin.SetFile(HomeShelfFav.10.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(501)">Skin.SetFile(HomeShelfFav.11.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(502)">Skin.SetFile(HomeShelfFav.12.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(901)">Skin.SetFile(HomeShelfAddon.7.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(902)">Skin.SetFile(HomeShelfAddon.8.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(903)">Skin.SetFile(HomeShelfAddon.9.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(904)">Skin.SetFile(HomeShelfAddon.10.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(905)">Skin.SetFile(HomeShelfAddon.11.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(906)">Skin.SetFile(HomeShelfAddon.12.Icon,,special://skin/icons)</onclick>			
+					<onclick condition="Container(8003).Hasfocus(801)">Skin.SetFile(HomeShelfAddon.13.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(802)">Skin.SetFile(HomeShelfAddon.14.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(803)">Skin.SetFile(HomeShelfAddon.15.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(804)">Skin.SetFile(HomeShelfAddon.16.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(805)">Skin.SetFile(HomeShelfAddon.17.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(806)">Skin.SetFile(HomeShelfAddon.18.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(370)">Skin.SetFile(HomeShelfFav.13.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(371)">Skin.SetFile(HomeShelfFav.14.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(372)">Skin.SetFile(HomeShelfFav.15.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(373)">Skin.SetFile(HomeShelfFav.16.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(374)">Skin.SetFile(HomeShelfFav.17.Icon,,special://skin/icons)</onclick>
+					<onclick condition="Container(8003).Hasfocus(375)">Skin.SetFile(HomeShelfFav.18.Icon,,special://skin/icons)</onclick>					
+                    <onclick>SetFocus(8003)</onclick>
+                </control>
+                <control type="button" id="667">
+					<visible>Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x)</visible>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31056]</label>	
+					<onclick condition="Container(8003).Hasfocus(601)">Skin.SetFile(HomeShelfFav.1.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(602)">Skin.SetFile(HomeShelfFav.2.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(603)">Skin.SetFile(HomeShelfFav.3.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(604)">Skin.SetFile(HomeShelfFav.4.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(605)">Skin.SetFile(HomeShelfFav.5.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(606)">Skin.SetFile(HomeShelfFav.6.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(405)">Skin.SetFile(HomeShelfAddon.1.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(406)">Skin.SetFile(HomeShelfAddon.2.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(505)">Skin.SetFile(HomeShelfAddon.3.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(506)">Skin.SetFile(HomeShelfAddon.4.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(701)">Skin.SetFile(HomeShelfAddon.5.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(702)">Skin.SetFile(HomeShelfAddon.6.Icon,,special://skin/icons-sio2)</onclick>						
+					<onclick condition="Container(8003).Hasfocus(401)">Skin.SetFile(HomeShelfFav.7.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(402)">Skin.SetFile(HomeShelfFav.8.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(403)">Skin.SetFile(HomeShelfFav.9.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(404)">Skin.SetFile(HomeShelfFav.10.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(501)">Skin.SetFile(HomeShelfFav.11.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(502)">Skin.SetFile(HomeShelfFav.12.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(901)">Skin.SetFile(HomeShelfAddon.7.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(902)">Skin.SetFile(HomeShelfAddon.8.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(903)">Skin.SetFile(HomeShelfAddon.9.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(904)">Skin.SetFile(HomeShelfAddon.10.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(905)">Skin.SetFile(HomeShelfAddon.11.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(906)">Skin.SetFile(HomeShelfAddon.12.Icon,,special://skin/icons-sio2)</onclick>			
+					<onclick condition="Container(8003).Hasfocus(801)">Skin.SetFile(HomeShelfAddon.13.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(802)">Skin.SetFile(HomeShelfAddon.14.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(803)">Skin.SetFile(HomeShelfAddon.15.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(804)">Skin.SetFile(HomeShelfAddon.16.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(805)">Skin.SetFile(HomeShelfAddon.17.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(806)">Skin.SetFile(HomeShelfAddon.18.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(370)">Skin.SetFile(HomeShelfFav.13.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(371)">Skin.SetFile(HomeShelfFav.14.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(372)">Skin.SetFile(HomeShelfFav.15.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(373)">Skin.SetFile(HomeShelfFav.16.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(374)">Skin.SetFile(HomeShelfFav.17.Icon,,special://skin/icons-sio2)</onclick>
+					<onclick condition="Container(8003).Hasfocus(375)">Skin.SetFile(HomeShelfFav.18.Icon,,special://skin/icons-sio2)</onclick>									
+                    <onclick>SetFocus(8003)</onclick>
+                </control>																							
+            </control>			
+        </control>
+ </controls>
+</window>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1131">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="520,0" end="0,0" time="300"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="520,0" time="300" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <!--top>290</top-->
+                <posx>1600</posx>
+                <width>370</width>
+                <height>1100</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>
+            <control type="image" description="List back">
+                <!--top>290</top-->
+                <posx>1600</posx>
+                <width>2</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">images/DialoglineV.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1620</left>
+			       <centerleft>960</centerleft>
+                   <top>8</top>
+                   <width>300</width>
+                   <height>1064</height>
+                   <itemgap>3</itemgap>
+                   <onleft>close</onleft>
+                   <onright>close</onright>
+                   <onup>9000</onup>
+                   <ondown>9000</ondown>
+                   <align>center</align>
+                   <scrolltime>200</scrolltime>
+                <control type="radiobutton" id="16">
+                    <label>White</label>
+                    <onclick>Skin.ToggleSetting(whitetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+                    <onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>					
+                    <selected>Skin.HasSetting(whitetext)</selected>				
+                </control>				   
+                <control type="radiobutton" id="17">
+                    <label>Black</label>
+                    <onclick>Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(blacktext)</selected>				
+                </control>				   
+                <control type="radiobutton" id="1">
+                    <label>Green</label>
+                    <onclick>Skin.ToggleSetting(greentext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(greentext)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Lime</label>
+                    <onclick>Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>					
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(limetext)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Emerald Green</label>
+                    <onclick>Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(emeraldtext)</selected>				
+                </control>				
+                <control type="radiobutton" id="4">
+                    <label>Forest Green</label>
+                    <onclick>Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(foresttext)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Blue</label>
+                    <onclick>Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(bluetext)</selected>				
+                </control>
+                <control type="radiobutton" id="6">
+                    <label>Light Blue</label>
+                    <onclick>Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>										
+                    <selected>Skin.HasSetting(ltbluetext)</selected>				
+                </control>
+                <control type="radiobutton" id="7">
+                    <label>Dark Blue</label>
+                    <onclick>Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(dbluetext)</selected>				
+                </control>				
+                <control type="radiobutton" id="8">
+                    <label>Red</label>
+                    <onclick>Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(redtext)</selected>				
+                </control>
+                <control type="radiobutton" id="9">
+                    <label>Pink</label>
+                    <onclick>Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(pinktext)</selected>				
+                </control>
+                <control type="radiobutton" id="10">
+                    <label>Purple</label>
+                    <onclick>Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(purpletext)</selected>				
+                </control>
+                <control type="radiobutton" id="11">
+                    <label>Indigo</label>
+                    <onclick>Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(indigotext)</selected>				
+                </control>
+                <control type="radiobutton" id="12">
+                    <label>Aquamarine</label>
+                    <onclick>Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(aquamarinetext)</selected>				
+                </control>
+                <control type="radiobutton" id="13">
+                    <label>Yellow</label>
+                    <onclick>Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(yellowtext)</selected>				
+                </control>
+                <control type="radiobutton" id="14">
+                    <label>Orange</label>
+                    <onclick>Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(coraltext)">Skin.ToggleSetting(coraltext)</onclick>
+                    <onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(orangetext)</selected>				
+                </control>
+                <control type="radiobutton" id="15">
+                    <label>Coral</label>
+                    <onclick>Skin.ToggleSetting(coraltext)</onclick>
+					<onclick condition="Skin.HasSetting(blacktext)">Skin.ToggleSetting(blacktext)</onclick>
+					<onclick condition="Skin.HasSetting(greentext)">Skin.ToggleSetting(greentext)</onclick>					
+					<onclick condition="Skin.HasSetting(limetext)">Skin.ToggleSetting(limetext)</onclick>
+					<onclick condition="Skin.HasSetting(emeraldtext)">Skin.ToggleSetting(emeraldtext)</onclick>
+					<onclick condition="Skin.HasSetting(foresttext)">Skin.ToggleSetting(foresttext)</onclick>
+					<onclick condition="Skin.HasSetting(bluetext)">Skin.ToggleSetting(bluetext)</onclick>
+					<onclick condition="Skin.HasSetting(ltbluetext)">Skin.ToggleSetting(ltbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(dbluetext)">Skin.ToggleSetting(dbluetext)</onclick>
+					<onclick condition="Skin.HasSetting(redtext)">Skin.ToggleSetting(redtext)</onclick>
+					<onclick condition="Skin.HasSetting(pinktext)">Skin.ToggleSetting(pinktext)</onclick>
+					<onclick condition="Skin.HasSetting(purpletext)">Skin.ToggleSetting(purpletext)</onclick>
+					<onclick condition="Skin.HasSetting(indigotext)">Skin.ToggleSetting(indigotext)</onclick>
+					<onclick condition="Skin.HasSetting(aquamarinetext)">Skin.ToggleSetting(aquamarinetext)</onclick>
+					<onclick condition="Skin.HasSetting(yellowtext)">Skin.ToggleSetting(yellowtext)</onclick>
+					<onclick condition="Skin.HasSetting(orangetext)">Skin.ToggleSetting(orangetext)</onclick>
+					<onclick condition="Skin.HasSetting(whitetext)">Skin.ToggleSetting(whitetext)</onclick>					
+                    <selected>Skin.HasSetting(coraltext)</selected>				
+                </control>											
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

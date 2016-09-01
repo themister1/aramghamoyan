@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1148">
+    <defaultcontrol always="true">9000</defaultcontrol>			
+    <controls>
+        <control type="group" description="All dialog content">	
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>		
+            <control type="image" description="List back">
+                <top>165</top>
+                <posx>1235</posx>
+                <width>740</width>
+                <height>750</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back border">
+                <top>165</top>
+                <posx>1235</posx>
+                <width>740</width>
+                <height>750</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1250</left>
+				<centerleft>960</centerleft>
+				<top>8</top>
+				<width>650</width>
+				<height>1064</height>
+				<itemgap>3</itemgap>
+				<onleft>close</onleft>
+				<onright>close</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<scrolltime>200</scrolltime>									
+				<control type="button" id="1">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>HomeIcon Layout</label>
+                    <onclick>ActivateWindow(1147)</onclick>
+                </control>				
+                <control type="button" id="3">
+				    <visible>Skin.HasSetting(colormenu)</visible>				
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>HomeIcon Color</label>
+                    <onclick>ActivateWindow(1134)</onclick>
+                </control>
+                <control type="button" id="4">
+				    <visible>!Skin.HasSetting(colormenu)</visible>
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>[COLOR=Disabled]Home Icon Color[/COLOR]</label>
+                </control>					
+                <control type="button" id="5">
+				    <visible>Skin.HasSetting(colormenu)</visible>
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>HomeIcon Transparency </label>
+                    <onclick>ActivateWindow(1128)</onclick>
+                </control>
+                <control type="button" id="6">
+				    <visible>!Skin.HasSetting(colormenu)</visible>
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>[COLOR=Disabled]Home Icon Transparency[/COLOR]</label>
+                </control>				
+                <control type="button" id="7">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>HomeIcon Border Color</label>
+                    <onclick>ActivateWindow(1129)</onclick>
+                </control>
+                <control type="button" id="12">
+					<visible>!Skin.HasSetting(homeiconborders)</visible>
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>[COLOR=Disabled]HomeIcon Border Transparency[/COLOR]</label>
+                </control>
+                <control type="button" id="11">
+					<visible>Skin.HasSetting(homeiconborders)</visible>				
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>HomeIcon Border Transparency</label>
+                    <onclick>ActivateWindow(1161)</onclick>
+                </control>				
+                <control type="radiobutton" id="8">
+                    <label>$LOCALIZE[31033]</label>
+                    <onclick>Skin.ToggleSetting(colormenu)</onclick>
+                    <selected>!Skin.HasSetting(colormenu)</selected>
+                </control>				
+                <control type="radiobutton" id="9">
+                    <label>$LOCALIZE[31104]</label>
+                    <onclick>Skin.ToggleSetting(homelabel)</onclick>
+                    <selected>Skin.HasSetting(homelabel)</selected>
+                </control>
+				<!--control type="button" id="10">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>Home Slider Animation MENU</label>
+                    <onclick>ActivateWindow(1149)</onclick>
+                </control-->				
+                </control>
+            </control>
+		</control>	
+<!-- LEFT PANEL -->		
+        <control type="group" description="Left panel">
+            <top>80</top>							
+            <control type="image" description="ICON LAYOUT - SQUARE">			
+				<visible>[Controlgroup(9000).HasFocus(1) + [![Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5) | Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6) | Skin.HasSetting(hideshelf) | Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x) | Skin.HasSetting(homeiconios)]]] | [Controlgroup(9000).HasFocus(1) + [Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5)]]</visible>
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture diffuse="icons/diffusehome.png">$VAR[darkblue]</texture>	
+            </control>
+            <control type="image" description="ICON LAYOUT - SQUARE BORDER">			
+				<visible>[Controlgroup(9000).HasFocus(1) + [![Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5) | Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6) | Skin.HasSetting(hideshelf) | Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x) | Skin.HasSetting(homeiconios)]]] | [Controlgroup(9000).HasFocus(1) + [Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5)]]</visible>
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture colordiffuse="$VAR[diffusehomeiconborder]">borders/iconborder.png</texture>	
+            </control>					
+            <control type="image" description="ICON LAYOUT - ROUNDED SQUARE">
+                <visible>Controlgroup(9000).HasFocus(1) + [Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6)]</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture diffuse="icons/roundcorners/base.png">$VAR[darkblue]</texture>	
+            </control>
+            <control type="image" description="ICON LAYOUT - ROUNDED SQUARE - BORDER">
+                <visible>Controlgroup(9000).HasFocus(1) + [Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6)] + Skin.HasSetting(homeiconborders)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture colordiffuse="$VAR[diffusehomeiconborder]">icons/roundcorners/border.png</texture>	
+            </control>		
+            <control type="image" description="ICON LAYOUT - SiO2">
+                <visible>Controlgroup(9000).HasFocus(1) + Skin.HasSetting(homeiconsio2)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>312</width>
+                <height>180</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture diffuse="icons/sio2/base.png">$VAR[darkblue]</texture>	
+            </control>
+            <control type="image" description="ICON LAYOUT - SiO2 - BORDER">
+                <visible>Controlgroup(9000).HasFocus(1) + Skin.HasSetting(homeiconsio2) + Skin.HasSetting(homeiconborders)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>312</width>
+                <height>180</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture colordiffuse="$VAR[diffusehomeiconborder]">icons/sio2/border.png</texture>	
+            </control>			
+            <control type="image" description="ICON LAYOUT - SiO2-X">
+                <visible>Controlgroup(9000).HasFocus(1) + Skin.HasSetting(homeiconsio2x)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>260</width>
+                <height>168</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture diffuse="icons/sio2x/base.png">$VAR[darkblue]</texture>	
+            </control>
+            <control type="image" description="ICON LAYOUT - SiO2-X - BORDER">
+                <visible>Controlgroup(9000).HasFocus(1) + Skin.HasSetting(homeiconsio2x) + Skin.HasSetting(homeiconborders)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>260</width>
+                <height>168</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture colordiffuse="$VAR[diffusehomeiconborder]">icons/sio2x/border.png</texture>	
+            </control>			
+            <control type="image" description="ICON LAYOUT - iOS">
+                <visible>Controlgroup(9000).HasFocus(1) + Skin.HasSetting(homeiconios)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>200</width>
+                <height>180</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture diffuse="icons/ios/base.png">$VAR[darkblue]</texture>	
+            </control>
+            <control type="image" description="ICON LAYOUT - iOS - BORDER">
+                <visible>Controlgroup(9000).HasFocus(1) + Skin.HasSetting(homeiconios) + Skin.HasSetting(homeiconborders)</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>200</width>
+                <height>180</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture colordiffuse="$VAR[diffusehomeiconborder]">icons/ios/border.png</texture>	
+            </control>
+	
+<!-- HELP WINDOW -->			
+            <control type="image" description="ICON NONCOLORED">
+                <visible>Controlgroup(9000).HasFocus(3) | Controlgroup(9000).HasFocus(5) | [Controlgroup(9000).HasFocus(7) + Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(11) + Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(12) + Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(8) + Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(9) + Skin.HasSetting(colormenu)]</visible>
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseicons2]">icons/base.png</texture>
+            </control>
+            <control type="image" description="ICON COLORED">
+                <visible>Controlgroup(9000).HasFocus(2) | Controlgroup(9000).HasFocus(4) | Controlgroup(9000).HasFocus(6) | [Controlgroup(9000).HasFocus(7) + !Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(11) + !Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(12) + !Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(8) + !Skin.HasSetting(colormenu)] | [Controlgroup(9000).HasFocus(9) + !Skin.HasSetting(colormenu)]</visible>				
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+				<texture diffuse="icons/diffusehome.png">$VAR[darkblue]</texture>	
+            </control>			
+            <control type="image" description="ICON BORDER">
+                <visible>Skin.HasSetting(homeiconborders) + [Controlgroup(9000).HasFocus(2) | Controlgroup(9000).HasFocus(3) | Controlgroup(9000).HasFocus(4) | Controlgroup(9000).HasFocus(5) | Controlgroup(9000).HasFocus(6) | Controlgroup(9000).HasFocus(7) | Controlgroup(9000).HasFocus(11) | Controlgroup(9000).HasFocus(12) | Controlgroup(9000).HasFocus(8) | Controlgroup(9000).HasFocus(9)]</visible>
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffusehomeiconborder]">borders/iconborder.png</texture>
+            </control>			
+			<control type="label" description="LABEL">
+				<visible>!Skin.HasSetting(homelabel) + Controlgroup(9000).HasFocus(9)</visible>			
+                <centerleft>460</centerleft>
+				<top>370</top>
+                <width>220</width>
+                <height>22</height>
+				<font>size30</font>
+				<align>center</align>
+				<textcolor>White</textcolor>
+				<label>[B]Label[/B]</label>
+			</control>		
+            <control type="image" description="Selector Color">
+                <visible>Controlgroup(9000).HasFocus(10)</visible>	
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>200</top>
+                <width>220</width>
+                <height>200</height>
+                <aspectratio align="center" aligny="bottom">scretch</aspectratio>
+                <texture>icons/iconnoborder.png</texture>
+            </control>
+            <control type="image" description="Selector Color Border">
+                <visible>Controlgroup(9000).HasFocus(10)</visible>	
+                <animation effect="fade" time="200">VisibleChange</animation>				
+                <centerleft>460</centerleft>
+				<top>186</top>
+                <width>248</width>
+                <height>220</height>
+                <aspectratio align="center" aligny="bottom">stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseselect]">help/selectorcolor.png</texture>
+            </control>									
+        </control>
+        <control type="textbox" description="HelpDetails">
+            <posx>170</posx>
+            <top>560</top>
+            <width>660</width>
+            <height>380</height>
+            <font>size33</font>
+            <align>justify</align>
+            <label>[COLOR=$VAR[diffusetext]]$VAR[helptext][/COLOR]</label>
+        </control>		
+    </controls>
+</window>

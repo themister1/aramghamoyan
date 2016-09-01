@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="100">
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="image" description="Dialog">
+            <centerleft>960</centerleft>
+            <centertop>520</centertop>
+            <width>1060</width>
+            <height>540</height>
+            <texture>images\black.png</texture>
+			<aspectratio>stretch</aspectratio>
+        </control>	
+        <control type="image" description="Dialog Border">
+            <centerleft>960</centerleft>
+            <centertop>520</centertop>
+            <width>1060</width>
+            <height>540</height>
+            <texture colordiffuse="$VAR[diffuseborder]">borders/yesno.png</texture>
+			<aspectratio>stretch</aspectratio>
+        </control>		
+        <control type="group">
+            <posx>559</posx>
+            <top>280</top>
+            <control type="label" id="1" description="Heading">
+                <label></label>
+                <width>800</width>
+                <font>size33</font>
+                <align>center</align>
+            </control>
+            <control type="textbox" id="9" description="content">
+                <top>88</top>
+		<font>size33</font>
+                <label>-</label>
+                <width>800</width>
+                <height>270</height>
+                <align>center</align>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <autoscroll>false</autoscroll>
+            </control>
+            <control type="button" id="10" description="No">
+                <left>-10</left>
+                <top>400</top>
+                <width>400</width>
+		<font>size33</font>
+                <label>106</label>
+                <onleft>11</onleft>
+                <onright>11</onright>
+                <onup>10</onup>
+                <ondown>10</ondown>
+            </control>
+            <control type="button" id="11" description="Yes">
+                <left>410</left>
+                <top>400</top>
+                <width>400</width>
+		<font>size33</font>
+                <label>107</label>
+                <onleft>10</onleft>
+                <onright>10</onright>
+                <onup>11</onup>
+                <ondown>11</ondown>
+            </control>
+        </control>
+    </controls>
+</window>

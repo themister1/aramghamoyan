@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1190">
+    <defaultcontrol always="true">8001</defaultcontrol>
+		<visible>Window.IsVisible(home.xml) + Window.IsActive(1190)</visible>		
+    <controls>	
+		<include condition="![Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5) | Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6) | Skin.HasSetting(hideshelf) | Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x) | Skin.HasSetting(homeiconios)]">toprowdefault</include>
+		<include condition="Skin.HasSetting(homeicondefaultrow7)">toprowdefault7row</include>
+		<include condition="Skin.HasSetting(homeicondefaultrow6)">toprowdefault6row</include>
+		<include condition="Skin.HasSetting(homeicondefaultrow5)">toprowdefault5row</include>				
+		<include condition="Skin.HasSetting(hideshelf)">toprowdefault</include>
+		<include condition="Skin.HasSetting(homeiconsio2)">toprowsio2</include>					
+		<include condition="Skin.HasSetting(homeiconsio2x)">toprowsio2x</include>	
+		<include condition="Skin.HasSetting(homeiconroundrow8)">toprowroundsquare8row</include>						
+		<include condition="Skin.HasSetting(homeiconroundrow7)">toprowroundsquare7row</include>
+		<include condition="Skin.HasSetting(homeiconroundrow6)">toprowroundsquare6row</include>
+		<include condition="Skin.HasSetting(homeiconios)">toprowios</include>	
+		
+<!-- SHELF ITEMS  -->
+
+
+
+
+
+
+
+
+
+	
+        <control type="group" id="700" description="Favorite Shelf items">
+
+
+
+            <control type="panel" id="321" description="TOP Shortcuts">			
+				<visible>[[Container(8001).HasFocus(601) + !IsEmpty(Skin.String(HomeShelfFav.1.List))] | [Container(8001).HasFocus(602) + !IsEmpty(Skin.String(HomeShelfFav.2.List))] | [Container(8001).HasFocus(603) + !IsEmpty(Skin.String(HomeShelfFav.3.List))] | [Container(8001).HasFocus(604) + !IsEmpty(Skin.String(HomeShelfFav.4.List))] | [Container(8001).HasFocus(605) + !IsEmpty(Skin.String(HomeShelfFav.5.List))] | [Container(8001).HasFocus(606) + !IsEmpty(Skin.String(HomeShelfFav.6.List))] | [Container(8001).HasFocus(401) + !IsEmpty(Skin.String(HomeShelfFav.7.List))] | [Container(8001).HasFocus(402) + !IsEmpty(Skin.String(HomeShelfFav.8.List))] | [Container(8001).HasFocus(403) + !IsEmpty(Skin.String(HomeShelfFav.9.List))] | [Container(8001).HasFocus(404) + !IsEmpty(Skin.String(HomeShelfFav.10.List))] | [Container(8001).HasFocus(501) + !IsEmpty(Skin.String(HomeShelfFav.11.List))] | [Container(8001).HasFocus(502) + !IsEmpty(Skin.String(HomeShelfFav.12.List))] | [Container(8001).HasFocus(370) + !IsEmpty(Skin.String(HomeShelfFav.13.List))] | [Container(8001).HasFocus(371) + !IsEmpty(Skin.String(HomeShelfFav.14.List))] | [Container(8001).HasFocus(372) + !IsEmpty(Skin.String(HomeShelfFav.15.List))] | [Container(8001).HasFocus(373) + !IsEmpty(Skin.String(HomeShelfFav.16.List))] |[Container(8001).HasFocus(374) + !IsEmpty(Skin.String(HomeShelfFav.17.List))] | [Container(8001).HasFocus(375) + !IsEmpty(Skin.String(HomeShelfFav.18.List))]] + !Skin.HasSetting(verticalshelf)</visible>	
+				
+				<!--visible>[Container(9003).HasFocus(405) + !IsEmpty(Skin.String(HomeShelfAddon.1.List))]</visible>
+				<visible>[Container(9003).HasFocus(406) + !IsEmpty(Skin.String(HomeShelfAddon.2.List))]</visible>
+				<visible>[Container(9003).HasFocus(505) + !IsEmpty(Skin.String(HomeShelfAddon.3.List))]</visible>
+				<visible>[Container(9003).HasFocus(506) + !IsEmpty(Skin.String(HomeShelfAddon.4.List))]</visible>
+				<visible>[Container(9003).HasFocus(701) + !IsEmpty(Skin.String(HomeShelfAddon.5.List))]</visible>
+				<visible>[Container(9003).HasFocus(702) + !IsEmpty(Skin.String(HomeShelfAddon.6.List))]</visible>
+				<visible>[Container(9003).HasFocus(901) + !IsEmpty(Skin.String(HomeShelfAddon.7.List))]</visible>
+				<visible>[Container(9003).HasFocus(902) + !IsEmpty(Skin.String(HomeShelfAddon.8.List))]</visible>
+				<visible>[Container(9003).HasFocus(903) + !IsEmpty(Skin.String(HomeShelfAddon.9.List))]</visible>
+				<visible>[Container(9003).HasFocus(904) + !IsEmpty(Skin.String(HomeShelfAddon.10.List))]</visible>
+				<visible>[Container(9003).HasFocus(905) + !IsEmpty(Skin.String(HomeShelfAddon.11.List))]</visible>
+				<visible>[Container(9003).HasFocus(906) + !IsEmpty(Skin.String(HomeShelfAddon.12.List))]</visible>
+				<visible>[Container(9003).HasFocus(801) + !IsEmpty(Skin.String(HomeShelfAddon.13.List))]</visible>
+				<visible>[Container(9003).HasFocus(802) + !IsEmpty(Skin.String(HomeShelfAddon.14.List))]</visible>
+				<visible>[Container(9003).HasFocus(803) + !IsEmpty(Skin.String(HomeShelfAddon.15.List))]</visible>
+				<visible>[Container(9003).HasFocus(804) + !IsEmpty(Skin.String(HomeShelfAddon.16.List))]</visible>
+				<visible>[Container(9003).HasFocus(805) + !IsEmpty(Skin.String(HomeShelfAddon.17.List))]</visible>
+				<visible>[Container(9003).HasFocus(806) + !IsEmpty(Skin.String(HomeShelfAddon.18.List))]</visible-->
+				
+
+
+				<!--visible>[Container(9003).HasFocus(602) + !IsEmpty(Skin.String(HomeShelfFav.2.List))]</visible>					
+				<visible>[Container(9003).HasFocus(603) + !IsEmpty(Skin.String(HomeShelfFav.3.List))]</visible>			
+				<visible>[Container(9003).HasFocus(604) + !IsEmpty(Skin.String(HomeShelfFav.4.List))]</visible>				
+				<visible>[Container(9003).HasFocus(605) + !IsEmpty(Skin.String(HomeShelfFav.5.List))]</visible>
+				<visible>[Container(9003).HasFocus(606) + !IsEmpty(Skin.String(HomeShelfFav.6.List))]</visible>
+				<visible>[Container(9003).HasFocus(401) + !IsEmpty(Skin.String(HomeShelfFav.7.List))]</visible>
+				<visible>[Container(9003).HasFocus(402) + !IsEmpty(Skin.String(HomeShelfFav.8.List))]</visible>
+				<visible>[Container(9003).HasFocus(403) + !IsEmpty(Skin.String(HomeShelfFav.9.List))]</visible>
+				<visible>[Container(9003).HasFocus(404) + !IsEmpty(Skin.String(HomeShelfFav.10.List))]</visible>
+				<visible>[Container(9003).HasFocus(501) + !IsEmpty(Skin.String(HomeShelfFav.11.List))]</visible>
+				<visible>[Container(9003).HasFocus(502) + !IsEmpty(Skin.String(HomeShelfFav.12.List))]</visible>
+				<visible>[Container(9003).HasFocus(370) + !IsEmpty(Skin.String(HomeShelfFav.13.List))]</visible>
+				<visible>[Container(9003).HasFocus(371) + !IsEmpty(Skin.String(HomeShelfFav.14.List))]</visible>
+				<visible>[Container(9003).HasFocus(372) + !IsEmpty(Skin.String(HomeShelfFav.15.List))]</visible>
+				<visible>[Container(9003).HasFocus(373) + !IsEmpty(Skin.String(HomeShelfFav.16.List))]</visible>
+				<visible>[Container(9003).HasFocus(374) + !IsEmpty(Skin.String(HomeShelfFav.17.List))]</visible>
+				<visible>[Container(9003).HasFocus(375) + !IsEmpty(Skin.String(HomeShelfFav.18.List))]</visible-->				
+                <onup>noop</onup>
+                <ondown>8001</ondown>
+                <onleft>321</onleft>
+                <onright>321</onright>
+                <include>MovieFavsShortcutsCommons</include>
+                <content target="video">$VAR[shelfmovies]</content>
+            </control>
+			<control type="image">
+				<visible>Control.HasFocus(321) + !Skin.HasSetting(verticalshelf)</visible>
+				<posx>49</posx>
+             			<top>84</top>			
+            			<width>292</width>
+            			<height>428</height>
+            			<texture colordiffuse="$VAR[diffuseselect]">images/dockfocusmovie.png</texture>						
+            <animation effect="fade" time="220">VisibleChange</animation>
+            <animation condition="Container(321).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(1) | Container(321).Position(7) | Container(321).Position(13)" effect="slide" start="0,0" end="307,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(2) | Container(321).Position(8) | Container(321).Position(14)" effect="slide" start="0,0" end="614,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(3) | Container(321).Position(9) | Container(321).Position(15)" effect="slide" start="0,0" end="921,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(4) | Container(321).Position(10) | Container(321).Position(16)" effect="slide" start="0,0" end="1228,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(5) | Container(321).Position(11) | Container(321).Position(17)" effect="slide" start="0,0" end="1535,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        </control>
+
+
+<!-- VERTICAL SHELF -->		
+            <control type="panel" id="321" description="TOP Shortcuts">			
+				<visible>[[Container(8001).HasFocus(601) + !IsEmpty(Skin.String(HomeShelfFav.1.List))] | [Container(8001).HasFocus(602) + !IsEmpty(Skin.String(HomeShelfFav.2.List))] | [Container(8001).HasFocus(603) + !IsEmpty(Skin.String(HomeShelfFav.3.List))] | [Container(8001).HasFocus(604) + !IsEmpty(Skin.String(HomeShelfFav.4.List))] | [Container(8001).HasFocus(605) + !IsEmpty(Skin.String(HomeShelfFav.5.List))] | [Container(8001).HasFocus(606) + !IsEmpty(Skin.String(HomeShelfFav.6.List))] | [Container(8001).HasFocus(401) + !IsEmpty(Skin.String(HomeShelfFav.7.List))] | [Container(8001).HasFocus(402) + !IsEmpty(Skin.String(HomeShelfFav.8.List))] | [Container(8001).HasFocus(403) + !IsEmpty(Skin.String(HomeShelfFav.9.List))] | [Container(8001).HasFocus(404) + !IsEmpty(Skin.String(HomeShelfFav.10.List))] | [Container(8001).HasFocus(501) + !IsEmpty(Skin.String(HomeShelfFav.11.List))] | [Container(8001).HasFocus(502) + !IsEmpty(Skin.String(HomeShelfFav.12.List))] | [Container(8001).HasFocus(370) + !IsEmpty(Skin.String(HomeShelfFav.13.List))] | [Container(8001).HasFocus(371) + !IsEmpty(Skin.String(HomeShelfFav.14.List))] | [Container(8001).HasFocus(372) + !IsEmpty(Skin.String(HomeShelfFav.15.List))] | [Container(8001).HasFocus(373) + !IsEmpty(Skin.String(HomeShelfFav.16.List))] |[Container(8001).HasFocus(374) + !IsEmpty(Skin.String(HomeShelfFav.17.List))] | [Container(8001).HasFocus(375) + !IsEmpty(Skin.String(HomeShelfFav.18.List))]] + Skin.HasSetting(verticalshelf)</visible>				
+                <onup>noop</onup>
+                <ondown>8001</ondown>
+                <onleft>321</onleft>
+                <onright>321</onright>				
+				<include>ShelfFade</include>
+				<top>68</top>
+				<width>1920</width>
+				<height>434</height>
+				<orientation>vertical</orientation>
+				<scrolltime>400</scrolltime>
+				<itemlayout height="390" width="320">
+					<control type="group">
+						<control type="image">
+							<posx>41</posx>
+							<top>7</top>
+							<width>237</width>
+							<height>356</height>
+							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+						<control type="image">
+							<posx>37</posx>
+							<top>0</top>
+							<width>248</width>
+							<height>369</height>
+							<texture border="10" background="true">$VAR[dvdbox]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="420" width="320">
+					<control type="group">
+						<animation center="160,25" effect="zoom" start="100" end="110" time="140">Focus</animation>
+						<animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
+						<control type="group">
+							<animation effect="fade" start="100" end="0" time="100">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="150">unFocus</animation>
+						</control>
+						<control type="image">
+							<posx>41</posx>
+							<top>7</top>
+							<width>237</width>
+							<height>356</height>
+							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+						<control type="image">
+							<posx>37</posx>
+							<top>0</top>
+							<width>248</width>
+							<height>369</height>
+							<texture border="10" background="true">$VAR[dvdbox]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+							<animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
+							<visible>Control.HasFocus(321)</visible>
+							<posx>40</posx>
+							<top>4</top>
+							<width>241</width>
+							<height>361</height>
+							<texture colordiffuse="$VAR[diffuseselect]">images/darkgrey.png</texture>
+						</control>
+						<control type="textbox">
+							<visible>ControlGroup(700).HasFocus()</visible>
+							<animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+							<animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
+							<posx>45</posx>
+							<top>10</top>
+							<width>231</width>
+							<height>350</height>
+							<font>size22</font>
+							<textcolor>shelffont</textcolor>
+							<shadowcolor>shelfshadow</shadowcolor>
+							<autoscroll>false</autoscroll>
+							<label>[COLOR=$VAR[diffusetext2]][B]$INFO[ListItem.Label][/B][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]: $INFO[ListItem.Year][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA][/COLOR]</label>
+							<align>center</align>
+						</control>
+					</control>
+				</focusedlayout>				
+                <content target="video">$VAR[shelfmovies]</content>
+            </control>		
+			<control type="image" description="Shelf Shader">
+				<visible>[[Container(8001).HasFocus(601) + !IsEmpty(Skin.String(HomeShelfFav.1.List))] | [Container(8001).HasFocus(602) + !IsEmpty(Skin.String(HomeShelfFav.2.List))] | [Container(8001).HasFocus(603) + !IsEmpty(Skin.String(HomeShelfFav.3.List))] | [Container(8001).HasFocus(604) + !IsEmpty(Skin.String(HomeShelfFav.4.List))] | [Container(8001).HasFocus(605) + !IsEmpty(Skin.String(HomeShelfFav.5.List))] | [Container(8001).HasFocus(606) + !IsEmpty(Skin.String(HomeShelfFav.6.List))] | [Container(8001).HasFocus(401) + !IsEmpty(Skin.String(HomeShelfFav.7.List))] | [Container(8001).HasFocus(402) + !IsEmpty(Skin.String(HomeShelfFav.8.List))] | [Container(8001).HasFocus(403) + !IsEmpty(Skin.String(HomeShelfFav.9.List))] | [Container(8001).HasFocus(404) + !IsEmpty(Skin.String(HomeShelfFav.10.List))] | [Container(8001).HasFocus(501) + !IsEmpty(Skin.String(HomeShelfFav.11.List))] | [Container(8001).HasFocus(502) + !IsEmpty(Skin.String(HomeShelfFav.12.List))] | [Container(8001).HasFocus(370) + !IsEmpty(Skin.String(HomeShelfFav.13.List))] | [Container(8001).HasFocus(371) + !IsEmpty(Skin.String(HomeShelfFav.14.List))] | [Container(8001).HasFocus(372) + !IsEmpty(Skin.String(HomeShelfFav.15.List))] | [Container(8001).HasFocus(373) + !IsEmpty(Skin.String(HomeShelfFav.16.List))] |[Container(8001).HasFocus(374) + !IsEmpty(Skin.String(HomeShelfFav.17.List))] | [Container(8001).HasFocus(375) + !IsEmpty(Skin.String(HomeShelfFav.18.List))]] + Skin.HasSetting(verticalshelf)</visible>				
+				<top>402</top>
+				<width>1920</width>
+				<height>100</height>
+				<texture colordiffuse="black">Shades/shelfshader_flip.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>			
+			<control type="image">
+				<visible>Control.HasFocus(321) + Skin.HasSetting(verticalshelf)</visible>
+				<posx>49</posx>
+             			<top>84</top>			
+            			<width>292</width>
+            			<height>428</height>
+            			<texture colordiffuse="$VAR[diffuseselect]">images/dockfocusmovie.png</texture>						
+            <animation effect="fade" time="220">VisibleChange</animation>
+            <animation condition="Container(321).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(1) | Container(321).Position(7) | Container(321).Position(13)" effect="slide" start="0,0" end="307,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(2) | Container(321).Position(8) | Container(321).Position(14)" effect="slide" start="0,0" end="614,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(3) | Container(321).Position(9) | Container(321).Position(15)" effect="slide" start="0,0" end="921,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(4) | Container(321).Position(10) | Container(321).Position(16)" effect="slide" start="0,0" end="1228,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(321).Position(5) | Container(321).Position(11) | Container(321).Position(17)" effect="slide" start="0,0" end="1535,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        </control>
+			
+							
+		</control>
+		
+		
+		
+					
+        <control type="group" id="701" description="ADDON Shelf items">
+            <!--control type="label" description="Top Label">
+                <visible>Control.IsVisible(321)</visible>
+                <include>ShelfFade</include>
+                <include>ShelfTitle</include>
+                <label>[B] $VAR[shelflabel] [/B]</label>
+            </control-->
+            <control type="panel" id="320" description="TOP Shortcuts">
+				
+				<visible>[Container(8001).HasFocus(405) + !IsEmpty(Skin.String(HomeShelfAddon.1.Label))] | [Container(8001).HasFocus(406) + !IsEmpty(Skin.String(HomeShelfAddon.2.Label))]</visible>	
+				
+
+				<!--visible>[Container(9003).HasFocus(405) + !IsEmpty(Skin.String(HomeShelfAddon.1.List))]</visible>
+				<visible>[Container(9003).HasFocus(406) + !IsEmpty(Skin.String(HomeShelfAddon.2.List))]</visible>
+				<visible>[Container(9003).HasFocus(505) + !IsEmpty(Skin.String(HomeShelfAddon.3.List))]</visible>
+				<visible>[Container(9003).HasFocus(506) + !IsEmpty(Skin.String(HomeShelfAddon.4.List))]</visible>
+				<visible>[Container(9003).HasFocus(701) + !IsEmpty(Skin.String(HomeShelfAddon.5.List))]</visible>
+				<visible>[Container(9003).HasFocus(702) + !IsEmpty(Skin.String(HomeShelfAddon.6.List))]</visible>
+				<visible>[Container(9003).HasFocus(901) + !IsEmpty(Skin.String(HomeShelfAddon.7.List))]</visible>
+				<visible>[Container(9003).HasFocus(902) + !IsEmpty(Skin.String(HomeShelfAddon.8.List))]</visible>
+				<visible>[Container(9003).HasFocus(903) + !IsEmpty(Skin.String(HomeShelfAddon.9.List))]</visible>
+				<visible>[Container(9003).HasFocus(904) + !IsEmpty(Skin.String(HomeShelfAddon.10.List))]</visible>
+				<visible>[Container(9003).HasFocus(905) + !IsEmpty(Skin.String(HomeShelfAddon.11.List))]</visible>
+				<visible>[Container(9003).HasFocus(906) + !IsEmpty(Skin.String(HomeShelfAddon.12.List))]</visible>
+				<visible>[Container(9003).HasFocus(801) + !IsEmpty(Skin.String(HomeShelfAddon.13.List))]</visible>
+				<visible>[Container(9003).HasFocus(802) + !IsEmpty(Skin.String(HomeShelfAddon.14.List))]</visible>
+				<visible>[Container(9003).HasFocus(803) + !IsEmpty(Skin.String(HomeShelfAddon.15.List))]</visible>
+				<visible>[Container(9003).HasFocus(804) + !IsEmpty(Skin.String(HomeShelfAddon.16.List))]</visible>
+				<visible>[Container(9003).HasFocus(805) + !IsEmpty(Skin.String(HomeShelfAddon.17.List))]</visible>
+				<visible>[Container(9003).HasFocus(806) + !IsEmpty(Skin.String(HomeShelfAddon.18.List))]</visible-->
+				
+
+
+				<!--visible>[Container(9003).HasFocus(602) + !IsEmpty(Skin.String(HomeShelfFav.2.List))]</visible>					
+				<visible>[Container(9003).HasFocus(603) + !IsEmpty(Skin.String(HomeShelfFav.3.List))]</visible>			
+				<visible>[Container(9003).HasFocus(604) + !IsEmpty(Skin.String(HomeShelfFav.4.List))]</visible>				
+				<visible>[Container(9003).HasFocus(605) + !IsEmpty(Skin.String(HomeShelfFav.5.List))]</visible>
+				<visible>[Container(9003).HasFocus(606) + !IsEmpty(Skin.String(HomeShelfFav.6.List))]</visible>
+				<visible>[Container(9003).HasFocus(401) + !IsEmpty(Skin.String(HomeShelfFav.7.List))]</visible>
+				<visible>[Container(9003).HasFocus(402) + !IsEmpty(Skin.String(HomeShelfFav.8.List))]</visible>
+				<visible>[Container(9003).HasFocus(403) + !IsEmpty(Skin.String(HomeShelfFav.9.List))]</visible>
+				<visible>[Container(9003).HasFocus(404) + !IsEmpty(Skin.String(HomeShelfFav.10.List))]</visible>
+				<visible>[Container(9003).HasFocus(501) + !IsEmpty(Skin.String(HomeShelfFav.11.List))]</visible>
+				<visible>[Container(9003).HasFocus(502) + !IsEmpty(Skin.String(HomeShelfFav.12.List))]</visible>
+				<visible>[Container(9003).HasFocus(370) + !IsEmpty(Skin.String(HomeShelfFav.13.List))]</visible>
+				<visible>[Container(9003).HasFocus(371) + !IsEmpty(Skin.String(HomeShelfFav.14.List))]</visible>
+				<visible>[Container(9003).HasFocus(372) + !IsEmpty(Skin.String(HomeShelfFav.15.List))]</visible>
+				<visible>[Container(9003).HasFocus(373) + !IsEmpty(Skin.String(HomeShelfFav.16.List))]</visible>
+				<visible>[Container(9003).HasFocus(374) + !IsEmpty(Skin.String(HomeShelfFav.17.List))]</visible>
+				<visible>[Container(9003).HasFocus(375) + !IsEmpty(Skin.String(HomeShelfFav.18.List))]</visible-->				
+                <onup>noop</onup>
+                <ondown>8001</ondown>
+                <onleft>320</onleft>
+                <onright>320</onright>
+				<include>ShelfFade</include>
+				<top>50</top>
+				<width>1920</width>
+				<height>450</height>
+				<orientation>horizontal</orientation>
+				<scrolltime>400</scrolltime>
+				<itemlayout height="350" width="320">
+					<control type="group">
+						<control type="image" description="Reflection">
+							<posx>35</posx>
+							<top>409</top>
+							<width>250</width>
+							<height>375</height>
+							<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>31</posx>
+							<top>400</top>
+							<width>262</width>
+							<height>389</height>
+							<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>35</posx>
+							<top>25</top>
+							<width>250</width>
+							<height>375</height>
+							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>31</posx>
+							<top>18</top>
+							<width>262</width>
+							<height>389</height>
+							<texture border="10" background="true">$VAR[dvdbox]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout height="420" width="320">
+					<control type="group">
+						<animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
+						<animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
+						<control type="group">
+							<animation effect="fade" start="100" end="0" time="100">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="150">unFocus</animation>
+							<control type="image" description="Reflection">
+								<posx>35</posx>
+								<top>409</top>
+								<width>250</width>
+								<height>375</height>
+								<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>31</posx>
+								<top>400</top>
+								<width>262</width>
+								<height>389</height>
+								<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+						</control>
+						<control type="image">
+							<posx>35</posx>
+							<top>25</top>
+							<width>250</width>
+							<height>375</height>
+							<texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>31</posx>
+							<top>18</top>
+							<width>262</width>
+							<height>389</height>
+							<texture border="10" background="true">$VAR[dvdbox]</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+							<animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
+							<visible>Control.HasFocus(320)</visible>
+							<posx>35</posx>
+							<top>22</top>
+							<width>254</width>
+							<height>381</height>
+							<texture colordiffuse="$VAR[diffuseselect]">images/darkgrey.png</texture>
+						</control>
+						<control type="textbox">
+							<visible>ControlGroup(701).HasFocus()</visible>
+							<animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+							<animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
+							<posx>38</posx>
+							<top>28</top>
+							<width>244</width>
+							<height>369</height>
+							<font>size22</font>
+							<textcolor>shelffont</textcolor>
+							<shadowcolor>shelfshadow</shadowcolor>
+							<autoscroll>false</autoscroll>
+							<label>[COLOR=$VAR[diffusetext2]][B]$INFO[ListItem.Label][/B][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]: $INFO[ListItem.Year][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA][/COLOR]</label>
+							<align>center</align>
+						</control>
+					</control>
+				</focusedlayout>
+                <content target="video">$VAR[shelfmovies]</content>
+            </control>
+            <!--include>movshelslider</include-->
+		</control>		
+		
+		
+	
+
+        <!--control type="group" id="701" description="Addon Shelf items">
+            <control type="panel" id="315" description="TOP Shortcuts">
+			
+			
+				<visible>[Container(8001).HasFocus(405) + !IsEmpty(Skin.String(HomeShelfAddon.1.Label))] | [Container(8001).HasFocus(406) + !IsEmpty(Skin.String(HomeShelfAddon.2.Label))]</visible>					
+			
+			
+                <onup>noop</onup>
+                <ondown>8001</ondown>
+                <onleft>315</onleft>
+                <onright>315</onright>
+                <include>SquareShortcutsCommons</include>				
+				<content>$VAR[shelfmovies]</content>				
+				
+            </control>
+			
+			
+			
+            <control type="image">
+                <visible>Control.HasFocus(315)</visible>
+                <posx>52</posx>
+                <top>84</top>
+                <width>426</width>
+                <height>426</height>
+                <texture colordiffuse="$VAR[diffuseselect]">images/dockfocus.png</texture>
+                <aspectratio>stretch</aspectratio>
+                <animation effect="fade" time="220">VisibleChange</animation>
+                <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="463,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="927,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1390,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        </control>
+        </control-->
+
+
+		
+    </controls>
+</window>

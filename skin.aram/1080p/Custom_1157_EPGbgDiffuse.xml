@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1157">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>EPG BG Darkness1</label>
+                    <onclick>Skin.ToggleSetting(bgdiffuseEPG1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG2)">Skin.ToggleSetting(bgdiffuseEPG2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG3)">Skin.ToggleSetting(bgdiffuseEPG3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG4)">Skin.ToggleSetting(bgdiffuseEPG4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG5)">Skin.ToggleSetting(bgdiffuseEPG5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffuseEPG1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>EPG BG Darkness2</label>
+                    <onclick>Skin.ToggleSetting(bgdiffuseEPG2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG1)">Skin.ToggleSetting(bgdiffuseEPG1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG3)">Skin.ToggleSetting(bgdiffuseEPG3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG4)">Skin.ToggleSetting(bgdiffuseEPG4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG5)">Skin.ToggleSetting(bgdiffuseEPG5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffuseEPG2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>EPG BG Darkness3</label>
+                    <onclick>Skin.ToggleSetting(bgdiffuseEPG3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG1)">Skin.ToggleSetting(bgdiffuseEPG1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG2)">Skin.ToggleSetting(bgdiffuseEPG2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG4)">Skin.ToggleSetting(bgdiffuseEPG4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG5)">Skin.ToggleSetting(bgdiffuseEPG5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffuseEPG3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>EPG BG Darkness4</label>
+                    <onclick>Skin.ToggleSetting(bgdiffuseEPG4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG1)">Skin.ToggleSetting(bgdiffuseEPG1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG2)">Skin.ToggleSetting(bgdiffuseEPG2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG3)">Skin.ToggleSetting(bgdiffuseEPG3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG5)">Skin.ToggleSetting(bgdiffuseEPG5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffuseEPG4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>EPG BG Darkness5</label>
+                    <onclick>Skin.ToggleSetting(bgdiffuseEPG5)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG1)">Skin.ToggleSetting(bgdiffuseEPG1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG2)">Skin.ToggleSetting(bgdiffuseEPG2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG3)">Skin.ToggleSetting(bgdiffuseEPG3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffuseEPG4)">Skin.ToggleSetting(bgdiffuseEPG4)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffuseEPG5)</selected>				
+                </control>								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

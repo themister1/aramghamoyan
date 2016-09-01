@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1140">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>Weather BG Darkness1</label>
+                    <onclick>Skin.ToggleSetting(bgdiffusewtr1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr2)">Skin.ToggleSetting(bgdiffusewtr2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr3)">Skin.ToggleSetting(bgdiffusewtr3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr4)">Skin.ToggleSetting(bgdiffusewtr4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr5)">Skin.ToggleSetting(bgdiffusewtr5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffusewtr1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Weather BG Darkness2</label>
+                    <onclick>Skin.ToggleSetting(bgdiffusewtr2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr1)">Skin.ToggleSetting(bgdiffusewtr1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr3)">Skin.ToggleSetting(bgdiffusewtr3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr4)">Skin.ToggleSetting(bgdiffusewtr4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr5)">Skin.ToggleSetting(bgdiffusewtr5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffusewtr2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Weather BG Darkness3</label>
+                    <onclick>Skin.ToggleSetting(bgdiffusewtr3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr1)">Skin.ToggleSetting(bgdiffusewtr1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr2)">Skin.ToggleSetting(bgdiffusewtr2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr4)">Skin.ToggleSetting(bgdiffusewtr4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr5)">Skin.ToggleSetting(bgdiffusewtr5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffusewtr3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>Weather BG Darkness4</label>
+                    <onclick>Skin.ToggleSetting(bgdiffusewtr4)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr1)">Skin.ToggleSetting(bgdiffusewtr1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr2)">Skin.ToggleSetting(bgdiffusewtr2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr3)">Skin.ToggleSetting(bgdiffusewtr3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr5)">Skin.ToggleSetting(bgdiffusewtr5)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffusewtr4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Weather BG Darkness5</label>
+                    <onclick>Skin.ToggleSetting(bgdiffusewtr5)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr1)">Skin.ToggleSetting(bgdiffusewtr1)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr2)">Skin.ToggleSetting(bgdiffusewtr2)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr3)">Skin.ToggleSetting(bgdiffusewtr3)</onclick>
+					<onclick condition="Skin.HasSetting(bgdiffusewtr4)">Skin.ToggleSetting(bgdiffusewtr4)</onclick>					
+                    <selected>Skin.HasSetting(bgdiffusewtr5)</selected>				
+                </control>								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

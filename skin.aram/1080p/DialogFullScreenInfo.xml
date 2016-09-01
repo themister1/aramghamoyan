@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="142">
+    <defaultcontrol always="false">9000</defaultcontrol>
+    <include>OpenClose</include>
+    <zorder>2</zorder>
+    <controls>
+        <control type="button" id="9000">
+            <include>HiddenButton</include>
+            <onclick>close</onclick>
+        </control>
+        <control type="image" description="Background">
+            <posx>151</posx>
+            <top>73</top>
+            <width>1617</width>
+            <height>340</height>
+			<texture diffuse="Seekbar/OSDBackground.png">$VAR[OSDbgimg]</texture>
+        </control>
+        <control type="group">
+            <control type="image">
+                <top>106</top>
+                <posx>182</posx>
+                <width>195</width>
+                <height>275</height>
+		<align>left</align>
+                <texture>$INFO[Player.Art(poster)]$INFO[Player.Art(tvshow.poster)]</texture>
+                <aspectratio align="left">keep</aspectratio>
+            </control>
+            <control type="group">
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <top>80</top>
+                <posx>41</posx>
+		<align>left</align>
+                <control type="label" description="Main label">
+                    <visible>VideoPlayer.Content(MusicVideos)</visible>
+                    <font>size33</font>
+                    <top>3</top>
+		    <align>left</align>
+		    <include>FullscreenInfoLabel</include>
+                    <label>$INFO[VideoPlayer.Artist]</label>
+                </control>
+                <control type="label" description="Main label">
+                    <visible>!VideoPlayer.Content(MusicVideos)</visible>
+                    <font>size33</font>
+                    <top>3</top>
+		    <align>left</align>
+		    <include>FullscreenInfoLabel</include>
+                    <label>$INFO[VideoPlayer.Title]</label>
+                </control>
+                <control type="label" description="Label 2">
+                    <visible>VideoPlayer.Content(MusicVideos)</visible>
+                    <font>size33</font>
+                    <top>3</top>
+		    <align>left</align>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <include>FullscreenInfoLabel</include>
+                    <label>$INFO[VideoPlayer.Album]</label>
+                </control>
+                <!--control type="label" description="chapters">
+                    <visible>Player.ChapterCount</visible>
+                    <font>size33</font>
+                    <top>3</top>
+		    <align>left</align>
+                    <textcolor>$VAR[diffusetext]</textcolor>
+                    <include>FullscreenInfoLabel</include>
+                    <label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
+                </control-->
+                <control type="label" description="Episode s-e">
+                    <visible>VideoPlayer.Content(Episodes)</visible>
+		    <font>size33</font>
+                    <top>3</top>
+		    <align>left</align>
+                    <textcolor>=</textcolor>
+                    <include>FullscreenInfoLabel</include>
+                    <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
+                </control>
+                <control type="label" description="music video title">
+                    <visible>VideoPlayer.Content(Musicvideos)</visible>
+                    <font>size33</font>
+                    <top>3</top>
+		    <align>left</align>
+                    <textcolor>=</textcolor>
+                    <include>FullscreenInfoLabel</include>
+                    <label>$INFO[VideoPlayer.Title]</label>
+                </control>
+		<control type="grouplist">
+                <posx>401</posx>
+                <width>800</width>
+                <top>77</top>
+                <height>60</height>
+                <itemgap>10</itemgap>
+                <align>left</align>
+                <orientation>horizontal</orientation>
+                <control type="image">
+                    <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+                    <height>50</height>
+                    <width>80</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.VideoAspect,badges/video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <height>50</height>
+                    <width>80</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+                    <height>50</height>
+                    <width>80</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+                    <height>50</height>
+                    <width>80</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+                    <height>50</height>
+                    <width>80</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.AudioChannels,badges/,.png]</texture>
+                </control>
+            </control>				
+                <control type="textbox">
+                    <posx>401</posx>
+                    <top>130</top>
+                    <width>1280</width>
+                    <height>170</height>
+                    <label>[COLOR=$VAR[diffusetext]]$INFO[VideoPlayer.Plot][/COLOR]</label>
+                    <align>left</align>
+                    <autoscroll delay="4000" time="4000" repeat="10000">Window.IsVisible(142)</autoscroll>
+                    <font>size28</font>
+                </control>
+		    <control type="image">
+                    <posx>1645</posx>
+                    <top>14</top>
+                    <width>58</width>
+                    <height>58</height>
+                    <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
+                    <colordiffuse>AAFFFFFF</colordiffuse>
+                </control>
+            </control>
+        </control>
+        <!--control type="image">
+            <posx>110</posx>
+            <top>700</top>
+            <height>200</height>
+            <width>250</width>
+            <aspectratio>scale</aspectratio>
+            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(fanart)]</texture>
+        </control-->
+		
+		
+		
+		
+        <control type="group">
+			<animation effect="fade" start="0" end="70" time="400">Visible</animation>
+            <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
+            <top>10</top>			
+            <control type="image" description="Top Background">					
+				<posx>0</posx>
+                <top>-10</top>
+                <width>1924</width>
+                <height>58</height>	
+					<include>OSDdefaultBG</include>
+            </control>						
+            <control type="label" description="Clock">
+                <posx>30</posx>
+		<top>-10</top>
+                <width>695</width>
+                <height>58</height>
+                <font>size33</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <label>$LOCALIZE[142] $INFO[System.Time]</label>
+            </control>
+            <control type="label" description="End time">
+                <posx>30r</posx>
+		<top>-10</top>
+                <width>695</width>
+                <height>58</height>
+                <align>right</align>
+                <font>size33</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
+            </control>
+        </control>
+    </controls>
+</window>

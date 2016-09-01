@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="34">
+    <defaultcontrol always="true">2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <include>OpenClose</include>
+    <controls>
+        <include>BlackBackground</include>
+        <include>WindowsTopInfos</include>
+        <control type="togglebutton" id="4" description="Toggle Login Screen">
+            <posx>970</posx>
+            <top>130</top>
+            <height>81</height>
+            <width>898</width>
+            <label>$LOCALIZE[20096]: $LOCALIZE[1223]</label>
+            <altlabel>$LOCALIZE[20096]: $LOCALIZE[305]</altlabel>
+            <align>left</align>
+            <onright>noop</onright>
+            <onleft>noop</onleft>
+            <onup>noop</onup>
+            <ondown>2</ondown>
+            <font>size30</font>
+            <textoffsetx>20</textoffsetx>
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+	</control>
+        <control type="group" description="List" id="575">
+            <left>970</left>
+            <top>210</top>
+            <control type="list" id="2">
+                <posx>0</posx>
+                <top>0</top>
+                <width>900</width>
+                <height>730</height>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <onup>4</onup>
+                <ondown>noop</ondown>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>280</scrolltime>
+                <itemlayout height="81">
+                    <control type="label" description="Main Label">
+                        <posx>20</posx>
+                        <height>81</height>
+                        <width>898</width>
+                        <aligny>center</aligny>
+                        <font>size30</font>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="81">
+                    <control type="image">
+                        <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <posx>0</posx>
+			<width>898</width>
+                        <height>81</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <posx>20</posx>
+                        <height>81</height>
+                        <width>898</width>
+                        <aligny>center</aligny>
+                        <font>size30</font>
+                        <textcolor>$VAR[diffusetext]</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+        <include>User</include>
+        <control type="image">
+            <centerleft>480</centerleft>
+            <centertop>540</centertop>
+            <width>600</width>
+            <height>600</height>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture background="true" diffuse="images/logindiffuse.png" fallback="def_user.png">$INFO[Container(2).ListItem.Icon]</texture>
+        </control>
+    </controls>
+</window>

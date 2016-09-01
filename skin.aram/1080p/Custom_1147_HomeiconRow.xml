@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1147">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>160</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>760</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back border">
+                <top>160</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>760</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>Square 7 Row</label>
+                    <onclick>Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>		
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeicondefaultrow7)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Square 6 Row</label>
+                    <onclick>Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeicondefaultrow6)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Square 5 Row</label>
+                    <onclick>Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeicondefaultrow5)</selected>				
+                </control>
+				<!--control type="radiobutton" id="4">
+                    <label>Square NoShelf</label>
+                    <onclick>Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>						
+                    <selected>Skin.HasSetting(hideshelf)</selected>
+                </control-->
+				<control type="image" id="41">
+					<centerleft>940</centerleft>
+					<top>104</top>					
+					<align>center</align>					
+					<width>530</width>
+					<height>1</height>
+					<texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>				
+                <control type="radiobutton" id="5">
+                    <label>Rounded Square 8 Row</label>
+                    <onclick>Skin.ToggleSetting(homeiconroundrow8)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>			
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeiconroundrow8)</selected>
+                </control>
+                <control type="radiobutton" id="6">
+                    <label>Rounded Square 7 Row</label>
+                    <onclick>Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>					
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeiconroundrow7)</selected>
+                </control>				
+                <control type="radiobutton" id="7">
+                    <label>Rounded Square 6 Row</label>
+                    <onclick>Skin.ToggleSetting(homeiconroundrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>			
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeiconroundrow6)</selected>
+                </control>
+				<control type="image" id="42">
+					<centerleft>940</centerleft>
+					<top>104</top>					
+					<align>center</align>					
+					<width>530</width>
+					<height>1</height>
+					<texture colordiffuse="$VAR[diffuselines]">lines/Line.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>				
+                <control type="radiobutton" id="8">
+                    <label>SiO2 Layout</label>
+                    <onclick>Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+					
+                    <selected>!Skin.HasSetting(homeiconsio2)</selected>
+                </control>				
+                <control type="radiobutton" id="9">
+                    <label>SiO2-X Layout</label>
+                    <onclick>Skin.ToggleSetting(homeiconsio2x)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconios)">Skin.ToggleSetting(homeiconios)</onclick>						
+                    <selected>Skin.HasSetting(homeiconsio2x)</selected>
+                </control>	
+                <control type="radiobutton" id="10">
+                    <label>iOS Layout</label>
+                    <onclick>Skin.ToggleSetting(homeiconios)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow7)">Skin.ToggleSetting(homeicondefaultrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow6)">Skin.ToggleSetting(homeicondefaultrow6)</onclick>
+					<onclick condition="Skin.HasSetting(homeicondefaultrow5)">Skin.ToggleSetting(homeicondefaultrow5)</onclick>
+					<onclick condition="Skin.HasSetting(hideshelf)">Skin.ToggleSetting(hideshelf)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconsio2)">Skin.ToggleSetting(homeiconsio2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow8)">Skin.ToggleSetting(homeiconroundrow8)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconroundrow7)">Skin.ToggleSetting(homeiconroundrow7)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconroundrow6)">Skin.ToggleSetting(homeiconroundrow6)</onclick>	
+					<onclick condition="Skin.HasSetting(homeiconsio2x)">Skin.ToggleSetting(homeiconsio2x)</onclick>						
+                    <selected>Skin.HasSetting(homeiconios)</selected>
+                </control>											
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

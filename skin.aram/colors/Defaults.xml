@@ -1,0 +1,46 @@
+<colors>
+<!-- Default Colors -->
+	<color name="background">CC000000</color>
+	<color name="White">FFFFFFFF</color>
+	<color name="black">FF000000</color>	
+		
+    <color name="shelffont">FFFFFFFF</color>
+    <color name="shelfshadow">FF000000</color>
+	<color name="gray">FFFFFFFF</color>
+	<color name="gray2">FF9595A2</color>
+	<color name="gray3">EE868691</color>
+	<color name="gray4">FF67676E</color>	
+	
+	<color name="Red">FFFF0000</color>	
+	<color name="Blue">FF2261B4</color>
+	<color name="Silver">FFFFFFFF</color>
+	<color name="Disabled">FF676767</color>
+	<color name="Yellow">FFFA9600</color>
+	<color name="invalid">FFFF0000</color>
+	<color name="searchband">99FFFFFF</color>	
+	<color name="kodi">FF12B2E7</color>	
+	
+    <color name="textcolor">FFFFFFFF</color>	     <!-- Text  -->	
+	<color name="rsscolor">FFFFFFFF</color>	         <!-- RSS Text -->
+    <color name="selected">FFFFFFFF</color>	         <!-- Selected/Focused  -->	
+				
+	<color name="homeshader">FF051932</color>	     <!-- Homescreen Shader  -->
+		
+	<color name="icondiffuse">88000000</color>	     <!-- Icon Diffuse   -->	
+	<color name="videoviewshader">FF000000</color>	 <!-- VideoView Shader -->	
+	
+	<color name="keys">FF000000</color>	             <!-- Keyboard Letters - Unfocused   -->
+	<color name="keys2">FFFFFFFF</color>	         <!-- Keyboard Letters - Focused   -->	
+	<color name="keyboard">EE0F699E</color>	         <!-- Keyboard Background   -->
+
+	<color name="dialog">EE0F699E</color>	         <!-- Pop-Up Windows  -->	
+	<color name="progressbg">CC0F699E</color>	     <!-- Pop-Up Windows  -->
+	
+	<color name="slider">CCA7EA00</color>            <!-- Homescreen Icon Slider -->	
+	<color name="bgcolor2">FFA7EA00</color>	         <!-- Background 2 -->
+	<color name="lines">FFA7EA00</color>	         <!-- Lines -->	
+	<color name="bgcolor2clear">AAA7EA00</color>	 <!-- Background 2 - Transparent -->	
+	<color name="buttonselect">99A7EA00</color>      <!-- Button Select Bars -->
+	<color name="buttonselect2">EEA7EA00</color>	 <!-- Background 2 - Transparent -->	
+<!-- Default Colors -->
+</colors>
