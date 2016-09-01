@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="12">
+    <defaultcontrol always="true">3</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <controls>
+        <include>BlackBackground</include>
+        <control type="image">
+            <top>80</top>
+            <left>500</left>
+            <width>1</width>
+            <height>1080</height>
+            <texture colordiffuse="$VAR[diffuselines]">lines/LineV.png</texture>
+        </control>
+        <control type="label" id="6">
+            <top>-500</top>
+            <width>0</width>
+            <height>0</height>
+            <font>size42</font>
+        </control>
+        <control type="label" id="2" description="Heading">
+            <centerleft>960</centerleft>
+            <width>1400</width>
+            <font>size42B</font>
+            <align>center</align>
+            <label>-</label>
+        </control>
+        <control type="grouplist" id="3" description="TopMenu">
+            <top>81</top>
+            <width>500</width>
+            <height>1000</height>
+            <onup>20</onup>
+            <onright>5</onright>
+            <onleft>500</onleft>
+            <itemgap>0</itemgap>
+        </control>
+        <control type="grouplist" id="5" description="Stage">
+            <posx>500</posx>
+            <top>81</top>
+            <width>1380</width>
+            <height>972</height>
+            <onright>60</onright>
+            <onup>20</onup>
+            <ondown>5</ondown>
+            <onright>3</onright>
+            <onleft>3</onleft>
+            <pagecontrol>60</pagecontrol>
+            <orientation>vertical</orientation>
+            <itemgap>0</itemgap>
+        </control>
+        <control type="button" id="7" description="Button">
+            <width>300</width>
+            <height>81</height>
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+            <invalidcolor>invalid</invalidcolor>
+            <font>size33</font>
+            <align>left</align>
+        </control>
+        <control type="radiobutton" id="8" description="Radio Button">
+            <width>300</width>
+            <height>81</height>
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+            <radioposx>0</radioposx>
+            <font>size33</font>
+            <align>left</align>
+        </control>
+        <control type="spincontrolex" id="9" description="Spin control">
+            <width>1260</width>
+            <height>81</height>
+            <align>left</align>
+            <font>size33</font>
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+        </control>
+        <control type="button" id="10" description="Category Button">
+            <width>500</width>
+            <height>81</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>size33</font>
+            <texturefocus flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+        </control>
+        <control type="sliderex" id="13">
+			<description>Default Slider</description>
+            <height>81</height>
+			 <align>right</align>
+            <aligny>center</aligny>
+            <font>size33</font>
+			<texturefocus flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+		</control>		
+        <control type="scrollbar" id="60">
+            <left>16r</left>
+            <top>90</top>
+            <height>950</height>
+            <onleft>5</onleft>
+            <onright>noop</onright>
+        </control>
+        <control type="grouplist">
+            <left>0</left>
+            <align>right</align>
+            <orientation>Horizontal</orientation>
+            <control type="label">
+                <left>1320</left>
+                <width>auto</width>
+                <height>80</height>
+                <font>size26</font>
+                <!--todo settings level label-->
+                <label>Settings LeVeL : </label>
+            </control>
+            <control type="button" id="20">
+                <description>Setting level button</description>
+                <width>350</width>
+                <height>80</height>
+                <font>size26</font>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/white.png</texturefocus>
+                <onclick>SettingsLevelChange</onclick>
+                <ondown>5</ondown>
+            </control>
+        </control>
+        <control type="group">
+            <top>915</top>
+            <visible>!SubString(Control.GetLabel(6),No info) + !Control.HasFocus(20)</visible>
+            <animation effect="slide" start="-620,0" end="0,0" time="500" reversible="true" delay="100">VisibleChange</animation>
+            <!--control type="image">
+                <left>-100</left>
+                <width>620</width>
+                <height>285</height>
+                <texture border="50" colordiffuse="$VAR[bgcolor1]">sidepanel/Back.png</texture>
+            </control-->						
+            <control type="textbox" id="90">
+                <top>20</top>
+                <left>15</left>
+                <width>450</width>
+                <height>240</height>
+                <font>size24</font>
+                <label>[COLOR=$VAR[diffusetext]]$INFO[Control.GetLabel(6)][/COLOR]</label>
+                <align>justify</align>
+            </control>
+        </control>
+    </controls>
+</window>

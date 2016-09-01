@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1144">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="520,0" end="0,0" time="300"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="520,0" time="300" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <!--top>290</top-->
+                <posx>1600</posx>
+                <width>370</width>
+                <height>1100</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>
+            <control type="image" description="List back">
+                <!--top>290</top-->
+                <posx>1600</posx>
+                <width>2</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">images/DialoglineV.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1620</left>
+			       <centerleft>960</centerleft>
+                   <top>8</top>
+                   <width>300</width>
+                   <height>1064</height>
+                   <itemgap>3</itemgap>
+                   <onleft>close</onleft>
+                   <onright>close</onright>
+                   <onup>9000</onup>
+                   <ondown>9000</ondown>
+                   <align>center</align>
+                   <scrolltime>200</scrolltime>
+                <control type="radiobutton" id="1">
+                    <label>Light Blue</label>
+                    <onclick>Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 					
+                    <selected>Skin.HasSetting(lightblueicon)</selected>				
+                </control>				   
+                <control type="radiobutton" id="2">
+                    <label>Dark Blue</label>
+                    <onclick>Skin.ToggleSetting(darkblueicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 					
+                    <selected>Skin.HasSetting(darkblueicon)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Blue Gray</label>
+                    <onclick>Skin.ToggleSetting(bluegrayicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 				
+                    <selected>Skin.HasSetting(bluegrayicon)</selected>				
+                </control>				
+                <control type="radiobutton" id="4">
+                    <label>Green</label>
+                    <onclick>Skin.ToggleSetting(greenicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 					
+                    <selected>Skin.HasSetting(greenicon)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Dark Green</label>
+                    <onclick>Skin.ToggleSetting(green3icon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 				
+                    <selected>Skin.HasSetting(green3icon)</selected>				
+                </control>
+                <control type="radiobutton" id="6">
+                    <label>Teal</label>
+                    <onclick>Skin.ToggleSetting(dvdcoloricon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 					
+                    <selected>Skin.HasSetting(dvdcoloricon)</selected>				
+                </control>
+                <control type="radiobutton" id="7">
+                    <label>Teal2</label>
+                    <onclick>Skin.ToggleSetting(progcoloricon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 				
+                    <selected>Skin.HasSetting(progcoloricon)</selected>				
+                </control>				
+                <control type="radiobutton" id="8">
+                    <label>Light Orange</label>
+                    <onclick>Skin.ToggleSetting(teakicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 				
+                    <selected>Skin.HasSetting(teakicon)</selected>				
+                </control>
+                <control type="radiobutton" id="9">
+                    <label>Orange</label>
+                    <onclick>Skin.ToggleSetting(orangeicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 					
+                    <selected>Skin.HasSetting(orangeicon)</selected>				
+                </control>
+				<control type="radiobutton" id="10">
+                    <label>Yellow</label>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 					
+                    <selected>Skin.HasSetting(lightyellowicon)</selected>				
+                </control>
+                <control type="radiobutton" id="11">
+                    <label>Red</label>
+                    <onclick>Skin.ToggleSetting(redicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 									
+                    <selected>Skin.HasSetting(redicon)</selected>				
+                </control>				
+                <control type="radiobutton" id="12">
+                    <label>Purple</label>
+                    <onclick>Skin.ToggleSetting(purpleicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>												
+					<onclick condition="Skin.HasSetting(pinkicon)">Skin.ToggleSetting(pinkicon)</onclick> 				
+                    <selected>Skin.HasSetting(purpleicon)</selected>				
+                </control>
+                <control type="radiobutton" id="13">
+                    <label>Pink</label>
+                    <onclick>Skin.ToggleSetting(pinkicon)</onclick>
+				    <onclick condition="Skin.HasSetting(lightblueicon)">Skin.ToggleSetting(lightblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(darkblueicon)">Skin.ToggleSetting(darkblueicon)</onclick>
+					<onclick condition="Skin.HasSetting(bluegrayicon)">Skin.ToggleSetting(bluegrayicon)</onclick>
+					<onclick condition="Skin.HasSetting(greenicon)">Skin.ToggleSetting(greenicon)</onclick>					
+					<onclick condition="Skin.HasSetting(green3icon)">Skin.ToggleSetting(green3icon)</onclick>
+					<onclick condition="Skin.HasSetting(dvdcoloricon)">Skin.ToggleSetting(dvdcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(progcoloricon)">Skin.ToggleSetting(progcoloricon)</onclick>
+					<onclick condition="Skin.HasSetting(teakicon)">Skin.ToggleSetting(teakicon)</onclick>
+					<onclick condition="Skin.HasSetting(orangeicon)">Skin.ToggleSetting(orangeicon)</onclick>
+					<onclick condition="Skin.HasSetting(lightyellowicon)">Skin.ToggleSetting(lightyellowicon)</onclick>
+					<onclick condition="Skin.HasSetting(redicon)">Skin.ToggleSetting(redicon)</onclick>
+					<onclick condition="Skin.HasSetting(purpleicon)">Skin.ToggleSetting(purpleicon)</onclick>												                  				
+                    <selected>Skin.HasSetting(pinkicon)</selected>				
+                </control>										
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

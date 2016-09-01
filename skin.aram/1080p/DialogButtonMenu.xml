@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="buttonMenu">
+    <defaultcontrol>9000</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="image" description="BG">
+            <animation effect="fade" start="0" end="50" delay="150" time="300">WindowOpen</animation>
+            <animation effect="fade" start="50" end="0" time="50">WindowClose</animation>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>images/BlackT.png</texture>
+        </control>
+        <control type="image" description="Dialog">
+            <posx>465</posx>
+            <top>390</top>
+            <width>1000</width>
+            <height>280</height>
+            <aspectratio>scale</aspectratio>
+            <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+        </control>
+		<control type="image" description="Dialog border">
+            <posx>465</posx>
+            <top>390</top>
+            <width>1000</width>
+            <height>280</height>
+            <aspectratio>stretch</aspectratio>
+            <texture colordiffuse="$VAR[diffuseborder]">borders/powermenuborder.png</texture>
+		</control>
+        <control type="grouplist" id="9000">
+            <posx>500</posx>
+            <top>450</top>
+            <width>920</width>
+            <height>126</height>
+            <onleft>9000</onleft>
+            <onright>9000</onright>
+            <onup>noop</onup>
+            <ondown>noop</ondown>
+            <itemgap>30</itemgap>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+			<control type="button" id="1" description="Exit button">
+				<visible>!System.HasAddon(service.openelec.settings)</visible>
+                <width>126</width>
+                <height>126</height>
+                <font>-</font>
+                <texturenofocus>BM_QuitNF.png</texturenofocus>
+                <texturefocus>BM_QuitFO.png</texturefocus>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <onclick>XBMC.Quit()</onclick>
+                <label>13009</label>
+            </control>
+            <control type="button" id="1" description="Exit button">
+                <width>126</width>
+                <height>126</height>
+                <font>-</font>
+                <texturenofocus>BM_QuitNF.png</texturenofocus>
+                <texturefocus>BM_QuitFO.png</texturefocus>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <onclick>XBMC.Powerdown()</onclick>
+                <label>13009</label>
+            </control>
+          
+            <control type="button" id="4" description="Reboot button">
+                <enable>System.CanReboot</enable>
+                <animation type="Conditional" condition="!Control.IsEnabled(4)">
+                    <effect type="fade" start="100" end="30" time="0" reversible="true" />
+                </animation>
+                <width>126</width>
+                <height>126</height>
+                <font>-</font>
+                <texturenofocus>BM_RestartNF.png</texturenofocus>
+                <texturefocus>BM_RestartFO.png</texturefocus>
+                <colordiffuse>FFFFFFFF</colordiffuse>
+                <onclick>XBMC.Reset()</onclick>
+                <label>13013</label>
+            </control>
+          
+        </control>
+        <control type="group">
+            <posx>660</posx>
+            <top>565</top>
+            <control type="label" id="3100">
+                <width>600</width>
+                <align>center</align>
+                <font>size39B</font>
+                <label>13009</label>
+            </control>
+        </control>
+    </controls>
+</window>

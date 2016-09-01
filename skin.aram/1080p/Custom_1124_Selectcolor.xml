@@ -1,0 +1,2123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1124">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="370,0" end="0,0" time="400"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="370,0" time="400" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <!--top>290</top-->
+                <posx>1540</posx>
+                <width>380</width>
+                <height>1100</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusenav]">$VAR[bgimgnav]</texture>
+            </control>
+            <control type="image" description="List back">
+                <!--top>290</top-->
+                <posx>1540</posx>
+                <width>2</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">images/DialoglineV.png</texture>
+            </control>	
+            <control type="scrollbar" id="60">
+                <posx>36r</posx>
+                <top>40</top>
+                <height>1010</height>
+                <onleft>9000</onleft>
+                <onright>noop</onright>
+            </control>			
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1560</left>
+			       <centerleft>960</centerleft>
+                   <top>8</top>
+                   <width>300</width>
+                   <height>1064</height>
+                   <itemgap>1</itemgap>
+                   <onleft>close</onleft>
+                   <onright>60</onright>
+                   <onup>9000</onup>
+                   <ondown>9000</ondown>
+				   <pagecontrol>60</pagecontrol>
+                   <align>center</align>
+                   <scrolltime>200</scrolltime>
+                <control type="radiobutton" id="1">
+                    <label>Wit</label>
+                    <onclick>Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>						
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>	
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>										
+                    <selected>Skin.HasSetting(whiteselect)</selected>				
+                </control>	
+
+                <control type="radiobutton" id="42">
+                    <label>Zwart</label>
+                    <onclick>Skin.ToggleSetting(blackselect)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>	
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>										
+                    <selected>Skin.HasSetting(blackselect)</selected>				
+                </control>
+				
+                <control type="radiobutton" id="43">
+                    <label>Grijs</label>
+                    <onclick>Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>	
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>										
+                    <selected>Skin.HasSetting(grayselect)</selected>				
+                </control>
+				
+                <control type="radiobutton" id="2">
+                    <label>Groen 1</label>
+                    <onclick>Skin.ToggleSetting(green1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>	
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(green1select)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Groen 2</label>
+                    <onclick>Skin.ToggleSetting(green2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>				
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(green2select)</selected>				
+                </control>
+                <control type="radiobutton" id="4">
+                    <label>Groen 3</label>
+                    <onclick>Skin.ToggleSetting(green3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>										
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(green3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="5">
+                    <label>Groen 4</label>
+                    <onclick>Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(green4select)</selected>				
+                </control>
+                <control type="radiobutton" id="6">
+                    <label>Groen 5</label>
+                    <onclick>Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(green5select)</selected>				
+                </control>															
+                <control type="radiobutton" id="7">
+                    <label>Blauw 1</label>
+                    <onclick>Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>						
+					
+					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(blue1select)</selected>				
+                </control>
+                <control type="radiobutton" id="8">
+                    <label>Blauw 2</label>
+                    <onclick>Skin.ToggleSetting(blue2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>						
+									
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(blue2select)</selected>				
+                </control>
+                <control type="radiobutton" id="9">
+                    <label>Blauw 3</label>
+                    <onclick>Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>				
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>									
+					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(blue3select)</selected>				
+                </control>	
+                <control type="radiobutton" id="10">
+                    <label>Blauw 4</label>
+                    <onclick>Skin.ToggleSetting(blue4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>				
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>											
+					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(blue4select)</selected>				
+                </control>
+                <control type="radiobutton" id="11">
+                    <label>Blauw 5</label>
+                    <onclick>Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>										
+					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(blue5select)</selected>				
+                </control>
+                <control type="radiobutton" id="12">
+                    <label>Rood 1</label>
+                    <onclick>Skin.ToggleSetting(red1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>	
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(red1select)</selected>				
+                </control>
+                <control type="radiobutton" id="13">
+                    <label>Rood 2</label>
+                    <onclick>Skin.ToggleSetting(red2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>				
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(red2select)</selected>				
+                </control>
+                <control type="radiobutton" id="14">
+                    <label>Rood 3</label>
+                    <onclick>Skin.ToggleSetting(red3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>										
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(red3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="15">
+                    <label>Rood 4</label>
+                    <onclick>Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(red4select)</selected>				
+                </control>
+                <control type="radiobutton" id="16">
+                    <label>Rood 5</label>
+                    <onclick>Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(red5select)</selected>				
+                </control>							
+                <control type="radiobutton" id="17">
+                    <label>Roze 1</label>
+                    <onclick>Skin.ToggleSetting(pink1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>	
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(pink1select)</selected>				
+                </control>
+                <control type="radiobutton" id="18">
+                    <label>Roze 2</label>
+                    <onclick>Skin.ToggleSetting(pink2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>				
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(pink2select)</selected>				
+                </control>
+                <control type="radiobutton" id="19">
+                    <label>Roze 3</label>
+                    <onclick>Skin.ToggleSetting(pink3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>										
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(pink3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="20">
+                    <label>Roze 4</label>
+                    <onclick>Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(pink4select)</selected>				
+                </control>
+                <control type="radiobutton" id="21">
+                    <label>Roze 5</label>
+                    <onclick>Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(pink5select)</selected>				
+                </control>								
+                <control type="radiobutton" id="22">
+                    <label>Paars 1</label>
+                    <onclick>Skin.ToggleSetting(purple1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(purple1select)</selected>				
+                </control>
+                <control type="radiobutton" id="23">
+                    <label>Paars 2</label>
+                    <onclick>Skin.ToggleSetting(purple2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>				
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(purple2select)</selected>				
+                </control>
+                <control type="radiobutton" id="24">
+                    <label>Paars 3</label>
+                    <onclick>Skin.ToggleSetting(purple3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>										
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(purple3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="25">
+                    <label>Paars 4</label>
+                    <onclick>Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(purple4select)</selected>				
+                </control>
+                <control type="radiobutton" id="26">
+                    <label>Paars 5</label>
+                    <onclick>Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(purple5select)</selected>				
+                </control>														
+                <control type="radiobutton" id="27">
+                    <label>Turquoise 1</label>
+                    <onclick>Skin.ToggleSetting(teal1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(teal1select)</selected>				
+                </control>
+                <control type="radiobutton" id="28">
+                    <label>Turquoise 2</label>
+                    <onclick>Skin.ToggleSetting(teal2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>				
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(teal2select)</selected>				
+                </control>
+                <control type="radiobutton" id="29">
+                    <label>Turquoise 3</label>
+                    <onclick>Skin.ToggleSetting(teal3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>										
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(teal3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="30">
+                    <label>Turquoise 4</label>
+                    <onclick>Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>		
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(teal4select)</selected>				
+                </control>
+                <control type="radiobutton" id="31">
+                    <label>Turquoise 5</label>
+                    <onclick>Skin.ToggleSetting(teal5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+										
+                    <selected>Skin.HasSetting(teal5select)</selected>				
+                </control>		
+
+				
+				
+				
+				
+                <control type="radiobutton" id="32">
+                    <label>Geel 1</label>
+                    <onclick>Skin.ToggleSetting(yellow1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>	
+										
+                    <selected>Skin.HasSetting(yellow1select)</selected>				
+                </control>
+                <control type="radiobutton" id="33">
+                    <label>Geel 2</label>
+                    <onclick>Skin.ToggleSetting(yellow2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>				
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>	
+										
+                    <selected>Skin.HasSetting(yellow2select)</selected>				
+                </control>
+                <control type="radiobutton" id="34">
+                    <label>Geel 3</label>
+                    <onclick>Skin.ToggleSetting(yellow3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>										
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>	
+										
+                    <selected>Skin.HasSetting(yellow3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="35">
+                    <label>Geel 4</label>
+                    <onclick>Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>	
+										
+                    <selected>Skin.HasSetting(yellow4select)</selected>				
+                </control>
+                <control type="radiobutton" id="36">
+                    <label>Geel 5</label>
+                    <onclick>Skin.ToggleSetting(yellow5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>	
+										
+                    <selected>Skin.HasSetting(yellow5select)</selected>				
+                </control>				
+				
+				
+				
+                <control type="radiobutton" id="37">
+                    <label>Oranje 1</label>
+                    <onclick>Skin.ToggleSetting(orange1select)</onclick>	
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>					
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>										
+                    <selected>Skin.HasSetting(orange1select)</selected>				
+                </control>
+                <control type="radiobutton" id="38">
+                    <label>Oranje 2</label>
+                    <onclick>Skin.ToggleSetting(orange2select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>				
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>											
+                    <selected>Skin.HasSetting(orange2select)</selected>				
+                </control>
+                <control type="radiobutton" id="39">
+                    <label>Oranje 3</label>
+                    <onclick>Skin.ToggleSetting(orange3select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>										
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>												
+                    <selected>Skin.HasSetting(orange3select)</selected>				
+                </control>				
+                <control type="radiobutton" id="40">
+                    <label>Oranje 4</label>
+                    <onclick>Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange5select)">Skin.ToggleSetting(orange5select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>												
+                    <selected>Skin.HasSetting(orange4select)</selected>				
+                </control>
+                <control type="radiobutton" id="41">
+                    <label>Oranje 5</label>
+                    <onclick>Skin.ToggleSetting(orange5select)</onclick>
+					<onclick condition="Skin.HasSetting(whiteselect)">Skin.ToggleSetting(whiteselect)</onclick>
+					<onclick condition="Skin.HasSetting(blackselect)">Skin.ToggleSetting(blackselect)</onclick>	
+					<onclick condition="Skin.HasSetting(grayselect)">Skin.ToggleSetting(grayselect)</onclick>
+					<onclick condition="Skin.HasSetting(green1select)">Skin.ToggleSetting(green1select)</onclick>
+					<onclick condition="Skin.HasSetting(green2select)">Skin.ToggleSetting(green2select)</onclick>					
+					<onclick condition="Skin.HasSetting(green3select)">Skin.ToggleSetting(green3select)</onclick>					
+					<onclick condition="Skin.HasSetting(green4select)">Skin.ToggleSetting(green4select)</onclick>
+					<onclick condition="Skin.HasSetting(green5select)">Skin.ToggleSetting(green5select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange1select)">Skin.ToggleSetting(orange1select)</onclick>
+					<onclick condition="Skin.HasSetting(orange2select)">Skin.ToggleSetting(orange2select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange3select)">Skin.ToggleSetting(orange3select)</onclick>					
+					<onclick condition="Skin.HasSetting(orange4select)">Skin.ToggleSetting(orange4select)</onclick>
+					<onclick condition="Skin.HasSetting(blue1select)">Skin.ToggleSetting(blue1select)</onclick>
+					<onclick condition="Skin.HasSetting(blue2select)">Skin.ToggleSetting(blue2select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue3select)">Skin.ToggleSetting(blue3select)</onclick>
+					<onclick condition="Skin.HasSetting(blue4select)">Skin.ToggleSetting(blue4select)</onclick>					
+					<onclick condition="Skin.HasSetting(blue5select)">Skin.ToggleSetting(blue5select)</onclick>
+					<onclick condition="Skin.HasSetting(red1select)">Skin.ToggleSetting(red1select)</onclick>
+					<onclick condition="Skin.HasSetting(red2select)">Skin.ToggleSetting(red2select)</onclick>					
+					<onclick condition="Skin.HasSetting(red3select)">Skin.ToggleSetting(red3select)</onclick>					
+					<onclick condition="Skin.HasSetting(red4select)">Skin.ToggleSetting(red4select)</onclick>
+					<onclick condition="Skin.HasSetting(red5select)">Skin.ToggleSetting(red5select)</onclick>
+					<onclick condition="Skin.HasSetting(pink1select)">Skin.ToggleSetting(pink1select)</onclick>
+					<onclick condition="Skin.HasSetting(pink2select)">Skin.ToggleSetting(pink2select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink3select)">Skin.ToggleSetting(pink3select)</onclick>					
+					<onclick condition="Skin.HasSetting(pink4select)">Skin.ToggleSetting(pink4select)</onclick>
+					<onclick condition="Skin.HasSetting(pink5select)">Skin.ToggleSetting(pink5select)</onclick>
+					<onclick condition="Skin.HasSetting(purple1select)">Skin.ToggleSetting(purple1select)</onclick>
+					<onclick condition="Skin.HasSetting(purple2select)">Skin.ToggleSetting(purple2select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple3select)">Skin.ToggleSetting(purple3select)</onclick>					
+					<onclick condition="Skin.HasSetting(purple4select)">Skin.ToggleSetting(purple4select)</onclick>
+					<onclick condition="Skin.HasSetting(purple5select)">Skin.ToggleSetting(purple5select)</onclick>
+					<onclick condition="Skin.HasSetting(teal1select)">Skin.ToggleSetting(teal1select)</onclick>
+					<onclick condition="Skin.HasSetting(teal2select)">Skin.ToggleSetting(teal2select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal3select)">Skin.ToggleSetting(teal3select)</onclick>					
+					<onclick condition="Skin.HasSetting(teal4select)">Skin.ToggleSetting(teal4select)</onclick>
+					<onclick condition="Skin.HasSetting(teal5select)">Skin.ToggleSetting(teal5select)</onclick>	
+					<onclick condition="Skin.HasSetting(yellow1select)">Skin.ToggleSetting(yellow1select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow2select)">Skin.ToggleSetting(yellow2select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow3select)">Skin.ToggleSetting(yellow3select)</onclick>					
+					<onclick condition="Skin.HasSetting(yellow4select)">Skin.ToggleSetting(yellow4select)</onclick>
+					<onclick condition="Skin.HasSetting(yellow5select)">Skin.ToggleSetting(yellow5select)</onclick>											
+                    <selected>Skin.HasSetting(orange5select)</selected>				
+                </control>										
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

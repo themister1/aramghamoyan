@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1118">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">					
+            <control type="image" description="List back">
+                <posx>708</posx>
+                <top>382</top>
+                <width>504</width>
+                <height>314</height>
+	            <aspectratio>scale</aspectratio>				
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>			
+           </control>
+           <control type="image" description="List back border">	
+                <posx>708</posx>
+                <top>382</top>
+                <width>504</width>
+                <height>314</height>
+                <aspectratio>stretch</aspectratio>				
+                <texture colordiffuse="$VAR[diffuseborder]">borders/Dialogborder.png</texture>
+          </control>			
+            <control type="grouplist" id="9000">
+                <include>DialogGLs</include>
+                <control type="button" id="699">
+                    <include>DialogButt</include>
+                    <label>1037</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                </control>
+                <control type="button" id="700">
+                    <include>DialogButt</include>
+                    <label>1038</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Music,Addons)</onclick>
+                </control>
+			<control type="button" id="703">
+					<include>DialogButt</include>
+					<label>0</label>
+					<onclick>Close</onclick>
+					<onclick>ActivateWindow(Programs,Addons)</onclick>
+				</control>
+                <control type="button" id="701">
+                    <include>DialogButt</include>
+                    <label>31037</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

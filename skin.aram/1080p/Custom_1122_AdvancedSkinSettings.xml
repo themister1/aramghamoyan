@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1122">
+    <defaultcontrol always="true">1122</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <include>OpenClose</include>
+    <controls>
+        <include>BlackBackground</include>
+        <include>WindowsTopInfos</include>
+        <control type="group">
+            <posx>960</posx>
+            <top>80</top>			
+            <control type="label" description="Heading">
+		<posx>240</posx>
+		<top>-38</top>
+                <width>auto</width>
+                <height>60</height>
+                <font>size42</font>
+                <scroll>false</scroll>
+                <label>Geavanceerde Skin Instellingen</label>
+            </control>			
+            <control type="grouplist" id="1122">
+                <top>50</top>
+		<width>940</width>
+                <height>900</height>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <itemgap>0</itemgap>
+                <onup>1122</onup>
+                <ondown>1122</ondown>
+                <pagecontrol>60</pagecontrol>
+                <control type="radiobutton" id="2">
+                    <label>Schuifbalken Aan/Uit</label>
+                    <onclick>Skin.ToggleSetting(Scrollbars_Passive)</onclick>
+                    <selected>!Skin.HasSetting(Scrollbars_Passive)</selected>
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Weergave menu Aan/Uit</label>
+                    <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
+                    <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
+                </control>
+                <control type="radiobutton" id="9">
+                    <label>Klok Aan/Uit</label>
+                    <onclick>Skin.ToggleSetting(HideClock)</onclick>
+                    <selected>!Skin.HasSetting(HideClock)</selected>
+                </control>		
+                <!--control type="radiobutton" id="39">
+                    <label>Enable/Disable 3 Row Home Icons</label>
+                    <onclick>Skin.ToggleSetting(3rowhome)</onclick>
+                    <selected>!Skin.HasSetting(3rowhome)</selected>
+                </control-->							
+                <!--control type="radiobutton" id="13">
+                    <label>$LOCALIZE[31098]</label>
+                    <onclick>Skin.ToggleSetting(hideconnection)</onclick>
+                    <selected>Skin.HasSetting(hideconnection)</selected>
+                </control-->				
+                
+                <!--control type="radiobutton" id="45">				
+                    <label>Custom Home Shelf Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHomeSHELF))">Skin.SetFile(CustomBgHomeSHELF,.jpg|.png,special://skin/topshelf)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHomeSHELF))">Skin.Reset(CustomBgHomeSHELF)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHomeSHELF))</selected>
+                    <onclick>Skin.ToggleSetting(homeshelf)</onclick>
+                    <selected>Skin.HasSetting(homeshelf)</selected>					
+                </control>
+                <control type="button" id="47">
+					<visible>IsEmpty(Skin.String(CustomBgHomeSHELF))</visible>
+                    <align>left</align>
+		    <width>auto</width>
+		    <height>81</height>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>[COLOR=Disabled]Home Shelf Darkness[/COLOR]</label>
+                </control>
+                <control type="button" id="48">
+					<visible>!IsEmpty(Skin.String(CustomBgHomeSHELF))</visible>
+                    <align>left</align>
+		    <width>auto</width>
+		    <height>81</height>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>Home Shelf Darkness</label>
+                    <onclick>ActivateWindow(1160)</onclick>
+                </control-->	
+				
+				<!--control type="button" id="44">
+                    <align>left</align>
+		    <width>auto</width>
+		    <height>81</height>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>Home Slider Animation MENU</label>
+                    <onclick>ActivateWindow(1149)</onclick>
+                </control-->
+                <!--control type="radiobutton" id="44">
+                    <label>Home Shelf Image</label>
+                    <onclick>Skin.ToggleSetting(homeshelf)</onclick>
+                    <selected>!Skin.HasSetting(homeshelf)</selected>
+                </control-->
+
+
+                <!--control type="radiobutton" id="30">
+				    <visible></visible>				
+                    <label>Custom TopRow Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHomeTOPROW))">Skin.SetFile(CustomBgHomeTOPROW,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHomeTOPROW))">Skin.Reset(CustomBgHomeTOPROW)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHomeTOPROW))</selected>
+                </control>
+                <control type="button" id="33">
+					<visible>IsEmpty(Skin.String(CustomBgHomeTOPROW))</visible>				
+                    <align>left</align>
+		    <width>auto</width>
+		    <height>81</height>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>[COLOR=Disabled]TopRow BG Darkness[/COLOR]</label>
+                </control>	
+                <control type="button" id="34">
+					<visible>!IsEmpty(Skin.String(CustomBgHomeTOPROW))</visible>
+                    <align>left</align>
+		    <width>auto</width>
+		    <height>81</height>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>TopRow BG Darkness</label>
+                    <onclick>ActivateWindow(1192)</onclick>
+                </control-->	
+				<!--  CUSTOMSHELF IMAGE -->
+                    <control type="radiobutton" id="22">
+                    <label>Geselecteerde tekst zwart Aan/Uit</label>
+                    <onclick>Skin.ToggleSetting(focusedblack)</onclick>
+                    <selected>Skin.HasSetting(focusedblack)</selected>
+                </control>	
+                <control type="radiobutton" id="25">
+                    <label>Alternatief laad symbool</label>
+                    <onclick>Skin.ToggleSetting(busyimg)</onclick>
+                    <selected>Skin.HasSetting(busyimg)</selected>
+                </control>
+				<control type="radiobutton" id="26">
+						<label>Touchscreen Aan/Uit</label>
+						<onclick>Skin.ToggleSetting(EnableTouchSupport)</onclick>
+						<selected>Skin.HasSetting(EnableTouchSupport)</selected>
+				</control>
+				
+					<!--control type="radiobutton" id="35">
+                    <label>Enable Vertical Scroll on TopRow Shelf Items</label>
+                    <onclick>Skin.ToggleSetting(verticalshelf)</onclick>
+                    <selected>Skin.HasSetting(verticalshelf)</selected>
+                </control-->							
+                <!--control type="radiobutton" id="71">
+				    <visible></visible>				
+                    <label>OSD Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgOSD))">Skin.SetFile(CustomBgOSD,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgOSD))">Skin.Reset(CustomBgOSD)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgOSD))</selected>
+                </control>
+				<control type="button" id="73">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>OSD Transparency</label>
+                    <onclick>ActivateWindow(1150)</onclick>
+                </control-->																		
+                <!--control type="radiobutton" id="19">
+                    <label>$LOCALIZE[31104]</label>
+                    <onclick>Skin.ToggleSetting(homelabel)</onclick>
+                    <selected>Skin.HasSetting(homelabel)</selected>
+                </control-->				
+          
+                              
+            </control>
+        </control>
+        <control type="group" description="Left panel">
+            <top>80</top>
+            <control type="label" description="Skin Version">
+                <top>970</top>
+                <posx>6</posx>			
+                <width>100</width>
+                <height>25</height>
+                <font>size28</font>
+                <textcolor>$VAR[diffusetext]</textcolor>
+                <label>$INFO[System.AddonVersion(skin.iOS-X)]</label>
+            </control>
+        			
+            <control type="image" description="DEFAULT-BUSY ON">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(25) + !Skin.HasSetting(busyimg)</visible>
+                    <animation effect="fade" time="200">VisibleChange</animation>
+					<top>90</top>
+					<width>320</width>
+					<height>270</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture>busy/Busy2.png</texture>
+            </control>						
+            <control type="image" description="ALT-BUSY ON">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(25) + Skin.HasSetting(busyimg)</visible>
+                <animation effect="fade" time="200">VisibleChange</animation>
+					<top>110</top>
+					<width>274</width>
+					<height>226</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture>busy/Busy.png</texture>
+            </control>
+			<control type="image" description="ALT-BUSY ON">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(25) + Skin.HasSetting(busyimg)</visible>
+                <animation effect="fade" time="200">VisibleChange</animation>
+					<top>110</top>
+					<width>274</width>
+					<height>226</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+                <texture>busy/busyout.png</texture>
+            </control>						
+            <control type="image" description="Network">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(13)</visible>
+                <include>Help_Panel</include>
+                <texture>help/wireless.png</texture>
+            </control>
+            <control type="image" description="NetworkOFF">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(13) + !Skin.HasSetting(hideconnection)</visible>
+                <include>Help_Panel</include>
+                <texture>help/off.png</texture>
+            </control>	
+            <control type="image" description="HomeShader">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(16)</visible>
+                <include>Help_Panel</include>
+                <texture>help/homeshadericon.png</texture>
+            </control>
+            <control type="image" description="HomeShaderOFF">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(16) + !Skin.HasSetting(homeshader)</visible>
+                <include>Help_Panel</include>
+                <texture>help/off.png</texture>
+            </control>
+            <control type="image" description="homerss">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(17)</visible>
+                <include>Help_Panel</include>
+                <texture>help/rssbottom.png</texture>
+            </control>
+            <control type="image" description="homerssOFF">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(17) + !Skin.HasSetting(homerss)</visible>
+                <include>Help_Panel</include>
+                <texture>help/rsstop.png</texture>
+            </control>
+            <control type="image" description="homelines">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(20)</visible>
+                <include>Help_Panel</include>
+                <texture>help/homelineson.png</texture>
+            </control>
+            <control type="image" description="homelinesOFF">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(20) + !Skin.HasSetting(homelines)</visible>
+                <include>Help_Panel</include>
+                <texture>help/homelinesoff.png</texture>
+            </control>						
+            <control type="image" description="Logo">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(1)</visible>
+                <include>Help_Panel</include>
+                <texture>DefaultAddon.png</texture>
+            </control>
+            <control type="image" description="ScrollBars">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(2)</visible>
+                <include>Help_Panel</include>
+                <texture>help/scrollbars.png</texture>
+            </control>
+            <control type="image" description="ScrollBars">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(2) + Skin.HasSetting(Scrollbars_Passive)</visible>
+                <include>Help_Panel</include>
+                <texture>help/off.png</texture>
+            </control>
+            <control type="image" description="Menuviews">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(3)</visible>
+                <include>Help_Panel</include>
+                <texture>help/optionsmenu.png</texture>
+            </control>
+            <control type="image" description="Menuviews">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(3) + Skin.HasSetting(ViewsMenuOff)</visible>
+                <include>Help_Panel</include>
+                <texture>help/off.png</texture>
+            </control>
+            <control type="image" description="quits">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(8)</visible>
+                <include>Help_Panel</include>
+                <texture>help/menu$INFO[Skin.String(shutdown)].png</texture>
+            </control>					
+            <control type="image" description="clock">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(9)</visible>
+                <include>Help_Panel</include>
+                <texture>help/clock.png</texture>
+            </control>
+            <control type="image" description="clock">
+                <centerleft>460</centerleft>
+                <visible>Controlgroup(1122).HasFocus(9) + Skin.HasSetting(HideClock)</visible>
+                <include>Help_Panel</include>
+                <texture>help/off.png</texture>
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1151">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <include>DialogOpenCloseVisible</include>
+            <!--ORIGINAL--control type="image" description="List back">
+                <posx>540</posx>
+                <top>310</top>
+                <width>840</width>
+                <height>460</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="150" colordiffuse="$VAR[bgcolor1]">images/Dialog.png</texture>
+            </control-->								  
+			<include condition="![Skin.HasSetting(homeicondefaultrow7) | Skin.HasSetting(homeicondefaultrow6) | Skin.HasSetting(homeicondefaultrow5) | Skin.HasSetting(homeiconroundrow8) | Skin.HasSetting(homeiconroundrow7) | Skin.HasSetting(homeiconroundrow6) | Skin.HasSetting(hideshelf) | Skin.HasSetting(homeiconsio2) | Skin.HasSetting(homeiconsio2x) | Skin.HasSetting(homeiconios)]">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow7)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow6)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeicondefaultrow5)">dialogdefault</include>				
+			<include condition="Skin.HasSetting(hideshelf)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeiconsio2)">dialogdefault</include>					
+			<include condition="Skin.HasSetting(homeiconsio2x)">dialogdefault</include>	
+			<include condition="Skin.HasSetting(homeiconroundrow8)">dialogdefault</include>						
+			<include condition="Skin.HasSetting(homeiconroundrow7)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeiconroundrow6)">dialogdefault</include>
+			<include condition="Skin.HasSetting(homeiconios)">dialogdefault</include>
+            <control type="scrollbar" id="60">
+                <posx>1190</posx>
+                <top>390</top>
+                <height>300</height>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+            </control>			
+            <control type="grouplist" id="9000">
+				<centerleft>940</centerleft>
+				<top>385</top>
+				<width>400</width>
+				<height>310</height>
+				<itemgap>3</itemgap>
+				<onleft>close</onleft>
+				<onright>close</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<pagecontrol>60</pagecontrol>				
+				<scrolltime>200</scrolltime>
+                <control type="radiobutton" id="1">
+				    <visible></visible>				
+                    <label>OSD Background</label>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgOSD))">Skin.SetFile(CustomBgOSD,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgOSD))">Skin.Reset(CustomBgOSD)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgOSD))</selected>
+                </control>
+				<control type="button" id="3">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>OSD Transparency</label>
+                    <onclick>ActivateWindow(1150)</onclick>
+                </control>	
+				<control type="button" id="4">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>OSD Darkness</label>
+                    <onclick>ActivateWindow(1152)</onclick>
+                </control>
+				<control type="button" id="5">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>OSD Progress Color</label>
+                    <onclick>ActivateWindow(1153)</onclick>
+                </control>
+				<control type="button" id="6">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>OSD Cache Color</label>
+                    <onclick>ActivateWindow(1154)</onclick>
+                </control>
+				<control type="button" id="7">
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>OSD Marker Color</label>
+                    <onclick>ActivateWindow(1155)</onclick>
+                </control>				
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="list1">
+<control type="group" description="List1">
+            <visible>Control.IsVisible(50)</visible>
+            <include>left_Panel_list1</include>
+            <include>Linemiddle</include>
+            <control type="group" description="Slider and List">
+                <include>SlimListItemCount</include>
+                <posx>960</posx>
+                <top>120</top>
+                <control type="fixedlist" id="50">
+                    <width>960</width>
+                    <height>891</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="535">List1</viewtype>
+                    <focusposition>5</focusposition>
+                    <movement>5</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <itemlayout width="880" height="81">
+                        <include>Watched_Marks2</include>
+                        <!--include>HD_Badge</include-->
+                        <control type="label" description="Main Label">
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+							<width>820</width><!--MAIN-->
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                            <width>820</width>
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>container.content(songs) | container.content(musicvideos)</visible>
+                            <include>52Label2</include>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="880" height="81">
+                        <control type="image">
+                            <animation effect="fade" end="0" time="30">UnFocus</animation>
+                            <width>960</width>
+                            <height>81</height>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                        </control>
+                        <include>Watched_Marks2</include>
+                        <!--include>HD_Badge</include-->
+                        <control type="label" description="Main Label">
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+							<width>820</width><!--MAIN-->
+                            <textcolor>$VAR[textfo]</textcolor>
+                            <!--textcolor>White</textcolor-->
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                            <width>820</width>
+                            <textcolor>$VAR[textfo]</textcolor>
+                            <!--textcolor>White</textcolor-->
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>container.content(songs) | container.content(musicvideos)</visible>
+                            <include>52Label2FO</include>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>			
+            <control type="group">
+                <top>92</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>$VAR[bgimg2]</texture>
+					<colordiffuse>$VAR[diffusemenu]</colordiffuse>
+                </control>				
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>borders/scrollbg.png</texture>
+                </control>				
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>24</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>			
+        </control>
+         </include>
+</includes>

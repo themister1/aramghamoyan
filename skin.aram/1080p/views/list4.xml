@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="list4">
+<control type="group" description="List4">
+            <visible>Control.IsVisible(503)</visible>
+						
+            <!--include>left_Panel_list1</include-->
+				<!--control type="image" description="LEFT V-Line">
+					<posx>509</posx>
+					<top>-300</top>
+					<width>1</width>
+					<height>1680</height>
+					<texture colordiffuse="$VAR[diffuselines]">lines/LineV.png</texture>
+				</control-->
+				<!--control type="image" description="RIGHT V-Line">
+					<posx>1401</posx>
+					<top>-300</top>
+					<width>1</width>
+					<height>1680</height>
+					<texture colordiffuse="$VAR[diffuselines]">lines/LineV.png</texture>
+				</control-->
+				
+					
+				
+				
+		<control type="group">	
+			<visible>!ControlGroup(9000).HasFocus()</visible>	
+			<animation conditon="Control.IsActive(9000)" start="100" end="0" time="700">Conditional</animation>	
+			<control type="group">				
+				<animation condition="Control.HasFocus(60)" effect="slide" end="-30,0" time="250" reversible="true">Conditional</animation>
+                <animation condition="!Control.HasFocus(60)" effect="slide" start="-30,0" end="0,0" time="250" reversible="true">Conditional</animation>			
+                <posx>1401</posx>
+                <top>60</top>																
+                <control type="image" description="Dialog BG">	
+                    <width>600</width>
+                    <height>1020</height>
+                    <texture border="30" colordiffuse="$VAR[diffuseicon4view]">$VAR[bgimgnav]</texture>
+                    <aspectratio>scale</aspectratio>					
+                </control>				
+			</control>			
+            <control type="group">	
+			    <animation condition="Control.HasFocus(60)" effect="slide" end="-25,0" time="250" reversible="true">Conditional</animation>
+                <animation condition="!Control.HasFocus(60)" effect="slide" start="-25,0" end="0,0" time="250" reversible="true">Conditional</animation>
+				<centerright>260</centerright>
+                <top>40</top>
+				<visible>!IsEmpty(ListItem.Art(fanart))</visible>
+				<control type="image">
+                   <top>80</top>
+				   <posx>5</posx>
+                   <height>380</height>
+                   <width>490</width>
+                   <aspectratio>stretch</aspectratio>
+                   <texture>images/black.png</texture>
+                </control>				
+				<control type="image">
+                   <top>80</top>
+				   <posx>10</posx>
+                   <height>380</height>
+                   <width>480</width>
+                   <aspectratio>scale</aspectratio>
+                   <texture diffuse="images/white.png">$INFO[ListItem.Art(fanart)]</texture>
+                </control>			
+                <control type="label" description="Title">
+					<top>20</top>
+                    <width>500</width>
+                    <height>60</height>
+                    <align>center</align>
+                    <font>size33B</font>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" description="Media details">
+                    <top>530</top>
+                    <width>500</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>size26</font>
+                    <label>$VAR[TopLabel]</label>
+                </control>	
+                <control type="textbox" description="plots">
+                    <top>580</top>
+                    <width>500</width>
+                    <height>426</height>
+                    <align>justify</align>					
+                    <font>size24</font>
+					<autoscroll delay="10000" time="4300" repeat="11000"></autoscroll>
+                    <label>[COLOR=$VAR[diffusetext]]$VAR[Plots][/COLOR]</label>
+                </control>				
+                <control type="grouplist">
+                    <top>468</top>
+                    <width>510</width>
+                    <height>108</height>
+                    <itemgap>15</itemgap>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <control type="image" description="Sets">
+						<animation condition="![Container(503).OnNext | Container(503).OnPrevious]" effect="slide" start="800" end="0" time="200" delay="1000" tween="sine">Conditional</animation>
+                        <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+                        <height>50</height>
+                        <width>150</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>badges/setsFO.png</texture>
+                    </control>
+                    <control type="image">
+						<animation condition="![Container(503).OnNext | Container(503).OnPrevious]" effect="slide" start="800" end="0" time="200" delay="800" tween="sine">Conditional</animation>
+                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                        <height>30</height>
+                        <width>70</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+                    </control>
+                    <control type="image">
+						<animation condition="![Container(503).OnNext | Container(503).OnPrevious]" effect="slide" start="800" end="0" time="200" delay="980" tween="sine">Conditional</animation>
+                        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                        <height>30</height>
+                        <width>70</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+                    </control>
+                    <control type="image">
+						<animation condition="![Container(503).OnNext | Container(503).OnPrevious]" effect="slide" start="800" end="0" time="200" delay="1130" tween="sine">Conditional</animation>
+                        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                        <height>30</height>
+                        <width>70</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                    </control>
+                    <control type="image">
+						<animation condition="![Container(503).OnNext | Container(503).OnPrevious]" effect="slide" start="800" end="0" time="200" delay="1250" tween="sine">Conditional</animation>
+                        <visible>!IsEmpty(ListItem.FileExtension)</visible>
+                        <height>30</height>
+                        <width>70</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
+                    </control>
+                    <control type="image">
+						<animation condition="![Container(503).OnNext | Container(503).OnPrevious]" effect="slide" start="800" end="0" time="200" delay="1370" tween="sine">Conditional</animation>
+                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                        <height>30</height>
+                        <width>70</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                    </control>	    				
+                </control>			
+                <control type="image" description="Stars">
+                    <left>130</left>
+                    <top>500</top>
+                    <visible>!IsEmpty(ListItem.Rating)</visible>
+                    <height>40</height>
+                    <width>250</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+                </control>
+            </control>				
+		</control>		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+            <control type="group" description="Slider and List">
+                <include>SlimListItemCount</include>
+                <posx>510</posx>
+                <top>120</top>
+                <control type="fixedlist" id="503">
+                    <width>880</width>
+                    <height>891</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onup>503</onup>
+                    <ondown>503</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="535">List1</viewtype>
+                    <focusposition>5</focusposition>
+                    <movement>5</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <itemlayout width="880" height="81">
+						<control type="image" description="WATCHED MARKS">
+							<visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+							<posx>80r</posx>
+							<height>81</height>
+							<width>30</width>
+							<texture>$VAR[WatchStatus,overlay/List/]</texture>
+							<aspectratio>keep</aspectratio>
+							</control>
+							<!--include>HD_Badge</include-->
+                        <control type="label" description="Main Label">
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+							<width>820</width><!--MAIN-->
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                            <width>711</width>
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>container.content(songs) | container.content(musicvideos)</visible>
+                            <include>52Label2</include>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="880" height="81">
+                        <control type="image">
+                            <animation effect="fade" end="0" time="30">UnFocus</animation>
+                            <width>935</width>
+                            <height>81</height>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                        </control>
+                        <control type="image" description="WATCHED MARKS">
+							<visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+							<posx>80r</posx>
+							<height>81</height>
+							<width>30</width>
+							<texture>$VAR[WatchStatus,overlay/List/]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+                        <!--include>HD_Badge</include-->
+                        <control type="label" description="Main Label">
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+							<width>805</width><!--MAIN-->
+                            <textcolor>$VAR[textfo]</textcolor>
+                            <!--textcolor>White</textcolor-->
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                            <width>711</width>
+                            <textcolor>$VAR[textfo]</textcolor>
+                            <!--textcolor>White</textcolor-->
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>container.content(songs) | container.content(musicvideos)</visible>
+                            <include>52Label2FO</include>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>			
+            <control type="group">
+                <top>92</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>$VAR[bgimg2]</texture>
+					<colordiffuse>$VAR[diffusemenu]</colordiffuse>
+                </control>				
+                <control type="image">
+                    <left>1940</left>
+                    <height>896</height>
+                    <width>40</width>
+                    <texture>borders/scrollbg.png</texture>
+                </control>				
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>24</top>
+                    <height>850</height>
+                    <onleft>503</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>			
+        </control>
+         </include>
+</includes>

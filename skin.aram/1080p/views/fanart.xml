@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="fanart">
+        <control type="group" description="Fanart">
+            <visible>Control.IsVisible(59)</visible>
+            <control type="image">
+                <include>Dimensions_Fullscreen</include>
+                <include>Fanart_Fade</include>
+                <texture background="true">$VAR[fanart]</texture>
+                <colordiffuse>33AAAABB</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="fixedlist" id="59" description="Shortcuts">
+                <visible>Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
+                <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
+                <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
+                <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
+                <ondown condition="Skin.HasSetting(Scrollbars_Passive)">noop</ondown>
+                <onleft>59</onleft>
+                <onright>59</onright>
+                <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
+                <posx>-210</posx>
+                <top>570</top>
+                <width>2200</width>
+                <height>700</height>
+                <orientation>horizontal</orientation>
+                <scrolltime>300</scrolltime>
+                <focusposition>1</focusposition>
+                <preloaditems>2</preloaditems>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout width="300" height="500">
+                    <control type="image" description="Reflection">
+                        <posx>85</posx>
+                        <top>440</top>
+                        <height>350</height>
+                        <width>230</width>
+                        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[Locandine]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>85</posx>
+                        <top>80</top>
+                        <height>350</height>
+                        <width>230</width>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image" description="WatchStatus">
+                        <posx>76</posx>
+                        <top>380</top>
+                        <height>60</height>
+                        <width>60</width>
+                        <aspectratio align="left">keep</aspectratio>
+                        <texture>$VAR[WatchStatus]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="300" height="500">
+                    <control type="group">
+                        <animation effect="zoom" end="150" center="178,430" time="300" tween="Quadratic" easing="in">Focus</animation>
+                        <animation effect="zoom" start="150" end="100" center="178,430" time="120">unFocus</animation>
+                        <control type="image" description="black">
+                            <posx>77</posx>
+                            <top>72</top>
+                            <height>365</height>
+                            <width>246</width>
+                            <texture background="true" colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                            <colordiffuse>AAFFFFFF</colordiffuse>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image" description="THUMBNAIL">
+                            <posx>85</posx>
+                            <top>80</top>
+                            <height>350</height>
+                            <width>230</width>
+                            <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image" description="WatchStatus">
+                            <posx>76</posx>
+                            <top>380</top>
+                            <height>60</height>
+                            <width>60</width>
+                            <aspectratio align="left">keep</aspectratio>
+                            <texture>$VAR[WatchStatus]</texture>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="image" description="LeftFade">
+                <include>VisibleFade</include>
+                <width>30</width>
+                <height>1080</height>
+                <texture colordiffuse="videoviewshader">images/DefaultGradientH.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image" description="RightFade">
+                <include>VisibleFade</include>
+                <posx>1891</posx>
+                <width>30</width>
+                <height>1080</height>
+                <texture flipx="true" colordiffuse="videoviewshader">images/DefaultGradientH.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="group" description="Media Info">
+                <visible>!StringCompare(ListItem.label,..)</visible>
+                <top>40</top>
+                <posx>98</posx>
+                <control type="image" description="Stars rating">
+                    <posx>1340</posx>
+                    <top>450</top>
+                    <height>44</height>
+                    <width>383</width>
+                    <aspectratio aligny="center" align="right">keep</aspectratio>
+                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+                </control>
+                <control type="label" description="Item Title">
+                    <font>size50B</font>
+                    <align>center</align>
+                    <width>1724</width>
+                    <info>ListItem.Label</info>
+                </control>
+                <!--control type="image" description="Line Split">
+                    <posx>450</posx>
+                    <top>515</top>
+                    <width>1300</width>
+                    <height>1</height>
+                    <texture colordiffuse="$VAR[diffuselines]">lines/LineL.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control-->
+                <control type="group">
+                    <!--<visible>!SubString(ListItem.Path,videodb://1/7)</visible>-->
+                    <!--control type="image" description="lineplot">
+                        <top>70</top>
+                        <posx>550</posx>
+                        <width>620</width>
+                        <height>1</height>
+                        <texture colordiffuse="$VAR[diffuselines]">lines/LineSH.png</texture>
+                    </control-->
+                    <!--control type="image" description="lineplot">
+                        <top>80</top>
+                        <width>1724</width>
+                        <height>1</height>
+                        <texture colordiffuse="$VAR[diffuselines]">lines/LineSH.png</texture>
+                    </control-->
+                    <control type="textbox" description="Plot">
+					<!--visible>!Skin.HasSetting(plotinfo)</visible-->
+                        <top>80</top>
+                        <width>1724</width>
+                        <height>330</height>
+                        <font>size33</font>
+                        <!--textcolor>$VAR[diffusetext]</textcolor-->
+                        <align>justify</align>
+                        <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
+                        <label>[COLOR=$VAR[diffusetext]]$VAR[Plots][/COLOR]</label>
+                        <!--<label>$INFO[ListItem.Plot]</label>-->
+                    </control>
+                    <!--control type="image" description="lineplot">
+                        <top>410</top>
+                        <width>1724</width>
+                        <height>1</height>
+                        <texture colordiffuse="$VAR[diffuselines]">lines/LineSH.png</texture>
+                    </control-->
+                    <control type="label">
+                        <top>440</top>
+                        <font>size30</font>
+                        <height>40</height>
+                        <align>center</align>
+                        <width>1724</width>
+                        <label>$VAR[TopLabel]</label>
+                    </control>
+                    <control type="grouplist" description="Flags">
+                        <top>540</top>
+                        <width min="90" max="1724">auto</width>
+                        <height>150</height>
+                        <itemgap>30</itemgap>
+                        <orientation>horizontal</orientation>
+                        <align>center</align>
+                        <control type="image">
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
+                        </control>
+                    </control>
+                    <control type="label" description="Genre">
+                        <top>470</top>
+                        <font>size30</font>
+                        <width>1724</width>
+                        <height>50</height>
+                        <align>center</align>
+                        <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
+                    </control>
+                </control>
+            </control>
+            <include>Unwatched</include>
+            <control type="scrollbar" id="60">
+                <animation effect="fade" delay="200" time="300">VisibleChange</animation>
+                <posx>198</posx>
+                <top>1038</top>
+                <width>1525</width>
+                <height>9</height>
+                <onup>59</onup>
+                <ondown>59</ondown>
+                <orientation>horizontal</orientation>
+                <texturesliderbackground border="4">Scrollbar/HScrollbarBG.png</texturesliderbackground>
+                <texturesliderbar border="4">Scrollbar/HScrollerNF.png</texturesliderbar>
+                <texturesliderbarfocus border="4" colordiffuse="$VAR[diffuseselect]">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
+                <showonepage>false</showonepage>
+            </control>
+        </control>
+    </include>
+</includes>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="106">
+    <defaultcontrol always="true">996</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <include>DialogOpenClose</include>
+    <coordinates>
+        <system>1</system>
+        <origin x="560" y="80" />
+    </coordinates>
+    <controls>
+        <control type="image" id="999" description="Background image">
+		    <posx>140</posx>
+            <width>500</width>		
+            <height>1100</height>
+            <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+			<aspectratio>scale</aspectratio>
+        </control>				
+        <control type="button" id="1000" description="Buttons">
+            <posx>150</posx>
+            <top></top>
+            <width>480</width>
+            <height>60</height>
+            <focusedcolor>$VAR[textfo]</focusedcolor>
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+        </control>
+        <control type="grouplist" id="996" description="Context menu container">
+            <posx>150</posx>
+            <top>80</top>
+            <width>480</width>
+            <height max="960">auto</height>
+            <itemgap>3</itemgap>
+            <control type="button" id="1500">
+                <visible>Skin.HasSetting(ViewsMenuOff)</visible>
+                <width>480</width>
+                <height>60</height>
+                <label>Next View Mode</label>
+                <onclick>Container.NextViewMode</onclick>
+            </control>					
+        </control>		
+    </controls>
+</window>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1161">
+    <defaultcontrol always="true">9000</defaultcontrol>
+            <animation effect="slide" start="540,0" end="0,0" time="500"reversible="true">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="540,0" time="500" reversible="true">WindowClose</animation>			
+    <controls>
+        <control type="group" description="All dialog content">		
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="$VAR[diffusemenu]">$VAR[bgimg2]</texture>
+            </control>
+            <control type="image" description="List back">
+                <top>290</top>
+                <posx>1435</posx>
+                <width>540</width>
+                <height>500</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseborder]">borders/skinsettingsdialog.png</texture>
+            </control>						
+            <control type="group">
+                <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs2</include>					
+                <control type="radiobutton" id="1">
+                    <label>Transperancy1</label>
+                    <onclick>Skin.ToggleSetting(homeiconborderdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse2)">Skin.ToggleSetting(homeiconborderdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse3)">Skin.ToggleSetting(homeiconborderdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse4)">Skin.ToggleSetting(homeiconborderdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse5)">Skin.ToggleSetting(homeiconborderdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(homeiconborderdiffuse1)</selected>				
+                </control>
+                <control type="radiobutton" id="2">
+                    <label>Transperancy2</label>
+                    <onclick>Skin.ToggleSetting(homeiconborderdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse1)">Skin.ToggleSetting(homeiconborderdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse3)">Skin.ToggleSetting(homeiconborderdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse4)">Skin.ToggleSetting(homeiconborderdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse5)">Skin.ToggleSetting(homeiconborderdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(homeiconborderdiffuse2)</selected>				
+                </control>
+                <control type="radiobutton" id="3">
+                    <label>Transperancy3</label>
+                    <onclick>Skin.ToggleSetting(homeiconborderdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse1)">Skin.ToggleSetting(homeiconborderdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse2)">Skin.ToggleSetting(homeiconborderdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse4)">Skin.ToggleSetting(homeiconborderdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse5)">Skin.ToggleSetting(homeiconborderdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(homeiconborderdiffuse3)</selected>				
+                </control>								
+                <control type="radiobutton" id="4">
+                    <label>Transperancy4</label>
+                    <onclick>Skin.ToggleSetting(homeiconborderdiffuse4)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse1)">Skin.ToggleSetting(homeiconborderdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse2)">Skin.ToggleSetting(homeiconborderdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse3)">Skin.ToggleSetting(homeiconborderdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse5)">Skin.ToggleSetting(homeiconborderdiffuse5)</onclick>					
+                    <selected>Skin.HasSetting(homeiconborderdiffuse4)</selected>				
+                </control>
+                <control type="radiobutton" id="5">
+                    <label>Transperancy5</label>
+                    <onclick>Skin.ToggleSetting(homeiconborderdiffuse5)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse1)">Skin.ToggleSetting(homeiconborderdiffuse1)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse2)">Skin.ToggleSetting(homeiconborderdiffuse2)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse3)">Skin.ToggleSetting(homeiconborderdiffuse3)</onclick>
+					<onclick condition="Skin.HasSetting(homeiconborderdiffuse4)">Skin.ToggleSetting(homeiconborderdiffuse4)</onclick>					
+                    <selected>Skin.HasSetting(homeiconborderdiffuse5)</selected>				
+                </control>								
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

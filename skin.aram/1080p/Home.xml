@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<backgroundcolor>background</backgroundcolor>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <onload>RunScript(script.favourites)</onload>
+    <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
+	<controls>
+		<!-- Normal Home Menu-->
+		<include condition="!Skin.HasSetting(EnableTouchSupport)" file="Home_normal.xml">NormalHome</include>
+		<!-- Touch screen menu-->
+		<include condition="Skin.HasSetting(EnableTouchSupport)" file="Home_touch.xml">NormalTouch</include>
+	</controls>
+</window>
