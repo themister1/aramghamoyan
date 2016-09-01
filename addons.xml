@@ -442,27 +442,4 @@
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 	</extension>
 </addon>
-
-<addon id="skin.aram" version="9999999999999.9999999999999.9999999999999" name="HAYbox Skin" provider-name="Aram Ghamoyan">
-    <requires>
-        <import addon="plugin.video.youtube" />
-        <import addon="plugin.video.merojax.tv" />
-    </requires>
-    <extension
-            point="xbmc.gui.skin"
-            defaultthemename="Textures.xbt"
-            debugging="false">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary></summary>
-        <description>HAYbox Skin by Aram Ghamoyan</description>
-		<disclaimer>HAYbox Skin</disclaimer>
-        <platform>all</platform>
-        <licence></licence>
-        <forum></forum>
-        <source></source>
-        <email></email>
-    </extension>
-</addon>
 </addons>
