@@ -194,9 +194,10 @@
   </extension>
 </addon>
 
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.8" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.10" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
+			<import addon="plugin.program.haybox.notifications" />
 			<import addon="plugin.video.AwesomeStreams" />
 			<import addon="repository.dokinl" />
         </requires>
