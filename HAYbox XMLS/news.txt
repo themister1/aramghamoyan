@@ -2,7 +2,7 @@
 |||
 [COLOR red]HAYbox TV - Entertainment Center[/COLOR]
 
-[COLOR white]Er is een nieuwe [COLOR red][B]HAYbox UPDATE[/B][/COLOR][/COLOR] beschikbaar.
+[COLOR white]Er is een nieuwe [COLOR red][B]HAYbox UPDATE[/B][/COLOR] beschikbaar.
 Om die update te doen klik eerst op [B]DISMISS[/B] en klik dan op [B]HAYbox Update[/B]
 en installeer de update.
 
