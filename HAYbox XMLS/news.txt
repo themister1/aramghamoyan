@@ -1,4 +1,4 @@
-43
+45
 |||
 [COLOR red]HAYbox TV - Entertainment Center[/COLOR]
 
@@ -6,7 +6,7 @@
 Om die update te doen klik eerst op [B]DISMISS[/B] en klik dan op [B]HAYbox Update[/B]
 en installeer de update.
 
-Er zijn ook [B]TWEE nieuwe [B]ARMEENSE[/B] kanalen bij gekomen.
+Er zijn ook [COLOR red][B]TWEE NIEUWE ARMEENSE[/B][/COLOR] kanalen bij gekomen.
 
 [COLOR red][B]1. Armount TV[/B][/COLOR]
 [COLOR red][B]2. Horizon TV[/B][/COLOR]
