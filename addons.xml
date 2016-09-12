@@ -125,7 +125,7 @@
 </addon>
 
 
-<addon id="plugin.video.merojax.tv" name="Merojax.TV" version="1.0.5" provider-name="Aram Ghamoyan">
+<addon id="plugin.video.merojax.tv" name="Merojax.TV" version="1.0.7" provider-name="Aram Ghamoyan">
 
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
