@@ -5,7 +5,6 @@ version=" 04-11-2016 "
 url="http://downloads.sourceforge.net/project/haybox-tv/19092016.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%2F%3Fupload_just_completed%3Dtrue&ts=1475612217&use_mirror=heanet"
 gui="http://downloads.sourceforge.net/project/haybox-tv/19092016.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%2F%3Fupload_just_completed%3Dtrue&ts=1475612217&use_mirror=heanet"
 kodi="14.1"
-theme="https://cloud.tech4.life/index.php/s/Sbt0eI01kiSGrlQ/download"
 icon="https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/plugin.program.hayboxinstaller/icon.png"
 fanart="https://cloud.tech4.life/index.php/s/icK43lthspdub1b/download"
 
