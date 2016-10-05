@@ -1,0 +1,4 @@
+name="HAYbox TV Skin"
+url="https://github.com/aramghamoyan/aramghamoyan/blob/master/zips/skin.aram/skin.aram-0.0.7.zip?raw=true"
+icon="https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/skin.aram/icon.png"
+fanart="https://cloud.tech4.life/index.php/s/icK43lthspdub1b/download"
