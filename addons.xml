@@ -22,16 +22,17 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.hayboxinstaller" name="HAYbox Installer/Updater" version="1.0.4" provider-name="Aram Ghamoyan">
+<addon id="plugin.program.hayboxinstaller" name="[B]HAYbox Installer/Updater[/B]" version="2.0.1" provider-name="Aram Ghamoyan">
   <requires>
-    	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">HAYbox Installer</summary>
-    <description lang="en">Installeer de build HAYbox by Aram Ghamoyan</description>
+    <description lang="en">HAYbox Installer geeft toegang tot de laatste HAYbox Versies</description>
     <platform>all</platform>
   </extension>
 </addon>
