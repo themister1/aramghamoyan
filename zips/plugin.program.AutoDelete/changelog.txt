@@ -1,0 +1,4 @@
+v1.0.0
+- Auto Delete Cache By Reboot
+- Auto Delete Pachages By Reboot
+- Auto Delete Thumbnails By Reboot
