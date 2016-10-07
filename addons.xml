@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.program.AutoDelete" name="[B]AutoDelete[/B]" version="1.0.0" provider-name="Aram Ghamoyan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AutoDeleter</summary>
+    <description lang="en">This Addon Deletes all Cache, Thumbnails and packages on startup auto</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.haybox.notifications" version="1.0.8"
        name="HAYbox Notifications" provider-name="Aram Ghamoyan">
   <requires>
@@ -22,9 +37,10 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.hayboxinstaller" name="HAYbox Installer/Updater" version="2.0.2" provider-name="Aram Ghamoyan">
+<addon id="plugin.program.hayboxinstaller" name="HAYbox Installer/Updater" version="2.0.3" provider-name="Aram Ghamoyan">
   <requires>
     	<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="plugin.program.AutoDelete" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
