@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.AutoDelete" name="[B]AutoDelete[/B]" version="1.0.0" provider-name="Aram Ghamoyan">
+<addon id="plugin.program.AutoDelete" name="[B]AutoDelete[/B]" version="5.0.0" provider-name="Aram Ghamoyan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -37,17 +37,17 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.hayboxinstaller" name="HAYbox Installer/Updater" version="2.0.3" provider-name="Aram Ghamoyan">
+<addon id="plugin.program.hayboxinstaller" name="[B]HAYbox Updater[/B]" version="2.0.7" provider-name="Aram Ghamoyan">
   <requires>
-    	<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="plugin.program.AutoDelete" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">HAYbox Installer</summary>
-    <description lang="en">Installeer de build HAYbox by Aram Ghamoyan</description>
+    <summary lang="en">HAYbox Updater</summary>
+    <description lang="en">HAYbox Updater geeft toegang tot de laatste HAYbox Updates.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -482,7 +482,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="0.0.7" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.15" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />
