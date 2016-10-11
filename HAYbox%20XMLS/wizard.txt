@@ -1,5 +1,3 @@
-
-
 name=" HAYbox "
 version=" 7-10-2016 "
 url="http://downloads.sourceforge.net/project/haybox-tv/update.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%3Fsource%3Dnavbar&ts=1475787665&use_mirror=netcologne"
@@ -8,5 +6,3 @@ kodi="14.1"
 theme="https://"
 icon="https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/plugin.program.hayboxinstaller/icon.png"
 fanart="https://cloud.tech4.life/index.php/s/icK43lthspdub1b/download"
-
-================================================================================================================================
