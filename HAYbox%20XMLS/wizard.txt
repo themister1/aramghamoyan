@@ -1,5 +1,5 @@
 name=" HAYbox "
-version=" 8-10-2016 "
+version=" 9-10-2016 "
 url="http://downloads.sourceforge.net/project/haybox-tv/update.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%3Fsource%3Dnavbar&ts=1475787665&use_mirror=netcologne"
 gui="http://downloads.sourceforge.net/project/haybox-tv/update.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%3Fsource%3Dnavbar&ts=1475787665&use_mirror=netcologne"
 kodi="14.1"
