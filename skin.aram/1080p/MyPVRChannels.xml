@@ -24,7 +24,7 @@
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
-                <texture>pvr/tvset.png</texture>
+                <texture>special://home/addons\skin.aram\pvr.png</texture>
             </control>
             <control type="videowindow">
                 <posx>120</posx>

@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <onload>AlarmClock(CloseStartup,ReplaceWindow($INFO[System.StartupWindow]),00:03,silent)</onload>
-    <backgroundcolor>Black</backgroundcolor>
-    <animation type="WindowOpen">
-        <effect type="fade" start="0" end="100" time="400" delay="200" />
-    </animation>
-    <controls>
-        <control type="image">
-            <animation effect="fade" start="0" end="100" time="80">WindowOpen</animation>
-            <width>1920</width>
-            <height>1080</height>
-            <texture colordiffuse="FF000000">images/black.png</texture>
-        </control>
-        <control type="image">
-           <animation type="WindowClose">
-                <effect type="fade" start="100" end="0" time="600" delay="200" />
-                <effect type="zoom" center="960,540" start="100" end="0" time="600" delay="200" tween="back" easing="in" />
-            </animation>
-            <centerleft>960</centerleft>
-            <centertop>540</centertop>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>special://skin/icon2.png</texture>
-        </control>
-    </controls>
+	<!-- Intro -->
+	<onload condition="!Skin.HasSetting(Disable.StartupIntro)">PlayMedia(special://skin/intro.mp4,1)</onload>
+	<onunload>PlayerControl(Stop)</onunload>
+	<defaultcontrol always="true">10</defaultcontrol>
+	<controls>
+		<control type="button" id="10">
+			<include>HiddenObject</include>
+			<onup>ReplaceWindow($INFO[System.StartupWindow])</onup>
+			<ondown>ReplaceWindow($INFO[System.StartupWindow])</ondown>
+			<onleft>ReplaceWindow($INFO[System.StartupWindow])</onleft>
+			<onright>ReplaceWindow($INFO[System.StartupWindow])</onright>
+			<onclick>ReplaceWindow($INFO[System.StartupWindow])</onclick>
+			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+			<animation effect="fade" start="100" end="0" time="6000" condition="!Skin.HasSetting(Disable.StartupIntro)">Focus</animation>
+		</control>
+		<control type="videowindow">
+			<include>FullscreenDimensions</include>
+			<visible>Player.HasVideo</visible>
+		</control>
+	</controls>
 </window>
