@@ -120,23 +120,17 @@
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <width>45</width>
-								<left>10</left>
-
+								<left>40</left>
                                 <height>75</height>
                                 <align>right</align>
-
-
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
                                 <font>font10</font>
                                 <label>$INFO[ListItem.Channelnumber]</label>
-
-
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
                                 <left>70</left>
-
                                 <width>900</width>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -148,7 +142,6 @@
                             <control type="label">
                                 <description>Label 2 Title</description>
                                 <left>45</left>
-
                                 <width>900</width>
                                 <include>BigListDetails</include>
                                 <info>ListItem.Title</info>
@@ -171,23 +164,17 @@
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                                 <width>45</width>
-								<left>10</left>
-
+								<left>40</left>
                                 <height>75</height>
                                 <align>right</align>
-
-
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
                                 <font>font10</font>
                                 <label>$INFO[ListItem.Channelnumber]</label>
-
-
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
                                 <left>70</left>
-
                                 <width>900</width>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -195,18 +182,13 @@
                                 <width>900</width>
                                 <include>BigListTitle</include>
                                 <info>ListItem.Label</info>
-
-
                             </control>
                             <control type="label">
                                 <description>Label 2 Title</description>
                                 <left>45</left>
-
                                 <width>900</width>
                                 <include>BigListDetails</include>
                                 <info>ListItem.Title</info>
-
-
                             </control>
                             <include>statusbiglist</include>
                         </focusedlayout>
@@ -322,14 +304,15 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <left>70</left>
+                                <left>90</left>
                                 <include>52MainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">
-                                <left>720</left>
-                                <width>81</width>
-                                <height>81</height>
+								<posy>9</posy>
+                                <left>690</left>
+                                <width>82</width>
+                                <height>62</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
@@ -363,15 +346,16 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <left>70</left>
+                                <left>90</left>
                                 <textcolor>gray</textcolor>
                                 <include>52MainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">
-                                <left>720</left>
-                                <width>81</width>
-                                <height>81</height>
+								<posy>9</posy>
+                                <left>690</left>
+                                <width>82</width>
+                                <height>62</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">

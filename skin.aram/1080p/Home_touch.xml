@@ -20,7 +20,7 @@
             <height>10</height>
 			<font>size9</font>
             <textcolor>black</textcolor>
-            <label>[COLOR lime]VERSIE: 25-05-2016[/COLOR]</label>
+            <label></label>
 			</control>
 			<control type="panel" id="9000" description="ICONE">
 			<animation condition="Container(9000).Row(2) +!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,0" time="220">Conditonal</animation>
@@ -136,12 +136,12 @@
 					<visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
 				</item>
 				<item id="403" description="Custom addon">
-                    <visible>!IsEmpty(Skin.String(HomeAddon.3.Label))</visible>
-                    <thumb>special://home/addons\skin.aram\icons\\toot.png</thumb>
-                    <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.3.label))][/COLOR]</label2>
+                    <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
+                    <thumb>special://home/addons\skin.aram\icons\\help.png</thumb>
+                    <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.1.label))][/COLOR]</label2>
                     <label></label>
-                    <onclick>PlayMedia(&quot;plugin://plugin.video.dailymotion_com/?url=x2gwi1b&amp;mode=playVideo&quot;)</onclick>
-                </item>	
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.HAYboxYouTube/&quot;,return))</onclick>
+                </item>					
 				<item id="401" description="Custom addon">
                     <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
                     <thumb>special://home/addons\skin.aram\icons\\merojax.png</thumb>
@@ -161,7 +161,7 @@
                     <thumb>special://home/addons\skin.aram\icons\\rus.png</thumb>
                     <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.4.label))][/COLOR]</label2>
                     <label></label>
-                    <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
+                    <onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=RusKino&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CRusKino&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
                 </item>
 				<item id="405" description="Custom addon">
 					<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
@@ -170,6 +170,13 @@
 					<label></label>
 					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=ArmoGuy ADD-ONS&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CArmoGuy%20ADD-ONS&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
 				</item>
+				<item id="347" description="Custom addon">
+					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
+					<thumb>special://home/addons\skin.aram\icons\nlzone.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.7.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.nlzone/&quot;,return)</onclick>
+				</item>				
 				<item id="500" description="Custom addon">
 					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
 					<thumb>special://home/addons\skin.aram\icons\films.png</thumb>
@@ -210,8 +217,8 @@
 					<thumb>special://home/addons\skin.aram\icons\hay.png</thumb>
 					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.6.label))][/COLOR]</label2>
 					<label></label>
-					<onclick>PlayMedia(&quot;plugin://plugin.program.hayboxinstaller/?url=http%3A%2F%2Faram-design.nl%2Fupdate.zip&amp;mode=5&amp;name=HAYbox+Updaten&amp;iconimage=C%3A%5CUsers%5CAram+Ghamoyan%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.hayboxinstaller%5Cresources%5Cart%5Cicon.png&amp;fanart=C%3A%5CUsers%5CAram+Ghamoyan%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.program.hayboxinstaller%5Cfanart.jpg&amp;description=&quot;)</onclick>
-				</item>	
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.hayboxinstaller/?mode=builds&quot;,return)</onclick>
+				</item>
                
 				<item id="352">
                     <visible>!Skin.HasSetting(hidefav)</visible>
