@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.haybox.notifications" version="1.0.5"
-       name="HAYbox Notifications" provider-name="Aram Ghamoyan">
-  <requires>
-  	<import addon="xbmc.python" version="2.1.0"/>
-  	<import addon="script.module.addon.common" optional="true" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-  	<summary>HAYbox TV</summary>
-  	<description>Receive Important HAYbox Notifications. Unsubscribe within Add-on Settings.</description>
-  	<disclaimer>We take no responsibility for any problems this plugin might in any way, form, shape or size cause.</disclaimer>
-  	<language>en</language>
-  	<platform>all</platform>
-  	<source></source>
-  	<email></email>
-  </extension>
-</addon>
-
 <addon id="plugin.program.hayboxinstaller" name="[B]HAYbox Updater[/B]" version="2.0.20" provider-name="Aram Ghamoyan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -35,55 +13,6 @@
     <description lang="en">HAYbox Updater geeft toegang tot de laatste HAYbox Updates.</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.AwesomeStreams"
-       name="Jericho"
-       version="5.0.0"
-       provider-name="Team Jericho">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.1.1"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.youtube.dl" />
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" />
-    <import addon="script.module.liveresolver" />
-    <import addon="plugin.video.veetle" />
-
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Streams voor XBMC / KODI!</summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.brettus.streams" name="[COLOR white]B[/COLOR][COLOR dodgerblue]rettus [/COLOR][COLOR white]S[/COLOR][COLOR dodgerblue]treams[/COLOR]" version="1.0.3" provider-name="Biggy_Ozz">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.liveresolver" version="0.1.24"/>
-		<import addon="plugin.video.youtube" optional="true" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Brettus-Streams</summary>
-		<description lang="en">Brettus-Streams</description>
-		<platform>all</platform>
-		<forum>Brettus-Streams</forum>
-		<website>Brettus-Streams</website>
-	</extension>
 </addon>
 
 <addon id="plugin.video.dailymotion_com" name="DailyMotion.com" version="2.1.6" provider-name="AddonScriptorDE (Modified by ArmoGuy)">
@@ -106,23 +35,6 @@
         <forum>http://forum.xbmc.org/showthread.php?tid=142626</forum>
         <email>AddonScriptorDE at yahoo dot de</email>
     </extension>
-</addon>
-
-<addon id="plugin.video.dutchyoutubechannels"
-       name="DutchYoutubeChannels"
-       version="1.0.3"
-       provider-name="ArmoGuy">
-  <requires>
-	<import addon="script.module.t0mm0.common" />
-    <import addon="script.module.simple.downloader" />
-    <import addon="plugin.video.youtube" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.HAYboxYouTube"
@@ -154,6 +66,25 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.haymusic"
+	name="HAY Music"
+	version="0.0.1"
+	provider-name="Aram Ghamoyan">
+  <requires>
+    <import addon="xbmc.python" />
+    <import addon="script.module.addon.common" />
+    <import addon="plugin.video.youtube" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="nl">HAY Music</summary>
+    <description lang="nl">HAY Music From YouTube</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.merojax.tv" name="Merojax.TV" version="1.0.5" provider-name="Aram Ghamoyan">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
@@ -169,26 +100,6 @@
     <summary lang="en"></summary>
     <description lang="en"></description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.nlplks" name="NL Shizzle" version="1.0.6" provider-name="Prometheus">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.urlresolver"  version="3.0.12"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
-    <disclaimer lang="en"></disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <website></website>
-    <email></email>
   </extension>
 </addon>
 
@@ -530,11 +441,12 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="0.0.21" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.30" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />
 		<import addon="plugin.video.HAYboxYouTube" />
+		<import addon="plugin.video.haymusic" />
     </requires>
     <extension
             point="xbmc.gui.skin"
