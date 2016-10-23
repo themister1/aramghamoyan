@@ -41,8 +41,11 @@ channellist=[
 		("[COLOR darkorange]>>[/COLOR] Aram MP3", "user/AramMp3Official", "https://yt3.ggpht.com/-D8bIZD4yzDo/AAAAAAAAAAI/AAAAAAAAAAA/dki8QUm6WdM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"),
 		("[COLOR darkorange]>>[/COLOR] Garik Papoyan", "user/GarikOfficialChanel", "https://yt3.ggpht.com/-Jm4S4uopdTY/AAAAAAAAAAI/AAAAAAAAAAA/sy_iEoejesk/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"),
 		("[COLOR darkorange]>>[/COLOR] Gevorg Martirosyan", "user/gevorgmusic", "https://yt3.ggpht.com/-fO6TjhS6T5o/AAAAAAAAAAI/AAAAAAAAAAA/jfTuLv0Zd4Y/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"),
-		
-		
+
+		("[COLOR darkorange]>>[/COLOR] PlayBack", "user/MetsHayqThaBest", "https://yt3.ggpht.com/-PaeOQYbZ6pU/AAAAAAAAAAI/AAAAAAAAAAA/wMW6VZCLiaE/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"),
+		("[COLOR darkorange]>>[/COLOR] Lilu", "user/lilitmusic", "https://yt3.ggpht.com/-A1juZEwBrRQ/AAAAAAAAAAI/AAAAAAAAAAA/Xqa1rOK52B4/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"),
+		("[COLOR darkorange]>>[/COLOR] Duetro Studio", "user/DuetroStudio", "https://yt3.ggpht.com/--C5mA3aeB_8/AAAAAAAAAAI/AAAAAAAAAAA/d2MXrvzU5os/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"),
+
 ]
 
 
