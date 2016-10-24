@@ -134,7 +134,7 @@
 
 <addon id="plugin.video.TVGuideRussia"
        name="TVGuideRussia"
-       version="1.0.1"
+       version="1.0.5"
        provider-name="Aram Ghamoyan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -153,7 +153,7 @@
     <provides>video audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Addon FOR Russian Channels TV Guide</summary>
+    <summary lang="en">Addon white Dutch Content!!</summary>
     <description lang="en"></description>
     <platform>all</platform>
   </extension>

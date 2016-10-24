@@ -1,1 +1,5 @@
-1.0.0 Initial release
+1.0.0 - Initial release
+1.0.2 - Bug Fixes
+1.0.3 - Bug Fixes
+1.0.4 - New Channels Added
+1.0.5 - New Channels Added, Bug Fixes
