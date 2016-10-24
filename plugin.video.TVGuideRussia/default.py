@@ -2366,6 +2366,14 @@ elif mode == 274: kijk.ListKHL(url)
 elif mode == 275: kijk.ListExtremeSports(url)
 elif mode == 276: kijk.ListViasatSport(url)
 
+elif mode == 277: kijk.ListPremiere(url)
+elif mode == 278: kijk.ListKinohit(url)
+elif mode == 279: kijk.ListNasheNovoyeKino(url)
+elif mode == 280: kijk.ListEvrokino(url)
+elif mode == 281: kijk.ListRusskiyIllyuzion(url)
+elif mode == 282: kijk.ListTV1000(url)
+
+
 elif mode == 300: utils.playyt(url, name)
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))

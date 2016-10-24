@@ -28,11 +28,13 @@ def Main():
 	utils.addDir('Extreme Sports','https://tv.yandex.ru/213/channels/288',275,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
 	utils.addDir('Viasat Sport','https://tv.yandex.ru/213/channels/455',276,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
 
-	utils.addDir('Première','https://tv.yandex.ru/213/channels/455',276,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
-	utils.addDir('Viasat Sport','https://tv.yandex.ru/213/channels/455',276,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
-	utils.addDir('Viasat Sport','https://tv.yandex.ru/213/channels/455',276,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
-	utils.addDir('Viasat Sport','https://tv.yandex.ru/213/channels/455',276,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
-	utils.addDir('Viasat Sport','https://tv.yandex.ru/213/channels/455',276,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+	utils.addDir('Premiere','https://tv.yandex.ru/213/channels/566',277,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+	utils.addDir('Kinohit','https://tv.yandex.ru/213/channels/542',278,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+	utils.addDir('Nashe Novoye Kino','https://tv.yandex.ru/213/channels/485',279,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+	utils.addDir('Evrokino','https://tv.yandex.ru/213/channels/352',280,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+	utils.addDir('Russkiy Illyuzion','https://tv.yandex.ru/213/channels/53',281,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+
+	utils.addDir('TV1000','https://tv.yandex.ru/213/channels/127',282,'','https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Images/iaqUpVfm.jpg',fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
 	
 	xbmcplugin.endOfDirectory(utils.addon_handle)
 
@@ -222,6 +224,60 @@ def ListViasatSport(url):
     for pagina, name, in match:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/455" + pagina
+            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+    xbmcplugin.endOfDirectory(utils.addon_handle)
+
+def ListPremiere(url):
+    listhtml = utils.getHtml2(url)
+    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for pagina, name, in match:
+            name = utils.cleantext(name)
+            pagina = "https://tv.yandex.ru/213/channels/566" + pagina
+            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+    xbmcplugin.endOfDirectory(utils.addon_handle)
+
+def ListKinohit(url):
+    listhtml = utils.getHtml2(url)
+    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for pagina, name, in match:
+            name = utils.cleantext(name)
+            pagina = "https://tv.yandex.ru/213/channels/542" + pagina
+            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+    xbmcplugin.endOfDirectory(utils.addon_handle)
+
+def ListNasheNovoyeKino(url):
+    listhtml = utils.getHtml2(url)
+    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for pagina, name, in match:
+            name = utils.cleantext(name)
+            pagina = "https://tv.yandex.ru/213/channels/485" + pagina
+            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+    xbmcplugin.endOfDirectory(utils.addon_handle)
+
+def ListEvrokino(url):
+    listhtml = utils.getHtml2(url)
+    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for pagina, name, in match:
+            name = utils.cleantext(name)
+            pagina = "https://tv.yandex.ru/213/channels/352" + pagina
+            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+    xbmcplugin.endOfDirectory(utils.addon_handle)
+
+def ListRusskiyIllyuzion(url):
+    listhtml = utils.getHtml2(url)
+    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for pagina, name, in match:
+            name = utils.cleantext(name)
+            pagina = "https://tv.yandex.ru/213/channels/53" + pagina
+            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
+    xbmcplugin.endOfDirectory(utils.addon_handle)
+
+def ListTV1000(url):
+    listhtml = utils.getHtml2(url)
+    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for pagina, name, in match:
+            name = utils.cleantext(name)
+            pagina = "https://tv.yandex.ru/213/channels/127" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
     xbmcplugin.endOfDirectory(utils.addon_handle)
 	
