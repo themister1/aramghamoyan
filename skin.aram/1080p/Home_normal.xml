@@ -133,6 +133,11 @@
 					<onclick>ActivateWindow(TvChannels)</onclick>
 					<visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
 				</item>
+				<item id="353" description="Custom script">
+					<thumb>special://home/addons\skin.aram\icons\gids.png</thumb>
+					<label></label>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.TVGuideRussia/?fanart&amp;mode=245&amp;name=TV%20Guide%20Russia&amp;url=https%3a%2f%2ftv.yandex.ru&quot;,return)</onclick>
+				</item>				
 				<item id="403" description="Custom addon">
                     <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
                     <thumb>special://home/addons\skin.aram\icons\\help.png</thumb>
