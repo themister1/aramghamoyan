@@ -11,7 +11,6 @@ import xbmcaddon
 import xbmcvfs
 import traceback
 import cookielib
-import plugintools
 import urlparse
 import httplib
 import time
@@ -2395,6 +2394,19 @@ elif mode == 299: kijk.List2x2(url)
 elif mode == 301: kijk.ListAmedia1(url)
 elif mode == 302: kijk.ListAmedia2(url)
 elif mode == 303: kijk.ListAmediaPremium(url)
+
+elif mode == 304: kijk.ListFoxRussia(url)
+elif mode == 305: kijk.ListFoxLife(url)
+elif mode == 306: kijk.ListDomKino(url)
+
+elif mode == 307: kijk.ListCTC(url)
+elif mode == 308: kijk.ListCTCLove(url)
+
+elif mode == 309: kijk.ListTHT4(url)
+
+elif mode == 310: kijk.ListMoyaPlaneta(url)
+elif mode == 311: kijk.ListNatGeoWild(url)
+elif mode == 312: kijk.ListDiscoveryChannel(url)
 
 elif mode == 300: utils.playyt(url, name)
 
