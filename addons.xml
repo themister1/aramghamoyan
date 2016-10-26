@@ -244,6 +244,30 @@
   <extension library="lib" point="xbmc.python.module" />
 </addon>
 
+<addon id="script.hayboxnews"
+       name="HAYbox Nieuws Flits"
+       version="0.0.1"
+       provider-name="Aram Ghamoyan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.video.youtube" />
+    <import addon="script.module.addon.common" />
+    <import addon="script.module.metahandler" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary></summary>
+    <description></description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+  </extension>
+</addon>
+
 <addon id="script.module.addon.common"
 	     name="Common addon methods"
 	     version="2.0.0"
@@ -465,12 +489,13 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="0.0.37" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.40" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />
 		<import addon="plugin.video.HAYboxYouTube" />
 		<import addon="plugin.video.TVGuideRussia" />
+		<import addon="script.hayboxnews" />
     </requires>
     <extension
             point="xbmc.gui.skin"
