@@ -82,17 +82,23 @@ def Main():
 
 def ListPervyy(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
-            name = utils.cleantext(name)
-            pagina = "https://tv.yandex.ru/213/channels/146" + pagina
-            utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
+    		name = utils.cleantext(name)
+        	pagina = "https://tv.yandex.ru/213/channels/146" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     xbmcplugin.endOfDirectory(utils.addon_handle)
 
 def ListRussia1(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/711" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -100,8 +106,11 @@ def ListRussia1(url):
 
 def ListMatch(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1593" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -109,8 +118,11 @@ def ListMatch(url):
 
 def ListRussia24(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1683" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -118,8 +130,11 @@ def ListRussia24(url):
 
 def ListRussiaKultura(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/187" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -127,8 +142,11 @@ def ListRussiaKultura(url):
 
 def ListHTB(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/162" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -136,8 +154,11 @@ def ListHTB(url):
 
 def ListHTBMir(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/726" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -145,8 +166,11 @@ def ListHTBMir(url):
 
 def ListNashSport(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1669" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -154,8 +178,11 @@ def ListNashSport(url):
 
 def ListPlaneta(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1671" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -163,8 +190,11 @@ def ListPlaneta(url):
 
 def ListArena(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1667" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -172,8 +202,11 @@ def ListArena(url):
 
 def ListBoyets(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/454" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -181,8 +214,11 @@ def ListBoyets(url):
 
 def ListIgra(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1668" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -190,8 +226,11 @@ def ListIgra(url):
 
 def ListFutbol1(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/664" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -199,8 +238,11 @@ def ListFutbol1(url):
 
 def ListFutbol2(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/563" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -208,8 +250,11 @@ def ListFutbol2(url):
 
 def ListFutbol3(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1039" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -217,8 +262,11 @@ def ListFutbol3(url):
 
 def ListNashFutbol(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/499" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -226,8 +274,11 @@ def ListNashFutbol(url):
 
 def ListEuroSport1(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/737" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -235,8 +286,11 @@ def ListEuroSport1(url):
 
 def ListEuroSport2(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/850" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -244,8 +298,11 @@ def ListEuroSport2(url):
 
 def ListKHL(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/481" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -253,8 +310,11 @@ def ListKHL(url):
 
 def ListExtremeSports(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/288" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -262,8 +322,11 @@ def ListExtremeSports(url):
 
 def ListViasatSport(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/455" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -271,8 +334,11 @@ def ListViasatSport(url):
 
 def ListPremiere(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/566" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -280,8 +346,11 @@ def ListPremiere(url):
 
 def ListKinohit(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/542" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -289,8 +358,11 @@ def ListKinohit(url):
 
 def ListNasheNovoyeKino(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/485" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -298,8 +370,11 @@ def ListNasheNovoyeKino(url):
 
 def ListEvrokino(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/352" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -307,8 +382,11 @@ def ListEvrokino(url):
 
 def ListRusskiyIllyuzion(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/53" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -316,8 +394,11 @@ def ListRusskiyIllyuzion(url):
 
 def ListTV1000(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/127" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -325,8 +406,11 @@ def ListTV1000(url):
 
 def ListTV1000RussischeCinema(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/267" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -334,8 +418,11 @@ def ListTV1000RussischeCinema(url):
 
 def ListShantTV(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1725" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -343,8 +430,11 @@ def ListShantTV(url):
 
 def ListTV1000Action(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/125" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -352,8 +442,11 @@ def ListTV1000Action(url):
 
 def ListTV1000Comedy(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1011" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -361,8 +454,11 @@ def ListTV1000Comedy(url):
 
 def ListTV1000Megahit(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1012" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -370,8 +466,11 @@ def ListTV1000Megahit(url):
 
 def ListMuzhskoyeKino(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1584" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -379,8 +478,11 @@ def ListMuzhskoyeKino(url):
 
 def ListSonyTV(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1034" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -388,8 +490,11 @@ def ListSonyTV(url):
 
 def ListSonySciFi(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/516" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -397,8 +502,11 @@ def ListSonySciFi(url):
 
 def ListSonyTurbo(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/935" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -406,8 +514,11 @@ def ListSonyTurbo(url):
 
 def ListIllyuzion(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/123" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -415,8 +526,11 @@ def ListIllyuzion(url):
 
 def ListAMC(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/608" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -424,8 +538,11 @@ def ListAMC(url):
 
 def ListCBSDrama(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/911" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -433,8 +550,11 @@ def ListCBSDrama(url):
 
 def ListNostalgiya(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/783" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -442,8 +562,11 @@ def ListNostalgiya(url):
 
 def ListMnogoTV(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/799" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -451,8 +574,11 @@ def ListMnogoTV(url):
 
 def ListKomediya(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1620" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -460,8 +586,11 @@ def ListKomediya(url):
 
 def ListParamountComedy(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/920" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -469,8 +598,11 @@ def ListParamountComedy(url):
 
 def List2x2(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/323" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -478,8 +610,11 @@ def List2x2(url):
 
 def ListAmedia1(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1371" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -487,8 +622,11 @@ def ListAmedia1(url):
 
 def ListAmedia2(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/918" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -496,8 +634,11 @@ def ListAmedia2(url):
 
 def ListAmediaPremium(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/918" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -505,8 +646,11 @@ def ListAmediaPremium(url):
 
 def ListFoxRussia(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/659" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -514,8 +658,11 @@ def ListFoxRussia(url):
 
 def ListFoxLife(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/615" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -523,8 +670,11 @@ def ListFoxLife(url):
 
 def ListDomKino(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/834" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -532,8 +682,11 @@ def ListDomKino(url):
 
 def ListCTC(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/79" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -541,8 +694,11 @@ def ListCTC(url):
 
 def ListCTCLove(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1322" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -550,8 +706,11 @@ def ListCTCLove(url):
 
 def ListTHT4(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1649" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -559,8 +718,11 @@ def ListTHT4(url):
 
 def ListMoyaPlaneta(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/675" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -568,8 +730,11 @@ def ListMoyaPlaneta(url):
 
 def ListNatGeoWild(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/223" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
@@ -577,8 +742,11 @@ def ListNatGeoWild(url):
 
 def ListDiscoveryChannel(url):
     listhtml = utils.getHtml2(url)
-    match = re.compile('<a class="link tv-filter-days__link" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for pagina, name, in match:
+    match = re.compile('<a class="link tv-filter(.*?)" href="(.*?)">(.*?)</a>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    for classe, pagina, name, in match:
+    	if 'past_yes' in classe:
+    		pass
+    	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/325" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
