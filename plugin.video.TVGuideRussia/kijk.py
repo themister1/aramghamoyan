@@ -86,6 +86,10 @@ def ListPervyy(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/146" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
     		name = utils.cleantext(name)
         	pagina = "https://tv.yandex.ru/213/channels/146" + pagina
@@ -98,6 +102,10 @@ def ListRussia1(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/711" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/711" + pagina
@@ -110,6 +118,10 @@ def ListMatch(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1593" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1593" + pagina
@@ -122,6 +134,10 @@ def ListRussia24(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1683" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1683" + pagina
@@ -134,6 +150,10 @@ def ListRussiaKultura(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/187" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/187" + pagina
@@ -146,6 +166,10 @@ def ListHTB(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/162" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/162" + pagina
@@ -158,6 +182,10 @@ def ListHTBMir(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/726" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/726" + pagina
@@ -170,6 +198,10 @@ def ListNashSport(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1669" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1669" + pagina
@@ -182,6 +214,10 @@ def ListPlaneta(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1671" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1671" + pagina
@@ -194,6 +230,10 @@ def ListArena(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1667" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1667" + pagina
@@ -206,6 +246,10 @@ def ListBoyets(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/454" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/454" + pagina
@@ -218,6 +262,10 @@ def ListIgra(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1668" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1668" + pagina
@@ -230,6 +278,10 @@ def ListFutbol1(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/664" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/664" + pagina
@@ -242,6 +294,10 @@ def ListFutbol2(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/563" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/563" + pagina
@@ -254,6 +310,10 @@ def ListFutbol3(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1039" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1039" + pagina
@@ -266,6 +326,10 @@ def ListNashFutbol(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/499" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/499" + pagina
@@ -278,6 +342,10 @@ def ListEuroSport1(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/737" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/737" + pagina
@@ -290,6 +358,10 @@ def ListEuroSport2(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/850" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/850" + pagina
@@ -302,6 +374,10 @@ def ListKHL(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/481" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/481" + pagina
@@ -314,6 +390,10 @@ def ListExtremeSports(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/288" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/288" + pagina
@@ -326,6 +406,10 @@ def ListViasatSport(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/455" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/455" + pagina
@@ -338,6 +422,10 @@ def ListPremiere(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/566" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/566" + pagina
@@ -350,6 +438,10 @@ def ListKinohit(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/542" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/542" + pagina
@@ -362,6 +454,10 @@ def ListNasheNovoyeKino(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/485" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/485" + pagina
@@ -374,6 +470,10 @@ def ListEvrokino(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/352" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/352" + pagina
@@ -386,6 +486,10 @@ def ListRusskiyIllyuzion(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/53" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/53" + pagina
@@ -398,6 +502,10 @@ def ListTV1000(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/127" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/127" + pagina
@@ -410,6 +518,10 @@ def ListTV1000RussischeCinema(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/267" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/267" + pagina
@@ -422,6 +534,10 @@ def ListShantTV(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1725" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1725" + pagina
@@ -434,6 +550,10 @@ def ListTV1000Action(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/125" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/125" + pagina
@@ -446,6 +566,10 @@ def ListTV1000Comedy(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1011" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1011" + pagina
@@ -458,6 +582,10 @@ def ListTV1000Megahit(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1012" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1012" + pagina
@@ -470,6 +598,10 @@ def ListMuzhskoyeKino(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1584" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1584" + pagina
@@ -482,6 +614,10 @@ def ListSonyTV(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1034" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1034" + pagina
@@ -494,6 +630,10 @@ def ListSonySciFi(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/516" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/516" + pagina
@@ -506,6 +646,10 @@ def ListSonyTurbo(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/935" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/935" + pagina
@@ -518,6 +662,10 @@ def ListIllyuzion(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/123" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/123" + pagina
@@ -530,6 +678,10 @@ def ListAMC(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/608" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/608" + pagina
@@ -542,6 +694,10 @@ def ListCBSDrama(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/911" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/911" + pagina
@@ -554,6 +710,10 @@ def ListNostalgiya(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/783" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/783" + pagina
@@ -566,6 +726,10 @@ def ListMnogoTV(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/799" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/799" + pagina
@@ -578,6 +742,10 @@ def ListKomediya(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1620" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1620" + pagina
@@ -590,6 +758,10 @@ def ListParamountComedy(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/920" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/920" + pagina
@@ -602,6 +774,10 @@ def List2x2(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/323" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/323" + pagina
@@ -614,6 +790,10 @@ def ListAmedia1(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1371" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1371" + pagina
@@ -626,6 +806,10 @@ def ListAmedia2(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/918" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/918" + pagina
@@ -638,9 +822,13 @@ def ListAmediaPremium(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1372" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')			
     	else:
             name = utils.cleantext(name)
-            pagina = "https://tv.yandex.ru/213/channels/918" + pagina
+            pagina = "https://tv.yandex.ru/213/channels/1372" + pagina
             utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')
     xbmcplugin.endOfDirectory(utils.addon_handle)
 
@@ -650,6 +838,10 @@ def ListFoxRussia(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/659" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/659" + pagina
@@ -662,6 +854,10 @@ def ListFoxLife(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/615" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/615" + pagina
@@ -674,6 +870,10 @@ def ListDomKino(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/834" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/834" + pagina
@@ -686,6 +886,10 @@ def ListCTC(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/79" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/79" + pagina
@@ -698,6 +902,10 @@ def ListCTCLove(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1322" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1322" + pagina
@@ -710,6 +918,10 @@ def ListTHT4(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/1649" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/1649" + pagina
@@ -722,6 +934,10 @@ def ListMoyaPlaneta(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/675" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/675" + pagina
@@ -734,6 +950,10 @@ def ListNatGeoWild(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/223" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/223" + pagina
@@ -746,6 +966,10 @@ def ListDiscoveryChannel(url):
     for classe, pagina, name, in match:
     	if 'past_yes' in classe:
     		pass
+    	elif 'weekend_yes' in classe:
+    		name = '[COLOR red]' + utils.cleantext(name) + '[/COLOR]'
+        	pagina = "https://tv.yandex.ru/213/channels/325" + pagina
+         	utils.addDir(name, pagina, 258, '', fanart='https://raw.githubusercontent.com/doki1/repo/master/NLView%20XML/fanart.jpg')				
     	else:
             name = utils.cleantext(name)
             pagina = "https://tv.yandex.ru/213/channels/325" + pagina

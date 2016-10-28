@@ -166,13 +166,6 @@
                     <label></label>
                     <onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=RusKino&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CRusKino&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
                 </item>
-				<item id="405" description="Custom addon">
-					<visible>!IsEmpty(Skin.String(HomeAddon.5.Label))</visible>
-					<thumb>special://home/addons\skin.aram\icons\armo.png</thumb>
-					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.5.label))][/COLOR]</label2>
-					<label></label>
-					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=ArmoGuy ADD-ONS&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CArmoGuy%20ADD-ONS&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
-				</item>
 				<item id="347" description="Custom addon">
 					<visible>!IsEmpty(Skin.String(HomeAddon.6.Label))</visible>
 					<thumb>special://home/addons\skin.aram\icons\nlzone.png</thumb>

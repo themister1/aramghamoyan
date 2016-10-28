@@ -10,11 +10,11 @@
 				<width>740</width>
 				<height>850</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150" colordiffuse="mauve">images/Dialog.png</texture>
+                <texture border="150" colordiffuse="$VAR[bgcolor1]">images/Dialog.png</texture>
             </control>
             <control type="grouplist" id="9000">
                 <include>DialogGLs</include>
-          <control type="button" id="690">
+           <control type="button" id="690">
             <include>DialogButt</include>
             <label>[COLOR red]MADE by Aram Ghamoyan[/COLOR]</label>
             <onclick>Close</onclick>
@@ -22,13 +22,13 @@
 		   </control>
 		    <control type="button" id="691">
             <include>DialogButt</include>
-            <label>[COLOR red]Facebook:[/COLOR] [COLOR black]/HAYbox.TV[/COLOR]</label>
+            <label>[COLOR red]Facebook:[/COLOR] [COLOR white]/HAYbox.TV[/COLOR]</label>
             <onclick>Close</onclick>
            <onclick>ActivateWindow()</onclick>
 		   </control>
           <control type="button" id="692">
             <include>DialogButt</include>
-            <label>[COLOR red]Instagram:[/COLOR] [COLOR black]@HAYbox.TV[/COLOR]</label>
+            <label>[COLOR red]Instagram:[/COLOR] [COLOR white]@HAYbox.TV[/COLOR]</label>
             <onclick>Close</onclick>
            <onclick>ActivateWindow()</onclick>
 		   </control>
@@ -40,40 +40,40 @@
 		   </control>		   
           <control type="button" id="693">
             <include>DialogButt</include>
-            <label>[COLOR black]***************************[/COLOR]</label>
+            <label>[COLOR white]***************************[/COLOR]</label>
             <onclick>Close</onclick>
            <onclick>ActivateWindow()</onclick>
 		   </control>		   
           <control type="button" id="700">
             <include>DialogButt</include>
-            <label>[COLOR black]HAYbox Instellingen[/COLOR]</label>
+            <label>[COLOR white]HAYbox Instellingen[/COLOR]</label>
             <onclick>Close</onclick>
            <onclick>ActivateWindow(SkinSettings)</onclick>
-		   </control>				
+		   </control>	
                 <control type="button" id="694">
                     <include>DialogButt</include>
-                    <label>[COLOR black]$LOCALIZE[128] $LOCALIZE[5][/COLOR]</label>
+                    <label>[COLOR white]$LOCALIZE[128] $LOCALIZE[5][/COLOR]</label>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(Settings)</onclick>
                 </control>
          	<control type="button" id="702">
           <include>DialogButt</include>
-          <label>[COLOR black]Systeem Informatie[/COLOR]</label>
+          <label>[COLOR white]Systeem Informatie[/COLOR]</label>
           <onclick>Close</onclick>
 	  <onclick>activatewindow(systeminfo)</onclick>
-        </control>
+        </control>		   
 	<control type="button" id="705" description="Addons">
           <include>DialogButt</include>
-          <label>[COLOR black]Alle Add-ons[/COLOR]</label>
+          <label>Alle Add-ons</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(1118)</onclick>
-		  </control>
-          <control type="button" id="695">
+		  </control>		  
+          <control type="button" id="697">
             <include>DialogButt</include>
-            <label>[COLOR black]***************************[/COLOR]</label>
+            <label>[COLOR white]***************************[/COLOR]</label>
             <onclick>Close</onclick>
            <onclick>ActivateWindow()</onclick>
-		   </control>		  
+		   </control>>		  
         </control>
         </control>
     </controls>

@@ -134,7 +134,7 @@
 
 <addon id="plugin.video.TVGuideRussia"
        name="TVGuideRussia"
-       version="1.0.7"
+       version="1.0.8"
        provider-name="Aram Ghamoyan">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -489,7 +489,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="0.0.40" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.41" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
         <import addon="plugin.video.merojax.tv" />
