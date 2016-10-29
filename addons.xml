@@ -217,12 +217,11 @@
 	</extension>
 </addon>
 
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.32" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.33" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
 			<import addon="script.icechannel" />
 			<import addon="plugin.video.my-hit.ru" />
-			<import addon="repository.Dixie-Deans-XBMC-Repo" />
 			<import addon="repository.dokinl" />
 			<import addon="repository.eldorado" />
 			<import addon="repository.entertainmentrepobackup" />
