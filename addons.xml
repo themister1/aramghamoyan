@@ -103,6 +103,27 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.my-hit.ru"
+       name="[COLOR FF00FF00]Кино портал ([/COLOR][COLOR FFFFF000]my-hit.org[/COLOR][COLOR FF00FF00])[/COLOR]"
+       version="1.2.7"
+       provider-name="Silen - [COLOR red](Modified by Aram Ghamoyan)[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="repository.AramGhamoyan" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             provides="video"
+             library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>my-hit.ru</summary>
+    <description>Фильмы онлайн, наш кино портал.</description>
+    <platform>all</platform>
+    <website>http://xbmc.ru/forum/showthread.php?t=1415</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.nlzone"
        name="[COLOR red]NL[/COLOR]Zone"
        version="1.0.1"
@@ -196,9 +217,10 @@
 	</extension>
 </addon>
 
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.29" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.30" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
+			<import addon="plugin.video.my-hit.ru" />
 			<import addon="repository.Dixie-Deans-XBMC-Repo" />
 			<import addon="repository.dokinl" />
 			<import addon="repository.eldorado" />

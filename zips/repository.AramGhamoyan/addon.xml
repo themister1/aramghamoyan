@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.29" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.30" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
+			<import addon="plugin.video.my-hit.ru" />
 			<import addon="repository.Dixie-Deans-XBMC-Repo" />
 			<import addon="repository.dokinl" />
 			<import addon="repository.eldorado" />
