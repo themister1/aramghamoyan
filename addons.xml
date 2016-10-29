@@ -217,27 +217,13 @@
 	</extension>
 </addon>
 
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.33" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.40" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
 			<import addon="script.icechannel" />
 			<import addon="plugin.video.my-hit.ru" />
-			<import addon="repository.dokinl" />
-			<import addon="repository.eldorado" />
-			<import addon="repository.entertainmentrepobackup" />
-			<import addon="repository.exodus" />
-			<import addon="repository.filmkodi.com" />
-			<import addon="repository.kaosbox2" />
-			<import addon="repository.Kinkin" />
-			<import addon="repository.filmkodi.com" />
-			<import addon="repository.metalkettle" />
-			<import addon="repository.q" />
-			<import addon="repository.ru" />
 			<import addon="repository.schismtvaddons" />
-			<import addon="repository.seppius" />
-			<import addon="repository.xbmc.org" />
 			<import addon="repository.xunitytalk" />
-			<import addon="repository.xvbmc" />
         </requires>
         <extension point="xbmc.addon.repository" name="Galaxy Repo">
             <info compressed="false">https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/addons.xml</info>
