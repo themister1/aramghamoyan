@@ -217,11 +217,11 @@
 	</extension>
 </addon>
 
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.50" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.60" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
 			<import addon="script.icechannel" version="1.0.0.50"/>
-			<import addon="repository.istream" />
+			<import addon="repository.istream" version="10.2"/>
         </requires>
         <extension point="xbmc.addon.repository" name="Galaxy Repo">
             <info compressed="false">https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/addons.xml</info>
