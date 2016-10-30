@@ -217,13 +217,11 @@
 	</extension>
 </addon>
 
-    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.40" provider-name="Aram Ghamoyan">
+    <addon id="repository.AramGhamoyan" name="Aram Ghamoyan Repository" version="1.0.50" provider-name="Aram Ghamoyan">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
-			<import addon="script.icechannel" />
-			<import addon="plugin.video.my-hit.ru" />
-			<import addon="repository.schismtvaddons" />
-			<import addon="repository.xunitytalk" />
+			<import addon="script.icechannel" version="1.0.0.50"/>
+			<import addon="repository.istream" />
         </requires>
         <extension point="xbmc.addon.repository" name="Galaxy Repo">
             <info compressed="false">https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/addons.xml</info>
@@ -342,6 +340,24 @@
 		<description lang="pl">Wtyczki z nieoficjalnego, repozytorium polskiego mrknow.pl..</description>
 		<disclaimer lang="en">Repository has non-comercial nature. Created by enthusiasts, acting in good faith.</disclaimer>
 		<disclaimer lang="pl">Zawartość repozytorium ma charakter niekomercyjny, wtyczki tworzone przez pasjonatów, .</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.istream" name="iSTREAM XBMC Addons Repository" version="10.2" provider-name="iSTREAM">
+	<extension point="xbmc.addon.repository" name="iSTREAM">
+	<dir>
+		<info compressed="false">http://istreamrepo.me/istream/repo/addons.xml</info>
+		<checksum>http://istreamrepo.me/istream/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://istreamrepo.me/istream/repo/zips</datadir>
+	</dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>iSTREAM XBMC Addons and Extensions</summary>
+		<description>iSTREAM XBMC Addons and Extensions</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -793,6 +809,276 @@
     <extension point="xbmc.addon.metadata">
 		<summary lang="en">iSTREAM</summary>
 		<description lang="en">iSTREAM</description>
+		<platform></platform>
+		<language></language>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<email></email>
+    </extension>
+</addon>
+
+<addon id="script.icechannel.extn.common" version="0.2.7" name="iSTREAM - Common" provider-name="iSTREAM">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension library="default.py" point="xbmc.service" />
+    <extension point="xbmc.addon.metadata">
+		<summary lang="en">iSTREAM - Common</summary>
+		<description lang="en">iSTREAM - Common</description>
+		<platform></platform>
+		<language></language>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<email></email>
+    </extension>
+</addon>
+
+<addon id="script.icechannel.extn.xunity.tv.common" version="0.0.5" name="Xunity TV - Common" provider-name="xunity.tv">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension library="default.py" point="xbmc.service" />
+    <extension point="xbmc.addon.metadata">
+		<summary lang="en">Xunity TV - Common</summary>
+		<description lang="en">Xunity TV - Common</description>
+		<platform></platform>
+		<language></language>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<email></email>
+    </extension>
+</addon>
+
+<addon id="script.icechannel.extn.xunitytalk" version="0.8.8" name=".[COLOR blue]X[/COLOR]unity Talk iStream Extensions" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension library="default.py" point="xbmc.service" />
+		<summary lang="en">iStream Extensions by xunitytalk.com</summary>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+		<description lang="en">iStream Extensions by Xunity Talk Movies Tv Shows Kids Live</description>
+		<!--<provides>video</provides>-->
+		<platform></platform>
+		<language></language>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<email></email>
+    </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+</addon>
+
+<addon id="script.icechannel.IceFilms.settings" version="0.0.2" name="iStream - IceFilms" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - IceFilms - Settings </summary>
+<description lang="en">iStream - IceFilms - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.IMDb.settings" version="0.0.2" name="iStream - IMDb" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - IMDb - Settings </summary>
+<description lang="en">iStream - IMDb - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.iStream.about.settings" version="0.0.2" name="iStream - About" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - About - Settings </summary>
+<description lang="en">iStream - About - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.iStream.internetconnection.settings" version="0.0.2" name="iStream - Internet Connection" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - Internet Connection - Settings </summary>
+<description lang="en">iStream - Internet Connection - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.iStream.lists.settings" version="0.0.2" name="iStream - iWatch" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - iWatch - Settings </summary>
+<description lang="en">iStream - iWatch - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.iStream.movies.settings" version="0.0.2" name="iStream - Movies" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - Movies - Settings </summary>
+<description lang="en">iStream - Movies - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.iStream.tv_shows.settings" version="0.0.2" name="iStream - TV Shows" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - TV Shows - Settings </summary>
+<description lang="en">iStream - TV Shows - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.iStream.xbmcintegration.settings" version="0.0.2" name="iStream - XBMC Integration" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - XBMC Integration - Settings </summary>
+<description lang="en">iStream - XBMC Integration - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.ororo.settings" version="0.0.2" name="iStream - ororo" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - ororo - Settings </summary>
+<description lang="en">iStream - ororo - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.primewireag.settings" version="0.0.2" name="iStream - primewireag" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - primewireag - Settings </summary>
+<description lang="en">iStream - primewireag - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.superchillin.settings" version="0.0.2" name="iStream - superchillin" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - superchillin - Settings </summary>
+<description lang="en">iStream - superchillin - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.tmdb.settings" version="0.0.2" name="iStream - tmdb" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - tmdb - Settings </summary>
+<description lang="en">iStream - tmdb - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.icechannel.trakt.settings" version="0.0.2" name="iStream - trakt" provider-name="iStream">
+<extension point="xbmc.python.pluginsource" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en">iStream - trakt - Settings </summary>
+<description lang="en">iStream - trakt - Settings </description>
+<platform></platform>
+<language></language>
+<license></license>
+<forum></forum>
+<website></website>
+<source></source>
+<email></email>
+</extension>
+</addon>
+
+<addon id="script.istream.dialogs" version="0.1.15" name="iSTREAM Custom Windows and Dialogs" provider-name="iSTREAM">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+		<summary lang="en">iSTREAM Custom Windows and Dialogs</summary>
+		<description lang="en">Custom UI (Windows and Dialogs) for iSTREAM</description>
 		<platform></platform>
 		<language></language>
 		<license></license>
