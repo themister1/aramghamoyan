@@ -1308,13 +1308,9 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="0.0.90" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.120" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
-        <import addon="plugin.video.merojax.tv" />
-		<import addon="plugin.video.HAYboxYouTube" />
-		<import addon="plugin.video.TVGuideRussia" />
-		<import addon="script.hayboxnews" />
     </requires>
     <extension
             point="xbmc.gui.skin"
