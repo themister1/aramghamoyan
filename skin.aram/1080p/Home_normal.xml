@@ -139,10 +139,10 @@
 					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.TVGuideRussia/?fanart&amp;mode=245&amp;name=TV%20Guide%20Russia&amp;url=https%3a%2f%2ftv.yandex.ru&quot;,return)</onclick>
 				</item>				
 				<item id="403" description="Custom addon">
-                    <thumb>special://home/addons\skin.aram\icons\\info.png</thumb>
+                    <thumb>special://home/addons\skin.aram\icons\\fav.png</thumb>
                     <label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.1.label))][/COLOR]</label2>
                     <label></label>
-                    <onclick>PlayMedia(&quot;plugin://script.hayboxnews/?url=url&amp;mode=11&amp;name=%5BB%5DHAYbox+Info%5B%2FB%5D&quot;)</onclick>
+                    <onclick>ActivateWindow(134)</onclick>
                 </item>					
 				<item id="401" description="Custom addon">
                     <thumb>special://home/addons\skin.aram\icons\\merojax.png</thumb>
