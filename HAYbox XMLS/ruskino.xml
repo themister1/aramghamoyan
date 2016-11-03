@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
  
 <item>
-	<title>ADDON TITEL</title>
+	<title>1. VKontakte [COLOR red](Account Nodig!)[/COLOR]</title>
 	<link>https://ignorme</link>
-	<jsonrpc>https://ignorme</jsonrpc>
-	<thumbnail>https://ignorme</thumbnail>
-	<fanart>https://ignorme</fanart>
+	<jsonrpc>plugin://xbmc-vk.svoka.com</jsonrpc>
+	<thumbnail>https://superrepo.org/static/images/icons/original/xxbmc-vk.svoka.com.png.pagespeed.ic.VX_Lpmk59j.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Splash.png</fanart>
 <item>
 
+<item>
+	<title>2. My-Hit.org[/COLOR]</title>
+	<link>https://ignorme</link>
+	<jsonrpc>plugin://plugin.video.my-hit.org</jsonrpc>
+	<thumbnail>http://yousmi.by/images/content/1286863114534.jpg</thumbnail>
+	<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Splash.png</fanart>
+<item>
  
 </items>
