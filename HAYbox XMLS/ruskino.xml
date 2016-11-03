@@ -15,5 +15,13 @@
 	<thumbnail>http://yousmi.by/images/content/1286863114534.jpg</thumbnail>
 	<fanart>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/Splash.png</fanart>
 <item>
+
+<item>
+	<title>Salts HD lite by XvBMC</title>
+	<link>http://ignoreme</link>
+	<jsonrpc>plugin://plugin.video.saltshd.lite</jsonrpc>
+	<thumbnail>https://raw.githubusercontent.com/XvBMC/repository.xvbmc/master/plugin.video.saltshd.lite/icon.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/XvBMC/repository.xvbmc/master/plugin.video.saltshd.lite/fanart.jpg</fanart>
+<item>
  
 </items>
