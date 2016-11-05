@@ -1308,7 +1308,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aram" version="0.0.130" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.135" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
     </requires>

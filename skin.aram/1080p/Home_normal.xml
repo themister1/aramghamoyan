@@ -221,6 +221,11 @@
                     <label></label>
                     <onclick condition="Player.HasMedia">Fullscreen</onclick>
                 </item>
+                <item id="350">
+                    <thumb>special://home/addons\skin.aram\icons\stop.png</thumb>
+                    <label></label>
+                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
+                </item>				
             </content>
         </control>
         <include>weather_shelf</include>
@@ -255,6 +260,7 @@
 	 <include>SETBACK</include>
 	 <include>DOORGAAN</include>
 	 <include>EXITBACK</include>
+	 <include>STOP</include>	 
 	    </control>
         <control type="group" description="Player Info">
             <visible>Player.HasAudio</visible>
@@ -312,7 +318,7 @@
 				<centerright>-88</centerright>
                 <height>45</height>
                 <font>size30</font>
-                <label>[COLOR black]$INFO[System.Time] $INFO[System.Date][/COLOR]</label>
+                <label>[COLOR white]$INFO[System.Time] $INFO[System.Date][/COLOR]</label>
             </control>
         <control type="label" description="Top Label">
             <include>ShelfFade</include>

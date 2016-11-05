@@ -12,7 +12,19 @@
 	<textcolor>black</textcolor>
     </include>
     
-   
+     <include name="STOP">
+         <control type="group">
+            <visible>[Container(9000).HasFocus(350)]</visible>
+             <control type="image">
+                <posx>0</posx>
+                <top>0</top>
+                <width>1920</width>
+                <height>490</height>
+                <texture background="false">special://home/addons\skin.aram\backgrounds\banner.png</texture>
+            </control>           
+        </control>
+    </include>
+	
     <include name="FAV01">
          <control type="group">
             <visible>[Container(9000).HasFocus(502)]</visible>
