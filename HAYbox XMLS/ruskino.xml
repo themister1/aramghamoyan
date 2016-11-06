@@ -1,6 +1,0 @@
-<favourites>
-    <favourite name="1. VKontakte [COLOR red](Account Nodig!)[/COLOR]" thumb="special://home/addons\xbmc-vk.svoka.com\icon.png">ActivateWindow(10025,&quot;plugin://xbmc-vk.svoka.com/?content_type=video&quot;,return)</favourite>
-    <favourite name="2. My-Hit.org" thumb="special://home/addons\plugin.video.my-hit.ru\icon.png">ActivateWindow(10025,&quot;plugin://plugin.video.my-hit.ru/&quot;,return)</favourite>
-    <favourite name="3. Filmix.Net" thumb="special://home/addons\plugin.video.filmix.net.dev\icon.png">ActivateWindow(10025,&quot;plugin://plugin.video.filmix.net.dev/&quot;,return)</favourite>
-    <favourite name="4. [COLOR FFFFFFFF]Kinolist.net[/COLOR]" thumb="special://home/addons\plugin.video.kinolist.net\icon.png">ActivateWindow(10025,&quot;plugin://plugin.video.kinolist.net/&quot;,return)</favourite>
-</favourites>
