@@ -133,6 +133,11 @@
 					<onclick>ActivateWindow(TvChannels)</onclick>
 					<visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
 				</item>
+				<item id="120" description="Custom script">
+					<thumb>special://home/addons\skin.aram\icons\nltv.png</thumb>
+					<label></label>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.NLTV/?content_type=video&quot;,return)</onclick>
+				</item>				
 				<item id="353" description="Custom script">
 					<thumb>special://home/addons\skin.aram\icons\gids.png</thumb>
 					<label></label>
@@ -260,7 +265,8 @@
 	 <include>SETBACK</include>
 	 <include>DOORGAAN</include>
 	 <include>EXITBACK</include>
-	 <include>STOP</include>	 
+	 <include>STOP</include>
+	<include>NLTV</include>
 	    </control>
         <control type="group" description="Player Info">
             <visible>Player.HasAudio</visible>
