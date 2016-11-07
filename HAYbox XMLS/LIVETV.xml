@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <item>
-	<title>Sky Sports 1</title>
-	<link>http://ignorme</link>
-	<f4m>http://89.40.71.245:8081/live/239006.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTI6MTYgUE0maGFzaF92YWx1ZT15dktXanZ4a3U4OUlkMHJTV0NMYmFnPT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTdlY2NkMTU4ZmY5Zg==</f4m>
+	<title>BEIN Sports 1HD</title>
+	<link>http://134.19.187.52:8081/live/mamahdbeinfr1.m3u8?e=1478533645&st=k1-MIsy_j9pA93t8c0ANWA</link>
 	<thumbnail>https://ignorme</thumbnail>
 	<fanart>https://ignorme</fanart>
 <item>
