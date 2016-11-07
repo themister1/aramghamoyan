@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
+<item>
+	<title>Sky Sports 1</title>
+	<link>http://89.40.71.245:8081/live/239006.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTI6MTYgUE0maGFzaF92YWx1ZT15dktXanZ4a3U4OUlkMHJTV0NMYmFnPT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTdlY2NkMTU4ZmY5Zg==</link>
+	<thumbnail>https://ignorme</thumbnail>
+	<fanart>https://ignorme</fanart>
+<item>
+
+<item>
+	<title>Sky Sports 2</title>
+	<link>http://89.40.71.243:8081/live/238970.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTU6MTIgUE0maGFzaF92YWx1ZT1LQ1prRmE0eU1PMGl1U1dVMFpCRnVRPT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTVjMjU1MGNkZjU2OA==</link>
+	<thumbnail>https://ignorme</thumbnail>
+	<fanart>https://ignorme</fanart>
+<item>
+
+<item>
+	<title>Sky Sports 3</title>
+	<link>http://185.163.109.89:8081/live/238997.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTY6MTkgUE0maGFzaF92YWx1ZT1LMTNDbm56L2VwRC9lTWRZdWpLQTJnPT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTY1MWY2Y2M4MGVhOQ==</link>
+	<thumbnail>https://ignorme</thumbnail>
+	<fanart>https://ignorme</fanart>
+<item>
+
+<item>
+	<title>Sky Sports 4</title>
+	<link>http://89.40.71.244:8081/live/238992.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTc6NDUgUE0maGFzaF92YWx1ZT01WnF0My9TWkQ3T3hxYUNPZUlaNFR3PT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTVjMjU1MzA2YTJjNQ==</link>
+	<thumbnail>https://ignorme</thumbnail>
+	<fanart>https://ignorme</fanart>
+<item>
  
 <item>
-	<title>[COLOR red]BINNENKORT KOMEN HIER ALLE SPORT KANALEN[/COLOR]</title>
-	<link>http://ignorme</link>
-	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/2000px-Flag_of_the_Netherlands.svg.png</thumbnail>
+	<title>Sky Sports 5</title>
+	<link>http://185.45.13.179:8081/live/238899.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTg6NDYgUE0maGFzaF92YWx1ZT0xMGlRK0FvNUNSeHBpNlp4NWxKcHJRPT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTVjMjU1NDBiMGY5Yg==</link>
+	<thumbnail>https://ignorme</thumbnail>
+	<fanart>https://ignorme</fanart>
+<item>
+
+<item>
+	<title>Sky Sports F1</title>
+	<link>http://185.45.13.179:8081/live/238993.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvNy8yMDE2IDc6MTk6NDggUE0maGFzaF92YWx1ZT1UTjBLT2VSWkwyOTgrNG5MTm40S2JnPT0mdmFsaWRtaW51dGVzPTI=&wmsAuthSign2=NTVjMzgwNTAyNWNjNQ==</link>
+	<thumbnail>https://ignorme</thumbnail>
 	<fanart>https://ignorme</fanart>
 <item>
 
