@@ -67,19 +67,12 @@
 </item>
 
 <item>
-<name>[COLOR lime]*****DOKI HOLLAND*****[/COLOR] [COLOR red*****Channel*****[/COLOR]</name>
+<name>SPORTS TV</name>
 <thumbnail>https://raw.githubusercontent.com/doki1/build/master/plugin.program.dokiinstaller/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/doki1/build/master/plugin.program.dokiinstaller/fanart.jpg</fanart>
-<ytch>UCAIB9JsLfsleqmsbLDpIlzg</ytch>
-<externallink>https://ignorme</externallink>
+<link>http://ignorme</link>
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/LIVETV.xml</externallink>
 </item>
 
-<item>
-<name>[COLOR lime]*****XvBMC Nederland*****[/COLOR] [COLOR red*****Channel*****[/COLOR]</name>
-<thumbnail>https://yt3.ggpht.com/-Kyyiux7fXFo/AAAAAAAAAAI/AAAAAAAAAAA/YdLc90hVGO8/s100-c-k-no-rj-c0xffffff/photo.jpg</thumbnail>
-<fanart>https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/12733411_935231533239439_3372156148203112944_n.jpg?oh=7464e637c2dbecd787a63e9c1f9cac7d&oe=580BBD0E</fanart>
-<ytch>UC6eXWQMFBVvASRag_VKfIBQ</ytch>
-<externallink>https://ignorme</externallink>
-</item>
 
 </items>
