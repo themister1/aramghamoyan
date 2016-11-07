@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-<items>
-
+ 
 <item>
-	<title>[COLOR red][B]AL DEZE ZENDERS ZIJN GRATIS!![/B][/COLOR]</title>
-	<link>http://ignorme</link>
-	<thumbnail>https://ignorme</thumbnail>
-	<fanart>https://ignorme</fanart>
-<item>
-
-<item>
-	<title>[COLOR red][B]Nederlandse Zender[/B][/COLOR]</title>
+	<title>[COLOR red]BINNENKORT KOMEN HIER ALLE SPORT KANALEN[/COLOR]</title>
 	<link>http://ignorme</link>
 	<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/nliptv.xml</externallink>
 	<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/2000px-Flag_of_the_Netherlands.svg.png</thumbnail>
