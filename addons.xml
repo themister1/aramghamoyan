@@ -169,6 +169,22 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.9" provider-name="Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader - downloaded for free from:
+http://www.hometheater.co.il</summary>
+    <description lang="en">Playlist Loader - downloaded for free from:
+http://www.hometheater.co.il</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.TVGuideRussia"
        name="TVGuideRussia"
        version="1.0.8"
@@ -1369,9 +1385,10 @@
 	</assets>
 </addon>
 
-<addon id="skin.aram" version="0.0.150" name="HAYbox Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="0.0.155" name="HAYbox Skin" provider-name="Aram Ghamoyan">
     <requires>
         <import addon="plugin.video.youtube" />
+		<import addon="plugin.video.playlistLoader" />
     </requires>
     <extension
             point="xbmc.gui.skin"
