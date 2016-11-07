@@ -136,7 +136,7 @@
 				<item id="120" description="Custom script">
 					<thumb>special://home/addons\skin.aram\icons\nltv.png</thumb>
 					<label></label>
-					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.NLTV/?content_type=video&quot;,return)</onclick>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.nlzone/?fanart=hhttps%3a%2f%2fraw.githubusercontent.com%2fDutchZone%2fDutchZone%2fmaster%2fdutchyoutubechannels%2520xmls%2ffanart.jpg&amp;mode=1&amp;name=SPORTS%20TV&amp;url=https%3a%2f%2fraw.githubusercontent.com%2faramghamoyan%2faramghamoyan%2fmaster%2fHAYbox%2520XMLS%2fLIVETV.xml&quot;,return)</onclick>
 				</item>				
 				<item id="353" description="Custom script">
 					<thumb>special://home/addons\skin.aram\icons\gids.png</thumb>
