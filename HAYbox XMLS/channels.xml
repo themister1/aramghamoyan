@@ -2,7 +2,28 @@
 <?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>                                                                                                                                                                         <item>
 
 <item>
-<title>[B][COLOR red]ALLE NEDERLANDSE KANALEN[/COLOR] [COLOR blue](OOK SPORT KANALEN)[/COLOR][/B]</title>
+<title>[B][COLOR white]UPDATED: 8-11-2016[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>
+<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>http://ignorme</link>
+</item>
+
+<item>
+<title>[B][COLOR white]LET OP: ALL DEZE KANALEN ZIJN GRATIS[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>
+<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>http://ignorme</link>
+</item>
+
+<item>
+<title>[B][COLOR white]DUS ZE KUNNEN HET SOMS NIET DOEN[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>
+<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>http://ignorme</link>
+</item>
+	
+<item>
+<title>[B][COLOR white]ALLE NEDERLANDSE KANALEN[/COLOR] [COLOR red](OOK SPORT KANALEN)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -19,7 +40,7 @@
 </item>
 	
 <item>
-<title>[B][COLOR red]ALLE UNITED KINGDOM KANALEN[/COLOR] [COLOR blue](OOK SPORT KANALEN)[/COLOR][/B]</title>
+<title>[B][COLOR white]ALLE UNITED KINGDOM KANALEN[/COLOR] [COLOR red](OOK SPORT KANALEN)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -36,7 +57,7 @@
 </item>
 
 <item>
-<title>[B][COLOR red]ALLE DUITSE KANALEN[/COLOR] [COLOR blue](OOK SPORT KANALEN)[/COLOR][/B]</title>
+<title>[B][COLOR white]ALLE DUITSE KANALEN[/COLOR] [COLOR red](OOK SPORT KANALEN)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
