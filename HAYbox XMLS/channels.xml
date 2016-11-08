@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
+
+<items> 
+
+<item>
+<title>[B][COLOR red]ENGLISH CHANNELS[/COLOR][/B]</title>
+<link>http://ignora.me</link>                                                                                                                               
+<externallink>http://freedomiptv.tk/FREEDOMUK.xml</externallink>                                                                                              
+ <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>                                                                                                         
+ <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[B][COLOR red]ESPANOL CHANNELS[/COLOR][/B]</title>
+<link>http://ignora.me</link>                                                                                                                               
+<externallink>http://freedomiptv.tk/FREEDOMESP.xml</externallink>                                                                                             
+ <thumbnail>http://freedomiptv.tk/fistesp.png</thumbnail>                                                                                                          
+ <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+</item> 
+
+<item>
+<title>[B][COLOR red]SPORTS CHANNELS[/COLOR][/B]</title>
+<link>http://ignora.me</link>                                                                                                                               
+<externallink>http://freedomiptv.tk/FREEDOMSPORTSMENU.xml</externallink>                                                                                       
+<thumbnail>http://freedomiptv.tk/fistsports.png</thumbnail>                                                                                                         
+ <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+</item>  
+
+<item>
+<title>[B][COLOR red]OVERIGE CHANNELS[/COLOR][/B]</title>
+<link>http://ignora.me</link>                                                                                                                               
+<externallink>http://pastebin.com/raw/dckffjfe</externallink>                                                                                                  
+<thumbnail>http://freedomiptv.tk/fisttotal.png</thumbnail>                                                                                                       
+<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+</item> 
+
+<item>
+<title>[B][COLOR red]OVERIGE CHANNELS[/COLOR][/B]</title>
+<link>http://ignora.me</link>                                                                                                                               
+<externallink>http://maddogtv.comxa.com/STREAMS/MDIPTVTotalplay.m3u</externallink>                                                                             
+<thumbnail>http://freedomiptv.tk/fisttotal.png</thumbnail>                                                                                                       
+<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>*[B][COLOR white] FREEDOM[COLOR dodgerblue] IPTV[COLOR red]  TESTING[COLOR limegreen][/COLOR][/B]</title>                                                
+<thumbnail>http://freedomiptv.tk/fisttest.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+     <title> [COLOR white]FREEDOM[COLOR red] TESTING[/COLOR]    ( [makelist.param1] )  </title>
+    <link>NA</link>
+    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
+]]></listrepeat>
+<expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
+<page>http://www.m3uliste.pw/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://freedomiptv.tk/fisttest.png</thumbnail>
+<fanart>http://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+</item>                                                                                                                                                                                                                                                                                                                                            </items>
+		
+		
+</channel>  
