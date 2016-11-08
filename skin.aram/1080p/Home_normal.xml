@@ -136,7 +136,7 @@
 				<item id="120" description="Custom script">
 					<thumb>special://home/addons\skin.aram\icons\nltv.png</thumb>
 					<label></label>
-					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.playlistLoader/?iconimage&amp;index=0&amp;logos&amp;mode=2&amp;move=0&amp;name=%5bCOLOR%20blue%5d%5bSportsTV%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2fpastebin.com%2fraw%2fVtExDja9&quot;,return)</onclick>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.freetv/?fanart=http%3a%2f%2ffreedomiptv.tk%2ffanart.jpg&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20white%5d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%5bCOLOR%20dodgerblue%5dENTER%20HERE%5bCOLOR%20white%5d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=https%3a%2f%2fraw.githubusercontent.com%2faramghamoyan%2faramghamoyan%2fmaster%2fHAYbox%2520XMLS%2fchannels.xml&quot;,return)</onclick>
 				</item>				
 				<item id="353" description="Custom script">
 					<thumb>special://home/addons\skin.aram\icons\gids.png</thumb>
@@ -179,17 +179,17 @@
 					<label></label>
 					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Films &amp; Series&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CFilms%20%26%20Series&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.exodus%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
 				</item>
-				<item id="408" description="Custom addon">
-					<thumb>special://home/addons\skin.aram\icons\kids.png</thumb>
-					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.8.label))][/COLOR]</label2>
-					<label></label>
-					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Kids&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CKids&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.tbh.kidswb%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
-				</item>
 				<item id="409" description="Custom addon">
 					<thumb>special://home/addons\skin.aram\icons\Sports.png</thumb>
 					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.9.label))][/COLOR]</label2>
 					<label></label>
 					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Sport&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CSport&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.clubtv%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>				
+				<item id="408" description="Custom addon">
+					<thumb>special://home/addons\skin.aram\icons\kids.png</thumb>
+					<label2>[COLOR white]$INFO[system.addonicon(Skin.String(HomeAddon.8.label))][/COLOR]</label2>
+					<label></label>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Kids&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CKids&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.tbh.kidswb%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
 				</item>
 				<item id="410" description="Custom addon">
 					<thumb>special://home/addons\skin.aram\icons\music.png</thumb>
