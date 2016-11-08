@@ -6,7 +6,7 @@
 <item>
 <title>[B][COLOR red]ENGLISH CHANNELS[/COLOR][/B]</title>
 <link>http://ignora.me</link>                                                                                                                               
-<externallink>http://freedomiptv.tk/FREEDOMUK.xml</externallink>                                                                                              
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/engels.xml</externallink>                                                                                              
  <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>                                                                                                         
  <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 </item>
@@ -14,26 +14,10 @@
 <item>
 <title>[B][COLOR red]SPORTS CHANNELS[/COLOR][/B]</title>
 <link>http://ignora.me</link>                                                                                                                               
-<externallink>http://freedomiptv.tk/FREEDOMSPORTSMENU.xml</externallink>                                                                                       
+<externallink>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/sports.xml</externallink>                                                                                       
 <thumbnail>http://freedomiptv.tk/fistsports.png</thumbnail>                                                                                                         
  <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 </item>  
-
-<item>
-<title>[B][COLOR red]OVERIGE CHANNELS[/COLOR][/B]</title>
-<link>http://ignora.me</link>                                                                                                                               
-<externallink>http://pastebin.com/raw/dckffjfe</externallink>                                                                                                  
-<thumbnail>http://freedomiptv.tk/fisttotal.png</thumbnail>                                                                                                       
-<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-</item> 
-
-<item>
-<title>[B][COLOR red]OVERIGE CHANNELS[/COLOR][/B]</title>
-<link>http://ignora.me</link>                                                                                                                               
-<externallink>http://maddogtv.comxa.com/STREAMS/MDIPTVTotalplay.m3u</externallink>                                                                             
-<thumbnail>http://freedomiptv.tk/fisttotal.png</thumbnail>                                                                                                       
-<fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-</item>
 
 </items>
 		
