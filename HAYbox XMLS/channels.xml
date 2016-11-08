@@ -2,7 +2,7 @@
 <?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>                                                                                                                                                                         <item>
 
 <item>
-<title>[B][COLOR red]ALLE NEDERLANDSE KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR red]ALLE NEDERLANDSE KANALEN[/COLOR] [COLOR blue](OOK SPORT KANALEN)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -19,7 +19,7 @@
 </item>
 	
 <item>
-<title>[B][COLOR red]ALLE UNITED KINGDOM KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR red]ALLE UNITED KINGDOM KANALEN[/COLOR] [COLOR blue](OOK SPORT KANALEN)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -36,7 +36,7 @@
 </item>
 
 <item>
-<title>[B][COLOR red]ALLE DUITSE KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR red]ALLE DUITSE KANALEN[/COLOR] [COLOR blue](OOK SPORT KANALEN)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
