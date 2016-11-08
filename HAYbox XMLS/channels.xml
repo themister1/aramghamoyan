@@ -43,25 +43,7 @@
 <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 </item>
 
-<item>
-<title>*[B][COLOR white] FREEDOM[COLOR dodgerblue] IPTV[COLOR red]  TESTING[COLOR limegreen][/COLOR][/B]</title>                                                
-<thumbnail>http://freedomiptv.tk/fisttest.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-     <title> [COLOR white]FREEDOM[COLOR red] TESTING[/COLOR]    ( [makelist.param1] )  </title>
-    <link>NA</link>
-    <externallink>[makelist.param1][DE]$$TSDOWNLOADER$$</externallink>
-]]></listrepeat>
-<expres>>(http:\/\/(.*?)\/.*?get.php.*?)&lt;</expres>
-<page>http://www.m3uliste.pw/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://freedomiptv.tk/fisttest.png</thumbnail>
-<fanart>http://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-</item>                                                                                                                                                                                                                                                                                                                                            </items>
+</items>
 		
 		
 </channel>  
