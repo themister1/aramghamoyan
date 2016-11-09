@@ -2,7 +2,7 @@
 <?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>                                                                                                                                                                         <item>
 
 <item>
-<title>[B][COLOR red]UPDATED: 9-11-2016 || 21:43[/COLOR][/B]</title>
+<title>[B][COLOR red]UPDATED: 9-11-2016 || 22:00[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>
 <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>http://ignorme</link>
@@ -37,7 +37,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
 	<title>[makelist.param1]</title>
-	<link>[makelist.param2]</link>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,(.*?)\n(.*)</expres>
