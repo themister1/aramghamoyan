@@ -1,20 +1,795 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>  
-<item>
+<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
+
+
+ 
+<items>
 
 <item>
-<title>[B][COLOR white]ABBONOMENT;[/COLOR] [COLOR dodgerblue]ARAM GHAMOYAN[/COLOR][/B]</title>
-<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-<link>$doregex[makelist]</link>
+<title>BEIN ñ</title>                                                                                                                                              <link>http://latino-webtv.ml:8880/beinhd/playlist.m3u8</link>                                                                                                  <thumbnail>http://3.bp.blogspot.com/-nFMVLo4r728/VlNtRStYqHI/AAAAAAAABe0/rlV5EVt1D0M/s1600/Pirlo%2Btv%2Ben%2Bvivo%2BGratis%2BbeIN%2BSports%2Bonline.jpg</thumbnail>    <fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jp</fanart>
+</item>
+
+
+
+
+
+
+<item>
+<title>BEIN SPORT HD</title>
+<link>$doregex[select_Url]</link>
 <regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-	<title>[makelist.param1]</title>
-	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
-	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-]]></listrepeat>
-<expres>#EXTINF:-o,(.*?)\n(.*)</expres>
-<page>http://pastebin.com/raw/TDrdA6rg</page>
-<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>BEIN SPORT 1 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+<item>
+<title>BEIN SPORT 2 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+
+<item>
+<title>BEIN SPORT 3 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports3.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports3.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+
+<item>
+<title>BEIN SPORT 4 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports4.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports4.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+
+<item>
+<title>BEIN SPORT 5 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports5.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports5.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+
+<item>
+<title>BEIN SPORT 6 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports6.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports6.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+
+<item>
+<title>BEIN SPORT 7 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports7.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports7.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+  </item>
+
+
+
+<item>
+<title>BEIN SPORT 8 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports8.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports8.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>BEIN SPORT 9 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports9.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/beinsports9.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</thumbnail>
+<fanart>http://s03.s3c.es/imag/_v0/640x300/5/3/4/bein-sports.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>CANAL + LIGA HD</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.abonateadigitalplus.es/canal-plus-liga1.jpg</thumbnail>
+<fanart>https://pbs.twimg.com/profile_images/3261903068/8b8ca1d66bf686faa9cb7aa859cfaff5.jpeg</fanart>
+</item>
+
+
+<item>
+<title>CANAL + LIGA</title>
+<sportsdevil>http://verdirectotv.com/tv/deportes2/plusliga.html</sportsdevil>
+<referer>http://verdirectotv.com/</referer>
+<thumbnail>http://www.abonateadigitalplus.es/canal-plus-liga1.jpg</thumbnail>
+<fanart>https://pbs.twimg.com/profile_images/3261903068/8b8ca1d66bf686faa9cb7aa859cfaff5.jpeg</fanart>
+</item>
+
+
+<item>
+<title>C+ PLUS FUTBOL</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://i.ytimg.com/vi/B2PrZn-SI7c/maxresdefault.jpg</thumbnail>
+<fanart>http://i.ytimg.com/vi/B2PrZn-SI7c/maxresdefault.jpg</fanart>
+</item>
+
+
+<item>
+<title>C+ PLUS FUTBOL opc2</title>
+<sportsdevil>http://cinestrenostv.tv/canales/emision1/plusfutbol.html</sportsdevil>
+<referer>http://cinestrenostv.tv/</referer>
+<thumbnail>http://i.ytimg.com/vi/B2PrZn-SI7c/maxresdefault.jpg</thumbnail>
+<fanart>http://i.ytimg.com/vi/B2PrZn-SI7c/maxresdefault.jpg</fanart>
+</item>
+
+
+<item>
+<title>C+ DEPORTE</title>
+<sportsdevil>http://cinestrenostv.tv/canales/emision/plusdeportes.html</sportsdevil>
+<referer>http://cinestrenostv.tv/</referer>
+<thumbnail>http://3.bp.blogspot.com/-rOsfBHt7XIU/UQMlgPaSqNI/AAAAAAAAAI0/H5YNeFSW-do/s1600/plus-deportes.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-rOsfBHt7XIU/UQMlgPaSqNI/AAAAAAAAAI0/H5YNeFSW-do/s1600/plus-deportes.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>FORMULA 1</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/formula1.php</sportsdevil>
+<referer>http://cinestrenostv.tv/</referer>
+<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUABBEQvtEXaCC46zudyyr0q0_7cEppxftAi09OtikCqVg7zDG</thumbnail>
+<fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUABBEQvtEXaCC46zudyyr0q0_7cEppxftAi09OtikCqVg7zDG</fanart>
+</item>
+
+
+
+<item>
+<title>MOTOS GP</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/motogp.php</sportsdevil>
+<referer>http://cinestrenostv.tv/</referer>
+<thumbnail>https://lh3.googleusercontent.com/-CNXmnUpRCwo/AAAAAAAAAAI/AAAAAAAAAAA/OmUjp85j9Ac/photo.jpg</thumbnail>
+<fanart>https://lh3.googleusercontent.com/-CNXmnUpRCwo/AAAAAAAAAAI/AAAAAAAAAAA/OmUjp85j9Ac/photo.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>C+ GOLF</title>
+<sportsdevil>http://cinestrenostv.tv/canales/emision1/plusgolf.html</sportsdevil>
+<referer>http://cinestrenostv.tv/</referer>
+<thumbnail>http://www.plus.es/recorte/m-NEO/guianeo/GOLF+.png</thumbnail>
+<fanart>http://www.plus.es/recorte/m-NEO/guianeo/GOLF+.png</fanart>
+</item>
+
+
+<item>
+ <title>EUROSPORT 2</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/eurosport2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/eurosport2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.bowling-mv.de/typo3temp/pics/880bb9e9a0.jpg</thumbnail>
+<fanart>http://www.bowling-mv.de/typo3temp/pics/880bb9e9a0.jpg</fanart>
+  </item>
+
+
+<item>
+ <title>WWE</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/wwenetwork.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/wwenetwork.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://media1.santabanta.com/full1/Sports/WWE/wwe-143a.jpg</thumbnail>
+<fanart>http://media1.santabanta.com/full1/Sports/WWE/wwe-143a.jpg</fanart>
+  </item>
+
+
+
+
+<item>
+ <title>SKY SPORTS 1</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</thumbnail>
+<fanart>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</fanart>
+  </item>
+
+
+<item>
+ <title>SKY SPORTS 2 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</thumbnail>
+<fanart>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</fanart>
+  </item>
+
+
+
+<item>
+ <title>SKY SPORTS 3</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports3.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports3.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</thumbnail>
+<fanart>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</fanart>
+  </item>
+
+
+
+<item>
+ <title>SKY SPORTS 4 </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports4.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports4.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</thumbnail>
+<fanart>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</fanart>
+  </item>
+
+
+
+<item>
+ <title>SKY SPORTS 5</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports5.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports5.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</thumbnail>
+<fanart>http://www.userlogos.org/files/logos/zeppelin0291/sky%20sports%20football.png</fanart>
+  </item>
+
+
+
+<item>
+ <title>ESPN CLASSIC</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.embeducaster.com/membedplayer/espn2016/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.embeducaster.com</referer>
+			</regex>
+<thumbnail>http://www.cablevisionadsales.com/wp-content/uploads/espn_classic.gif</thumbnail>
+<fanart>http://www.cablevisionadsales.com/wp-content/uploads/espn_classic.gif</fanart>
+</item>
+
+
+
+<item>
+ <title>REAL MADRID</title>
+ <link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8</link>
+<thumbnail>https://lh3.googleusercontent.com/-cFgy24zcDio/AAAAAAAAAAI/AAAAAAAAAKQ/b7Yl7IixCrE/photo.jpg/thumbnail>
+<fanart>https://lh3.googleusercontent.com/-cFgy24zcDio/AAAAAAAAAAI/AAAAAAAAAKQ/b7Yl7IixCrE/photo.jpg</fanart>
+</item>
+
+
+<item>
+    <title>[COLOR orange]                        CANALES DE DEPORTE VARIOS[/COLOR]</title>
+    <link>http://Ignoreme</link>
+    <externallink></externallink>
+    </item>
+
+<item>
+ <title>[COLOR yellow][B][I]UEFA CHAMPIONS LEAGUE[/I][/B][/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/uefachampionsleague.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/uefachampionsleague.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://aubureau-suresnes.fr/uploads/actualites/sources/32-photo_2-date-tirage-quarts-de-finale-ligue-des-champions.jpg</thumbnail>
+<fanart>http://aubureau-suresnes.fr/uploads/actualites/sources/32-photo_2-date-tirage-quarts-de-finale-ligue-des-champions.jpg</fanart>
+</item>
+           
+<item>
+ <title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 1[/I][/B][/COLOR]</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/livefootball.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/livefootball.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
 </regex>
 </item>
+
+
+<item>            
+<item>
+ <title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 2[/I][/B][/COLOR]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.mips.tv/membedplayer/verliga1123/1/650/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mips.tv</referer>
+			</regex>
+<thumbnail>logo.logo.logo</thumbnail>
+</item>
+
+
+<item>            
+ <title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 3[/I][/B][/COLOR]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.mips.tv/membedplayer/verliga02/1/650/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mips.tv</referer>
+			</regex>
+<thumbnail>logo.logo.logo</thumbnail>
+</item>
+
+
+
+
+<item>
+			<title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 4[/I][/B][/COLOR]</title>
+			<link>http://azubuhlspull-a.akamaihd.net/5355ba49fb409126057a4c525eeb7dad/eu-west-1/video255150CHbiophobiatv/2400/index.m3u8</link>
+			
+			<thumbnail></thumbnail>
+</item>
+
+
+<item>
+			<title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 5[/I][/B][/COLOR]</title>
+			<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.embeducaster.com/membedplayer/zaccion1/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.embeducaster.com</referer>
+			</regex>
+			<thumbnail></thumbnail>
+</item>
+
+
+
+
+		<item>
+			<title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 6[/I][/B][/COLOR]</title>
+			<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.embeducaster.com/membedplayer/ccdep2101/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.embeducaster.com</referer>
+			</regex>
+			<thumbnail>http://3.bp.blogspot.com/-LH8scgnyY7g/VZmt4Vvqj-I/AAAAAAAAApo/djxIkyfUJM8/s1600/eventos%2Bdeportivos.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-LH8scgnyY7g/VZmt4Vvqj-I/AAAAAAAAApo/djxIkyfUJM8/s1600/eventos%2Bdeportivos.jpg</fanart>
+</item>
+
+		<item>
+			<title>[COLOR lime][B][I]MULTICANAL /[COLOR yellow][B][I]SOLO EVENTOS 6[/I][/B][/COLOR]</title>
+			<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.embeducaster.com/membedplayer/awhrahfhdawfosodepra/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.embeducaster.com</referer>
+			</regex>
+			<thumbnail>http://3.bp.blogspot.com/-LH8scgnyY7g/VZmt4Vvqj-I/AAAAAAAAApo/djxIkyfUJM8/s1600/eventos%2Bdeportivos.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-LH8scgnyY7g/VZmt4Vvqj-I/AAAAAAAAApo/djxIkyfUJM8/s1600/eventos%2Bdeportivos.jpg</fanart>
+</item>                                                                                                                                                                                                                                                                                                                                             </items>
