@@ -40,14 +40,14 @@
 	<link>[makelist.param2]</link>
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,(.*?)NL\n(.*)</expres>
-<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u</page>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/nltv.m3u8</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 	
 <item>
-<title>[B][COLOR white]ALLE UNITED KINGDOM KANALEN[/COLOR] [COLOR dodgerblue](OOK SPORT)[/COLOR][/B]</title>
+<title>[B][COLOR white]ALLE SKY SPORTS KANALEN[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -57,14 +57,14 @@
 	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,(.*?)UK\n(.*)</expres>
-<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u</page>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/skysports.m3u8</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
 
 <item>
-<title>[B][COLOR white]ALLE DUITSE KANALEN[/COLOR] [COLOR dodgerblue](OOK SPORT)[/COLOR][/B]</title>
+<title>[B][COLOR white]ALLE BEIN SPORTS KANALEN[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -74,8 +74,42 @@
 	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,(.*?)DE\n(.*)</expres>
-<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u</page>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/beinsports.m3u8</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+	
+<item>
+<title>[B][COLOR white]ALLE BT SPORTS KANALEN[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
+	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/btsports.m3u8</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+	
+<item>
+<title>[B][COLOR white]ALLE MIO SPORTS KANALEN[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
+	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>https://raw.githubusercontent.com/aramghamoyan/aramghamoyan/master/HAYbox%20XMLS/miosports.m3u8</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
