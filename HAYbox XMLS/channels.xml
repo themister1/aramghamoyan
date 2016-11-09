@@ -41,7 +41,7 @@
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-1,(.*?)NL</expres>
-<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u&amp;output=hls</page>
+<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
@@ -57,8 +57,8 @@
 	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,UK(.*?)\n(.*)</expres>
-<page>http://149.202.78.137:8080/get.php?username=5454&amp;password=5454&amp;type=m3u</page>
+<expres>#EXTINF:-1,(.*?)UK</expres>
+<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
@@ -74,8 +74,8 @@
 	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
 	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 ]]></listrepeat>
-<expres>#EXTINF:-1,DE(.*?)\n(.*)</expres>
-<page>http://149.202.78.137:8080/get.php?username=5454&amp;password=5454&amp;type=m3u</page>
+<expres>#EXTINF:-1,(.*?)DE</expres>
+<page>http://clientportal.link:8080/get.php?username=HAYboxTV&amp;password=HAYboxTV&amp;type=m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 </item>
