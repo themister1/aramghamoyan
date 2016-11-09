@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>  
+<item>
+
+<item>
+<title>[B][COLOR white]ABBONOMENT;[/COLOR] [COLOR dodgerblue]ARAM GHAMOYAN[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
+	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-o,(.*?)\n(.*)</expres>
+<page>http://pastebin.com/raw/TDrdA6rg</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
