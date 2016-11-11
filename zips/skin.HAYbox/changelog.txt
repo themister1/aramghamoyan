@@ -1,0 +1,83 @@
+0.1.2
+-FIX Recent Music Song Widget
+-FIX Small fonts on Addons
+-FIX Notification Font Color
+
+0.1.1
+-Improved Dark Mode
+-Change Notification color
+-FIX Colorbox Error Message
+
+0.1.0
+-FIX Touchscreen list scrolling
+-Themed Video Screen for test version
+-NEW Video Screen Movieinformation
+-NEW Video Screen Options
+-NEW Video Screen Movieinformation
+-NEW Dialog Menu Style
+-ADD Movie Information Data
+-FIX.TRY Movie Informations (need to be tested)
+
+
+0.0.9
+-Lighter Home Banner
+-FIX Addon Settings Background
+-IMPROVED Notification
+-FIX Video Information Window
+
+0.0.8
+-Improved Movie/Series Information page
+-Improved Dark Mode
+-FIX Some Keyboard Issues with Dark Mode
+-FIX Home Widgets
+-NEW LiveTV
+-NEW Weather Shelf Widget 
+-NEW Side Menu
+-and some other fixes
+
+0.0.7
+-NEW Notification
+
+0.0.6
+-FIX Skin Settings Option (missing label)
+-FIX Changelog Textsize
+-NEW Homescreen Folders
+-NEW Shelf Icons
+
+
+0.0.5
+-FIX Home Icon-Banner
+-FIX Small Font in some Windows
+-FIX Some Texts in Dark Theme (Dark textcolor on Dark background)
+-NEW AddOn-Settings Style
+-NEW VIdeo-Information Style
+-NEW Dialog Information
+-NEW Some new Button Style
+-NEW New Custom Backgrounds (thanks to: Jakeround98)
+
+
+
+0.0.4
+-FIX (not showing intro)
+-FIX (Home Background showing Black)
+-FIX (some string sizes)
+-Fonts are now usable
+-New AddOn-Information Style
+-New Icons (thanks to: plusorminus)  
+-New Power-Off Style
+-New Skin-Settings Style
+-New Dialog Style
+-New Video-Player Style
+
+0.0.3
+-New Intro
+-First Help Dialog Test
+
+0.0.2
+-Themes | Dark, Light, Extra Light
+-New Icons
+
+0.0.1
+-first alpha version
+-Keyboard (WIP)
+-Login Screen (WIP)

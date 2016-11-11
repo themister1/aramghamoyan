@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>	
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+	<onload>RunScript(script.colorbox)</onload>
+    <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
+    <include>HomeOpenClose</include>
+    <controls>
+        <control type="group" description="Furniture">		
+		  <visible>!Player.HasVideo</visible>		  
+		  <control type="group" description="DEFAULT BG HOME">
+            <!--animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation-->			
+            <control type="image" description="Home Background">
+				<animation condition="[!Container(9000).Row(0) | Container(9000).HasPrevious()] + !Skin.HasTheme(White)" effect="slide" start="0,0" end="0,-590" time="220">Conditonal</animation>			
+				<visible>IsEmpty(Skin.String(CustomBgHome))</visible>
+                <width>1920</width>
+                <height>1690</height>
+                <aspectratio>stretch</aspectratio>
+                <texture background="true">special://home/addons\skin.HAYbox\backgrounds\bg.png</texture>
+            </control>	
+            <!--control type="image">	
+                <width>1920</width>
+                <height>1080</height>
+                <texture>test2.jpg</texture>
+            </control-->			
+			<control type="label" description="Clock">		
+				<visible>!Skin.HasSetting(ShowClock) + !System.Date(04-01,04-01) + Container(9000).Row(0)</visible>
+				<right>30</right>
+				<top>40</top>
+				<width>560</width>
+				<height>30</height>
+				<align>right</align>
+				<font>font30m</font>
+				<textcolor>ShelfTopLabelFO</textcolor>
+				<shadowcolor>-</shadowcolor>
+				<label>$INFO[System.Date] • $INFO[System.Time]</label>
+			</control>						
+            <control type="image" description="Home ICON Banner">											
+				<visible>IsEmpty(Skin.String(CustomBgHome)) + !Skin.HasSetting(NoHomeBanner)</visible>				
+				<!--include condition="Skin.HasSetting(NoBannerAnimation)">homebanner_animation</include-->				
+				<include condition="!Skin.HasSetting(NoBannerAnimation)">homebanner_static</include>										
+                <top>718</top>
+                <width>1920</width>
+                <height>283</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>images/white.png</texture>
+                <colordiffuse>$VAR[homebanner2]</colordiffuse>
+            </control>		
+	      </control>	
+		  <control type="group" description="CUSTOM BG HOME">
+		  	<visible>!IsEmpty(Skin.String(CustomBgHome))</visible>
+            <control type="image" description="Home Background">
+                <width>1920</width>
+                <height>1080</height>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image" description="ICON Banner">			
+				<visible>!IsEmpty(Skin.String(CustomBgHome))</visible>
+				<!--include condition="Skin.HasSetting(NoBannerAnimation)">homebanner_animation</include-->				
+				<include condition="!Skin.HasSetting(NoBannerAnimation)">homebanner_static</include>										
+                <top>718</top>
+                <width>1920</width>
+                <height>283</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>images/white.png</texture>
+                <colordiffuse>$VAR[homebanner]</colordiffuse>>
+            </control>		
+		  </control>		  
+        </control>			
+		<control type="videowindow" description="Homescreen Video Preview">
+			<width>1920</width>
+			<height>1080</height>
+			<visible>Window.IsActive(Home.xml) + Player.HasVideo</visible>
+			<aspectratio>scale</aspectratio>
+		</control>	
+		<!--control type="image" description="homelogo">	
+			<animation condition="!Container(9000).Row(0)" effect="slide" start="0,0" end="0,-265" time="350"  tween="circle" easing="inout">Conditional</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)" effect="slide" start="0,0" end="0,-268" time="350" tween="circle" easing="inout">Conditonal</animation>	
+			<visible>!Container(9000).Row(0)</visible>
+			<centerleft>960</centerleft>
+			<centertop>450</centertop>
+            <width>960</width>
+            <height>540</height>
+            <texture colordiffuse="$VAR[homelogocolor]">logos/homelogo.png</texture>
+        </control-->
+        <control type="label" description="Shelf Label">
+			<visible>!Control.HasFocus(9009) + Control.HasFocus(9000) + !Player.HasVideo</visible>		
+			<animation effect="fade" end="100" delay="200" time="220">Visible</animation>
+			<animation condition="Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313)" effect="zoom" time="200" start="100" end="108" center="200,50" tween="Back" easing="Out">Conditional</animation>				
+			<!--animation effect="fade" end="0" time="100">Hidden</animation-->	
+			<!--animation condition="Control.HasFocus(311) | Control.HasFocus(312)" effect="slide" start="0,0" end="0,-30" time="60">Conditonal</animation-->				
+			<left>98</left>
+			<top>38</top>
+			<height>30</height>
+			<width>750</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font30m</font>
+			<textcolor>ShelfTopLabelNF</textcolor>
+			<shadowcolor>-</shadowcolor>
+			<label>$VAR[shelflabel]</label>
+        </control>
+	
+        <!--control type="button" id="9009">
+            <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
+            <left>0</left>
+            <top>15</top>
+            <width>34</width>
+            <height>34</height>
+            <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+            <onup>noop</onup>
+            <ondown condition="Control.IsVisible(311)">311</ondown>
+            <ondown condition="Control.IsVisible(312)">312</ondown>
+            <onleft>noop</onleft>
+            <onright>noop</onright>
+        </control-->		
+		<control type="list" id="9009" description="Shelf Menu">
+            <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>		
+			<top>38</top>
+			<width>1200</width>
+			<height>30</height>
+			<onleft>9006</onleft>
+			<onright>9006</onright>
+			<onup>noop</onup>
+			<align>left</align>
+			<ondown condition="Control.IsVisible(311)">311</ondown>
+			<ondown condition="Control.IsVisible(312)">312</ondown>
+			<ondown condition="Control.IsVisible(313)">313</ondown>			
+			<orientation>horizontal</orientation>	
+			<itemlayout width="360" height="30">
+			  <control type="label" description="Main Label-MOVIE">	
+				<visible>Control.IsVisible(311)</visible>
+				<left>88</left>
+				<height>30</height>
+				<width>340</width>
+				<align>center</align>
+				<font>font30m</font>
+				<textcolor>ShelfTopLabelNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			  </control>
+			  <control type="label" description="Main Label-TVSHOW">	
+				<visible>Control.IsVisible(312)</visible>
+				<left>88</left>
+				<height>30</height>
+				<width>340</width>
+				<align>center</align>
+				<font>font30m</font>
+				<textcolor>ShelfTopLabelNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			  </control>	  
+			  <control type="label" description="Main Label-MUSIC">	
+				<visible>Control.IsVisible(313)</visible>
+				<left>88</left>
+				<height>30</height>
+				<width>340</width>
+				<align>center</align>
+				<font>font30m</font>
+				<textcolor>ShelfTopLabelNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			  </control>			  
+			</itemlayout>
+			<focusedlayout width="360" height="30">
+				<control type="label" description="Main Label-MOVIE">
+					<visible>Control.IsVisible(311)</visible>
+					<animation effect="zoom" time="200" start="100" end="108" center="auto" tween="Back" easing="Out">Focus</animation>				
+					<left>88</left>
+					<height>30</height>
+					<width>340</width>
+					<align>center</align>
+					<font>font30m</font>
+					<textcolor>ShelfTopLabelFO</textcolor>
+					<shadowcolor>-</shadowcolor>
+				  <label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label" description="Main Label-TVSHOW">
+					<visible>Control.IsVisible(312)</visible>
+					<animation effect="zoom" time="200" start="100" end="108" center="auto" tween="Back" easing="Out">Focus</animation>				
+					<left>88</left>
+					<height>30</height>
+					<width>340</width>
+					<align>center</align>
+					<font>font30m</font>
+					<textcolor>ShelfTopLabelFO</textcolor>
+					<shadowcolor>-</shadowcolor>
+				  <label>$INFO[ListItem.Label]</label>
+				</control>	
+				<control type="label" description="Main Label-MUSIC">
+					<visible>Control.IsVisible(313)</visible>
+					<animation effect="zoom" time="200" start="100" end="108" center="auto" tween="Back" easing="Out">Focus</animation>				
+					<left>88</left>
+					<height>30</height>
+					<width>340</width>
+					<align>center</align>
+					<font>font30m</font>
+					<textcolor>ShelfTopLabelFO</textcolor>
+					<shadowcolor>-</shadowcolor>
+				  <label>$INFO[ListItem.Label]</label>
+				</control>				
+			</focusedlayout>
+			<content>			
+			  <item id="10" description="Recently added-MOVIES">	
+				<visible>Control.IsVisible(311)</visible>
+				<label>$LOCALIZE[20386]</label>
+				<onclick>Skin.SetString(moviesshelf,)</onclick>
+			  </item>
+			  <item id="20" description="Random-MOVIES">	
+				<visible>Control.IsVisible(311)</visible>			  
+				<label>$LOCALIZE[590]</label>
+				<onclick>Skin.SetString(moviesshelf,RND)</onclick>				
+			  </item>
+			  <!--item id="30" description="Recommended-MOVIES">	
+				<visible>Control.IsVisible(311)</visible>			  
+				<label>$LOCALIZE[31048]</label>
+				<onclick>Skin.SetString(moviesshelf,WL)</onclick>
+			  </item-->  
+			  <item id="11" description="Recently added-TV">	
+				<visible>Control.IsVisible(312)</visible>
+				<label>$LOCALIZE[20387]</label>
+				<onclick>Skin.SetString(tvshowshelf,)</onclick>
+			  </item>
+			  <item id="21" description="Random-TV">	
+				<visible>Control.IsVisible(312)</visible>			  
+				<label>$LOCALIZE[590]</label>
+				<onclick>Skin.SetString(tvshowshelf,RND)</onclick>				
+			  </item>
+			  <item id="12" description="Recently added-MUSIC">	
+				<visible>Control.IsVisible(313)</visible>
+				<label>$LOCALIZE[20387]</label>
+				<onclick>Skin.SetString(musicShelf,)</onclick>
+			  </item>
+			  <item id="22" description="Random-MUSIC">	
+				<visible>Control.IsVisible(313)</visible>			  
+				<label>$LOCALIZE[590]</label>
+				<onclick>Skin.SetString(musicShelf,RND)</onclick>				
+			  </item>		  
+			  <!--item id="31" description="Recommended-TV">	
+				<visible>Control.IsVisible(312)</visible>			  
+				<label>$LOCALIZE[31048]</label>
+				<onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+			  </item-->			  		  
+			  <!--item id="1" description="Testing1">			  			  
+				<label>$VAR[shelflabel]</label>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+			  </item>			  	  
+			  <item id="2" description="Testing1">			  			  
+				<label>$VAR[shelfchoose]</label>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+				<onclick condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
+			  </item-->			  			  			 		  
+			</content>
+		</control>			
+        <control type="panel" id="9000" description="ICON">
+            <animation condition="!Container(9000).Row(0)" effect="slide" start="0,0" end="0,-265" time="350" tween="circle" easing="inout">Conditional</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)" effect="slide" start="0,0" end="0,-268" time="350" tween="circle" easing="inout">Conditonal</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)+!Container(9000).Row(2)" effect="slide" start="0,0" end="0,-270" time="350" tween="circle" easing="inout">Conditonal</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)+!Container(9000).Row(2)+!Container(9000).Row(3)" effect="slide" start="0,0" end="0,-267" time="350" tween="circle" easing="inout">Conditonal</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)+!Container(9000).Row(2)+!Container(9000).Row(3)+!Container(9000).Row(4)" effect="slide" start="0,0" end="0,-250" time="350" tween="circle" easing="inout">Conditonal</animation>
+			
+			<!--animation condition="!Container(9000).Row(0)" effect="slide" start="0,0" end="0,-265" time="350" tween="circle" easing="inout">Conditional</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)" effect="slide" start="0,0" end="0,-268" time="350" tween="circle" easing="inout">Conditonal</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)+!Container(9000).Row(2)" effect="slide" start="0,0" end="0,-270" time="350" tween="circle" easing="inout">Conditonal</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)+!Container(9000).Row(2)+!Container(9000).Row(3)" effect="slide" start="0,0" end="0,-267" time="350" tween="circle" easing="inout">Conditonal</animation>	
+            <animation condition="!Container(9000).Row(0)+!Container(9000).Row(1)+!Container(9000).Row(2)+!Container(9000).Row(3)+!Container(9000).Row(4)" effect="slide" start="0,0" end="0,-250" time="350" tween="circle" easing="inout">Conditonal</animation-->
+			
+            <centerleft>960</centerleft>
+            <top>710</top>
+            <width>1800</width>
+            <height>2600</height>
+            <onleft>9000</onleft>
+            <onright>9000</onright>
+            <onup>700</onup>
+            <ondown>noop</ondown>
+            <orientation>vertical</orientation>
+            <scrolltime tween="sine" easing="inout">280</scrolltime>
+            <itemlayout height="269" width="360">
+                <control type="image" description="shade_base">
+                    <centerleft>180</centerleft>
+					<top>37</top>
+                    <width>350</width>
+                    <height>236</height>
+                    <texture>icons/iconbase.png</texture>
+                </control>
+                <control type="image" description="color base">
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>305</width>
+                    <height>182</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
+                </control>
+                <control type="image" description="THMBSICONS">
+                    <visible>!IsEmpty(Listitem.thumb)</visible>
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>305</width>
+                    <height>182</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                </control>
+                <control type="image" description="THMBSICONS">
+                    <visible>IsEmpty(Listitem.thumb)</visible>
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>305</width>
+                    <height>182</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                </control>
+                <control type="image" description="THMBS weather">
+                    <centerleft>180</centerleft>
+                    <top>75</top>
+                    <width>305</width>
+                    <height>160</height>
+                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>				
+                <control type="label" description="label">
+					<visible>!Player.HasVideo + Skin.HasSetting(NoFocusNoLabel)</visible>
+                    <!--animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation->
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation-->					
+                    <centerleft>180</centerleft>
+                    <top>252</top>
+                    <width>350</width>
+                    <height>24</height>
+                    <font>font27</font>
+                    <align>center</align>
+					<scroll>false</scroll>
+                    <textcolor>homelabelNF</textcolor>
+                    <label>[B]$INFO[ListItem.label][/B]</label>
+                </control>				
+            </itemlayout>
+            <focusedlayout height="290" width="360">
+                <control type="group">												
+                    <animation effect="zoom" start="100" end="130" time="350" center="auto" tween="back" easing="out">Focus</animation>
+                    <animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>															
+					<include condition="!Skin.HasSetting(ATV3select)">ATV4select</include>										
+                    <control type="image" description="shade_base">
+                        <centerleft>180</centerleft>
+						<top>45</top>
+                        <width>340</width>
+                        <height>246</height>
+                        <texture>icons/iconshadow.png</texture>
+                    </control>
+                    <control type="image" description="color base">
+                        <centerleft>180</centerleft>
+                        <top>45</top>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <visible>!IsEmpty(Listitem.thumb)</visible>
+                        <centerleft>180</centerleft>
+                        <top>45</top>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <visible>IsEmpty(Listitem.thumb)</visible>
+                        <centerleft>180</centerleft>
+                        <top>45</top>
+                        <width>287</width>
+                        <height>179</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBS weather">
+						<centerleft>180</centerleft>
+						<top>42</top>
+						<width>257</width>
+						<height>160</height>
+                        <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                </control>
+                <control type="label" description="label">
+					<visible>!Player.HasVideo</visible>
+                    <animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                    <centerleft>180</centerleft>
+                    <top>252</top>
+                    <width>368</width>
+                    <height>24</height>
+                    <font>font33</font>
+                    <align>center</align>
+					<scroll>true</scroll>
+                    <textcolor>homelabelFO</textcolor>
+                    <label>[B]$INFO[ListItem.label][/B]</label>
+                </control>
+            </focusedlayout>
+            <content>
+			
+               <item id="621" description="Shelf Favourite1">
+                    <thumb>special://home/addons\skin.HAYbox\icons\LiveTV.png</thumb>
+                    <property name="color">icons/darkblue.png</property>
+					<onclick>ActivateWindow(TvChannels)</onclick>
+					<visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                </item>
+				<item id="625" description="Shelf Favourite5">
+					<thumb>special://home/addons\skin.HAYbox\icons\freetv.png</thumb>
+					<property name="color">icons/red.png</property>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.freetv/?fanart=http%3a%2f%2ffreedomiptv.tk%2ffanart.jpg&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20white%5d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%5bCOLOR%20dodgerblue%5dENTER%20HERE%5bCOLOR%20white%5d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%5b%2fCOLOR%5d%5b%2fB%5d&amp;url=https%3a%2f%2fraw.githubusercontent.com%2faramghamoyan%2faramghamoyan%2fmaster%2fHAYbox%2520XMLS%2fchannels.xml&quot;,return)</onclick>
+               </item>
+				<item id="353" description="Custom script">
+					<thumb>special://home/addons\skin.HAYbox\icons\gids.png</thumb>
+					<property name="color">icons/darkblue.png</property>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.TVGuideRussia/?fanart&amp;mode=245&amp;name=TV%20Guide%20Russia&amp;url=https%3a%2f%2ftv.yandex.ru&quot;,return)</onclick>
+				</item>
+				<item id="403" description="Custom addon">
+					<thumb>special://skin/icons/favs.png</thumb>
+                    <property name="color">icons/red.png</property>
+                    <onclick>ActivateWindow(134)</onclick>
+                </item>
+                <item id="343">
+                    <thumb>special://home/addons\skin.HAYbox\icons\\merojax.png</thumb>
+                    <property name="color">icons/darkblue.png</property>
+                      <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.merojax.tv/&quot;,return))</onclick>
+                </item>	
+				<item id="402">
+                    <thumb>special://home/addons\skin.HAYbox\icons\haymusic.png</thumb>
+					<property name="color">icons/red.png</property>
+                    <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.haymusic/&quot;,return))</onclick>
+                </item>
+				<item id="404" description="Custom addon">
+                    <thumb>special://home/addons\skin.HAYbox\icons\\rus.png</thumb>
+                    <property name="color">icons/darkblue.png</property>
+                    <onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=RusKino&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CRusKino&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+                </item>
+				<item id="347" description="Custom addon">
+					<thumb>special://home/addons\skin.HAYbox\icons\nlzone.png</thumb>
+					<property name="color">icons/red.png</property>
+					<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.nlzone/&quot;,return)</onclick>
+				</item>				
+                <item id="340">
+                    <thumb>special://home/addons\skin.HAYbox\icons\movies.png</thumb>
+                    <property name="color">icons/darkblue.png</property>
+                    <onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Films &amp; Series&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CFilms%20%26%20Series&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.exodus%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+               </item>								
+				<item id="409" description="Custom addon">
+					<thumb>special://home/addons\skin.HAYbox\icons\Sports.png</thumb>
+					<property name="color">icons/red.png</property>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Sport&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CSport&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.clubtv%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>	
+				<item id="408" description="Custom addon">
+					<thumb>special://home/addons\skin.HAYbox\icons\kids.png</thumb>
+					<property name="color">icons/darkblue.png</property>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Kids&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CKids&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.tbh.kidswb%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>
+				<item id="410" description="Custom addon">
+					<thumb>special://home/addons\skin.HAYbox\icons\music.png</thumb>
+					<property name="color">icons/red.png</property>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Muziek&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CMuziek&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>
+                <item id="345">
+                    <thumb>special://home/addons\skin.HAYbox\icons\uitzendinggemist.png</thumb>
+                    <onclick>RunAddon(net.rieter.xot)</onclick>
+                </item>				
+                <item id="345">
+                    <thumb>special://home/addons\skin.HAYbox\icons\Youtube.png</thumb>
+                    <onclick>RunAddon(plugin.video.youtube)</onclick>
+                </item>
+				<item id="411" description="Custom addon">
+					<thumb>special://home/addons\skin.HAYbox\icons\program.png</thumb>
+					<property name="color">icons/darkblue.png</property>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.super.favourites/?label=Programma&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper%20Favourites%5CProgramma&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.program.super.favourites%5Cfanart.jpg%26_options_sf&quot;,return)</onclick>
+				</item>					
+				<item id="406" description="Custom addon">
+					<thumb>special://home/addons\skin.HAYbox\icons\hay.png</thumb>
+					<property name="color">icons/red.png</property>
+					<onclick>ActivateWindow(10001,&quot;plugin://plugin.program.hayboxinstaller/?mode=builds&quot;,return)</onclick>
+				</item>
+				<item id="353">
+					<thumb>special://home/addons\skin.HAYbox\icons\usb.png</thumb>
+					<property name="color">icons/darkblue.png</property>
+					<onclick>ActivateWindow(3)</onclick>
+				</item>
+                <item id="348">
+                     <thumb>special://home/addons\skin.HAYbox\icons\settings.png</thumb>
+                    <onclick>ActivateWindow(settings)</onclick>
+                </item>			
+                <item id="349">
+                     <thumb>special://home/addons\skin.HAYbox\icons\afsluiten.png</thumb>
+                    <onclick>ActivateWindow(ShutdownMenu)</onclick>
+                </item>						
+            </content>
+        </control>
+		
+
+		<!--ATV3 SLIDER-->
+		<include condition="Skin.HasSetting(ATV3select)">ATV3select</include>		
+		<control type="group" description="SHELF">	
+		<visible>!Player.HasVideo</visible>
+        <include>weather_shelf</include>
+        <control type="group" id="700" description="Shelf items">
+            <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <include>Movies</include>
+            <include>TV</include>
+            <include>Music_RA</include>
+            <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
+            <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
+            <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
+            <include>Favsshelf</include>
+            <!--control type="image" description="Logo">
+                <visible>![[Container(9000).HasFocus(621) | Container(9000).HasFocus(622) | Container(9000).HasFocus(623) | Container(9000).HasFocus(624) | Container(9000).HasFocus(625)] | [Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
+                <include>ShelfFade</include>
+                <width>1920</width>
+                <height>500</height>
+                <aspectratio aligny="bottom">keep</aspectratio>
+                <texture>$VAR[ShelfLogo]</texture>
+            </control-->
+        </control>
+        <control type="group" description="RSS">
+            <control type="image" description="RSS BG">
+                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+				<visible>!Skin.HasSetting(NORSS)</visible>
+				<top>1047</top>
+				<width>1920</width>
+                <height>33</height>
+                <texture colordiffuse="77404040">images/white.png</texture>
+            </control>
+			<control type="rss" description="RSS Feed">
+                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                <visible>!Skin.HasSetting(NORSS)</visible>
+                <include>VisibleFade</include>
+                <left>0</left>
+                <top>1046</top>
+                <width>1920</width>
+                <height>33</height>
+                <font>font22</font>
+                <urlset>1</urlset>
+                <shadowcolor>-</shadowcolor>
+                <titlecolor>selectedcolor</titlecolor>
+                <headlinecolor>textcolor2</headlinecolor>
+                <textcolor>textcolor2</textcolor>
+            </control>
+		</control>
+        <control type="group" description="Player Info">
+            <visible>Player.HasAudio</visible>
+            <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
+            <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
+            <left>1500</left>
+            <top>440</top>
+            <control type="image" description="Playing BG">
+                <width>430</width>
+                <height>105</height>
+                <texture border="20">images/ProgressBG.png</texture>
+            </control>
+            <control type="group">
+                <control type="image">
+                    <left>18</left>
+                    <top>15</top>
+                    <width>75</width>
+                    <height>75</height>
+                    <texture>$INFO[MusicPlayer.Cover]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="label">
+                    <left>110</left>
+                    <top>9</top>
+                    <aligny>center</aligny>
+                    <width>300</width>
+                    <height>36</height>
+                    <font>font24</font>
+                    <textcolor>White2</textcolor>
+                    <label>$INFO[MusicPlayer.Title]</label>
+                </control>
+                <control type="label">
+                    <left>110</left>
+                    <top>36</top>
+                    <aligny>center</aligny>
+                    <width>300</width>
+                    <height>36</height>
+                    <font>font21</font>
+                    <label>$INFO[MusicPlayer.Artist]</label>
+                </control>
+                <control type="label">
+                    <left>110</left>
+                    <top>60</top>
+                    <aligny>center</aligny>
+                    <width>300</width>
+                    <height>36</height>
+                    <font>font21</font>
+                    <label>$INFO[MusicPlayer.Album]</label>
+                </control>
+            </control>
+        </control>	
+        <!--control type="label" description="Top Label">
+            <include>ShelfFade</include>
+            <include>ShelfTitle</include>
+            <label>$VAR[shelflabel]</label>
+        </control-->	
+      </control>		
+    
+			<!--control type="image" description="Home Background">
+                <width>1920</width>
+                <height>1080</height>
+                <aspectratio>stretch</aspectratio>
+                <texture background="true">notification3.png</texture>
+            </control-->
+	</controls>
+</window>

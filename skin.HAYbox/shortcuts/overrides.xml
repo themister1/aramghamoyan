@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>
+    <!-- available icons -->
+    <thumbnailBrowseDefault label="Icons">special://skin/icons/</thumbnailBrowseDefault>
+	
+	<!-- required icons -->
+	<!--requiredshortcut label="5" thumbnail="special://skin/icons/favs.png">ActivateWindow(settings)</requiredshortcut-->
+	
+	<!--icon labelID="2" grouping="[32029]">special://skin/icons/music.png</icon-->
+	
+	<!--onback to="9000">3</onback-->
+	
+	<doNotShareMenu />
+	
+	<groupings>
+		<!-- common items -->
+		<node label="32029">
+			<shortcut label="342" grouping="32029" icon="special://skin/icons/movies.png">ActivateWindow(Videos,root)</shortcut>
+			<shortcut label="20343" grouping="32029" icon="special://skin/icons/tvshows.png">ActivateWindow(Videos,root)</shortcut>
+            <shortcut label="2" grouping="32029" icon="special://skin/icons/music.png">ActivateWindow(501,root)</shortcut>
+			<shortcut label="24001" grouping="32029" icon="special://skin/icons/addons.png">ActivateWindow(1118)</shortcut>
+			<shortcut label="$INFO[Weather.Temperature] + $INFO[12600]" grouping="32029" icon="$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]">ActivateWindow(MyWeather)</shortcut>
+			<shortcut label="1" grouping="32029" icon="special://skin/icons/photos.png">ActivateWindow(2)</shortcut>
+			<shortcut label="1036" grouping="32029" icon="special://skin/icons/favs.png">ActivateWindow(134)</shortcut>
+			<shortcut label="31059" grouping="32029" icon="special://skin/icons/LiveTV.png">ActivateWindow(1718)</shortcut>
+			<shortcut label="$VAR[LivetvLabel]" grouping="32029" icon="$VAR[LivetvIcon]">ActivateWindowAndFocus(TVChannels)</shortcut>
+			<shortcut label="0" grouping="32029" icon="special://skin/icons/program.png">ActivateWindow(Programs,Addons)</shortcut>
+			<shortcut label="20094" grouping="32029" icon="special://skin/icons/sources.png">ActivateWindow(1115)</shortcut>
+			<shortcut label="Search" grouping="32029" icon="special://skin/icons/search.png">RunScript(script.globalsearch</shortcut>
+			<shortcut label="7" grouping="32029" type="youtube" icon="special://skin/icons/browser.png">ActivateWindow(3)</shortcut>
+			<shortcut label="$INFO[System.DVDLabel]" type="playdvd" grouping="32029" icon="special://skin/icons/DVD.png" condition="![System.Platform.ios | System.Platform.atv2]">ActivateWindow(1112)</shortcut>
+			<shortcut label="5" grouping="32029" icon="special://skin/icons/settings.png" >ActivateWindow(settings)</shortcut>
+		</node>
+		<!-- video library-->
+		<node label="32030">
+			<shortcut label="19140" grouping="1211" type="1211" condition="IsEmpty(Window(home).Property(netflixmenu))">RunScript(script.skin.helper.service,action=VIDEOSEARCH)</shortcut>
+			<shortcut label="20381" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,scriptwidgets,extendedinfo,smartishwidgets</shortcut>
+			<content>video</content>
+			<node label="32040">
+				<content>playlist-video</content>
+			</node>
+			<node label="32010">
+				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(10025,addons://sources/video/,return)</shortcut>
+				<content>addon-video</content>
+			</node>
+			
+			<node label="32075">
+				<content>videosources</content>
+				<content>upnp-video</content>
+			</node>
+		</node>
+		<!-- music -->
+		<node label="32031">
+			<shortcut label="10005" grouping="32029" icon="special://skin/extras/hometiles/music.png">ActivateWindow(10502,musicdb://,return)</shortcut>
+			<shortcut label="19021" grouping="32029" icon="special://skin/extras/hometiles/radio.png" condition="IsEmpty(Window(home).Property(netflixmenu))">ActivateWindow(radiochannels,return)</shortcut>
+            <shortcut label="19140" grouping="1211" type="1211" condition="IsEmpty(Window(home).Property(netflixmenu))">RunScript(script.skin.helper.service,action=MUSICSEARCH)</shortcut>
+			<content>music</content>
+			<node label="32040">
+				<content>playlist-audio</content>
+			</node>
+			<node label="32011">
+				<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png" condition="IsEmpty(Window(home).Property(netflixmenu))">ActivateWindow(10502,Addons,return)</shortcut>
+				<content>addon-audio</content>
+			</node>
+			<node label="32075">
+				<content>musicsources</content>
+				<content>upnp-music</content>
+			</node>
+		</node>
+		<!-- Live TV -->
+		<node label="32017" condition="PVR.HasTVChannels">
+			<shortcut label="32022" grouping="32029" icon="special://skin/extras/hometiles/livetv.png" condition="PVR.HasTVChannels">ActivateWindow(TVGuide)</shortcut>
+			<shortcut label="19163" grouping="32029" icon="special://skin/extras/hometiles/tvrecordings.png" condition="PVR.HasTVChannels">ActivateWindow(TVRecordings,return)</shortcut>
+			<shortcut label="19021" grouping="32029" icon="special://skin/extras/hometiles/radio.png" condition="PVR.HasTVChannels">ActivateWindow(radiochannels,return)</shortcut>
+			<node label="32017" condition="PVR.HasTVChannels">
+				<content>pvr</content>
+				<node label="19023">
+					<content>pvr-tv</content>
+				</node>
+			</node>
+			<node label="32087" condition="PVR.HasRadioChannels">
+				<content>radio</content>
+				<node label="19024">
+					<content>pvr-radio</content>
+				</node>
+			</node>
+		</node>
+		<!-- pictures -->
+		<node label="32020">
+			<shortcut label="10002" grouping="32029" icon="$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]">ActivateWindow(pictures,return)</shortcut>
+			<content>picturesources</content>
+		</node>
+        <!-- addons -->
+        <node label="32007">
+			<node label="32009">
+				<shortcut label="10001" type="32021" icon="special://skin/extras/hometiles/programs.png">ActivateWindow(Programs,addons://sources/executable/,return)</shortcut>
+                <shortcut label="20244" grouping="32029" icon="special://skin/extras/hometiles/programs.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps/,return)</shortcut>
+				<content>addon-program</content>
+			</node>
+            <shortcut label="20244" type="32029" condition="System.Platform.Android">||BROWSE||androidapp://sources/apps/</shortcut>
+			<node label="32010">
+				<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(10025,addons://sources/video/,return)</shortcut>
+				<content>addon-video</content>
+			</node>
+			<node label="32011">
+				<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(10502,addons://sources/audio/,return)</shortcut>
+				<content>addon-audio</content>
+			</node>
+			<node label="32012">
+				<shortcut label="1039" type="32020" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
+				<content>addon-image</content>
+			</node>
+		</node>
+		<!-- favourites-->	
+		<node label="32006" condition="IsEmpty(Window(home).Property(netflixmenu))">
+			<shortcut label="10134" grouping="32029" icon="special://skin/extras/hometiles/favourites.png">ActivateWindow(favourites)</shortcut>
+			<content>favourite</content>
+		</node>
+		<!-- settings -->
+		<node label="10004" condition="IsEmpty(Window(home).Property(netflixmenu))">
+			<shortcut label="7" grouping="32029" icon="special://skin/extras/hometiles/filemanager.png">ActivateWindow(filemanager)</shortcut>
+            <shortcut label="130" grouping="32029" icon="special://skin/extras/backgrounds/systeminfo.jpg">ActivateWindow(systeminfo)</shortcut>
+			<content>settings</content>
+		</node>
+		<!-- xbmc commands -->
+		<node label="32054" condition="IsEmpty(Window(home).Property(netflixmenu))">
+			<shortcut label="31565" grouping="32029" condition="IsEmpty(Window(home).Property(powermenu))">submenu</shortcut>
+			<shortcut label="20077" icon="common/skin-settings.png">ActivateWindow(SkinSettings)</shortcut>
+			<shortcut label="10004" icon="common/settings1.png">ActivateWindow(Settings)</shortcut>
+			<shortcut label="20126" icon="common/lock.png">System.LogOff</shortcut>
+            <shortcut label="31714" icon="common/reload-skin.png">ReloadSkin</shortcut>
+			<shortcut label="13009" icon="common/exit1.png">Quit</shortcut>
+			<shortcut label="13005" icon="common/shutdown1.png">Shutdown</shortcut>
+			<shortcut label="13013" icon="common/reboot1.png">Reset</shortcut>
+			<shortcut label="13010" icon="common/hybernate.png">Hibernate</shortcut>
+			<shortcut label="20045" icon="common/mastermode.png">Mastermode</shortcut>
+			<shortcut label="13016" icon="common/shutdown1.png">Powerdown</shortcut>
+			<shortcut label="13011" icon="common/sleep.png">Suspend</shortcut>
+			<shortcut label="600"   icon="common/rip-cd.png">RipCD</shortcut>
+			<shortcut label="360"   icon="common/screensaver.png">ActivateScreensaver</shortcut>
+			<shortcut label="13014" icon="common/minimize.png">Minimize</shortcut>
+			<shortcut label="32046" icon="common/update-video.png">UpdateLibrary(video)</shortcut>
+			<shortcut label="32047" icon="common/update-audio.png">UpdateLibrary(music)</shortcut>
+			<shortcut label="32055" icon="common/clean-video.png">CleanLibrary(video)</shortcut>
+			<shortcut label="32056" icon="common/clean-audio.png">CleanLibrary(music)</shortcut>
+			<shortcut label="20150" icon="common/shutdown-timer.png">XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</shortcut>
+			<shortcut label="20151" icon="common/cancel-timer.png">XBMC.CancelAlarm(shutdowntimer)</shortcut>
+			<shortcut label="14092" icon="common/toggle-debug.png">ToggleDebug</shortcut>
+            <shortcut label="24034" icon="common/check-updates.png">UpdateAddonRepos</shortcut>
+            <shortcut label="14111" icon="common/toggle-debug.png">ActivateWindow(eventlog)</shortcut>
+		</node>
+	</groupings>
+	
+	<widget-groupings>
+        <!-- script.skin.helper.service default widgets -->
+        <shortcut label="$ADDON[script.skin.helper.service 32063]" type="32010" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=pvr,scriptwidgets,smartshortcuts,extendedinfo,smartishwidgets,favourites,static</shortcut>
+        <content>widgets</content>
+		<node label="32030">
+			<content>video</content>
+			<node label="32040">
+				<content>playlist-video</content>
+			</node>
+			<node label="32010">
+				<content>addon-video</content>
+			</node>
+			<node label="32075">
+				<content>videosources</content>
+			</node>
+		</node>
+		<node label="32031">
+			<content>music</content>
+			<node label="32040">
+				<content>playlist-audio</content>
+			</node>
+			<node label="32011">
+				<content>addon-audio</content>
+			</node>
+			<node label="32075">
+				<content>musicsources</content>
+			</node>
+		</node>
+		<node label="32020">
+			<content>picturesources</content>
+		</node>
+		<node label="32007">
+			<node label="32010">
+				<content>addon-video</content>
+			</node>
+			<node label="32011">
+				<content>addon-audio</content>
+			</node>
+			<node label="32012">
+				<content>addon-image</content>
+			</node>
+            <node label="32009">
+				<content>addon-program-plugin</content>
+			</node>
+			<shortcut label="10001" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs">addons://sources/executable</shortcut>
+			<shortcut label="1037" type="32014" icon="DefaultAddonVideo.png" widget="addon" widgetType="video" widgetTarget="video">addons://sources/video</shortcut>
+			<shortcut label="1038" type="32019" icon="DefaultAddonMusic.png" widget="addon" widgetType="music" widgetTarget="music">addons://sources/audio</shortcut>
+			<shortcut label="1039" type="32020" icon="DefaultAddonPicture.png" widget="addon" widgetType="picture" widgetTarget="pictures">addons://sources/image</shortcut>
+		</node>
+	</widget-groupings>
+	
+	<!-- widgets -->
+	<widget label="31531" type="32010">||BROWSE||script.skin.helper.service/?action=smartshortcuts</widget>
+	
+	<!-- widget style -->
+    <propertySettings property="widgetstyle" buttonID="1001" title="$LOCALIZE[31507]" showNone="False" imageBrowse="False" /> 
+    <property property="widgetstyle" label="31641">Global</property> 
+    <property property="widgetstyle" label="Landscape" condition="!Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_hor_landscape.jpg">landscape</property>
+    <property property="widgetstyle" label="Poster" condition="!Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_hor_poster.jpg">poster</property>
+    <property property="widgetstyle" label="Single Box" condition="!Skin.String(HomeLayout, netflix) + !Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_hor_singlebox.jpg">single box</property>
+    <property property="widgetstyle" label="Small poster" condition="!Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_hor_smallposter.jpg">small poster</property>
+    <property property="widgetstyle" label="Square" condition="!Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_hor_square.jpg">square</property>
+    <property property="widgetstyle" label="Wide Box" condition="!Skin.String(HomeLayout, netflix) + !Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_hor_widebox.jpg">wide box</property>
+    <property property="widgetstyle" label="Landscape" condition="Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_ver_landscape.jpg">landscape</property>
+    <property property="widgetstyle" label="Poster" condition="Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_ver_poster.jpg">poster</property>
+    <property property="widgetstyle" label="Single Box" condition="Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_ver_singlebox.jpg">single box</property>
+    <property property="widgetstyle" label="Small poster" condition="Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_ver_smallposter.jpg">small poster</property>
+    <property property="widgetstyle" label="Square" condition="Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_ver_square.jpg">square</property>
+    <property property="widgetstyle" label="Wide Box" condition="Skin.String(HomeLayout,simplever)" icon="special://skin/extras/viewthumbs/widget_ver_widebox.jpg">wide box</property>
+    <propertydefault defaultID="music" property="widgetstyle">square</propertydefault>
+</overrides>

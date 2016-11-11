@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">211</defaultcontrol>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="300" />
+	</animation>
+	<controls>
+		<!-- Background -->
+		<control type="image" description="Background">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>$VAR[HomeBG]</texture>
+		</control>
+		<!-- Menu -->
+		<control type="label" description="Menu">
+			<left>50</left>
+			<top>30</top>
+			<width>120</width>
+			<height>30</height>
+			<label>Menu</label>
+		</control>
+		<!-- Preview -->
+		<control type="label" description="Preview">
+			<left>550</left>
+			<top>320</top>
+			<width>200</width>
+			<height>200</height>
+			<label>Preview</label>
+		</control>
+
+		<control type="group" id="200">
+			<top>10</top>
+			<!--control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>500</width>
+				<height>700</height>
+				<texture border="2">grey.png</texture>
+				<colordiffuse>4FFFFFFF</colordiffuse>
+				<selectedcolor>FF000000</selectedcolor>
+			</control-->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>500</width>
+				<height>1080</height>
+				<texture border="2">blue.png</texture>
+				<colordiffuse>4FFFFFFF</colordiffuse>
+				<selectedcolor>FF000000</selectedcolor>
+				<visible>ControlGroup(200).HasFocus</visible>
+			</control>
+			
+			<!-- id 211 - Current shortcuts -->
+			<control type="list" id="211">
+				<top>50</top>
+				<centerleft>960</centerleft>
+				<width>1800</width>
+				<onright>211</onright>
+				<ondown>401</ondown>
+				<orientation>horizontal</orientation>
+				<preloaditems>2</preloaditems>
+				<pagecontrol>260</pagecontrol>
+				<scrolltime tween="sine" easing="inout">280</scrolltime>
+				<itemlayout width="360" height="269">
+					<control type="label" description="label">
+						<!--animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation->
+						<animation effect="fade" start="100" end="0" time="100">unFocus</animation-->					
+						<centerleft>180</centerleft>
+						<top>252</top>
+						<width>350</width>
+						<height>24</height>
+							<font>font27</font>
+						<align>center</align>
+						<scroll>false</scroll>
+						<textcolor>homelabelNF</textcolor>
+						<label>[B]$INFO[ListItem.label][/B]</label>
+					</control>
+					<control type="label" description="label">
+						<!--animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation->
+						<animation effect="fade" start="100" end="0" time="100">unFocus</animation-->					
+						<centerleft>180</centerleft>
+						<top>252</top>
+						<width>350</width>
+						<height>24</height>
+						<font>font27</font>
+						<align>center</align>
+						<scroll>false</scroll>
+						<textcolor>FFCCCCC</textcolor>
+						<selectedcolor>FF4DBAFF</selectedcolor>
+						<label>[B]$INFO[ListItem.label2][/B]</label>
+						<aligny>center</aligny>
+					</control>
+					<control type="image" description="shade_base">
+                    <centerleft>180</centerleft>
+					<top>37</top>
+                    <width>350</width>
+                    <height>236</height>
+                    <texture>icons/iconbase.png</texture>
+                </control>
+                <control type="image" description="color base">
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>305</width>
+                    <height>182</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
+                </control>
+                <control type="image" description="THMBSICONS">
+                    <visible>!IsEmpty(Listitem.thumb)</visible>
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>305</width>
+                    <height>182</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                </control>
+                <control type="image" description="THMBSICONS">
+                    <visible>IsEmpty(Listitem.thumb)</visible>
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>305</width>
+                    <height>182</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                </control>
+                <control type="image" description="THMBS weather">
+                    <centerleft>180</centerleft>
+                    <top>75</top>
+                    <width>305</width>
+                    <height>160</height>
+                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>			
+				</itemlayout>
+				<focusedlayout width="360" height="290">
+					<control type="group">												
+						<animation effect="zoom" start="100" end="130" time="350" center="auto" tween="back" easing="out">Focus</animation>
+						<animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>															
+						<include condition="!Skin.HasSetting(ATV3select)">ATV4select</include>										
+						<control type="image" description="shade_base">
+							<centerleft>180</centerleft>
+							<top>45</top>
+							<width>340</width>
+							<height>246</height>
+							<texture>icons/iconshadow.png</texture>
+						</control>
+						<control type="image" description="color base">
+							<centerleft>180</centerleft>
+							<top>45</top>
+							<width>287</width>
+							<height>179</height>
+							<texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
+						</control>
+						<control type="image" description="THMBSICONS">
+							<visible>!IsEmpty(Listitem.thumb)</visible>
+							<centerleft>180</centerleft>
+							<top>45</top>
+							<width>287</width>
+							<height>179</height>
+							<texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+						</control>
+						<control type="image" description="THMBSICONS">
+							<visible>IsEmpty(Listitem.thumb)</visible>
+							<centerleft>180</centerleft>
+							<top>45</top>
+							<width>287</width>
+							<height>179</height>
+							<texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+						</control>
+						<control type="image" description="THMBS weather">
+							<centerleft>180</centerleft>
+							<top>42</top>
+							<width>257</width>
+							<height>160</height>
+							<texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+					</control>
+					<control type="label" description="label">
+						<visible>!Player.HasVideo</visible>
+						<animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
+						<animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+						<centerleft>180</centerleft>
+						<top>252</top>
+						<width>368</width>
+						<height>24</height>
+						<font>font33</font>
+						<align>center</align>
+						<scroll>true</scroll>
+						<textcolor>homelabelFO</textcolor>
+						<label>[B]$INFO[ListItem.label][/B]</label>
+					</control>
+					<control type="label" description="label">
+						<visible>!Player.HasVideo</visible>
+						<animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
+						<animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+						<centerleft>180</centerleft>
+						<top>279</top>
+						<width>368</width>
+						<height>24</height>
+						<font>font27</font>
+						<align>center</align>
+						<scroll>true</scroll>
+						<textcolor>homelabelFO</textcolor>
+						<label>[B]$INFO[ListItem.label2][/B]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<!--control type="scrollbar" id="260">
+				<top>50</top>
+				<left>470</left>
+				<width>20</width>
+				<height>650</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+				<onleft>211</onleft>
+				<onright>300</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control-->
+		</control>
+		
+		<!--control type="panel" id="9000" description="Preview">
+			<include>mainmenu-position-and-appearance</include>
+			<content><include>skinshortcuts-mainmenu</include></content>
+            <!--animation condition="!Container(9000).Row(0)" effect="slide" start="0,0" end="0,-265" time="350" tween="circle" easing="inout">Conditional</animation->	
+			
+            <left>460</left>
+            <top>400</top>
+            <width>1500</width>
+            <height>600</height>
+            <onleft>9000</onleft>
+            <onright>9000</onright>
+            <onup>700</onup>
+            <ondown>noop</ondown>
+            <orientation>vertical</orientation>
+            <scrolltime tween="sine" easing="inout">280</scrolltime>
+            <itemlayout height="194" width="260">
+                <control type="image" description="shade_base">
+                    <centerleft>180</centerleft>
+					<top>37</top>
+                    <width>250</width>
+                    <height>182</height>
+                    <texture>icons/iconbase.png</texture>
+                </control>
+                <control type="image" description="color base">
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>230</width>
+                    <height>162</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
+                </control>
+                <control type="image" description="THMBSICONS">
+                    <visible>!IsEmpty(Listitem.thumb)</visible>
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>230</width>
+                    <height>152</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                </control>
+                <control type="image" description="THMBSICONS">
+                    <visible>IsEmpty(Listitem.thumb)</visible>
+                    <centerleft>180</centerleft>
+                    <top>60</top>
+                    <width>230</width>
+                    <height>152</height>
+                    <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                </control>
+                <control type="image" description="THMBS weather">
+                    <centerleft>180</centerleft>
+                    <top>75</top>
+                    <width>230</width>
+                    <height>152</height>
+                    <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>				
+                <control type="label" description="label">
+					<visible>!Player.HasVideo + Skin.HasSetting(NoFocusNoLabel)</visible>
+                    <!--animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation->
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation->					
+                    <centerleft>180</centerleft>
+                    <top>252</top>
+                    <width>350</width>
+                    <height>24</height>
+                    <font>font27</font>
+                    <align>center</align>
+					<scroll>false</scroll>
+                    <textcolor>homelabelNF</textcolor>
+                    <label>[B]$INFO[ListItem.label][/B]</label>
+                </control>				
+            </itemlayout>
+            <focusedlayout height="194" width="260">
+                <control type="group">												
+                    <animation effect="zoom" start="100" end="130" time="350" center="auto" tween="back" easing="out">Focus</animation>
+                    <animation effect="zoom" start="130" end="100" time="120" center="auto">unFocus</animation>															
+					<include condition="!Skin.HasSetting(ATV3select)">ATV4select</include>										
+                    <control type="image" description="shade_base">
+                        <centerleft>180</centerleft>
+						<top>45</top>
+                        <width>250</width>
+                        <height>182</height>
+                        <texture>icons/iconshadow.png</texture>
+                    </control>
+                    <control type="image" description="color base">
+                        <centerleft>180</centerleft>
+                        <top>45</top>
+                        <width>230</width>
+                        <height>162</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.Property(color)]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <visible>!IsEmpty(Listitem.thumb)</visible>
+                        <centerleft>180</centerleft>
+                        <top>45</top>
+                        <width>230</width>
+                        <height>162</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.thumb]</texture>
+                    </control>
+                    <control type="image" description="THMBSICONS">
+                        <visible>IsEmpty(Listitem.thumb)</visible>
+                        <centerleft>180</centerleft>
+                        <top>45</top>
+                        <width>230</width>
+                        <height>162</height>
+                        <texture diffuse="icons/diffusehomeicon.png">$INFO[ListItem.label2]</texture>
+                    </control>
+                    <control type="image" description="THMBS weather">
+						<centerleft>180</centerleft>
+						<top>42</top>
+						<width>230</width>
+						<height>162</height>
+                        <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                </control>
+                <control type="label" description="label">
+					<visible>!Player.HasVideo</visible>
+                    <animation effect="fade" start="0" end="100" time="150" delay="50">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                    <centerleft>180</centerleft>
+                    <top>252</top>
+                    <width>368</width>
+                    <height>24</height>
+                    <font>font33</font>
+                    <align>center</align>
+					<scroll>true</scroll>
+                    <textcolor>homelabelFO</textcolor>
+                    <label>[B]$INFO[ListItem.label][/B]</label>
+                </control>
+            </focusedlayout>
+		</control-->
+
+		<control type="group" id="300">
+			<left>80</left>
+			<top>400</top>
+			<width>325</width>
+			<visible>IsEmpty(Window.Property(widgetcontrols))</visible>
+			<control type="button" id="401">
+				<description>Add a new shortcut</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>0</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<ondown>1301</ondown>
+				<onup>211</onup>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>RunScript(script.skin.helper.service,action=ADDSHORTCUT)</onclick>
+				<label>$ADDON[script.skinshortcuts 32000]</label>
+			</control>
+			<control type="button" id="1301">
+				<description>Reload</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>65</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<ondown>302</ondown>
+				<onup>301</onup>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onclick>
+				<label>Reload</label>
+			</control>
+			<control type="button" id="302">
+				<description>Delete shortcut</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>130</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>1301</onup>
+				<ondown>303</ondown>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32001]</label>
+			</control>
+
+			<control type="button" id="303">
+				<description>Move shortcut up</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>195</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>302</onup>
+				<ondown>304</ondown>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32002]</label>
+			</control>
+			<control type="button" id="304">
+				<description>Move shortcut down</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>260</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>303</onup>
+				<ondown>305</ondown>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32003]</label>
+			</control>
+
+			<control type="button" id="305">
+				<description>Change shortcut label</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>325</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>304</onup>
+				<ondown>306</ondown>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32025]</label>
+			</control>
+			<control type="button" id="306">
+				<description>Change shortcut thumbnail</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>390</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>305</onup>
+				<ondown>307</ondown>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32026]</label>
+			</control>
+			<control type="button" id="307">
+				<description>Change shortcut action</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>455</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>306</onup>
+				<ondown>308</ondown>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32027]</label>
+			</control>
+
+			<control type="button" id="308">
+				<description>Reset shortcuts</description>
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<left>0</left>
+				<top>520</top>
+				<width>200</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>center</align>
+				<onup>307</onup>
+				<onleft>260</onleft>
+				<onright>111</onright>
+				<onclick>noop</onclick>
+				<label>$ADDON[script.skinshortcuts 32028]</label>
+			</control>
+			<!--set widget advanced-->
+			<control type="button" id="1312"> 
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<width>500</width>
+				<top>585</top>
+				<align>center</align>
+				<onclick>SetProperty(widgetcontrols,show)</onclick>
+				<onclick>SetFocus(9000,1)</onclick>
+				<label>31564</label>
+				<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+				<visible>!Skin.HasSetting(DisableAllWidgets) + !Skin.String(HomeLayout, netflix) + !Skin.String(HomeLayout, 3)</visible>
+			</control>
+			
+			<!--disable-->
+			<control type="button" id="313"> 
+				<width>325</width>
+				<height>60</height>
+				<align>center</align>
+				<include>DialogButt</include>
+				<width>500</width>
+				<top>650</top>
+				<align>center</align>
+				<onclick>noop</onclick>
+				<label>31564</label>
+				<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+				<visible>!Skin.HasSetting(DisableAllWidgets) + !Skin.String(HomeLayout, netflix) + !Skin.String(HomeLayout, 3)</visible>
+			</control>
+			<!-- hidden button to set widget -->
+			<control type="button" id="312">
+				<visible>false</visible>
+			</control>
+		</control>
+		
+		<!-- widget actions -->
+		<control type="grouplist" id="9000">
+			<left>80</left>
+			<top>400</top>
+			<width>325</width>
+			<height>770</height>
+			<itemgap>5</itemgap>
+			<orientation>vertical</orientation>
+			<onback>ClearProperty(widgetcontrols)</onback>
+			<onright>ClearProperty(widgetcontrols)</onright>
+			<onright>SetFocus(300)</onright>
+			<onleft>211</onleft>
+			<pagecontrol>280</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<animation effect="slide" start="0" end="1200" time="0" condition="IsEmpty(Window.Property(widgetcontrols))">Conditional</animation>
+			<!--widget rows-->
+			<control type="button" id="31750">
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>$LOCALIZE[31750]:</label>
+				<font>Reg22</font>
+				<label2>$VAR[widgetrowslabel]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=WidgetRows,header=$LOCALIZE[31750],property=multiwidget)</onclick>
+				<visible>SubString(Skin.String(HomeLayout), ver)</visible>
+			</control>
+            <!-- square submenu -->
+			<control type="radiobutton" id="31737"> 
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>31737</label>
+				<font>Reg22</font>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(squaresubmenu), enable)">SetProperty(customProperty, squaresubmenu)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(squaresubmenu), enable)">SetProperty(customValue, enable)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(squaresubmenu), enable)">SetProperty(customProperty, squaresubmenu)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(squaresubmenu), enable)">SetProperty(customValue, disable)</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(squaresubmenu), enable)</selected>
+				<visible>SubString(Skin.String(HomeLayout), ver)</visible>
+			</control>
+			<!-- lower widgets -->
+			<control type="radiobutton" id="31660"> 
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>31660</label>
+				<font>Reg22</font>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(lowerwidgets), enable)">SetProperty(customProperty, lowerwidgets)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(lowerwidgets), enable)">SetProperty(customValue, enable)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(lowerwidgets), enable)">SetProperty(customProperty, lowerwidgets)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(lowerwidgets), enable)">SetProperty(customValue, disable)</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(lowerwidgets), enable)</selected>
+				<visible>SubString(Container(211).ListItem.Property(multiwidget),single) | StringCompare(Container(211).ListItem.Property(multiwidget),multi) | IsEmpty(Container(211).ListItem.Property(multiwidget))</visible>
+				<visible>SubString(Skin.String(HomeLayout), ver)</visible>
+			</control>
+			<!-- WIDGET 1 -->
+			<control type="label" id="9001">
+				<width>500</width>
+				<align>left</align>
+				<height>40</height>
+				<font>Reg26</font>
+				<label>[B]$LOCALIZE[31499] 1[/B]</label>
+			</control>
+			<control type="button" id="9002">
+				<!-- select widget -->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<onclick>ClearProperty(widgetID)</onclick>
+				<onclick>SendClick(312)</onclick>
+				<textoffsetx>10</textoffsetx>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32044] >></label>
+			</control>
+			<control type="button" id="9003">
+				<!--widget style-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>Layout for widgets:</label>
+				<font>Reg22</font>
+				<label2>$VAR[widgetstylelabel1]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetstyle,header=Layout for widgets,property=widgetstyle)</onclick>
+				<visible>!Skin.String(HomeLayout, enhanced)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget))</visible>
+			</control>
+			<control type="button" id="9004">
+				<!--widget label-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32025]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget))</visible>
+			</control>
+			<control type="button" id="9005"> 
+				<!-- show infopanel -->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<textoffsetx>10</textoffsetx>
+				<label>$LOCALIZE[31185]:</label>
+				<label2>$VAR[widgetinfopanellabel1]</label2>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetInfoPanel,header=$LOCALIZE[31185],property=widgetInfoPanel)</onclick>
+				<visible>Skin.String(HomeLayout, win10)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget))</visible>
+			</control>
+			<control type="button" id="9006">
+				<!--widget tags-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$LOCALIZE[31675]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetTags)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$LOCALIZE[31675],property=widgetTags,setting=Widgets_DisplayTags)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget))</visible>
+				<visible>Skin.String(Widgets_DisplayTags,override)</visible>
+				<visible>!SubString(Container(211).ListItem.Property(widgetstyle),box) + ![IsEmpty(Container(211).ListItem.Property(widgetstyle)) + SubString(Skin.String(widgetstyle),box)]</visible>
+			</control>
+			<!-- widget force refresh -->
+			<control type="radiobutton" id="9007"> 
+				<width>500</width>
+				<label>31717</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh), refresh)">SetProperty(customProperty, widgetForceRefresh)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh), refresh)">SetProperty(customValue, refresh)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh), refresh)">SetProperty(customProperty, widgetForceRefresh)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh), refresh)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetForceRefresh), refresh)</selected>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget))</visible>
+				<visible>StringCompare(Container(211).ListItem.Property(widget), Addon) | SubString(Container(211).ListItem.Property(widgetPath), favourite) | SubString(Container(211).ListItem.Property(widgetPath), xsp)</visible>
+			</control>
+			<!-- widget auto rotate -->
+			<control type="radiobutton" id="9008"> 
+				<width>500</width>
+				<label>31723</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate), enabled)">SetProperty(customProperty, widgetAutoRotate)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate), enabled)">SetProperty(customValue, enabled)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate), enabled)">SetProperty(customProperty, widgetAutoRotate)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate), enabled)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetAutoRotate), enabled)</selected>
+				<visible>Skin.String(widgets_rotate,override)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget))</visible>
+			</control>
+			<!-- WIDGET 2 -->
+			<control type="label" id="9010">
+				<width>500</width>
+				<align>left</align>
+				<height>40</height>
+				<font>Reg26</font>
+				<label>[B]$LOCALIZE[31499] 2[/B]</label>
+			</control>
+			<control type="button" id="9011">
+				<!-- select widget -->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<onclick>SetProperty(widgetID, 1)</onclick>
+				<onclick>SendClick(312)</onclick>
+				<textoffsetx>10</textoffsetx>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32044] >></label>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+			</control>
+			<control type="button" id="9012">
+				<!--widget style-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>$LOCALIZE[31507]:</label>
+				<font>Reg22</font>
+				<label2>$VAR[widgetstylelabel2]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetstyle,header=$LOCALIZE[31507],property=widgetstyle.1)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.1))</visible>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+				<visible>!Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<control type="button" id="9013">
+				<!--widget label-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32025]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetName.1)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.1)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.1))</visible>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+			</control>
+			<!-- show infopanel -->
+			<control type="button" id="9014"> 
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<textoffsetx>10</textoffsetx>
+				<label>$LOCALIZE[31185]:</label>
+				<label2>$VAR[widgetinfopanellabel2]</label2>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetInfoPanel,header=$LOCALIZE[31185],property=widgetInfoPanel.1)</onclick>
+				<visible>Skin.String(HomeLayout, win10)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.1))</visible>
+			</control>
+			<control type="button" id="9015">
+				<!--widget tags-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$LOCALIZE[31675]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetTags.1)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$LOCALIZE[31675],property=widgetTags.1,setting=Widgets_DisplayTags)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.1))</visible>
+				<visible>Skin.String(Widgets_DisplayTags,override)</visible>
+				<visible>!SubString(Container(211).ListItem.Property(widgetstyle.1),box) + ![IsEmpty(Container(211).ListItem.Property(widgetstyle.1)) + SubString(Skin.String(widgetstyle),box)]</visible>
+			</control>
+			<!-- widget force refresh -->
+			<control type="radiobutton" id="9016"> 
+				<width>500</width>
+				<label>31717</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.1), refresh)">SetProperty(customProperty, widgetForceRefresh.1)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.1), refresh)">SetProperty(customValue, refresh)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.1), refresh)">SetProperty(customProperty, widgetForceRefresh.1)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.1), refresh)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetForceRefresh.1), refresh)</selected>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.1))</visible>
+				<visible>StringCompare(Container(211).ListItem.Property(widget.1), Addon) | SubString(Container(211).ListItem.Property(widgetPath.1), favourite) | SubString(Container(211).ListItem.Property(widgetPath.1), xsp)</visible>
+			</control>
+			<!-- widget auto rotate -->
+			<control type="radiobutton" id="9017"> 
+				<width>500</width>
+				<label>31723</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.1), enabled)">SetProperty(customProperty, widgetAutoRotate.1)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.1), enabled)">SetProperty(customValue, enabled)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.1), enabled)">SetProperty(customProperty, widgetAutoRotate.1)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.1), enabled)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetAutoRotate.1), enabled)</selected>
+				<visible>Skin.String(widgets_rotate,override)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.1))</visible>
+			</control>
+			<!-- WIDGET 3 -->
+			<control type="label" id="9020">
+				<width>500</width>
+				<align>left</align>
+				<height>40</height>
+				<font>Reg26</font>
+				<label>[B]$LOCALIZE[31499] 3[/B]</label>
+			</control>
+			<control type="button" id="9021">
+				<!-- select widget -->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<onclick>SetProperty(widgetID, 2)</onclick>
+				<onclick>SendClick(312)</onclick>
+				<textoffsetx>10</textoffsetx>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32044] >></label>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+			</control>
+			<control type="button" id="9022">
+				<!--widget style-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>$LOCALIZE[31507]:</label>
+				<font>Reg22</font>
+				<label2>$VAR[widgetstylelabel3]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetstyle,header=$LOCALIZE[31507],property=widgetstyle.2)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.2))</visible>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+				<visible>!Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<control type="button" id="9023">
+				<!--widget label-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32025]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetName.2)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.2)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.2))</visible>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+			</control>
+			<!-- show infopanel -->
+			<control type="button" id="9024"> 
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<textoffsetx>10</textoffsetx>
+				<label>$LOCALIZE[31185]:</label>
+				<label2>$VAR[widgetinfopanellabel3]</label2>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetInfoPanel,header=$LOCALIZE[31185],property=widgetInfoPanel.2)</onclick>
+				<visible>Skin.String(HomeLayout, win10)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.2))</visible>
+			</control>
+			<control type="button" id="9025">
+				<!--widget tags-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$LOCALIZE[31675]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetTags.2)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$LOCALIZE[31675],property=widgetTags.2,setting=Widgets_DisplayTags)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.2))</visible>
+				<visible>Skin.String(Widgets_DisplayTags,override)</visible>
+				<visible>!SubString(Container(211).ListItem.Property(widgetstyle.2),box) + ![IsEmpty(Container(211).ListItem.Property(widgetstyle.2)) + SubString(Skin.String(widgetstyle),box)]</visible>
+			</control>
+			<!-- widget force refresh -->
+			<control type="radiobutton" id="9026"> 
+				<width>500</width>
+				<label>31717</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.2), refresh)">SetProperty(customProperty, widgetForceRefresh.2)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.2), refresh)">SetProperty(customValue, refresh)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.2), refresh)">SetProperty(customProperty, widgetForceRefresh.2)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.2), refresh)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetForceRefresh.2), refresh)</selected>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.2))</visible>
+				<visible>StringCompare(Container(211).ListItem.Property(widget.2), Addon) | SubString(Container(211).ListItem.Property(widgetPath.2), favourite) | SubString(Container(211).ListItem.Property(widgetPath.2), xsp)</visible>
+			</control>
+			<!-- widget auto rotate -->
+			<control type="radiobutton" id="9027"> 
+				<width>500</width>
+				<label>31723</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.2), enabled)">SetProperty(customProperty, widgetAutoRotate.2)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.2), enabled)">SetProperty(customValue, enabled)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.2), enabled)">SetProperty(customProperty, widgetAutoRotate.2)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.2), enabled)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetAutoRotate.2), enabled)</selected>
+				<visible>Skin.String(widgets_rotate,override)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.2))</visible>
+			</control>
+			<!-- WIDGET 4 -->
+			<control type="label" id="9030">
+				<width>500</width>
+				<align>left</align>
+				<height>40</height>
+				<font>Reg26</font>
+				<label>[B]$LOCALIZE[31499] 4[/B]</label>
+			</control>
+			<control type="button" id="9031">
+				<!-- select widget -->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<onclick>SetProperty(widgetID, 3)</onclick>
+				<onclick>SendClick(312)</onclick>
+				<textoffsetx>10</textoffsetx>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32044] >></label>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+			</control>
+			<control type="button" id="9032">
+				<!--widget style-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<label>$LOCALIZE[31507]:</label>
+				<font>Reg22</font>
+				<label2>$VAR[widgetstylelabel4]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetstyle,header=$LOCALIZE[31507],property=widgetstyle.3)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.3))</visible>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+				<visible>!Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<control type="button" id="9033">
+				<!--widget label-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32025]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetName.3)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.3)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.3))</visible>
+				<enable>!IsEmpty(Container(211).ListItem.Property(widget))</enable>
+			</control>
+			<!-- show infopanel -->
+			<control type="button" id="9034"> 
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<textoffsetx>10</textoffsetx>
+				<label>$LOCALIZE[31185]:</label>
+				<label2>$VAR[widgetinfopanellabel4]</label2>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,setting=widgetInfoPanel,header=$LOCALIZE[31185],property=widgetInfoPanel.3)</onclick>
+				<visible>Skin.String(HomeLayout, win10)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.3))</visible>
+			</control>
+			<control type="button" id="9035">
+				<!--widget tags-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$LOCALIZE[31675]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetTags.3)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$LOCALIZE[31675],property=widgetTags.3,setting=Widgets_DisplayTags)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.3))</visible>
+				<visible>Skin.String(Widgets_DisplayTags,override)</visible>
+				<visible>!SubString(Container(211).ListItem.Property(widgetstyle.3),box) + ![IsEmpty(Container(211).ListItem.Property(widgetstyle.3)) + SubString(Skin.String(widgetstyle),box)]</visible>
+			</control>
+			<!-- widget force refresh -->
+			<control type="radiobutton" id="9036"> 
+				<width>500</width>
+				<label>31717</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.3), refresh)">SetProperty(customProperty, widgetForceRefresh.3)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.3), refresh)">SetProperty(customValue, refresh)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.3), refresh)">SetProperty(customProperty, widgetForceRefresh.3)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.3), refresh)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetForceRefresh.3), refresh)</selected>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.3))</visible>
+				<visible>StringCompare(Container(211).ListItem.Property(widget.3), Addon) | SubString(Container(211).ListItem.Property(widgetPath.3), favourite) | SubString(Container(211).ListItem.Property(widgetPath.3), xsp)</visible>
+			</control>
+			<!-- widget auto rotate -->
+			<control type="radiobutton" id="9037"> 
+				<width>500</width>
+				<label>31723</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.3), enabled)">SetProperty(customProperty, widgetAutoRotate.3)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.3), enabled)">SetProperty(customValue, enabled)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.3), enabled)">SetProperty(customProperty, widgetAutoRotate.3)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.3), enabled)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetAutoRotate.3), enabled)</selected>
+				<visible>Skin.String(widgets_rotate,override)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.3))</visible>
+			</control>
+			<!-- spotlight widget -->
+			<control type="label" id="9040">
+				<width>500</width>
+				<align>left</align>
+				<height>40</height>
+				<font>Reg26</font>
+				<label>[B]$LOCALIZE[31307][/B]</label>
+				<visible>Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<control type="button" id="9041">
+				<!-- select widget -->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32044] >></label>
+				<onclick>SetProperty(widgetID, 99)</onclick>
+				<onclick>SendClick(312)</onclick>
+				<visible>Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<control type="button" id="9042">
+				<!--widget label-->
+				<width>500</width>
+				<height>45</height>
+				<align>left</align>
+				<font>Reg22</font>
+				<label>$ADDON[script.skinshortcuts 32025]:</label>
+				<label2>$INFO[Container(211).ListItem.Property(widgetName.99)]</label2>
+				<textoffsetx>10</textoffsetx>
+				<onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.99)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.99))</visible>
+				<visible>Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<!-- widget force refresh -->
+			<control type="radiobutton" id="9043"> 
+				<width>500</width>
+				<label>31717</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.99), refresh)">SetProperty(customProperty, widgetForceRefresh.99)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetForceRefresh.99), refresh)">SetProperty(customValue, refresh)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.99), refresh)">SetProperty(customProperty, widgetForceRefresh.99)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetForceRefresh.99), refresh)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.99))</visible>
+				<visible>Skin.String(HomeLayout, enhanced)</visible>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetForceRefresh.99), refresh)</selected>
+				<visible>StringCompare(Container(211).ListItem.Property(widget.99), Addon) | SubString(Container(211).ListItem.Property(widgetPath.99), favourite) | SubString(Container(211).ListItem.Property(widgetPath.99), xsp)</visible>
+			</control>
+			<!-- widget auto rotate -->
+			<control type="radiobutton" id="9044"> 
+				<width>500</width>
+				<label>31723</label>
+				<font>Reg22</font>
+				<align>left</align>
+				<textoffsetx>10</textoffsetx>
+				<radiowidth>100</radiowidth>
+				<radioheight>65</radioheight>
+				<radioposx>415</radioposx>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.99), enabled)">SetProperty(customProperty, widgetAutoRotate.99)</onclick>
+				<onclick condition="!StringCompare(Container(211).ListItem.Property(widgetAutoRotate.99), enabled)">SetProperty(customValue, enabled)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.99), enabled)">SetProperty(customProperty, widgetAutoRotate.99)</onclick>
+				<onclick condition="StringCompare(Container(211).ListItem.Property(widgetAutoRotate.99), enabled)">SetProperty(customValue, "")</onclick>
+				<onclick>SendClick(404)</onclick>
+				<selected>StringCompare(Container(211).ListItem.Property(widgetAutoRotate.99), enabled)</selected>
+				<visible>Skin.String(widgets_rotate,override)</visible>
+				<visible>!IsEmpty(Container(211).ListItem.Property(widget.99))</visible>
+				<visible>Skin.String(HomeLayout, enhanced)</visible>
+			</control>
+			<!-- back -->
+			<control type="label" id="9060"> 
+				<width>500</width>
+				<align>center</align>
+				<label></label>
+				<height>45</height>
+			</control>
+			<control type="button" id="9061"> 
+				<width>500</width>
+				<height>45</height>
+				<align>center</align>
+				<onclick>ClearProperty(widgetcontrols)</onclick>
+				<onclick>SetFocus(300)</onclick>
+				<label>31654</label>
+			</control>
+        </control>
+
+		<!--control type="group" id="100">
+			<left>740</left>
+			<top>10</top>
+
+			<!-- id's 101, 102, 103 - label of current shortcut type, buttons to change shortcut type ->
+			<control type="label" id="101">
+				<left>10</left>
+				<top>10</top>
+				<width>400</width>
+				<height>30</height>
+			</control>
+			<control type="button" id="102">
+				<left>420</left>
+				<top>10</top>
+				<width>30</width>
+				<height>30</height>
+				<onclick>-</onclick>
+				<texturefocus>scroll-down-focus-2.png</texturefocus>
+				<texturenofocus>scroll-down-2.png</texturenofocus>
+				<onleft>300</onleft>
+				<onright>103</onright>
+				<ondown>111</ondown>
+			</control>
+			<control type="button" id="103">
+				<left>450</left>
+				<top>10</top>
+				<width>30</width>
+				<height>30</height>
+				<onclick>-</onclick>
+				<texturefocus>scroll-up-focus-2.png</texturefocus>
+				<texturenofocus>scroll-up-2.png</texturenofocus>
+				<onleft>102</onleft>
+				<ondown>111</ondown>
+			</control>
+
+			<!-- id 111 - List of available plugins ->
+			<control type="list" id="111">
+				<top>50</top>
+				<left>10</left>
+				<width>450</width>
+				<height>650</height>
+				<onleft>300</onleft>
+				<onright>160</onright>
+				<onup>103</onup>
+				<pagecontrol>160</pagecontrol>
+				<orientation>vertical</orientation>
+				<viewtype label="535">list</viewtype>
+				<preloaditems>2</preloaditems>
+				<itemlayout width="450" height="50">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture background="true" fallback="DefaultShortcut.png">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>55</posx>
+						<posy>0</posy>
+						<width>445</width>
+						<height>25</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font18</font>
+						<textcolor>FFCCCCC</textcolor>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<posx>55</posx>
+						<posy>25</posy>
+						<width>445</width>
+						<height>25</height>
+						<label>$INFO[ListItem.Label2]</label>
+						<font>font18</font>
+						<textcolor>FFCCCCC</textcolor>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="450" height="50">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture background="true" fallback="DefaultShortcut.png">$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="group">
+						<control type="label">
+							<posx>55</posx>
+							<posy>0</posy>
+							<width>445</width>
+							<height>25</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font18</font>
+							<textcolor>FF4DBAFF</textcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>55</posx>
+							<posy>25</posy>
+							<width>445</width>
+							<height>25</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<font>font18</font>
+							<textcolor>FF4DBAFF</textcolor>
+							<aligny>center</aligny>
+						</control>
+						<visible>Control.HasFocus(111)</visible>
+					</control>
+					<control type="group">
+						<control type="label">
+							<posx>55</posx>
+							<posy>0</posy>
+							<width>445</width>
+							<height>25</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font18</font>
+							<textcolor>FFCCCCC</textcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>55</posx>
+							<posy>25</posy>
+							<width>445</width>
+							<height>25</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<font>font18</font>
+							<textcolor>FFCCCCC</textcolor>
+							<aligny>center</aligny>
+						</control>
+						<visible>!Control.HasFocus(111)</visible>
+					</control>
+				</focusedlayout>
+			</control>
+
+			<!--control type="scrollbar" id="160">
+				<top>50</top>
+				<left>470</left>
+				<width>20</width>
+				<height>650</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
+				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
+				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
+				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
+				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+				<onleft>111</onleft>
+				<onright>102</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control->
+		</control-->
+	</controls>
+</window>

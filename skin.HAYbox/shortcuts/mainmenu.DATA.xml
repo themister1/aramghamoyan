@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts>
+	
+	<!-- all movies tile -->
+	<shortcut>
+		<label>$LOCALIZE[342]</label>
+		<label2>$LOCALIZE[342]</label2>
+		<icon>images/white.png</icon>
+		<thumb>special://skin/icons/movies.png</thumb>
+		<action>ActivateWindow(videos)</action>
+	</shortcut>
+	
+	<!-- all tvshows tile -->
+	<shortcut>
+		<label>$LOCALIZE[20343]</label>
+		<label2>$LOCALIZE[20343]</label2>
+		<icon>special://skin/extras/hometiles/titan.png</icon>
+		<thumb>special://skin/icons/tvshows.png</thumb>
+		<action>ActivateWindow(VideoLibrary,TVShowTitles,return)</action>
+	</shortcut>
+	
+	<!-- music tile -->
+	<shortcut>
+		<label>$LOCALIZE[2]</label>
+		<label2>$LOCALIZE[2]</label2>
+		<icon>special://skin/icons/music.png</icon>
+		<thumb>special://skin/icons/music.png</thumb>
+		<action>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</action>
+	</shortcut>
+	
+	<!-- addons tile -->
+	<shortcut>
+		<label>$LOCALIZE[24001]</label>
+		<label2>$LOCALIZE[24001]</label2>
+		<icon>special://skin/extras/hometiles/addons.png</icon>
+		<thumb>special://skin/icons/addons.png</thumb>
+		<action>ActivateWindow(1118)</action>
+	</shortcut>
+	
+	<!-- weather tile -->
+	<shortcut>
+		<label>$INFO[Weather.Temperature]</label>
+		<label2>$LOCALIZE[12600]</label2>
+		<icon>$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</icon>
+		<thumb>$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</thumb>
+		<action>ActivateWindow(Weather)</action>
+	</shortcut>	
+	
+	<!-- pictures tile -->
+	<shortcut>
+		<label>$LOCALIZE[1]</label>
+		<label2>$LOCALIZE[1]</label2>
+		<icon>special://skin/extras/hometiles/pictures.png</icon>
+		 <thumb>special://skin/icons/photos.png</thumb>
+		<action>ActivateWindow(2)</action>
+		<visible>!Skin.HasSetting(HomeMenuUsePlexforPictures)</visible>
+	</shortcut>	
+	
+	<!-- Favorite tile -->
+	<shortcut>
+		<label>$LOCALIZE[1036]</label>
+		<label2>-</label2>
+		<icon>special://skin/extras/hometiles/youtube.png</icon>
+		<thumb>special://skin/icons/favs.png</thumb>
+		<action>ActivateWindow(134)</action>
+	</shortcut>
+	
+	<!-- live tv tile -->
+	<shortcut>
+		<label>livetv</label>
+		<label2>$LOCALIZE[$VAR[LivetvLabel]]</label2>
+		<icon>special://skin/extras/hometiles/livetv.png</icon>
+		<thumb>special://skin/icons/livetv.png</thumb>
+		<action>ActivateWindow(TVGuide)</action>
+	</shortcut>
+
+	<!-- Programs tile -->
+	<shortcut>
+		<label>$LOCALIZE[0]</label>
+		<label2>$LOCALIZE[0]</label2>
+		<icon>special://skin/extras/backgrounds/hover_my music.jpg</icon>
+		<thumb>special://skin/icons/program.png</thumb>
+		<action>ActivateWindow(Programs,Addons)</action>
+	</shortcut>
+
+	<!-- Sources tile -->
+	<shortcut>
+		<label>$LOCALIZE[20094]</label>
+		<label2>$LOCALIZE[20094]</label2>
+		<icon>special://skin/extras/hometiles/videos.png</icon>
+		<thumb>special://skin/icons/sources.png</thumb>
+		<action>ActivateWindow(1115)</action>
+	</shortcut>
+	
+	<!-- filemanager tile -->
+	<shortcut>
+		<label>$LOCALIZE[7]</label>
+		<label2>$LOCALIZE[7]</label2>
+		<icon>special://skin/extras/hometiles/settings.png</icon>
+		<thumb>special://skin/icons/browser.png</thumb>
+		<action>ActivateWindow(3)</action>
+	</shortcut>
+	
+	<!-- settings tile -->
+	<shortcut>
+		<label>$LOCALIZE[5]</label>
+		<label2>$LOCALIZE[5]</label2>
+		<icon>special://skin/extras/hometiles/settings.png</icon>
+		<thumb>special://skin/icons/settings.png</thumb>
+		<action>ActivateWindow(Settings)</action>
+	</shortcut>
+	
+	<!-- close tile MENU-->
+	<shortcut>
+		<visible>!Player.HasMedia + !Skin.HasSetting(quitter) + !Skin.HasSetting(hidePwr)</visible>
+		<label>$LOCALIZE[351]</label>
+		<label2>$LOCALIZE[351]</label2>
+		<icon>special://skin/extras/hometiles/settings.png</icon>
+		<thumb>special://skin/icons/quits.png</thumb>
+		<action>ActivateWindow(ShutdownMenu)</action>
+	</shortcut>	
+	
+	
+	<!-- close tile -->
+	<shortcut>
+		<visible>!Player.HasMedia + Skin.HasSetting(quitter) + !Skin.HasSetting(hidePwr)</visible>
+		<label>$VAR[QuitLabel]</label>
+		<action condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</action>
+		<action condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</action>
+		<action condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</action>
+		<action condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</action>
+		<action condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</action>	
+		<label2>$LOCALIZE[351]</label2>
+		<icon>special://skin/extras/hometiles/settings.png</icon>
+		<thumb>special://skin/icons/quits.png</thumb>
+	</shortcut>
+	
+	<!-- fullscreen tile -->
+	<shortcut>
+		<visible>Player.HasMedia</visible>
+		<label>31064</label>
+		<action condition="Player.HasMedia">Fullscreen</action>
+		<label2>$LOCALIZE[31064]</label2>
+		<icon>special://skin/icons/full.png</icon>
+		<thumb>special://skin/icons/full.png</thumb>
+	</shortcut>
+</shortcuts>

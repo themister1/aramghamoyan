@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2005">
+  <defaultcontrol>-</defaultcontrol>
+  <onunload>Dialog.close(all,true)</onunload>
+  <controls>
+    <control type="group" >
+      <visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>
+      <animation effect="fade" time="200">VisibleChange</animation>
+      <!--control type="image" description="Background">
+        <width>1920</width>
+        <height>300</height>
+        <texture>images/Black.png</texture>
+        <colordiffuse>BBFFFFFF</colordiffuse>
+	  </control-->
+    </control>
+    <control type="grouplist" id="0">
+        <left>60</left>
+        <top>110</top>
+        <width>1800</width>
+        <height>500</height>
+        <itemgap>10</itemgap>
+        <control type="label" id="10" description="row 1 sys label">
+          <width>1800</width>
+          <height>50</height>
+          <align>left</align>
+          <font>font22</font>
+          <aligny>center</aligny>
+          <label>-</label>
+		  <textcolor>White3</textcolor>
+        </control>
+        <control type="label" id="11" description="row 2 sys label">
+          <width>1800</width>
+          <height>50</height>
+          <align>left</align>
+          <aligny>center</aligny>
+          <font>font22</font>
+          <label>-</label>
+		  <textcolor>White3</textcolor>
+        </control>
+        <control type="label" id="12" description="row 3 sys label">
+          <width>1800</width>
+          <height>50</height>
+          <align>left</align>
+          <aligny>center</aligny>
+          <font>font22</font>
+          <label>-</label>
+		  <textcolor>White3</textcolor>
+        </control>
+    </control>
+	<control type="image" id="1" description='pause'>
+		<visible>Player.Paused</visible>
+        <centertop>540</centertop>
+        <centerleft>960</centerleft>
+        <width>600</width>
+        <height>600</height>
+        <texture>mediacontrols/pause.png</texture>
+        <colordiffuse>FFFFFF</colordiffuse>
+    </control>
+  </controls>
+</window>

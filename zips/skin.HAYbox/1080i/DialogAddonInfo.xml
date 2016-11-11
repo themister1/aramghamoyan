@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="146">
+	<defaultcontrol always="true">300</defaultcontrol>
+	<onload>RunScript(script.colorbox,info=blur,id='"$INFO[ListItem.Property(fanart_image)]"',radius=100,prefix=AddonInfo)</onload>
+	<onunload>ClearProperty(AddonInfo.ImageColor,home)</onunload>
+	<onunload>ClearProperty(AddonInfo.ImageFilter,home)</onunload>  
+	<include>OpenClose</include>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<include>Background</include>
+		<control type="image" description="Fanart">
+		  <!--visible>IsEmpty(ListItem.Property(fanart_image))</visible-->
+		  <include>VisibleFade</include>
+		  <include>Dimensions_Fullscreen</include>
+		  <texture>$INFO[Window(home).Property(AddonInfo.ImageFilter)]</texture>
+		  <!--colordiffuse>30FFFFFF</colordiffuse-->
+		</control>
+		<control type="image" description='white image'>     
+			<top>770</top>
+			<height>500</height>
+			<width>1920</width>
+			<texture colordiffuse="55FFFFFF">images/white.png</texture>
+		</control> 
+		<control type="image" description="screenshot">
+		  <left>84</left>
+		  <top>822</top>
+		  <width>310</width>
+		  <height>210</height>
+		  <aspectratio>keep</aspectratio>
+		  <borderfont>3</borderfont>
+		  <texture>$INFO[ListItem.Property(fanart_image)]</texture>
+		</control>
+		<control type="grouplist">
+			<top>125</top>
+			<left>180</left>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<itemgap>20</itemgap>
+			<control type="label" description="Item Label">
+				<left>180</left>
+				<width>auto</width>
+				<height>40</height>
+				<textcolor>textcolor2</textcolor>
+				<font>font42</font>
+				<align>left</align>
+				<autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
+				<info>ListItem.Property(Addon.Name)</info>
+			</control>
+			<control type="label" description="Item Label">
+				<width>auto</width>
+				<height>52</height>
+				<textcolor>textcolor3</textcolor>
+				<font>font22</font>
+				<align>center</align>
+				<autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
+				<info>ListItem.Property(Addon.Version)</info>
+			</control>
+		</control>
+		<control type="image" id="111" description="Icon">
+			<left>179</left>
+			<top>195</top>
+			<width>225</width>
+			<height>200</height>
+			<texture diffuse="icons/diffusehomeicon.png" fallback="DefaultAddon.png">$INFO[ListItem.Thumb]</texture>
+		</control>
+		<control type="textbox" description="Author">
+			<top>197</top>
+			<left>430</left>
+			<width>1000</width>
+			<height>300</height>
+			<font>font26</font>
+			<align>left</align>
+			<label>$INFO[ListItem.Property(Addon.Creator)]</label>
+		</control>
+		<control type="label" description="summary">
+			<top>190</top>
+			<left>540</left>
+			<width>800</width>
+			<height>45</height>
+			<font>font30m</font>
+			<textcolor>textcolor3</textcolor>
+			<align>center</align>
+			<label>-</label>
+		</control>
+		<control type="textbox" description="Plot">
+			<left>180</left>
+			<top>400</top>
+			<width>672</width>
+			<height>178</height>
+			<font>font26</font>
+			<align>justify</align>
+			<autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
+			<label>$INFO[ListItem.Property(Addon.Description)]</label>
+		</control>
+		<control type="label" description="Disclaimer">
+			<left>430</left>
+			<top>246</top>
+			<align>left</align>
+			<width>1900</width>
+			<height>1</height>
+			<font>font21</font>
+			<align>center</align>
+			<textcolor>red</textcolor>
+			<scroll>-</scroll>
+			<label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
+		</control>
+		<control type="grouplist" id="300">
+		<top>600</top>
+		<left>176</left>
+		<width>1200</width>
+		<align>left</align>
+		<itemgap>11</itemgap>
+		<orientation>horizontal</orientation>
+		<onup></onup>
+		<ondown>9001</ondown>
+		<control type="group" id="100" description="Install">
+			<control type="button" id="6" description="Install">
+	          <onright>7</onright>
+			  <height>85</height>
+			  <width>150</width>
+			  <font>font0</font>
+			  <texturefocus>Addoninfo/addoninfodelete.png</texturefocus>
+			  <texturenofocus colordiffuse="white3">Addoninfo/addoninfodeletenofocus.png</texturenofocus> 
+			</control>		
+			<control type="label" description="Install">
+			  <visible>Control.HasFocus(6)</visible>
+			  <textcolor>White3</textcolor>
+			  <height>85</height>
+			  <width>155</width>
+			  <align>center</align>
+			  <top>70</top>
+			  <font>font30m</font>
+			  <label>Install</label>
+			</control>
+		</control>
+		<control type="group" id="101" description="Disable">
+			<control type="button" id="7" description="Disable">
+				<left>150</left>
+				<onleft>6</onleft>
+				<onright>8</onright>
+				<height>85</height>
+				<width>150</width>
+				<font>font0</font>
+				<label>-</label>
+				<texturefocus>Addoninfo/addoninfodisable.png</texturefocus>
+				<texturenofocus colordiffuse="white3">Addoninfo/addoninfodisablenofocus.png</texturenofocus> 
+			</control>		
+			<control type="label" description="Disable">
+				<left>150</left>
+				<height>85</height>
+				<width>155</width>
+				<align>center</align>
+				<top>70</top>
+			    <font>font30m</font> 
+				<visible>Control.HasFocus(7)</visible>
+			    <textcolor>White3</textcolor>
+				<label>Disable</label>
+			</control>
+		</control>
+		<control type="group" id="102" description="Update">
+			<control type="button" id="8" description="update">
+			  <onleft>7</onleft>
+			  <onright>9</onright>
+			  <left>300</left>
+			  <height>85</height>
+			  <width>150</width>
+			  <font>font0</font>
+			  <label>-</label>
+			  <texturefocus>Addoninfo/addoninfoupdate.png</texturefocus>
+			  <texturenofocus colordiffuse="white3">Addoninfo/addoninfoupdatenofocus.png</texturenofocus> 
+			</control>	
+			<control type="label" description="Update">
+				<left>300</left>
+				<height>85</height>
+				<width>155</width>
+				<align>center</align>
+				<top>70</top>
+				<visible>Control.HasFocus(8)</visible>
+			    <textcolor>White3</textcolor>
+			    <height>85</height>
+			    <font>font30m</font> 
+				<label>Update</label>
+			</control>
+		</control>
+		<control type="group" id="103" description="Update">
+			<control type="button" id="9" description="settings">
+			  <onleft>8</onleft>
+			  <onright>10</onright>
+			  <left>450</left>
+			  <height>85</height>
+			  <width>150</width>
+			  <font>font0</font>
+			  <label>-</label>
+			  <texturefocus>Addoninfo/addoninfosettings.png</texturefocus>
+			  <texturenofocus colordiffuse="white3">Addoninfo/addoninfosettingsnofocus.png</texturenofocus> 
+			</control>	
+			<control type="label" description="Update">
+				<left>450</left>
+				<height>85</height>
+				<width>155</width>
+				<align>center</align>
+				<top>70</top>
+			    <font>font30m</font> 
+				<visible>Control.HasFocus(9)</visible>
+			    <textcolor>White3</textcolor>
+			    <height>85</height>
+				<label>Settings</label>
+			</control>
+		</control>
+		<control type="group" id="104" description="Update">
+			<control type="button" id="10" description="changelog">
+			  <onleft>9</onleft>
+			  <onright>13</onright>
+			  <left>600</left>
+			  <height>85</height>
+			  <width>150</width>
+			  <font>font0</font>
+			  <label>-</label>
+			  <texturefocus>Addoninfo/addoninfochangelog.png</texturefocus>
+			  <texturenofocus colordiffuse="white3">Addoninfo/addoninfochangelognofocus.png</texturenofocus> 
+			</control>	
+			<control type="label" description="Update">
+				<left>600</left>
+				<height>85</height>
+				<width>155</width>
+				<align>center</align>
+				<top>70</top>
+				<visible>Control.HasFocus(10)</visible>
+			    <font>font30m</font> 
+			    <textcolor>White3</textcolor>
+			    <height>85</height>
+				<label>Changelog</label>
+			</control>
+		</control>
+		<control type="group" id="105" description="Update">
+			<control type="radiobutton" id="13" description="update on/off">
+			  <onleft>10</onleft>
+			  <onright>12</onright>
+			  <left>750</left>
+			  <top>-0</top>
+			  <height>85</height>
+			  <width>150</width>
+			  <font>font0</font>
+			  <label>-</label>
+			  <texturefocus>Addoninfo/addoninfoautoupdate.png</texturefocus>
+			  <texturenofocus colordiffuse="white3">Addoninfo/addoninfoautoupdatenofocus.png</texturenofocus> 
+			</control>	
+			<control type="label" description="Update">
+				<left>750</left>
+				<height>85</height>
+				<width>155</width>
+				<align>center</align>
+				<top>70</top>
+				<visible>Control.HasFocus(13)</visible>
+			    <textcolor>White3</textcolor>
+			    <height>85</height>
+			    <font>font30m</font> 
+				<label>Autoupdate</label>
+			</control>
+		</control>
+		<control type="group" id="106" description="Update">
+			<control type="button" id="12" description="start">
+			  <onleft>13</onleft>
+			  <left>900</left>
+			  <height>85</height>
+			  <width>150</width>
+			  <font>font0</font>
+			  <label>-</label>
+			  <texturefocus>Addoninfo/addoninfoopen.png</texturefocus>
+			  <texturenofocus colordiffuse="white3">Addoninfo/addoninfoopennofocus.png</texturenofocus> 
+			</control>	
+			<control type="label" description="Update">
+				<left>900</left>
+				<height>85</height>
+				<width>155</width>
+				<align>center</align>
+				<visible>Control.HasFocus(12)</visible>
+			    <textcolor>White3</textcolor>
+				<top>70</top>
+				<font>font30m</font>
+				<label>Open</label>
+			</control>
+		</control>
+	</control>
+	</controls>
+</window>

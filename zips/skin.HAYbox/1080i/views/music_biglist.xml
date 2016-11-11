@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="biglistmusic">
+		<!--BIG LIST-->
+		<control type="group" description="Big List">
+			<control type="image" id="99" description="Album Background">
+			<visible>false</visible>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>images/white.png</texture> <!--$INFO[Window(home).Property(AlbumInfo.ImageFilter)]-->
+		</control>
+	  <control type="image" id="100" description="Album Background">
+	    <visible>Container.Content(songs)</visible>
+        <width>1920</width>
+        <height>1080</height>
+        <texture colordiffuse="77FFFFFF">$INFO[Window(home).Property(AlbumInfo.ImageFilter)]</texture> <!--$INFO[Window(home).Property(AlbumInfo.ImageFilter)]-->
+      </control>
+	  <control type="image" id="99" description="Album Background">
+	    <visible>false</visible>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>$INFO[ListItem.icon]</texture> <!--$INFO[Window(home).Property(AlbumInfo.ImageFilter)]-->
+      </control>
+      <visible>Control.IsVisible(52)</visible>
+      <include>left_Panel_square</include>
+      <include>MusicInfo</include>
+      <control type="group" description="Slider and List">
+        <include>SlimListItemCount</include>
+        <left>1020</left>
+        <top>131</top>
+        <include>SlimListSlider</include>
+        <control type="fixedlist" id="52">
+          <visible>container.content(songs)</visible>
+          <left>0</left>
+          <top>0</top>
+          <width>802</width>
+          <height>891</height>
+          <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onup>52</onup>
+          <ondown>52</ondown>
+          <pagecontrol>60</pagecontrol>
+          <viewtype label="544">Media info</viewtype>
+          <focusposition>5</focusposition>
+          <movement>5</movement>
+          <preloaditems>4</preloaditems>
+          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          <itemlayout width="802" height="81">
+            <control type="image">
+              <height>70</height>
+              <width>805</width>
+              <include>right_listpanel_unfocused</include>
+            </control>		  
+            <control type="label" description="Main Label">
+              <width max="609">auto</width>
+              <include>52MainLabel</include>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label" description="Label2">
+              <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
+              <visible>container.content(songs)</visible>
+              <include>52Label2</include>
+              <label>$INFO[ListItem.Duration]</label>
+            </control>
+            <control type="image" description="playing">
+              <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
+              <left>99r</left>
+              <top>0</top>
+              <height>81</height>
+              <width>36</width>
+              <aspectratio>keep</aspectratio>
+              <texture>images/NowPlayingNF.png</texture>
+            </control>
+          </itemlayout>
+          <focusedlayout width="802" height="81">		  
+			<control type="group">
+				<animation effect="zoom" time="120" start="100" end="105" center="auto" tween="Back" easing="Out">Focus</animation>
+				<control type="image">
+					<top>12</top>
+					<left>-50</left>
+					<height>70</height>
+					<width>905</width>
+					<include>right_listpanel_focused_shadow</include>
+				</control>
+				<control type="image">
+					<height>70</height>
+                    <width>805</width>
+                    <include>right_listpanel_focused</include>
+                </control>		  	  
+				<control type="label" description="Main Label">
+					<width max="609">auto</width>
+					<include>52MainLabelFO</include>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label" description="Label2">
+					<visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
+					<include>52Label2FO</include>
+					<label>$INFO[ListItem.Duration]</label>
+				</control>
+				<control type="image" description="playing">
+					<visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
+					<animation effect="fade" start="50" end="100" time="100" delay="200">Focus</animation>
+					<left>99r</left>
+					<top>0</top>
+					<height>81</height>
+					<width>36</width>
+					<aspectratio>keep</aspectratio>
+					<texture>images/NowPlayingFO.png</texture>
+				</control>			
+		    </control>
+          </focusedlayout>
+        </control>
+      </control>
+      <control type="scrollbar" id="60">
+		<visible>Skin.HasSetting(Scrollbars_Active)</visible>
+        <left>51r</left>
+        <top>147</top>
+        <height>882</height>
+        <onleft>52</onleft>
+        <onright>noop</onright>
+      </control>
+      <control type="label" description="Heading">
+        <visible>!IsEmpty(Container.FolderName)</visible>
+        <include>HeadingR</include>
+        <label>$VAR[RootLabel]</label>
+      </control>
+    </control>
+    </include>
+</includes>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2901">
+    <!--include file="DialogSeekBar.xml" /-->
+	<defaultcontrol always="true">100</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <zorder>2</zorder>
+    <controls>
+        <control type="group">
+            <control type="group" id="101" description="Options">
+                <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
+                <left>500</left>
+                <top>1000</top>
+                <animation type="Focus">
+                    <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800" />
+                </animation>
+                <animation type="unFocus">
+                    <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500" />
+                </animation>
+                <!--control type="image">
+					<left>500</left>
+					<top>1000</top>
+                    <width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>$VAR[9000menu]</texture>
+                </control-->
+                <control type="grouplist" id="101" description="OSD Options">
+                    <left>196</left>
+                    <top>194</top>
+                    <width>720</width>
+                    <height>730</height>
+                    <itemgap>6</itemgap>
+                    <onleft>100</onleft>
+                    <onright>100</onright>
+                    <onup>101</onup>
+                    <ondown>101</ondown>
+                    <scrolltime>240</scrolltime>
+                    <control type="togglebutton" id="701" description="Subtitles">
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+						<textcolor>FF000000</textcolor>
+                        <include>DialogButt</include>
+                        <label>$LOCALIZE[33003] $LOCALIZE[287]</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>Dialog.Close(VideoOSD)</onclick>
+                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                    </control>
+                    <control type="button" id="703" description='video settings'>
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+						<textcolor>FF000000</textcolor>
+                        <include>DialogButt</include>
+                        <label>13395</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>ActivateWindow(OSDVideoSettings)</onclick>
+                    </control>
+                    <control type="button" id="704" description='audio u. settings'>
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+						<textcolor>FF000000</textcolor>
+                        <include>DialogButt</include>
+                        <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>ActivateWindow(OSDAudioSettings)</onclick>
+                    </control>
+                    <control type="button" id="705" description='bookmarks'>
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+						<textcolor>FF000000</textcolor>
+                        <include>DialogButt</include>
+                        <label>298</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>ActivateWindow(VideoBookmarks)</onclick>
+                    </control>
+                    <control type="togglebutton" id="706" description="Info">
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+						<textcolor>FF000000</textcolor>
+                        <include>DialogButt</include>
+                        <label>20176</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>close</onclick>
+                        <onclick>ActivateWindow(142)</onclick>
+                        <altclick>SetFocus(100,2)</altclick>
+                        <altclick>close</altclick>
+                        <altclick>Dialog.Close(142)</altclick>
+                        <usealttexture>Window.IsActive(142)</usealttexture>
+                    </control>
+                    <control type="button" id="707" description='video codec'>
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+						<textcolor>FF000000</textcolor>
+                        <include>DialogButt</include>
+                        <label>21445</label>
+                        <onclick>CodecInfo</onclick>
+                    </control>
+                    <control type="button" id="708" description='bluray menu'>
+						<textcolor>FF000000</textcolor>
+						<texturenofocus colordiffuse="$VAR[osdoption]">defaults/listviewfocus.png</texturenofocus>
+						<texturefocus colordiffuse="FFFFFFFF">defaults/listviewfocus.png</texturefocus>
+                        <include>DialogButt</include>
+                        <label>25003</label>
+                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>PlayerControl(ShowVideoMenu)</onclick>
+                        <enable>VideoPlayer.HasMenu</enable>
+                        <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>
+                    </control>
+                </control>
+            </control>
+            <control type="group" description='video player'>
+                <visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
+                <animation effect="fade" end="100" time="400">Visible</animation>
+                <animation effect="fade" end="0" time="100">Hidden</animation>
+                <control type="group" description='titel etc'>
+					<visible>!Window.IsVisible(142)</visible>
+                    <control type="group" description="Dialog Background">
+                        <visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml) + !Window.IsVisible(dialogpvrguideosd.xml) + !Window.IsVisible(dialogpvrchannelsosd.xml)</visible>
+                        <!--control type="image">
+                            <posx>100</posx>
+                            <top>608</top>
+                            <width>1700</width>
+                            <height>300</height>
+							<include>seekbar_bkgd</include>
+							<aspectratio>scale</aspectratio>
+                        </control-->
+                    </control>
+					<control type="label" description="Title">
+						<visible>VideoPlayer.Content(Episodes)</visible>
+						<posx>200</posx>
+						<top>86</top>
+						<height>60</height>
+						<width>840</width>
+						<scroll>true</scroll>
+						<font>font33</font>
+						<align>left</align>
+						<textcolor>textcolor2</textcolor>
+						<label>$INFO[VideoPlayer.TVShowTitle] - $INFO[VideoPlayer.Title]</label>
+					</control>
+					<control type="label" description="PlayerTimeRemaining">
+						<left>1728</left>
+						<top>1005</top>
+						<height>30</height>
+						<width>195</width>
+						<align>left</align>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>- $INFO[Player.TimeRemaining]</label>
+						<font>font31</font>
+					</control>					
+                    <!--control type="group" description="Cover">
+                        <animation effect="fade" start="0" end="100" font12="600">VisibleChange</animation>
+                        <visible>!ControlGroup(101).HasFocus()</visible>
+                        <posx>1560</posx>
+                        <top>704</top>
+                        <control type="image" description="CoverReal">
+                            <visible>IsEmpty(Player.Art(tvshow.poster)) + !Window.IsActive(610)</visible>
+							<!--posx>100</posx->
+                            <height>300</height>
+                            <width>220</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+                        </control>
+                        <control type="image" description="TVSHOW">
+                            <height>300</height>
+                            <width>220</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
+                        </control>
+                        <control type="label" description="Episode">
+                            <visible>VideoPlayer.Content(Episodes)</visible>
+                            <left>0</left>
+                            <top>290</top>
+                            <height>60</height>
+                            <width>220</width>
+                            <scroll>false</scroll>
+                            <font>font24</font>
+                            <align>left</align>
+                            <textcolor>textcolor2</textcolor>
+                            <!--shadowcolor>Black</shadowcolor->
+                            <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
+                        </control>
+                        <control type="label" description="Channel">
+                            <visible>Pvr.IsPlayingTV</visible>
+                            <left>0</left>
+                            <top>290</top>
+                            <height>60</height>
+                            <width>220</width>
+                            <scroll>false</scroll>
+                            <font>font24</font>
+                            <align>left</align>
+                            <textcolor>textcolor2</textcolor>
+                            <!--shadowcolor>Black</shadowcolor->
+                            <label>[B]$INFO[VideoPlayer.ChannelNumber] - $INFO[VideoPlayer.ChannelName][/B]</label>
+                        </control>
+                    </control-->
+                </control>
+                <control type="list" id="100" description='buttons'>
+					<left>600</left>
+					<top>880</top>
+                    <!--posx>2</posx-->
+                    <onright>100</onright>
+                    <onleft>100</onleft>
+		            <!--onup>101</onup-->
+                    <ondown>101</ondown>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
+                    <width>1000</width>
+					<height>100</height>
+					<itemgap>20</itemgap>
+                    <align>center</align>
+                    <orientation>horizontal</orientation>
+                    <itemlayout width="90">
+					  <control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>70</width>
+						<height>70</height>
+						<texture>$INFO[ListItem.thumb]</texture>
+						<colordiffuse>Black</colordiffuse>
+					  </control>
+					</itemlayout>
+                    <focusedlayout width="90">
+					  <control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>70</width>
+						<height>70</height>
+						<texture>$INFO[ListItem.label]</texture>
+					  </control>
+					</focusedlayout>
+                    <content description='play buttons'>
+                        <item id="7" description="previous">
+                            <visible>!Pvr.IsPlayingTV</visible>
+                            <thumb>mediacontrols/previous.png</thumb>
+							<label>mediacontrols/previous.png</label>
+                            <onclick>PlayerControl(Previous)</onclick>
+                        </item>
+                        <item id="10" description="PVR up">
+                            <visible>Pvr.IsPlayingTV</visible>
+                            <thumb>Seekbar/OSDupNF.png</thumb>
+                            <label>Seekbar/OSDupFO.png</label>
+                            <onclick>PlayerControl(Previous)</onclick>
+                        </item>
+                        <item id="11" description="PVR down">
+                            <visible>Pvr.IsPlayingTV</visible>
+                            <thumb>Seekbar/OSDdownNF.png</thumb>
+                            <label>Seekbar/OSDdownFO.png</label>
+                            <onclick>PlayerControl(Next)</onclick>
+                        </item>
+                        <item id="1" description="rewind">
+                            <visible>!Pvr.IsPlayingTV</visible>
+                            <thumb>mediacontrols/previousseek.png</thumb>
+							<label>mediacontrols/previousseek.png</label>
+                            <onclick>PlayerControl(Rewind)</onclick>
+                        </item>
+                        <item id="0" description="pause">
+                            <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding + !Pvr.IsPlayingTV</visible>
+                            <thumb>mediacontrols/pause.png</thumb>
+							<label>mediacontrols/pause.png</label>
+                            <onclick>PlayerControl(Play)</onclick>
+                        </item>
+                        <item id="0" description="play">
+                            <visible>Player.Paused | Player.Forwarding | Player.Rewinding + !Pvr.IsPlayingTV</visible>
+                            <thumb>mediacontrols/play.png</thumb>
+							<label>mediacontrols/play.png</label>
+                            <onclick>PlayerControl(Play)</onclick>
+                        </item>
+                        <item id="4" description="stop">
+                            <thumb>mediacontrols/stop.png</thumb>
+							<label>mediacontrols/stop.png</label>
+                            <onclick>PlayerControl(Stop)</onclick>
+                        </item>					
+                        <item id="0" description="">
+                            <visible>Pvr.IsPlayingTv</visible>
+                            <thumb>Seekbar/OSDchnNF.png</thumb>
+                            <label>Seekbar/OSDchnFO.png</label>
+                            <onclick>XBMC.ActivateWindow(PVROSDChannels)</onclick>
+                        </item>
+                        <item id="16" description="">
+                            <visible>Pvr.IsPlayingTv</visible>
+                            <thumb>Seekbar/OSDpvrNF.png</thumb>
+                            <label>Seekbar/OSDpvrFO.png</label>
+                            <onclick>XBMC.ActivateWindow(PVROSDGuide)</onclick>
+                        </item>
+                        <!--item id="15" description="">
+                            <visible>Pvr.IsPlayingTv</visible>
+                            <thumb>Seekbar/OSDtxtNF.png</thumb>
+                            <label>Seekbar/OSDtxtFO.png</label>
+                            <onclick>XBMC.ActivateWindow(Teletext)</onclick>
+                        </item-->
+                        <item id="5" description="foward">
+                            <visible>!Pvr.IsPlayingTV</visible>
+                            <thumb>mediacontrols/nextseek.png</thumb>
+							<label>mediacontrols/nextseek.png</label>
+                            <onclick>PlayerControl(Forward)</onclick>
+                        </item>
+                        <item id="8" description="record">
+                            <visible>Player.CanRecord + !Pvr.IsRecording</visible>
+                            <thumb>Seekbar/OSDrecNF.png</thumb>
+                            <label>Seekbar/OSDrecFO.png</label>
+                            <onclick>PlayerControl(Record)</onclick>
+                        </item>
+                        <item id="8" description="record red">
+                            <visible>Player.CanRecord + Pvr.IsRecording</visible>
+                            <thumb>Seekbar/OSDreconNF.png</thumb>
+                            <label>Seekbar/OSDreconFO.png</label>
+                            <onclick>PlayerControl(Record)</onclick>
+                        </item>												
+                        <item id="6" description="next">
+                            <visible>!Pvr.IsPlayingTV</visible>
+                            <thumb>mediacontrols/next.png</thumb>
+							<label>mediacontrols/next.png</label>
+                            <onclick>PlayerControl(Next)</onclick>
+                        </item>
+                        <item id="254" description="menu">
+                            <thumb>mediacontrols/menu.png</thumb>
+                            <label>mediacontrols/menu.png</label>
+                            <onclick>SetFocus(101)</onclick>
+                        </item>							
+                        <!--item id="255" description="">
+                            <visible>VideoPlayer.IsStereoscopic</visible>
+                            <thumb>Seekbar/OSD3DNF.png</thumb>
+                            <label>Seekbar/OSD3DFO.png</label>
+                            <onclick>SetFocus(500)</onclick>
+                        </item-->
+                    </content>
+                </control>
+            </control>
+        </control>
+        
+		<!--3D-->
+		<control type="group">
+            <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+            <visible allowhiddenfocus="true">ControlGroup(500).HasFocus</visible>
+            <animation effect="fade" time="200">VisibleChange</animation>
+            <control type="image">
+                <left>510</left>
+                <top>500</top>
+                <width>900</width>
+                <height>450</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="150">images/dialog.png</texture>
+            </control>
+            <control type="grouplist" id="500" description='3D Modus'>
+                <left>710</left>
+                <top>300</top>
+                <width>500</width>
+                <height>500</height>
+                <align>bottom</align>
+                <itemgap>0</itemgap>
+                <onleft>100</onleft>
+                <onright>100</onright>
+                <onup>noop</onup>
+                <ondown>noop</ondown>
+                <orientation>vertical</orientation>
+                <include>VisibleFade</include>
+                <control type="group">
+                    <description>Header</description>
+                    <width>500</width>
+                    <height>50</height>
+                    <control type="label" id="">
+                        <top>20</top>
+                        <width>500</width>
+                        <height>15</height>
+                        <font>font33</font>
+                        <label>test</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                    </control>
+                </control>
+                <control type="radiobutton" id="503">
+                    <height>40</height>
+                    <width>500</width>
+                    <font>font33</font>
+                    <label>24022</label>
+                    <onclick>ToggleStereoMode</onclick>
+                    <selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
+                    <pulseonselect>false</pulseonselect>
+                </control>
+                <control type="button" id="502">
+                    <height>40</height>
+                    <width>500</width>
+                    <align>left</align>
+                    <font>font33</font>
+                    <textoffsetx>30</textoffsetx>
+                    <pulseonselect>false</pulseonselect>
+                    <label>3D Mode Selection</label>
+                    <onclick>StereoMode</onclick>
+                </control>
+                <control type="radiobutton" id="501">
+                    <height>40</height>
+                    <width>500</width>
+                    <font>font33</font>
+                    <label>Force 2D</label>
+                    <onclick>StereoModeToMono</onclick>
+                    <selected>StringCompare(System.StereoscopicMode,7)</selected>
+                    <pulseonselect>false</pulseonselect>
+                </control>
+            </control>
+        </control>
+        <!-- 3D -->
+    </controls>
+</window>

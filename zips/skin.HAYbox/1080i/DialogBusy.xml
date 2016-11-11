@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="136">  
+  <coordinates>
+    <left>0</left>
+    <top>0</top>
+  </coordinates>
+  <include>OpenClose</include>
+  <controls>
+	<control type="group" description="BUSY DIALOG">
+	<visible>!Window.IsActive(dialogprogress.xml)</visible> <!-- BUSY dialog OVERLAPS PROGRESS dialog -->
+		<include>Background</include>
+		<control type="group">
+		  <left>932</left>
+		  <top>462</top>
+		  <control type="label">
+		  <top>-62</top>
+		  <label>Loading...</label>
+		  <font>font30m</font>
+		  <left>-30</left>
+		  <textcolor>white</textcolor>
+		  <style>bold</style>
+		  </control>
+		  <control type="multiimage" description="Busy animation">
+			<width>60</width>
+			<height>60</height>
+			<imagepath>busy/Loading</imagepath>
+			<timeperimage>80</timeperimage>
+			<fadetime>0</fadetime>
+			<loop>yes</loop>
+			<aspectratio>keep</aspectratio>
+		  </control>
+		</control>
+		<control type="progress" id="10">
+		  <left>735</left>
+		  <top>650</top>
+		  <width>450</width>
+		  <height>8</height>
+		  <texturebg>MusicOSD/ProgressBG.png</texturebg>
+		  <midtexture>MusicOSD/ProgressM.png</midtexture>
+		  <righttexture>MusicOSD/ProgressR.png</righttexture>
+		  <lefttexture>MusicOSD/ProgressL.png</lefttexture>
+		</control>
+	</control>
+  </controls>
+</window>

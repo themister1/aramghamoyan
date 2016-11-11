@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="iconmusic">
+        <!--ICONE-->
+		<control type="group">
+		  <visible>Control.IsVisible(53)</visible>
+		  <control type="group" description="Container and frame">
+			<control type="panel" id="53" description="Panel">
+			  <visible>Container.Content(Albums) | Container.Content(Addons)</visible>
+			  <visible>!Container.content(songs)</visible>
+			  <viewtype label="536">Icons</viewtype>
+			  <left>50</left>
+			  <width>1820</width>
+			  <height>1080</height>
+			  <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+			  <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+			  <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+			  <onright condition="!Skin.HasSetting(Scrollbars_Active)">noop</onright>
+			  <onup>53</onup>
+			  <ondown>53</ondown>
+			  <preloaditems>4</preloaditems>
+			  <pagecontrol>60</pagecontrol>
+			  <scrolltime>400</scrolltime>
+			  <itemlayout height="455" width="455">
+				<control type="image">
+				  <visible>container.content(albums)</visible>
+				  <centerleft>227</centerleft>
+				  <centertop>227</centertop>
+				  <width>360</width>
+				  <height>360</height>
+				  <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+				  <aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+				  <visible>!container.content(albums)</visible>
+				  <centerleft>227</centerleft>
+				  <centertop>227</centertop>
+				  <width>360</width>
+				  <height>360</height>
+				  <texture background="true">$INFO[ListItem.Icon]</texture>
+				  <aspectratio>stretch</aspectratio>
+				</control>
+				
+				  <control type="label">
+					<centerleft>227</centerleft>
+					<top>414</top>
+					<width>360</width>
+					<height>20</height>
+					<font>font24</font>
+					<textcolor>textcolor3</textcolor>
+					<align>center</align>
+					<label>$INFO[ListItem.Label]</label>
+				  </control>			
+				
+				
+			  </itemlayout>
+			  <focusedlayout height="455" width="455">
+				<control type="image">
+				  <animation effect="fade" start="0" end="100" time="150">Focus</animation>
+				  <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+				  <visible>!StringCompare(ListItem.Label,..)</visible>
+				  <centerleft>227</centerleft>
+				  <centertop>227</centertop>
+				  <width>455</width>
+				  <height>455</height>
+				  <texture>shadow.png</texture>
+				</control>
+				<control type="group">
+				  <animation effect="zoom" time="120" start="100" end="114" center="auto" tween="Back" easing="Out">Focus</animation>
+				  <animation effect="zoom" start="114" end="100" time="120" center="auto">unFocus</animation>
+				  <control type="image">
+					<visible>container.content(albums)</visible>
+					<centerleft>227</centerleft>
+					<centertop>227</centertop>
+					<width>360</width>
+					<height>360</height>
+					<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>stretch</aspectratio>
+				  </control>
+				  <control type="image">
+					<visible>!container.content(albums)</visible>
+					<centerleft>227</centerleft>
+					<centertop>227</centertop>
+					<width>360</width>
+					<height>360</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>stretch</aspectratio>
+				  </control>
+				  <control type="label">
+					<animation effect="fade" start="0" end="100" time="150">Focus</animation>
+					<animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+					<centerleft>227</centerleft>
+					<top>414</top>
+					<width>440</width>
+					<height>20</height>
+					<font>font24</font>
+					<textcolor>textcolor4</textcolor>
+					<align>center</align>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+				  </control>
+				   <control type="image" description="Rating">
+					<animation effect="fade" start="0" end="100" time="150">Focus</animation>
+					<animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+					<visible>!IsEmpty(ListItem.StarRating)</visible>
+					<centerleft>227</centerleft>
+					<top>436</top>
+					 <width>100</width>
+					<include>MusicRating</include>
+				  </control>
+				</control>
+			  </focusedlayout>
+			</control>
+		  </control>
+		  <control type="scrollbar" id="60">
+			<visible>Skin.HasSetting(Scrollbars_Active)</visible>
+			<left>45r</left>
+			<top>219</top>
+			<height>660</height>
+			<onleft>53</onleft>
+			<onright>noop</onright>
+		  </control>
+		</control>
+    </include>
+</includes>

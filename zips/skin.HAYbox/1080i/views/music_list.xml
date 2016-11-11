@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="listmusic">
+        <!--LIST-->
+        <control type="group" description="Base Music List">
+			<visible>Control.IsVisible(50)</visible>
+			<control type="group">
+				<visible>!Container.content(musicvideos)</visible>
+				<include>left_Panel_square</include>
+			</control>
+			<control type="group">
+				<visible>Container.content(musicvideos)</visible>
+				<include>left_Panel_square</include>
+				<include>MusicInfo</include>
+			</control>
+			<control type="group" description="Slider and List">
+				<include>LargeListItemCount</include>
+				<left>1020</left>
+				<top>131</top>
+				<control type="fixedlist" id="50">
+					<visible>!Container.content(songs)</visible>
+					<width>802</width>
+					<height>888</height>
+					<onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+					<onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+					<onup>50</onup>
+					<ondown>50</ondown>
+					<pagecontrol>60</pagecontrol>
+					<viewtype label="537">Big list</viewtype>
+					<focusposition>3</focusposition>
+					<movement>4</movement>
+					<preloaditems>4</preloaditems>
+					<scrolltime tween="sine" easing="inout">280</scrolltime>
+					<include>LargeListLayout</include>
+				</control>      
+			</control>
+			<control type="scrollbar" id="60">
+				<visible>Skin.HasSetting(Scrollbars_Active)</visible>
+				<left>51r</left>
+				<top>135</top>
+				<height>870</height>
+				<onleft>50</onleft>
+				<onright>noop</onright>
+			</control>
+			<control type="label" description="Heading">
+				<visible>!IsEmpty(Container.FolderName)</visible>
+				<include>HeadingR</include>
+				<label>$VAR[RootLabel]</label>
+			</control>
+		</control>
+    </include>
+</includes>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="29">
+  <backgroundcolor>Background</backgroundcolor>
+  <defaultcontrol always="true">52</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <include>OpenClose</include>
+  <controls>
+	<control type="image" dedication='background'>
+        <top>0</top>
+        <width>1920</width>
+        <height>1100</height>
+        <texture>login/blurbg.jpg</texture>
+    </control>
+   
+   <control type="group" description="Labels">
+      <left>0</left>
+      <top>96</top>
+      <control type="label" description="label 1">
+        <font>font45b</font>
+        <width>1920</width>
+		<align>center</align>
+        <align>center</align>
+		<left>0</left>
+        <top>30</top>
+        <height>45</height>
+        <width>1920</width>
+        <textcolor>textcolor2</textcolor>
+		<shadowcolor>-</shadowcolor>
+        <label>$INFO[ListItem.Label]</label>
+      </control>
+      <control type="label" description="Label 2">
+        <left>0</left>
+        <top>69</top>
+        <width>1920</width>
+        <font>font40</font>
+        <align>center</align>
+        <textcolor>77FFFFFF</textcolor>
+        <label>$INFO[ListItem.Label2]</label>
+      </control>  
+    </control>
+   <control type="group" description='button'>  
+	 <top>900</top>
+	 <control type="button" id="13" description='restart'>
+        <texturefocus>login/restart.png</texturefocus>
+		<texturenofocus colordiffuse="77FFFFFF">login/restart.png</texturenofocus>
+		<left>915</left>
+        <width>100</width>
+        <height>100</height>
+        <textcolor>white</textcolor>
+        <aligny>center</aligny>
+        <pulseonselect>true</pulseonselect>
+		<onclick>XBMC.Restart</onclick>
+		<onleft>12</onleft>
+		<onright>11</onright>
+		<onup>52</onup>
+		<ondown>52</ondown>
+     </control>
+	 <control type="button" id="12" description='shutdown'>
+        <texturefocus>login/shutdown.png</texturefocus>
+		<texturenofocus colordiffuse="77FFFFFF">login/shutdown.png</texturenofocus>
+		<left>763</left>
+        <top>0</top>
+        <width>100</width>
+        <height>100</height>
+        <textcolor>white</textcolor>
+        <focusedcolor>blue</focusedcolor>
+        <invalidcolor>red</invalidcolor>
+        <textoffsetx>10</textoffsetx>
+        <aligny>center</aligny>
+        <pulseonselect>true</pulseonselect>
+		<onclick>XBMC.Suspend</onclick>
+		<onleft>Control.Move(52,-1)</onleft>
+        <onleft>52</onleft>
+		<onright>13</onright>
+		<onup>52</onup>
+		<ondown>52</ondown>
+     </control>
+	 <control type="button" id="11" description="Quit xbmc">
+        <texturefocus>login/power.png</texturefocus>
+		<texturenofocus colordiffuse="77FFFFFF">login/power.png</texturenofocus>
+		<centerleft>1108</centerleft>
+        <width>100</width>
+        <height>100</height>
+        <onup>52</onup>
+        <ondown>52</ondown>
+        <onleft>13</onleft>
+        <onright>Control.Move(52,1)</onright>
+        <onright>52</onright>
+        <onclick>XBMC.Quit</onclick>
+      </control>
+	 <control type="label" description="Sleep">
+        <left>780</left>
+        <top>100</top>
+        <height>45</height>
+        <width>150</width>
+        <font>font42</font>
+        <textcolor>77FFFFFF</textcolor>
+		<shadowcolor>-</shadowcolor>
+        <label>Sleep</label>
+      </control>
+	  <control type="label" description="restart">
+        <left>925</left>
+        <top>100</top>
+        <height>45</height>
+        <width>150</width>
+        <font>font42</font>
+        <textcolor>77FFFFFF</textcolor>
+		<shadowcolor>-</shadowcolor>
+        <label>Restart</label>
+      </control>
+	  <control type="label" description="shutdown">
+        <left>1050</left>
+        <top>100</top>
+        <height>45</height>
+        <width>150</width>
+        <font>font42</font>
+        <textcolor>77FFFFFF</textcolor>
+        <label>Shut Down</label>
+      </control>
+	 </control>
+	
+	<control type="group">
+      <top>75</top>
+      <control type="fixedlist" id="52">
+        <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
+        <left>315</left>
+        <top>209</top>
+        <width>1350</width>
+        <height>450</height>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>noop</onup>
+        <ondown>13</ondown>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>250</scrolltime>
+        <focusposition>1</focusposition>
+        <movement>1</movement>
+        <orientation>horizontal</orientation>
+        <itemlayout width="450" height="450">
+		  <control type="image">
+			<visible>!IsEmpty(ListItem.Icon)</visible>	  	
+			<left>77</left>
+			<top>42</top>
+			<width>195</width>
+			<height>195</height>
+			<texture>login/user.png</texture>
+			<aspectratio>stretch</aspectratio>
+		  </control>
+          <control type="image">
+            <left>75</left>
+            <top>40</top>
+            <width>200</width>
+            <height>200</height>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture background="true" diffuse="images/logindiffuse.png">$INFO[ListItem.Icon]</texture>
+          </control>
+        </itemlayout>
+        <focusedlayout width="450" height="450">		
+		 <control type="group">
+		  <animation effect="zoom" start="100" end="110" time="200" center="auto" tween="Back" easing="Out">Focus</animation>
+		  <animation effect="zoom" start="110" end="100" time="160" center="auto">unFocus</animation>
+				  
+		  <control type="image">
+			<visible>!IsEmpty(ListItem.Icon)</visible>	  	
+			<left>77</left>
+			<top>42</top>
+			<width>215</width>
+			<height>215</height>
+			<texture>login/user2.png</texture>
+			<aspectratio>stretch</aspectratio>
+		  </control>		  		  
+          <control type="image">
+            <left>75</left>
+            <top>40</top>
+            <width>220</width>
+            <height>220</height>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture background="true" diffuse="images/logindiffuse.png">$INFO[ListItem.Icon]</texture>
+          </control>
+		 </control>
+        </focusedlayout>
+      </control>
+      <!--control type="image">
+        <visible>Control.HasFocus(52)</visible>
+        <animation effect="fade" time="300">VisibleChange</animation>
+        <left>797</left>
+        <top>236</top>
+        <width>326</width>
+        <height>326</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>images/LoginSlider.png</texture>
+        <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
+        <animation type="Conditional" condition="Container(52).Position(0)">
+          <effect type="slide" start="0,0" end="-450,0" center="auto" time="200" reversible="true" />
+        </animation>
+        <animation type="Conditional" condition="Container(52).Position(1)">
+          <effect type="slide" start="0,0" end="0,0" center="auto" time="200" reversible="true" />
+        </animation>
+        <animation type="Conditional" condition="Container(52).Position(2)">
+          <effect type="slide" start="0,0" end="450,0" center="auto" time="200" reversible="true" />
+        </animation>
+      </control-->
+    </control>
+  </controls>
+</window>

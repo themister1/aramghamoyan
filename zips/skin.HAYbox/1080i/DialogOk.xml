@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2002">
+  <type>dialog</type>
+  <defaultcontrol always="true">10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <include>DialogOpenClose</include>
+  <controls>
+	<include>Background</include>  
+    <control type="image">
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+		<texture>$VAR[9000menu]</texture>
+    </control>  
+    <control type="group">
+      <top>350</top>
+      <control type="label" id="1" description="Heading">
+        <width>1920</width>
+        <label>-</label>
+        <align>center</align>
+        <font>font33B</font>
+		<textcolor>$VAR[heading]</textcolor>
+      </control>
+      <control type="textbox" id="9" description="content">
+        <top>75</top>
+        <width>1920</width>
+		<height>185</height>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>-</label>
+      </control>
+      <control type="button" id="10" description="Ok">
+        <centerleft>960</centerleft>
+        <top>330</top>
+        <width>300</width>
+        <label>186</label>
+		<include>DialogButt</include> 
+		<textcolor>$VAR[heading]</textcolor>
+      </control>
+    </control>
+  </controls>
+</window>

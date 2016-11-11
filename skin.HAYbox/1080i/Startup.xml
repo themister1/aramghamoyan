@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Intro -->
+	<onload condition="!Skin.HasSetting(Disable.StartupIntro)">PlayMedia(special://skin/intro.mp4,1)</onload>
+	<onunload>PlayerControl(Stop)</onunload>
+	<defaultcontrol always="true">10</defaultcontrol>
+	<controls>
+		<control type="button" id="10">
+			<include>HiddenObject</include>
+			<onup>ReplaceWindow($INFO[System.StartupWindow])</onup>
+			<ondown>ReplaceWindow($INFO[System.StartupWindow])</ondown>
+			<onleft>ReplaceWindow($INFO[System.StartupWindow])</onleft>
+			<onright>ReplaceWindow($INFO[System.StartupWindow])</onright>
+			<onclick>ReplaceWindow($INFO[System.StartupWindow])</onclick>
+			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+			<animation effect="fade" start="100" end="0" time="6000" condition="!Skin.HasSetting(Disable.StartupIntro)">Focus</animation>
+		</control>
+		<control type="videowindow">
+			<include>FullscreenDimensions</include>
+			<visible>Player.HasVideo</visible>
+		</control>
+	</controls>
+</window>

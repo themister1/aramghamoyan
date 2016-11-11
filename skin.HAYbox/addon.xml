@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<addon id="skin.HAYbox" version="0.0.2" name="HAYbox TV (NIEUWE SKIN)" provider-name="Aram Ghamoyan">
+  <requires>
+  </requires>
+  <extension point="xbmc.gui.skin" defaultthemename="Texture.xbt" effectslowdown="1" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="de">Ein Skin das auf den AppleTv 4 basiert</summary>
+    <summary lang="en">A Skin that is based of Apple 4</summary>
+    <description lang="en">This Skin is a modifed version of SiO2 and tvOS-X Skins and is based to the AppleTv 4.[CR]Thanks to Fastcolors for SiO2 and iCanuck for tvOS-X[CR]Thanks to Testers and Inspirers: Steverae, plusorminus, iRubin, louvankooten, bigbadrabbit!</description>
+    <disclaimer>PineAppleTv</disclaimer>
+  </extension>
+</addon>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="107">
+    <type>dialog</type>
+    <controls>
+        <control type="group">
+            <animation type="WindowOpen" reversible="false">
+				<effect type="slide" start="0,-400" end="0,0" tween="cubic" easing="out" time="500" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="slide" start="0,0" end="0,-400" tween="cubic" easing="out" time="500" delay="1000"/>
+			</animation>
+			<animation type="WindowClose" reversible="false" condition="Window.IsActive(DialogExtendedProgressBar.xml)">
+				<effect type="slide" start="0,0" end="0,-800" tween="cubic" easing="out" time="500" delay="1000"/>
+			</animation>
+			<animation effect="slide" end="0,160" condition="Window.IsActive(DialogExtendedProgressBar.xml)">Conditional</animation>
+			<!--control type="image" description="Dialog BG">
+				<centerleft>960</centerleft>
+                <width>795</width>
+                <height>162</height>
+                <texture border="25" diffuse="notificationbannero2.png">gardient1.png</texture>
+				<!--colordiffuse>$VAR[notificationbanner]</colordiffuse->
+            </control-->		
+            <control type="image" description="Dialog BG">
+                <width>1920</width>
+                <height>148</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>$VAR[9000menu]</texture>
+            </control>
+			<control type="image" id="400" description="File Icon">
+				<left>570</left>
+				<top>17</top>
+				<width>90</width>
+				<height>90</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<!--control type="image" id="401" description="Line Icon">
+                <centerleft>960</centerleft>
+                <top>117</top>
+				<width>160</width>
+                <height>20</height>
+				<texture>notification/line.png</texture>
+				<colordiffuse>$VAR[notificationtext]</colordiffuse>
+				<aspectratio scalediffuse="false" >keep</aspectratio>
+            </control-->
+            <control type="label" id="401" description="Heading">
+                <top>15</top>
+                <left>680</left>
+                <width>575</width>
+                <height>44</height>
+                <font>font35B</font>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>$VAR[notificationtext]</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>-</label>
+            </control>
+            <control type="label" id="402" description="Message">
+                <left>685</left>
+                <top>50</top>
+                <width>575</width>
+                <height>44</height>
+                <font>font25</font>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>$VAR[notificationtext]</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>-</label>
+            </control>
+        </control>
+    </controls>
+</window>

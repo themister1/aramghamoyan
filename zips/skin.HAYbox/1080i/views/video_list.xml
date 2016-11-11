@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="list">
+        <!--SMALL LIST 50-->
+        <control type="group" description="List">
+            <visible>Control.IsVisible(50)</visible>
+            <include>left_Panel_plain</include>
+            <control type="group" description="Slider and List">
+                <include>SlimListItemCount</include>
+                <left>1060</left>
+				<top>165</top>
+                <control type="fixedlist" id="50">
+                    <width>760</width>
+					<height>880</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">50</onleft>
+                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Active)">50</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <focusposition>5</focusposition>
+                    <movement>5</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="760" height="80">
+                        <control type="image">
+							<height>68</height>
+							<width>760</width>
+							<include>right_listpanel_unfocused</include>
+						</control>					
+						<control type="image">
+						  <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+						  <left>4</left>
+						  <height>81</height>
+						  <width>30</width>
+						  <texture>$VAR[WatchStatus,overlay/List/]</texture>
+						  <aspectratio>keep</aspectratio>
+						</control>					
+                        <control type="label" description="Main Label">
+							<include>52MainLabel</include>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label" description="Main Label">
+							<label>$INFO[Window.Property(PercentPlayed)]</label>
+							<align>right</align>
+							<include>52MainLabel</include>
+						</control>
+                    </itemlayout>
+                    <focusedlayout condition="SubString(Container.FolderPath,plugin://,left)" width="770" height="81">
+                        <control type="group">
+                            <animation effect="zoom" time="120" start="100" end="104,100" center="auto" tween="Back" easing="Out">Focus</animation>
+                            <control type="image">
+								<height>68</height>
+								<width>760</width>
+								<include>right_listpanel_focused_shadow</include>
+							</control>
+                            <control type="image">
+								<height>68</height>
+								<width>760</width>
+								<include>right_listpanel_focused</include>
+							</control>
+							<control type="image" description="WatchedMark">
+							  <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+							  <left>4</left>
+							  <height>81</height>
+							  <width>30</width>
+							  <texture>$VAR[WatchStatus,overlay/List/FO/]</texture>
+							  <aspectratio>keep</aspectratio>
+							</control>
+                            <control type="label" description="Main Label">
+								<include>52MainLabelFO</include>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout width="760" height="80">
+                        <control type="image">
+							<height>68</height>
+							<width>760</width>
+							<include>right_listpanel_unfocused</include>
+						</control>
+						<control type="image" description="WatchedMark">
+						  <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+						  <left>4</left>
+						  <height>81</height>
+						  <width>30</width>
+						  <texture>$VAR[WatchStatus,overlay/List/]</texture>
+						  <aspectratio>keep</aspectratio>
+						</control>
+                        <include>HD_Badge</include>
+                        <include>Arrow</include>
+                        <control type="label" description="Main Label">
+                            <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Main Label">
+                            <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                            <include>52MainLabel</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label" description="Label2">
+                            <visible>container.content(songs) | container.content(musicvideos)</visible>
+                            <include>52Label2</include>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout  width="770" height="81">
+                        <control type="group">
+                            <animation effect="zoom" time="120" start="100" end="104,100" center="auto" tween="Back" easing="Out">Focus</animation>
+                            <control type="image">
+								<height>68</height>
+								<width>760</width>
+								<include>right_listpanel_focused_shadow</include>
+							</control>
+                            <control type="image">
+								<height>68</height>
+								<width>760</width>
+								<include>right_listpanel_focused</include>
+							</control>
+							<control type="image" description="WatchedMark">
+							  <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+							  <left>4</left>
+							  <height>81</height>
+							  <width>30</width>
+							  <texture>$VAR[WatchStatus,overlay/List/FO/]</texture>
+							  <aspectratio>keep</aspectratio>
+							</control>
+                            <include>HD_Badge</include>
+                            <include>Arrow</include>
+                            <control type="label" description="Main Label">
+                                <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+                                <include>52MainLabelFO</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+                                <width>711</width>
+                                <include>52MainLabelFO</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label" description="Label2">
+                                <visible>container.content(songs) | container.content(musicvideos)</visible>
+                                <include>52Label2FO</include>
+                                <label>$INFO[ListItem.Duration]</label>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="scrollbar" id="60">
+				<visible>Skin.HasSetting(Scrollbars_Active)</visible>
+                <left>39r</left>
+                <top>135</top>
+                <height>870</height>
+                <onright>noop</onright>
+                <onleft>50</onleft>
+            </control>
+        </control>
+    </include>
+</includes>

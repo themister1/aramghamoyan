@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="4">
+  <backgroundcolor>Background</backgroundcolor>
+  <defaultcontrol always="true">52</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <include>OpenClose</include>
+  <controls>
+    <include>Background</include>
+    <include>Heading</include>
+    <control type="group">
+      <left>1060</left>
+      <top>165</top>
+      <control type="list" id="52">
+        <width>760</width>
+        <height>990</height>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>52</onup>
+        <ondown>52</ondown>
+        <pagecontrol>60</pagecontrol>
+        <viewtype label="_52">52</viewtype>
+        <focusposition>5</focusposition>
+        <movement>5</movement>
+        <preloaditems>4</preloaditems>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout width="760" height="80">
+          <control type="image">
+            <height>68</height>
+            <width>760</width>
+            <include>right_listpanel_unfocused</include>
+          </control>
+          <include>Arrow</include>
+          <control type="label" description="Main Label">
+            <include>52MainLabel</include>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout width="770" height="81">
+          <control type="group">
+            <animation effect="zoom" time="120" start="100" end="104,100" center="auto" tween="Back" easing="Out">Focus</animation>
+            <control type="image">
+              <height>68</height>
+              <width>760</width>
+              <include>right_listpanel_focused_shadow</include>
+            </control>
+            <control type="image">
+              <height>68</height>
+              <width>760</width>
+              <include>right_listpanel_focused</include>
+            </control>
+            <include>Arrow</include>
+            <control type="label" description="Main Label">
+              <include>52MainLabelFO</include>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+          </control>
+        </focusedlayout>
+        <content>
+          <item id="0" description="Appearance">
+            <label>480</label>
+            <onclick>activatewindow(AppearanceSettings)</onclick>
+          </item>
+		  <item id="1" description="Skin Settings">
+            <label>20077</label>
+            <onclick>activatewindow(SkinSettings)</onclick>
+          </item>	
+          <item id="3" description="Videos">
+            <label>3</label>
+            <onclick>activatewindow(VideosSettings)</onclick>
+          </item>
+          <item id="4" description="Music">
+            <label>2</label>
+            <onclick>activatewindow(MusicSettings)</onclick>
+          </item>
+          <item id="14" description="LiveTV">
+            <label>31059</label>
+            <onclick>activatewindow(PVRSettings)</onclick>
+          </item>
+          <item id="5" description="Pictures">
+            <label>1</label>
+            <onclick>activatewindow(PicturesSettings)</onclick>
+          </item>
+          <item id="8" description="Weather">
+            <label>8</label>
+            <onclick>activatewindow(WeatherSettings)</onclick>
+          </item>
+          <item id="9" description="Services">
+            <label>14036</label>
+            <onclick>Activatewindow(servicesettings)</onclick>
+          </item>
+          <item id="10" description="System">
+            <label>13000</label>
+            <onclick>activatewindow(SystemSettings)</onclick>
+          </item>
+          <item id="6" description="Addons">
+            <label>24001</label>
+            <onclick>activatewindow(AddonBrowser,root)</onclick>
+          </item>
+          <item id="12" description="File manager">
+			<visible>Skin.HasSetting(hidebro)</visible>
+            <label>10003</label>
+            <onclick>ActivateWindow(filemanager)</onclick>
+          </item>		  
+          <item id="15" description="openELEC">
+            <visible>System.HasAddon(service.openelec.settings)</visible>
+            <label>$ADDON[service.openelec.settings 600]</label>
+            <onclick>RunAddon(service.openelec.settings)</onclick>
+          </item>
+          <item id="13" description="Sys Info">
+            <label>$LOCALIZE[138]</label>
+            <onclick>activatewindow(systeminfo)</onclick>
+          </item>
+        </content>
+      </control>
+    </control>
+    <control type="group" description="Left panel">
+      <left>183</left>
+      <control type="image" description="Logo">
+        <animation effect="fade" time="100">VisibleChange</animation>
+        <top>168</top>
+        <width>684</width>
+        <height>684</height>
+		<colordiffuse>$VAR[settingsicon]</colordiffuse>
+        <texture>logos/icon.png</texture>
+      </control>
+    </control>
+    <control type="group" description="Items description">
+      <left>200</left>
+      <top>825</top>
+      <control type="label" description="Appearance">
+        <visible>Container(52).HasFocus(0)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[33051] $LOCALIZE[166] - $LOCALIZE[14090] [CR]$LOCALIZE[14081] - $LOCALIZE[24008][CR]</label>
+      </control>
+      <control type="label" description="Skin">
+        <visible>Container(52).HasFocus(1)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[20077] - $LOCALIZE[33063] - $LOCALIZE[111].</label>
+      </control>
+      <control type="label" description="Videos">
+        <visible>Container(52).HasFocus(3)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[14022] - $LOCALIZE[14086] - $LOCALIZE[14081] [CR]$LOCALIZE[24012] - $LOCALIZE[14087]</label>
+      </control>
+      <control type="label" description="Music">
+        <visible>Container(52).HasFocus(4)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[14022] - $LOCALIZE[14086] - $LOCALIZE[14081] [CR]$LOCALIZE[15221] $LOCALIZE[620] $LOCALIZE[13327]</label>
+      </control>
+      <control type="label" description="Pictures">
+        <visible>Container(52).HasFocus(5)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[14081] - $LOCALIZE[108]</label>
+      </control>
+      <control type="label" description="Add-Ons">
+        <visible>Container(52).HasFocus(6)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>31037</label>
+      </control>
+      <control type="label" description="Weather">
+        <visible>Container(52).HasFocus(8)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[5]</label>
+      </control>
+      <control type="label" description="Services">
+        <visible>Container(52).HasFocus(9)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[128] - $LOCALIZE[20110] - $LOCALIZE[33101] [CR]$LOCALIZE[790] - $LOCALIZE[1259] - $LOCALIZE[1273] [CR]$LOCALIZE[1200]</label>
+      </control>
+      <control type="label" description="System">
+        <visible>Container(52).HasFocus(10)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[21373] - $LOCALIZE[337] [CR]$LOCALIZE[14094] - $LOCALIZE[798] - $LOCALIZE[14095] [CR]$LOCALIZE[14092] $LOCALIZE[12360]</label>
+      </control>
+      <control type="label" description="Profiles">
+        <visible>Container(52).HasFocus(11)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[20096] - $LOCALIZE[20100] - $LOCALIZE[20115]</label>
+      </control>
+      <control type="label" description="File manager">
+        <visible>Container(52).HasFocus(12)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[115] - $LOCALIZE[116] - $LOCALIZE[117] [CR]$LOCALIZE[118] - $LOCALIZE[744]</label>
+      </control>
+      <control type="label" description="System info">
+        <visible>Container(52).HasFocus(13)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[20037] - $LOCALIZE[154] - $LOCALIZE[705] [CR]$LOCALIZE[1212] - $LOCALIZE[13281]</label>
+      </control>
+      <control type="label" description="LiveTV">
+        <visible>Container(52).HasFocus(14)</visible>
+        <width>660</width>
+        <height>625</height>
+        <font>font33</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+		<textcolor>$VAR[heading]</textcolor>
+        <label>$LOCALIZE[128] - $LOCALIZE[19181] - $LOCALIZE[19222] [CR]$LOCALIZE[14086] - $LOCALIZE[20007] $LOCALIZE[14095] $LOCALIZE[19259] - $LOCALIZE[19279]</label>
+      </control>
+    </control>
+  </controls>
+</window>

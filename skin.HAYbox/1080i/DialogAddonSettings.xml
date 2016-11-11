@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="10140">
+  <onload>RunScript(script.colorbox,info=blur,id='"$INFO[ListItem.icon]"',radius=50,prefix=VideoInfo)</onload>
+  <defaultcontrol always="true">9</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <include>OpenClose</include>
+  <controls>
+	<include>Background</include>
+    <!--control type="label" description="Heading">
+      <include>Heading</include>
+      <label>1045</label>
+	  <textcolor>textcolor2</textcolor>
+    </control-->
+	<control type="image" description="Top Banner">											
+		<top>0</top>
+		<height>140</height>
+		<width>1920</width>
+		<texture>images/white.png</texture>
+		<colordiffuse>$VAR[homebanner]</colordiffuse>
+	</control>
+    <control type="grouplist" id="9" description="TopHat">
+      <top>43</top>
+      <width>auto</width>
+      <align>center</align>
+      <height>80</height>
+      <itemgap>3</itemgap>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
+      <onup>noop</onup>
+      <ondown>2</ondown>
+      <orientation>horizontal</orientation>
+    </control>
+    <control type="grouplist" id="8999" description="bottomPanel">
+      <top>1000</top>
+      <width>auto</width>
+      <align>center</align>
+      <height>80</height>
+      <itemgap>9</itemgap>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
+      <onup>2</onup>
+      <ondown>9001</ondown>
+      <orientation>horizontal</orientation>
+      <control type="button" id="10" description="OK">
+		<width>260</width>
+        <label>186</label>
+		<include>DialogButt</include>
+      </control>
+      <control type="button" id="12" description="Default">
+		<width>260</width>
+        <label>409</label>
+		<include>DialogButt</include>
+      </control>
+      <control type="button" id="11" description="Cancel">
+		<width>260</width>
+        <label>222</label>
+		<include>DialogButt</include>
+      </control>
+    </control>
+    <control type="button" id="13" description="Button Template">
+      <font>font37B</font>
+	  <width>260</width>
+	  <focusedcolor>White3</focusedcolor>
+	  <textcolor>886C7071</textcolor>
+	  <texturenofocus>keyboard/transparent.png</texturenofocus>
+	  <texturefocus>keyboard/transparent.png</texturefocus>
+    </control>
+    <control type="grouplist" id="2" description="List">
+      <left>300</left>
+      <top>160</top>
+      <width>1310</width>
+      <height>820</height>
+      <itemgap>6</itemgap>
+      <onup>9</onup>
+      <ondown>8999</ondown>
+      <onleft>0</onleft>
+      <onright>60</onright>
+      <pagecontrol>60</pagecontrol>
+    </control>
+    <control type="button" id="3" description="Default Button">
+      <font>font30m</font>
+      <align>left</align>
+	  <textoffsetx>20</textoffsetx>
+	  <include>DialogButt</include>
+    </control>
+    <control type="radiobutton" id="4" description="Default RadioButton">
+      <font>font30m</font>
+      <align>left</align>
+	  <textoffsetx>20</textoffsetx>
+      <radioleft>1260</radioleft>
+	  <include>DialogButt</include>
+    </control>
+    <control type="spincontrolex" id="5" description="Default spincontrolex">
+      <font>font30m</font>
+      <reverse>yes</reverse>
+      <align>left</align>
+	  <textoffsetx>20</textoffsetx>
+	  <include>DialogButt</include>
+    </control>
+    <control type="image" id="6" description="DO NOT REMOVE">
+      <height>1</height>
+      <texture>images/Lin.png</texture>
+    </control>
+    <control type="label" id="7" description="titel">
+      <label>-</label>
+      <font>font35</font>
+	  <align>left</align>
+      <include>Heading2</include>
+    </control>
+    <control type="sliderex" id="8" description="Default Slider Control">
+      <font>font30m</font>
+      <width>900</width>
+    </control>
+    <control type="scrollbar" id="60">
+	  <visible>Skin.HasSetting(Scrollbars_Active)</visible>
+      <left>45r</left>
+      <top>165</top>
+      <height>825</height>
+      <onleft>2</onleft>
+      <showonepage>false</showonepage>
+      <onright>8999</onright>
+    </control>
+  </controls>
+</window>

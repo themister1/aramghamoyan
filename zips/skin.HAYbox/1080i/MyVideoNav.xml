@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>  
+	<backgroundcolor>Background</backgroundcolor>
+    <defaultcontrol always="true">51</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <views>50,51,53,54,55,500,501,502</views>
+    <include condition="Control.IsVisible(54)">OpenClose</include>
+    <controls>
+        <include>Background</include>		
+		<control type="image" description="Fanart">
+		  <visible>!IsEmpty(ListItem.Property(fanart_image)) + Skin.HasSetting(Fanart)</visible>
+		  <include>VisibleFade</include>
+		  <include>Dimensions_Fullscreen</include>
+		  <!--texture background="true">$INFO[ListItem.Property(fanart_image)]</texture-->
+		  <texture>$INFO[Window(home).Property(AddonInfo.ImageUpdating)]</texture>
+		  <aspectratio>scale</aspectratio>
+		  <!--colordiffuse>10FFFFFF</colordiffuse-->
+		</control>	   
+		<control type="group">
+            <include>WindowsTopInfos</include>
+            <control type="label" description="Heading">
+				<visible>IsEmpty(Container.FolderName)</visible>
+                <label>3</label>
+                <include>Heading2</include>
+            </control>
+        </control>			
+                
+		<!--control type="image" description="Fanart">
+			  <animation effect="slide" start="0,0" end="502,0" time="250"  tween="circle" easing="inout">visible</animation>	
+		      <visible>Control.HasFocus(50)</visible>
+			  <texture>sekk.jpg</texture>
+		</control-->	 		
+				
+		<!--VIEWS-->
+        <include>list</include>
+        <include>biglist</include>
+        <include>3dwall</include>
+        <include>fanart</include>
+        <include>icons</include>
+        <include>banners</include>
+		
+		<include>menu9000</include>
+    </controls>
+</window>
