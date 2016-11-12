@@ -30,7 +30,7 @@
 </item>
 	
 <item>
-<title>[B][COLOR white]ALLE NEDERLANDSE KANALEN[/COLOR] [COLOR dodgerblue](OOK SPORT)[/COLOR][/B]</title>
+<title>[B][COLOR black]ALLE NEDERLANDSE KANALEN[/COLOR] [COLOR dodgerblue](OOK SPORT)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -47,7 +47,7 @@
 </item>
 	
 <item>
-<title>[B][COLOR white]ALLE SKY SPORTS KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR black]ALLE SKY SPORTS KANALEN[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -64,7 +64,7 @@
 </item>
 
 <item>
-<title>[B][COLOR white]ALLE BEIN SPORTS KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR black]ALLE BEIN SPORTS KANALEN[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -81,7 +81,7 @@
 </item>
 	
 <item>
-<title>[B][COLOR white]ALLE BT SPORTS KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR black]ALLE BT SPORTS KANALEN[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -98,7 +98,7 @@
 </item>
 	
 <item>
-<title>[B][COLOR white]ALLE MIO SPORTS KANALEN[/COLOR][/B]</title>
+<title>[B][COLOR black]ALLE MIO SPORTS KANALEN[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
@@ -115,7 +115,7 @@
 </item>
 	
 	<item>
-<title>[B][COLOR white]ALLE MOVIES KANALEN (ENGELS)[/COLOR][/B]</title>
+<title>[B][COLOR black]ALLE MOVIES KANALEN (ENGELS)[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>$doregex[makelist]</link>
 <regex>
