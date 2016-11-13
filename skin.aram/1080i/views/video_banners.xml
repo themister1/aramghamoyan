@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="banners">
+        <!--BANNERS 55-->
+        <control type="group" description="BANNERS">
+            <visible>Control.IsVisible(55)</visible>
+            <control type="group" description="Container and frame">
+                <control type="image">
+                    <include>Dimensions_Fullscreen</include>
+                    <include>Fanart_Fade</include>
+                    <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+                    <colordiffuse>55AAAABB</colordiffuse>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="fixedlist" id="55" description="bannerlist">
+                    <visible>container.content(tvshows)</visible>
+                    <visible>!IsEmpty(Container.FolderPath)</visible>
+                    <viewtype label="539">Banners</viewtype>
+                    <left>60</left>
+                    <top>140</top>
+                    <width>1800</width>
+                    <height>948</height>
+                    <orientation>vertical</orientation>
+                    <focusposition>1</focusposition>
+                    <preloaditems>2</preloaditems>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+                    <preloaditems>4</preloaditems>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime>300</scrolltime>
+                    <itemlayout condition="container.content(tvshows)" height="200" width="1800">
+                        <control type="image">
+                            <left>521</left>
+                            <top>80</top>
+                            <width>758</width>
+                            <height>140</height>
+                            <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+						<control type="image" description="WatchedMark">
+						  <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+						  <centerleft>1258</centerleft>
+						  <top>146</top>
+						  <height>97</height>
+						  <width>37</width>
+						  <texture>$VAR[WatchStatus,overlay/List/]</texture>
+						  <aspectratio>keep</aspectratio>
+						</control>
+                        <control type="image">
+                            <visible>StringCompare(ListItem.Label,..)</visible>
+                            <left>521</left>
+                            <top>80</top>
+                            <width>758</width>
+                            <height>140</height>
+                            <texture background="true">DefaultFolderBack.png</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label" description="Unwatched">
+                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                            <centerleft>1198</centerleft>
+                            <top>177</top>
+                            <height>45</height>
+                            <width>150</width>
+                            <font>font26</font>
+                            <scroll>true</scroll>
+                            <align>right</align>
+                            <scroll>false</scroll>
+                            <textcolor>White2</textcolor>
+							<shadowcolor>Black</shadowcolor>
+                            <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                        </control>
+                        <!--control type="image">
+                            <visible>!StringCompare(ListItem.Label,..)</visible>
+                            <top>125</top>
+                            <left>490</left>
+                            <width>50</width>
+                            <height>50</height>
+                            <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
+                        </control-->
+                    </itemlayout>
+                    <focusedlayout condition="container.content(tvshows)" height="200" width="1800">
+                        <control type="group">
+                            <animation effect="zoom" end="150" center="880,150" time="350">Focus</animation>
+                            <animation effect="zoom" start="150" end="100" center="880,150" time="350">unFocus</animation>
+                            <control type="image">
+                                <visible>StringCompare(ListItem.Label,..)</visible>
+                                <left>521</left>
+                                <top>80</top>
+                                <width>758</width>
+                                <height>140</height>
+                                <texture background="true">DefaultFolderBack.png</texture>
+                                <aspectratio>keep</aspectratio>
+                            </control>
+                            <control type="image">
+                                <left>521</left>
+                                <top>80</top>
+                                <width>758</width>
+                                <height>140</height>
+                                <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
+                                <aspectratio>keep</aspectratio>
+                            </control>
+							<control type="image" description="WatchedMark">
+							  <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
+							  <centerleft>1258</centerleft>
+							  <top>146</top>
+							  <height>97</height>
+							  <width>37</width>
+							  <texture>$VAR[WatchStatus,overlay/List/]</texture>
+							  <aspectratio>keep</aspectratio>
+							</control>
+                            <!--control type="image">
+                                <left>521</left>
+                                <top>79</top>
+                                <width>758</width>
+                                <height>142</height>
+                                <texture background="true">images/BannerOverlay.png</texture>
+                                <aspectratio>keep</aspectratio>
+                            </control-->
+                            <control type="label" description="Unwatched">
+                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                                <centerleft>1198</centerleft>
+                                <top>177</top>
+                                <height>45</height>
+                                <width>150</width>
+                                <font>font26</font>
+                                <scroll>true</scroll>
+                                <align>right</align>
+                                <scroll>false</scroll>
+                                <textcolor>White2</textcolor>
+								<shadowcolor>Black</shadowcolor>
+                                <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                            </control>
+                            <!--control type="image">
+                                <visible>!StringCompare(ListItem.Label,..)</visible>
+                                <top>125</top>
+                                <left>490</left>
+                                <width>50</width>
+                                <height>50</height>
+                                <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
+                            </control-->
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="image" description="Line Split">
+                <left>129</left>
+                <top>140</top>
+                <width>1674</width>
+                <height>1</height>
+                <texture>images/LineL.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="grouplist" description="Media Header">
+                <left>40</left>
+                <top>3</top>
+                <width>930</width>
+                <height>75</height>
+                <align>left</align>
+                <aligny>bottom</aligny>
+                <orientation>horizontal</orientation>
+                <control type="label" id="7777" description="Heading">
+                    <width min="60" max="930">auto</width>
+                    <height>75</height>
+                    <font>font28</font>
+                    <textcolor>textcolor2</textcolor>
+                    <label>$VAR[RootLabel]</label>
+                </control>
+                <control type="label" description="Number of files">
+                    <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+                    <width min="60" max="120">auto</width>
+                    <height>81</height>
+                    <font>font26</font>
+                    <textcolor>Grey</textcolor>
+                    <label>$INFO[Container.NumItems,  (,)]</label>
+                </control>
+            </control>
+            <control type="label" description="Media details">
+                <left>129</left>
+                <top>90</top>
+                <width>1350</width>
+                <textcolor>Silver</textcolor>
+                <include>Genre51Commons</include>
+                <label>$INFO[ListItem.Label]  [COLOR=Grey]$VAR[TopLabel][/COLOR]</label>
+            </control>
+            <control type="image" description="Rating">
+                <visible>!IsEmpty(ListItem.Rating)</visible>
+                <left>240r</left>
+                <top>90</top>
+                <height>24</height>
+                <width>135</width>
+                <aspectratio align="right">keep</aspectratio>
+                <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+            </control>
+            <!--control type="image" description="Bottom fade">
+                <top>870</top>
+                <width>1920</width>
+                <height>210</height>
+                <texture>images/DefaultGradient.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control-->
+            <control type="scrollbar" id="60">
+				<visible>Skin.HasSetting(Scrollbars_Active)</visible>
+                <left>45r</left>
+                <top>219</top>
+                <height>780</height>
+                <onleft>53</onleft>
+                <onright>9000</onright>
+            </control>
+        </control>
+    </include>
+</includes>

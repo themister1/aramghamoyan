@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="106">
+  <defaultcontrol always="true">996</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <coordinates>
+    <system>1</system>
+    <origin x="0" y="0" />
+  </coordinates>
+  <controls>
+		<control type="group" description="Side menu 9000 group">	
+			<left>-502</left>
+			<visible>true</visible>
+			<animation effect="slide" start="0,0" end="502,0" time="250"  tween="circle" easing="inout">WindowOpen</animation>	
+			<animation effect="slide" start="502,0" end="0,0" time="250"  tween="circle" easing="inout">WindowClose</animation>
+			<control type="image" description="Background image">
+				<width>502</width>
+				<height>1080</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>$VAR[9000menu]</texture>
+			</control>
+			<control type="label" id="200">
+                <!--Label Menu-->
+				<left>-30</left>
+				<top>150</top>
+                <width>458</width>
+                <align>left</align>
+                <textoffsetx>50</textoffsetx>
+                <font>font45B</font>
+                <textcolor>$VAR[heading]</textcolor>
+                <label>$LOCALIZE[33061]:</label>
+            </control>
+			<control type="label" id="200">
+                <!--Date Label-->
+				<left>-30</left>
+				<top>50</top>
+                <width>588</width>
+                <align>left</align>
+                <textoffsetx>50</textoffsetx>
+                <font>font35</font>
+                <textcolor>$VAR[heading]</textcolor>
+                <label>$INFO[System.Time][CR]$INFO[System.Date]</label>
+            </control>
+			<control type="grouplist" id="996" description="Context menu container">
+				<left>15</left>
+				<height>878</height>
+				<top>230</top>
+				<itemgap>10</itemgap>
+				<control type="button" id="1500">
+					<visible>System.HasAddon(script.cinema.experience) + Container.Content(Movies)</visible>
+					<width>480</width>
+					<height>60</height>
+					<label>31061</label>
+					<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
+				</control>
+				<control type="button" id="1501">
+					<visible>Skin.HasSetting(ViewsMenuOff)</visible>	
+					<!--visible>Container.Content(Movies)</visible-->
+					<width>480</width>
+					<height>60</height>
+					<label>$LOCALIZE[24140]: $INFO[Container.Viewmode]</label>
+					<onclick>Container.NextViewMode</onclick>
+				</control>			
+			</control>
+			<control type="button" id="1000" description="Buttons">
+				<width>468</width>
+				<align>left</align>
+				<textoffsetx>22</textoffsetx>
+				<include>DialogButt</include>
+			</control>
+		</control>
+  </controls>
+</window>

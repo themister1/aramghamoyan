@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="147">
+  <defaultcontrol>61</defaultcontrol>
+  <controls>
+    <control type="image">
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+		<texture>$VAR[9000menu]</texture>
+    </control>
+    <control type="group">
+      <left>450</left>
+      <top>75</top>
+      <control type="label" id="1" description="Header">
+        <left>-450</left>
+        <top>-25</top>
+		<include>Heading2</include>
+      </control>
+      <control type="textbox" id="5" description="Textarea">
+        <left>90</left>
+        <top>120</top>
+        <width>720</width>
+        <height>690</height>
+        <font>font27</font>
+        <align>justify</align>
+		<include>52MainLabel</include>
+      </control>
+      <control type="scrollbar" id="61">
+        <left>960</left>
+        <top>105</top>
+        <height>690</height>
+        <onleft>Close</onleft>
+        <onright>Close</onright>
+        <ondown>61</ondown>
+        <onup>61</onup>
+      </control>
+    </control>
+  </controls>
+</window>

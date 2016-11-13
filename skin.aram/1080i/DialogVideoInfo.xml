@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2003">	
+	<onload condition="System.HasAddon(script.extendedinfo) + StringCompare(Window(Home).Property(contenttype),movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onload>
+	<onload condition="System.HasAddon(script.extendedinfo) + StringCompare(Window(Home).Property(contenttype),tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onload>
+	<onload condition="System.HasAddon(script.extendedinfo) + StringCompare(Window(Home).Property(contenttype),seasons)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],silent=True)</onload>
+	<onload condition="System.HasAddon(script.extendedinfo) + StringCompare(Window(Home).Property(contenttype),episodes)">RunScript(script.extendedinfo,info=extendedepisodeinfo,dbid=$INFO[ListItem.DBID],tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode],silent=True)</onload> 
+	<allowoverlay>yes</allowoverlay>
+	<include>OpenClose</include>
+	<controls>
+		<include>Background</include> 
+		<control type="group">
+			<posx>960</posx>
+			<!--Center-->
+			<posy>540</posy>
+			<!--Center-->
+			<control type="multiimage">
+				<posx>-75</posx>
+				<posy>-75</posy>
+				<width>150</width>
+				<height>150</height>
+				<aspectratio>keep</aspectratio>
+				<imagepath>$INFO[Skin.String(SkinHelper.SpinnerTexturePath)]</imagepath>
+				<timeperimage>100</timeperimage>
+				<colordiffuse>$INFO[Skin.String(SpinnerTextureColor)]</colordiffuse>
+				<fadetime>0</fadetime>
+				<visible>true</visible>
+			</control>
+		</control>
+	</controls>
+</window>

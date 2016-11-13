@@ -37,6 +37,22 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.failarmy" name="Fail Army" version="1.0.0" provider-name="Aram Ghamoyan">
+	<requires>
+		<import addon="plugin.video.youtube" version="4.0" optional="false"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension  point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="nl">Bekijk Fail Army.</summary>
+		<description lang="nl">Met deze plugin is het mogelijk om Fail Army te bekijken.</description>
+		<disclaimer>Video's zijn intellectueel eigendom van de kanaaleigenaar. Tenzij YouTube anders is overeen gekomen. ;-)</disclaimer>
+		<language>nl</language>
+	</extension>
+</addon>
+
 <addon id="plugin.video.freetv" name="[B]FREE TV[/B]" version="0.0.1" provider-name="FreeTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1409,31 +1425,25 @@ http://www.hometheater.co.il</description>
 	</assets>
 </addon>
 
-<addon id="skin.aram" version="0.0.160" name="HAYbox Skin" provider-name="Aram Ghamoyan">
-    <requires>
-        <import addon="plugin.video.youtube" />
-		<import addon="plugin.video.freetv" />
-    </requires>
-    <extension
-            point="xbmc.gui.skin"
-            defaultthemename="Textures.xbt"
-            debugging="false">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary></summary>
-        <description>HAYbox Skin by Aram Ghamoyan</description>
-		<disclaimer>HAYbox Skin</disclaimer>
-        <platform>all</platform>
-        <licence></licence>
-        <forum></forum>
-        <source></source>
-        <email></email>
-    </extension>
+<addon id="skin.aram" version="1.0.1" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
+  <requires>
+	<import addon="plugin.video.failarmy" />
+  </requires>
+  <extension point="xbmc.gui.skin" defaultthemename="Texture.xbt" effectslowdown="1" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="de">Ein Skin das auf den AppleTv 4 basiert</summary>
+    <summary lang="en">A Skin that is based of Apple 4</summary>
+    <description lang="en">This Skin is a modifed version of SiO2 and tvOS-X Skins and is based to the AppleTv 4.[CR]Thanks to Fastcolors for SiO2 and iCanuck for tvOS-X[CR]Thanks to Testers and Inspirers: Steverae, plusorminus, iRubin, louvankooten, bigbadrabbit!</description>
+    <disclaimer>PineAppleTv</disclaimer>
+  </extension>
 </addon>
 
-<addon id="skin.HAYbox" version="0.0.2" name="HAYbox TV (NIEUWE SKIN)" provider-name="Aram Ghamoyan">
+<addon id="skin.HAYbox" version="1.0.1" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
   <requires>
+	<import addon="plugin.video.failarmy" />
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="Texture.xbt" effectslowdown="1" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>

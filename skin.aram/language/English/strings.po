@@ -1,17 +1,17 @@
 # XBMC Media Center language file
-# Addon Name: iOS-X
-# Addon id: skin.iOS-X
-# Addon version: 0.5.0h
+# Addon Name: tvOS-X
+# Addon id: skin.tvOS-X
+# Addon version: 1.0.0
 # Addon Provider: iCanuck
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Kodi Skin iOS-X\n"
-"Report-Msgid-Bugs-To: icanuck0604@gmail.com\n"
+"Project-Id-Version: XBMC Skin tvOS-X\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-09-27 19:04+0000\n"
-"Last-Translator: iCanuck\n"
-"Language-Team: English\n"
+"PO-Revision-Date: 2016-08-12 15:29+0000\n"
+"Last-Translator: emre.ay <emre4415@gmail.com>\n"
+"Language-Team: English (http://www.transifex.com/projects/p/tvOS-X-1/language/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -51,9 +51,12 @@ msgid "Last Started"
 msgstr "Last Started"
 
 msgctxt "#31008"
-msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
-" only become colored when Focused"
+msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
 msgstr "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
+
+msgctxt "#31009"
+msgid "Recently Added Episodes"
+msgstr "Recently Added Episodes"
 
 msgctxt "#31010"
 msgid "Open playlist"
@@ -76,16 +79,16 @@ msgid "Current Playlist"
 msgstr "Current Playlist"
 
 msgctxt "#31015"
-msgid "Trailers"
-msgstr "Trailers"
+msgid "Select Subtitle Add-on"
+msgstr "Select Subtitle Add-on"
 
 msgctxt "#31016"
 msgid "Last Updated"
 msgstr "Last Updated"
 
 msgctxt "#31017"
-msgid "Enable/Disable Options Dialog"
-msgstr "Enable/Disable Options Dialog"
+msgid "Choose Addon for Subtitles Search & Download"
+msgstr "Choose Addon for Subtitles Search & Download"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
@@ -96,16 +99,16 @@ msgid "Enable or Disable Clock On top right of All Pages (not while watching Mov
 msgstr "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
 
 msgctxt "#31020"
-msgid "-"
-msgstr "-"
+msgid "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
+msgstr "Enable or Disable Vinyl Record Animation from Home Shelf Albums."
 
 msgctxt "#31021"
 msgid "Memory Used:"
 msgstr "Memory Used:"
 
 msgctxt "#31022"
-msgid "Specify Action for Power Icon in Menu"
-msgstr "Specify Action for Power Icon in Menu"
+msgid "Specify Action for Power Icon in Home Menu"
+msgstr "Specify Action for Power Icon in Home Menu"
 
 msgctxt "#31023"
 msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
@@ -128,28 +131,28 @@ msgid "Last Added"
 msgstr "Last Added"
 
 msgctxt "#31028"
-msgid "Custom Home Background"
-msgstr "Custom Home Background"
+msgid "Watchlist"
+msgstr "Watchlist"
 
 msgctxt "#31029"
-msgid "Adds a custom Background to Home Screen. This will automatically switch On the setting for Always Colored Icons on Home screen. This can be manually switched Off from this page."
-msgstr "Adds a custom Background to Home Screen. This will automatically switch On the setting for Always Colored Icons on Home screen. This can be manually switched Off from this page."
+msgid "Favourite"
+msgstr "Favourite"
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
 msgstr "Custom Shelf Icon"
 
 msgctxt "#31031"
-msgid "Replace Default Icon on Shelf with a Picture of Your choice."
-msgstr "Replace Default Icon on Shelf with a Picture of Your choice."
+msgid "Replace tvOS-X Icon on Shelf with A Picture of Your choice."
+msgstr "Replace tvOS-X Icon on Shelf with A Picture of Your choice."
 
 msgctxt "#31032"
 msgid "Log Off"
 msgstr "Log Off"
 
 msgctxt "#31033"
-msgid "Always Colored Homescreen Icons"
-msgstr "Always Colored Homescreen Icons"
+msgid "Always Colored Menu Icons"
+msgstr "Always Colored Menu Icons"
 
 msgctxt "#31034"
 msgid "Click to Add Favourite to Home Page"
@@ -172,24 +175,16 @@ msgid "min"
 msgstr "min"
 
 msgctxt "#31039"
-msgid "Enable or disable the homescreen icon for network connection and battery percentage info (only shown if battery lower than 20%)"
-msgstr "Enable or disable the homescreen icon for network connection and battery percentage info (only shown if battery lower than 20%)"
+msgid "Record Animation on Shelf"
+msgstr "Record Animation on Shelf"
 
 msgctxt "#31040"
 msgid "Shelf items"
 msgstr "Shelf items"
 
 msgctxt "#31041"
-msgid "Enable/Disable Scrollbars"
-msgstr "Enable/Disable Scrollbars"
-
-msgctxt "#31042"
-msgid "Active"
-msgstr "Active"
-
-msgctxt "#31043"
-msgid "Passive"
-msgstr "Passive"
+msgid "Active Scrollbars"
+msgstr "Active Scrollbars"
 
 msgctxt "#31044"
 msgid "View options dialog"
@@ -200,8 +195,8 @@ msgid "Recent/Recommended Inverted First Item"
 msgstr "Recent/Recommended Inverted First Item"
 
 msgctxt "#31046"
-msgid "Stel hier in wat er in het hoofdmenu beschikbaar is."
-msgstr "Stel hier in wat er in het hoofdmenu beschikbaar is."
+msgid "Customize What Is Displayed On Home Shelf."
+msgstr "Customize What Is Displayed On Home Shelf."
 
 msgctxt "#31047"
 msgid "Show Clock"
@@ -212,8 +207,8 @@ msgid "Recommended"
 msgstr "Recommended"
 
 msgctxt "#31049"
-msgid "Select Power icon function - Now Set to:"
-msgstr "Select Power icon function - Now Set to:"
+msgid "Home menu Power button function"
+msgstr "Home menu Power button function"
 
 msgctxt "#31050"
 msgid "Choose from menu"
@@ -232,12 +227,12 @@ msgid "Link For Music Icon"
 msgstr "Link For Music Icon"
 
 msgctxt "#31054"
-msgid "Schakel View menu opties in om aan te passen hoe Items worden gepresenteerd."
-msgstr "Schakel View menu opties in om aan te passen hoe Items worden gepresenteerd."
+msgid "Enable Views Menu in order to change the way Items are presented to you."
+msgstr "Enable Views Menu in order to change the way Items are presented to you."
 
 msgctxt "#31055"
-msgid "Volledig Scherm"
-msgstr "Volledig Scherm"
+msgid "Fullscreen player"
+msgstr "Fullscreen player"
 
 msgctxt "#31056"
 msgid "Change Icon"
@@ -246,10 +241,6 @@ msgstr "Change Icon"
 msgctxt "#31057"
 msgid "Replace Item"
 msgstr "Replace Item"
-
-msgctxt "#31058"
-msgid "Show Homescreen Network Connection Status (and Battery Level on home)"
-msgstr "Show Homescreen Network Connection Status (and Battery Level on home)"
 
 msgctxt "#31059"
 msgid "LiveTV"
@@ -260,337 +251,141 @@ msgid "Add"
 msgstr "Add"
 
 msgctxt "#31061"
-msgid "Extra infos"
-msgstr "Extra infos"
+msgid "Cinema Experience"
+msgstr "Cinema Experience"
 
 msgctxt "#31062"
-msgid "Selecteer Songteksten Add-on"
-msgstr "Selecteer Songteksten Add-on"
-
-msgctxt "#31063"
-msgid "Instellingen voor u audio bibliotheek, En voor afspelen van muziek en karaoke"
-msgstr "Instellingen voor u audio bibliotheek, En voor afspelen van muziek en karaoke"
+msgid "Select Lyrics Add-on"
+msgstr "Select Lyrics Add-on"
 
 msgctxt "#31064"
-msgid "Voledig Scherm"
-msgstr "Voledig Scherm"
+msgid "Fullscreen"
+msgstr "Fullscreen"
 
 msgctxt "#31065"
-msgid "Delete Cache"
-msgstr "Delete Cache"
-
-msgctxt "#31066"
-msgid "Delete Thumbnails"
-msgstr "Delete Thumbnails"
-
-msgctxt "#31067"
-msgid "Remove Downloaded Zip Packages"
-msgstr "Remove Downloaded Zip Packages"
-
-msgctxt "#31068"
-msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-
-msgctxt "#31069"
-msgid "Maintenance Tools"
-msgstr "Maintenance Tools"
-
-msgctxt "#31070"
-msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-
-msgctxt "#31071"
-msgid "Delete MetaHandler Cache"
-msgstr "Delete MetaHandler Cache"
-
-msgctxt "#31072"
-msgid "All Done, Please Restart XBMC"
-msgstr "All Done, Please Restart XBMC"
-
-msgctxt "#31073"
-msgid "All Done."
-msgstr "All Done."
-
-msgctxt "#31074"
-msgid "Are You Sure?"
-msgstr "Are You Sure?"
-
-msgctxt "#31075"
-msgid "Remove cache.db for XBMC and most Addons"
-msgstr "Remove cache.db for XBMC and most Addons"
-
-msgctxt "#31076"
-msgid "Remove Corrupted Metadata"
-msgstr "Remove Corrupted Metadata"
-
-msgctxt "#31077"
-msgid "Instellingen voor media bibliotheek, het afspelen van videos, ondertitels en software bestuurde video hardware."
-msgstr "Instellingen voor media bibliotheek, het afspelen van videos, ondertitels en software bestuurde video hardware."
-
-msgctxt "#31078"
-msgid "restart XBMC for changes to take effect"
-msgstr "restart XBMC for changes to take effect"
-
-msgctxt "#31079"
-msgid "Pas het uiterlijk aan,of verander de gehele skin"
-msgstr "Pas het uiterlijk aan,of verander de gehele skin"
-
-msgctxt "#31080"
-msgid "Delete AdvancedSettings"
-msgstr "Delete AdvancedSettings"
-
-msgctxt "#31081"
-msgid "Remove Addons"
-msgstr "Remove Addons"
-
-msgctxt "#31082"
-msgid "Video Guides"
-msgstr "Video Guides"
-
-msgctxt "#31083"
-msgid "Maintenance"
-msgstr "Maintenance"
-
-msgctxt "#31084"
-msgid "Remove Video Database"
-msgstr "Remove Video Database"
-
-msgctxt "#31085"
-msgid "Remove Music Database"
-msgstr "Remove Music Database"
-
-msgctxt "#31086"
-msgid "This option will activate a popup when selecting a movie from shelf, giving the opportunity to use the Cinema Experience Addon.[CR]Notice that with this option activated, in case You choose not to play through Cinema Experience, the Movie will automatically resume from last stop point. (if previuosly started)"
-msgstr "This option will activate a popup when selecting a movie from shelf, giving the opportunity to use the Cinema Experience Addon.[CR]Notice that with this option activated, in case You choose not to play through Cinema Experience, the Movie will automatically resume from last stop point. (if previuosly started)"
-
-msgctxt "#31087"
-msgid "Percent Played"
-msgstr "Percent Played"
-
-msgctxt "#31088"
-msgid "Shelf Cinema Experience"
-msgstr "Shelf Cinema Experience"
-
-msgctxt "#31089"
-msgid "Returns all Skin's specifics Settings to defaults. Doesn't change any of the XBMC general settings."
-msgstr "Returns all Skin's specifics Settings to defaults. Doesn't change any of the XBMC general settings."
-
-msgctxt "#31090"
-msgid "Stel LiveTV/PVR in, afspeel en opneem functies, Electronische Programma Gids, en Energie besparings functies voor Live TV"
-msgstr "Stel LiveTV/PVR in, afspeel en opneem functies, Electronische Programma Gids, en Energie besparings functies voor Live TV"
-
-msgctxt "#31091"
-msgid "Foto's bekijken en voorstelling opties"
-msgstr "Foto's bekijken en voorstelling opties"
-
-msgctxt "#31092"
-msgid "Stel Weer provider en locatie in"
-msgstr "Stel Weer provider en locatie in"
-
-msgctxt "#31093"
-msgid "Network gerelateerde services. Kies apparaat naam en bepaal hoe de X9 te besturen is over het netwerk. Stel hier ook opties in voor delen."
-msgstr "Network gerelateerde services. Kies apparaat naam en bepaal hoe de X9 te besturen is over het netwerk. Stel hier ook opties in voor delen."
-
-msgctxt "#31094"
-msgid "Core Instellingen. Schakel hier specifieke Audio en Video Hardware in en uit, Schakel Debug logging in of uit"
-msgstr "Core Instellingen. Schakel hier specifieke Audio en Video Hardware in en uit, Schakel Debug logging in of uit"
-
-msgctxt "#31095"
-msgid "Specefieke Mediaplayer X9 opties zijn hier in te stellen"
-msgstr "specifieke Mediaplayer X9 opties zijn hier in te stellen"
-
-msgctxt "#31096"
 msgid "Started Movies"
 msgstr "Started Movies"
 
-msgctxt "#31097"
-msgid "Custom Pop-Up's Background"
-msgstr "Custom Pop-Up's Background"
+msgctxt "#31066"
+msgid "Recommended Episodes"
+msgstr "Recommended Episodes"
 
-msgctxt "#31098"
-msgid "Show Homescreen Network Icon"
-msgstr "Show Homescreen Network Icon"
+msgctxt "#31067"
+msgid "Top Albums"
+msgstr "Top Albums"
 
-msgctxt "#31099"
-msgid "Show HomeShader"
-msgstr "Show HomeShader"
+msgctxt "#31068"
+msgid "Toggle Debug"
+msgstr "Toggle Debug"
 
-msgctxt "#31100"
-msgid "Move RSS Feed to"
-msgstr "Move RSS Feed to"
+msgctxt "#31069"
+msgid "Custom Home Background"
+msgstr "Custom Home Background"
 
-msgctxt "#31101"
-msgid "Adds a custom Background to Dialog Pop-Ups"
-msgstr "Adds a custom Background to Dialog Pop-Ups"
+msgctxt "#31070"
+msgid "Choose a custom Homescreen Background"
+msgstr "Choose a custom Homescreen Background"
 
-msgctxt "#31102"
-msgid "Adds a Shader to Bottom of Homescreen"
-msgstr "Adds a Shader to Bottom of Homescreen"
+msgctxt "#31071"
+msgid "Custom Other Background"
+msgstr "Custom OtherBackground"
 
-msgctxt "#31103"
-msgid "Changes location of RSS Feed from Top/Bottom of Homescreen"
-msgstr "Changes location of RSS Feed from Top/Bottom of Homescreen"
+msgctxt "#31072"
+msgid "Choose a custom Other Background"
+msgstr "Choose a custom Other Background"
 
-msgctxt "#31104"
-msgid "Disable Homescreen Icon Labels"
-msgstr "Disable Homescreen Icon Labels"
+msgctxt "#31073"
+msgid "Enable Home Banner Animation"
+msgstr "Enable Home Banner Animation"
 
-msgctxt "#31105"
-msgid "Disable Homescreen Lines"
-msgstr "Disable Homescreen Lines"
+msgctxt "#31074"
+msgid "Enable ATV3 Style Home Selector. This setting will disable home icon zoom animation"
+msgstr "Enable ATV3 Style Home Selector. This setting will disable home icon zoom animation"
 
-msgctxt "#31106"
-msgid "Aanpassen van contrast van Fanart (Hoe hoger de instelling de lichter de Fanart)"
-msgstr "Aanpassen van contrast van Fanart (Hoe hoger de instelling de lichter de Fanart)"
+msgctxt "#31075"
+msgid "Coverflow"
+msgstr "Coverflow"
 
-msgctxt "#31107"
-msgid "       Geavanceerde skin instellingen aanpassen"
-msgstr "      Geavanceerde skin instellingen aanpassen"
+msgctxt "#31076"
+msgid "Enable ATV3 Home Icon Slider"
+msgstr "Enable ATV3 Home Icon Slider"
 
-msgctxt "#31108"
-msgid "Changes the Darkness of ALL Backgrounds EXCEPT Homescreen & Fanart (Use Higher Setting the Lighter the Background)"
-msgstr "Changes the Darkness of ALL Backgrounds EXCEPT Homescreen & Fanart (Use Higher Setting the Lighter the Background)"
+msgctxt "#31077"
+msgid "Disable Home Banner"
+msgstr "Disable Home Banner"
 
-msgctxt "#31109"
-msgid "  Verander de kleur van Selecteren & Schuifbalken."
-msgid  " Verander de kleur van Selecteren & Schuifbalken."
+msgctxt "#31078"
+msgid "Enable Fanart background in videoviews"
+msgstr "Enable Fanart background in videoviews"
 
-msgctxt "#31110"
-msgid "Verander de kleuren van Popup schermen en randen."
-msgid  "Verander de kleuren van Popup schermen en randen."
+msgctxt "#31079"
+msgid "Enable Sort Letter in views"
+msgstr "Enable Sort Letter in views"
 
-msgctxt "#31111"
-msgid "           Verander de kleuren van alle Lijnen"
-msgid  "          Verander de kleuren van alle Lijnen"
+msgctxt "#31080"
+msgid "3D Wall"
+msgstr "3D Wall"
 
-msgctxt "#31112"
-msgid "   Changes the Color of Primary Text     (Make sure to use Correct Brightness of Custom Backgrounds)"
-msgid  "   Changes the Color of Primary Text     (Make sure to use Correct Brightness of Custom Backgrounds)"
+msgctxt "#31081"
+msgid "Click to Add Add-on to Home Page"
+msgstr "Click to Add Add-on to Home Page"
 
-msgctxt "#31113"
-msgid "Changes the Transparency of Non-Colored Homescreen Icons (Only Available when 'Always Colored Homescreen Icons' Disabled)"
-msgid  "Changes the Transparency of Non-Colored Homescreen Icons (Only Available when 'Always Colored Homescreen Icons' Disabled)"
+msgctxt "#31082"
+msgid "Specify Action for LiveTV Icon in Home Menu"
+msgstr "Specify Action for LiveTV Icon in Home Menu"
 
-msgctxt "#31114"
-msgid "Enable Homescreen Icons Border & Choose Color"
-msgid  "Enable Homescreen Icons Border & Choose Color"
+msgctxt "#31083"
+msgid "Home menu LiveTV button function"
+msgstr "Home menu LiveTV button function"
 
-msgctxt "#31115"
-msgid "Changes the Darkness of Fanart Backgrounds (Use Higher Setting the Lighter the Background)"
-msgid  "Changes the Darkness of Fanart Backgrounds (Use Higher Setting the Lighter the Background)"
+msgctxt "#31084"
+msgid "LiveTV function"
+msgstr "LiveTV function"
 
-msgctxt "#31116"
-msgid "Changes the Primary Background Color (Dialog Popup Windows, Busy Background, Notification Window, etc)"
-msgid  "Changes the Primary Background Color (Dialog Popup Windows, Busy Background, Notification Window, etc)"
+msgctxt "#31085"
+msgid "Channels"
+msgstr "Channels"
 
-msgctxt "#31117"
-msgid "'Always Colors Homescreen Icons' must be Disabled to Change the Transparency"
-msgid  "'Always Colors Homescreen Icons' must be Disabled to Change the Transparency"
+msgctxt "#31086"
+msgid "Disable unfocused label on Icons"
+msgstr "Disable unfocused label on Icons"
 
-msgctxt "#31118"
-msgid "Changes the Color of the Homescreen Icons (Only Available when 'Always Colored Homescreen Icons' Disabled)"
-msgid  "Changes the Color of the Homescreen Icons (Only Available when 'Always Colored Homescreen Icons' Disabled)"
+msgctxt "#31087"
+msgid "Disable Iconview info bar"
+msgstr "Disable Iconview info bar"
 
-msgctxt "#31119"
-msgid "'Always Colors Homescreen Icons' must be Disabled to Change the Home Icon Color"
-msgid  "'Always Colors Homescreen Icons' must be Disabled to Change the Home Icon Color"
+msgctxt "#31088"
+msgid "Disable Startup Splash"
+msgstr "Disable Startup Splash"
 
-msgctxt "#31120"
-msgid "blank"
-msgid  "blank"
+msgctxt "#31089"
+msgid "ALT icon ViewShader Info Bar"
+msgstr "ALT icon ViewShader Info Bar"
 
-msgctxt "#31121"
-msgid "Enable Custom Popup, Keyboard, Navigation, Favorites & Weather Backgrounds & Change their Darkness"
-msgid  "Enable Custom Popup, Keyboard, Navigation, Favorites & Weather Backgrounds & Change their Darkness"
+msgctxt "#31090"
+msgid "Switch Keyboard"
+msgstr "Switch Keyboard"
 
-msgctxt "#31122"
-msgid "Change the Homescreen Icon Theme"
-msgid  "Change the Homescreen Icon Theme"
+msgctxt "#31091"
+msgid "Switch Numeric Keyboard"
+msgstr "Switch Numeric Keyboard"
 
-msgctxt "#31123"
-msgid "Clean Library"
-msgid  "Clean Library"
+msgctxt "#31189"
+msgid "Switch Keyboard to the Original Apple Tv 4 one"
+msgstr "Switch Keyboard to the Original Apple Tv 4 one"
 
-msgctxt "#31123"
-msgid "Icon Color Customizer"
-msgid  "Icon Color Customizer"
+msgctxt "#31191"
+msgid "Switch Keyboard to the Original Apple Tv 4 one"
+msgstr "Switch Keyboard to the Original Apple Tv 4 one"
 
-msgctxt "#31124"
-msgid "Enable Black focused Font color"
-msgid  "Enable Black focused Font color"
+msgctxt "#31190"
+msgid "Switch Keyboard to the Custom Version"
+msgstr "Switch Keyboard to the Custom Version"
 
-msgctxt "#31125"
-msgid "Changes the Font color to Black when Focused (Selected)"
-msgid  "Changes the Font Color to Black when Focused (Selected)"
+msgctxt "#31192"
+msgid "Switch Keyboard to the Custom Version"
+msgstr "Switch Keyboard to the Custom Version"
 
-msgctxt "#31126"
-msgid "Hide Plot in Videoview Menu"
-msgid  "Hide Plot in Videoview Menu"
-
-msgctxt "#31127"
-msgid "Menu to Disable the Plot in List1/2/3 Videoview"
-msgid  "Menu to Disable the Plot in List1/2/3 Videoview"
-
-msgctxt "#31128"
-msgid "Change the Homescreen Icon Layout"
-msgid  "Change the Homescreen Icon Layout"
-
-msgctxt "#31129"
-msgid "Change the Homescreen Slider Animation"
-msgid  "Change the Homescreen Slider Animation"
-
-msgctxt "#31130"
-msgid "Change Various Home Icon Settings"
-msgid  "Change Various Home Icon Settings"
-
-msgctxt "#31131"
-msgid "Adds a custom Background to Other Backgrounds, This is seperate from the Homescreen Background."
-msgstr "Adds a custom Background to Other Backgrounds, This is seperate from the Homescreen Background."
-
-msgctxt "#31132"
-msgid "Disable Homescreen Icon Labels when Not Focused"
-msgstr "Disable Homescreen Icon Labels when Not Focused"
-
-msgctxt "#31133"
-msgid "Changes the Transparency of the Homescreen Icon Borders"
-msgid  "Changes the Transparency of the Homescreen Icon Borders"
-
-msgctxt "#31134"
-msgid "Home Icon Borders must be Enabled to Change the Transparency"
-msgid  "Home Icon Borders must be Enabled to Change the Transparency"
-
-msgctxt "#31135"
-msgid "Adds a Home Shelf Custom Background (Top of Homescreen)"
-msgid  "Adds a Home Shelf Custom Background (Top of Homescreen)"
-
-msgctxt "#31136"
-msgid "Custom Home Shelf Background must be Enabled to change this setting"
-msgid  "Custom Home Shelf Background must be Enabled to change this setting"
-
-msgctxt "#31137"
-msgid "Changes the Darkness of the Home Shelf Background"
-msgstr "Changes the Darkness of the Home Shelf Background"
-
-msgctxt "#31138"
-msgid "Adds a custom Background to Custom TopRow"
-msgstr "Adds a custom Background to Custom TopRow"
-
-msgctxt "#31139"
-msgid "Changes the Darkness of Custom TopRow Background (Use Higher Setting the Lighter the Background)"
-msgid  "Changes the Darkness of Custom TopRow Background (Use Higher Setting the Lighter the Background)"
-
-msgctxt "#31140"
-msgid "Custom TopRow Background must be Enabled to change this setting"
-msgid  "Custom TopRow Background must be Enabled to change this setting"
-
-msgctxt "#31141"
-msgid "Recently added"
-msgid  "Recently added"
-
-msgctxt "#32100"
-msgid "Beheer OpenELEC systeem onderliggend OS. Hier kun je je gehele systeem beheren.[CR][CR]Veranderen van Netwerk, toetsenbord layout en taal Aan/Uit schakelen van SAMBA en SSH."
-msgstr "Beheer OpenELEC systeem onderliggend OS. Hier kun je je gehele systeem beheren.[CR][CR]Veranderen van Netwerk, toetsenbord layout en taal Aan/Uit schakelen van SAMBA en SSH."
-
-msgctxt "#31413"
-msgid "Lokaal al ondertitels beschikbaar"
-msgstr "Lokaal al ondertitels beschikbaar"
+msgctxt "#31200"
+msgid "Fullscreen"
+msgstr "Fullscreen"

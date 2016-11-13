@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="100">
+  <defaultcontrol always="true">10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <include>DialogOpenClose</include>
+  <controls>
+    <control type="image">
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+		<texture>$VAR[9000menu]</texture>
+    </control> 
+    <control type="group">
+      <left>0</left>
+      <top>350</top>
+      <control type="label" id="1" description="Heading">
+        <left>0</left>
+        <label>-</label>
+        <width>1920</width>
+        <font>font33B</font>
+        <align>center</align>
+		<textcolor>$VAR[52maincolor]</textcolor>
+      </control>
+      <control type="label" id="2" description="Line 1">
+        <left>0</left>
+        <top>108</top>
+        <label>-</label>
+        <width>1920</width>
+        <align>center</align>
+        <scroll>true</scroll>
+		<textcolor>$VAR[52maincolor]</textcolor>
+      </control>
+      <control type="label" id="3" description="Line 2">
+        <left>0</left>
+        <top>156</top>
+        <label>-</label>
+        <width>1920</width>
+        <align>center</align>
+        <scroll>true</scroll>
+		<textcolor>$VAR[52maincolor]</textcolor>
+      </control>
+      <control type="label" id="4" description="Line 3">
+        <left>0</left>
+        <top>204</top>
+        <label>-</label>
+        <width>1920</width>
+        <align>center</align>
+        <scroll>true</scroll>
+		<textcolor>$VAR[52maincolor]</textcolor>
+      </control>
+      <control type="button" id="10" description="No">
+        <centerleft>960</centerleft>
+        <top>390</top>
+        <width>270</width>
+		<focusedcolor>$VAR[52maincolor]</focusedcolor>
+		<texturenofocus colordiffuse="$VAR[52maincolorbutton]">defaults/listviewfocus.png</texturenofocus>
+		<texturefocus colordiffuse="FFF43934">defaults/listviewfocus.png</texturefocus>
+		<include>DialogButt</include>
+        <label>$LOCALIZE[107]</label>
+		<textcolor>$VAR[52maincolor]</textcolor>
+        <onup>11</onup>
+      </control>
+      <control type="button" id="11" description="Yes">
+        <centerleft>960</centerleft>
+        <top>315</top>
+        <width>270</width>
+		<include>DialogButt</include>
+		<texturenofocus diffuse="defaults/addonbuttondiffuse.png">defaults/button.png</texturenofocus>
+        <texturefocus diffuse="defaults/addonbuttondiffuse.png">defaults/buttonfocus.png</texturefocus>
+        <label>107</label>
+        <ondown>10</ondown>
+      </control>
+    </control>
+  </controls>
+</window>

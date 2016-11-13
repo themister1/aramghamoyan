@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="115">
+    <defaultcontrol always="true">901</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <zorder>5</zorder>
+    <include>OpenClose</include>
+	<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
+    <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
+    <animation effect="fade" start="0" end="100" time="400">Visible</animation>
+    <animation effect="fade" start="100" end="0" time="100">Hidden</animation>
+    <controls>
+        <control type="group">
+            <control type="group" description="Top Bar">
+				<visible>!Window.IsActive(142)</visible>
+                <animation effect="fade" start="-60,0" time="100" tween="quadratic" easing="out">Visible</animation>
+                <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
+                <control type="image" id='99' description="Top Background">	
+					<visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml) | Window.IsVisible(dialogseekbar.xml)</visible>				
+				    <posx>-2</posx>
+                    <top>0</top>
+                    <width>1924</width>
+                    <height>58</height>	
+					<aspectratio>center</aspectratio>
+					<include>seekbar_bkgd</include>
+                </control>				
+				<control type="label" description="Title">
+						<visible>!VideoPlayer.Content(Episodes)</visible>
+						<posx>0</posx>
+						<top>5</top>
+						<height>60</height>
+						<width>1920</width>
+						<scroll>true</scroll>
+						<font>font33</font>
+						<align>center</align>
+						<textcolor>white</textcolor>
+						<label>$INFO[VideoPlayer.Title]</label>
+					</control>
+                <control type="label" description="Clock">
+                    <posx>30</posx>
+                    <top>0</top>
+                    <width>695</width>
+                    <height>58</height>
+                    <font>font33</font>
+                    <textcolor>textcolor2</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$LOCALIZE[142] $INFO[System.Time]</label>
+                </control>
+                <control type="label" description="End time">
+                    <posx>30r</posx>
+                    <top>0</top>
+                    <width>695</width>
+                    <height>56</height>
+                    <align>right</align>
+                    <font>font33</font>
+                    <textcolor>textcolor2</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
+                </control>
+                <control type="label" description="Next item">
+                    <visible>!IsEmpty(VideoPlayer.NextTitle)</visible>
+                    <posx>300</posx>
+                    <top>1</top>
+                    <width>1320</width>
+                    <height>60</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font30m</font>
+                    <textcolor>textcolor2</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$INFO[VideoPlayer.NextTitle,[COLOR=gray]$LOCALIZE[209]:  [/COLOR]]</label>
+                </control>
+            </control>
+            <control type="group">
+                <control type="label" description="Seek time label">
+                    <visible>![player.forwarding | player.rewinding]</visible>
+                    <visible>Player.DisplayAfterSeek</visible>
+                    <height>75</height>
+                    <width>1920</width>
+                    <align>center</align>
+                    <font>font36</font>
+                    <textcolor>textcolor2</textcolor>
+                    <!--shadowcolor>Black</shadowcolor-->
+                    <animation effect="fade" time="200">VisibleChange</animation>
+                    <label>$INFO[Player.SeekOffset]</label>
+                </control>
+            </control>
+            <control type="group" description='seekbar'>
+                <top>973</top>			
+                <control type="image" description="Background">
+					<width>1740</width>	
+                    <left>90</left>
+                    <top>5</top>
+                    <texture colordiffuse="44FFFFFF">process/systemsettingsprocessbg.png</texture>
+                </control>							
+                <control type="progress" id="23" description="Cache Progress">
+				    <visible>true</visible>
+                    <left>90</left>
+                    <top>-3</top>
+                    <width>1740</width>
+                    <reveal>true</reveal>
+                    <midtexture colordiffuse="FFBEBEBE">process/systemsettingsprocessbg.png</midtexture>
+					<!--righttexture border="2" colordiffuse="$VAR[osdcachecolor]">Seekbar/ProgressM.png</righttexture-->
+                    <info>Player.ProgressCache</info>
+                </control>
+				<control type="grouplist">
+					<left>90</left>
+					<orientation>horizontal</orientation>
+				    <usecontrolcoords>true</usecontrolcoords>
+				    <control type="progress" id="23" description="Progress Bar">
+						<visible>true</visible>
+						<top>-3</top>
+						<width>1740</width>
+						<height>12</height>
+						<reveal>true</reveal>
+                        <!--texturebg>process/transparent.png</texturebg-->
+						<midtexture colordiffuse="EEFFFFFF">process/systemsettingsprocessbg.png</midtexture>
+						<!--righttexture colordiffuse="EEFFFFFF">Seekbar/Progressr original.png</righttexture-->		
+						<info>Player.Progress</info>
+					</control>	
+				   <!--control type="label" description="PlayerTime">
+						<usecontrolcoords>true</usecontrolcoords>
+						<left>-900</left>
+						<top>0</top>
+						<aspectratio aligny="center">keep</aspectratio>
+						<height>30</height>
+						<textcolor>white</textcolor>
+						<shadowcolor>-</shadowcolor>
+						<label>$INFO[Player.Time]</label>
+						<font>font31</font>
+				   </control-->	
+				</control>
+            </control>
+            <!--control type="group" description="Icons on Seekbar">
+                <top>981</top>
+                <posx>630</posx>
+                <control type="image" description="Buffer icon">
+                    <visible>Player.Caching</visible>
+                    <left>0</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" colordiffuse="textcolor2">busy/Busy.png</texture>
+                    <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true" condition="true">conditional</animation>
+                </control>
+                <control type="image" description="Pause">
+                    <visible>Player.Paused + !Player.Caching</visible>
+                    <left>10</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" colordiffuse="White3">Seekbar/OSDPauseNF.png</texture>
+                </control>
+                <control type="image" description="Play">
+                    <visible>player.playing</visible>
+                    <left>10</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" colordiffuse="White3">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="FF">
+                    <left>-10</left>
+                    <visible>player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
+                    <include>OSDbarIcons</include>
+                    <texture border="2">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="FFFF">
+                    <visible>player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
+                    <left>0</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="2FFFF">
+                    <visible>player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
+                    <left>10</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="4FFFF">
+                    <visible>player.forwarding16x | player.forwarding32x</visible>
+                    <left>20</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="8FFFF">
+                    <visible>player.forwarding32x</visible>
+                    <left>30</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="RF">
+                    <left>-10</left>
+                    <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="RFFF">
+                    <visible>player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
+                    <left>0</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="2RFFF">
+                    <visible>player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
+                    <left>10</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="4RFFF">
+                    <visible>player.rewinding16x | player.rewinding32x</visible>
+                    <left>20</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
+                </control>
+                <control type="image" description="8RFFF">
+                    <visible>player.rewinding32x</visible>
+                    <left>30</left>
+                    <include>OSDbarIcons</include>
+                    <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
+                </control>
+            </control-->
+            <!--control type="image">
+                <visible>!PLayer.Paused</visible>
+                <left>1500</left>
+                <top>750</top>
+                <width>100</width>
+                <height>100</height>
+                <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
+                <colordiffuse>77FFFFFF</colordiffuse>
+            </control-->
+	   </control>
+    </controls>
+</window>

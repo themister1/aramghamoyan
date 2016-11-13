@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="101">
+  <defaultcontrol always="true">10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <include>DialogOpenClose</include>
+  <controls>
+    <include>Background</include>
+    <control type="group">
+      <left>480</left>
+      <top>360</top>
+      <control type="label" id="1" description="Heading">
+        <width>960</width>
+        <label>-</label>
+        <font>font33</font>
+        <textcolor>textcolor2</textcolor>
+        <align>center</align>
+      </control>
+      <control type="textbox" id="9" description="content">
+        <top>75</top>
+        <width>960</width>
+		<height>145</height>
+        <align>center</align>
+		<textcolor>textcolor2</textcolor>
+        <label>-</label>
+      </control>
+		  <control type="multiimage" description="Busy animation">
+			<left>452</left>
+		    <top>202</top>
+			<width>60</width>
+			<height>60</height>
+			<imagepath>busy/Loading</imagepath>
+			<timeperimage>80</timeperimage>
+			<fadetime>0</fadetime>
+			<loop>yes</loop>
+			<aspectratio>keep</aspectratio>
+		  </control>
+      <control type="button" id="10" description="Cancel">
+        <include>DialogButt</include>
+        <left>200</left>
+        <top>330</top>
+        <width>300</width>
+        <label>222</label>
+      </control>
+    </control>
+  </controls>
+</window>
