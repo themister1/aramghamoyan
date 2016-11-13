@@ -28,23 +28,6 @@
 <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>http://ignorme</link>
 </item>
-	
-<item>
-<title>[B][COLOR black]ALLE NEDERLANDSE KANALEN[/COLOR] [COLOR dodgerblue](OOK SPORT)[/COLOR][/B]</title>
-<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-	<title>[makelist.param1]</title>
-	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR dodgerblue]FREE TV[/COLOR][/B] [makelist.param1]</link>
-	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
-]]></listrepeat>
-<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
-<page>http://pastebin.com/raw/VtExDja9</page>
-<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
-</regex>
-</item>
 
 <item>
 <title>[B][COLOR black] SPORTS KANALEN (OPTIE 1)[/COLOR][/B]</title>
