@@ -1,6 +1,6 @@
 name=" HAYbox "
 version=" 12-11-2016-1 "
-url="http://downloads.sourceforge.net/project/haybox-tv/update12112016-NEW.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%2F%3Fupload_just_completed%3Dtrue&ts=1478985534&use_mirror=master"
+url="http://downloads.sourceforge.net/project/haybox-tv/update12112016-NEW-2.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fhaybox-tv%2Ffiles%2F%3Fsource%3Dnavbar&ts=1479036288&use_mirror=master"
 gui="http://"
 kodi="14.1"
 theme="https://"
