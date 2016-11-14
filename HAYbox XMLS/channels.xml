@@ -2,7 +2,7 @@
 <?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>                                                                                                                                                                         <item>
 
 <item>
-<title>[B][COLOR red]UPDATED: 13-11-2016 || 12:54[/COLOR][/B]</title>
+<title>[B][COLOR red]UPDATED: 14-11-2016 || 16:43[/COLOR][/B]</title>
 <thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail>
 <fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
 <link>http://ignorme</link>
@@ -29,6 +29,24 @@
 <link>http://ignorme</link>
 </item>
 
+ <item>
+<title>[B][COLOR black] NEDERLANDSE KANALEN[/COLOR][/B]</title>
+<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=[B][COLOR white]FREEDOM[COLOR dodgerblue] IPTV [COLOR red]ENG[/COLOR][/B] [makelist.param1]</link>
+	<thumbnail>http://freedomiptv.tk/fistuk.png</thumbnail><fanart>https://dl.dropbox.com/s/5qljnidny3p7udf/fanart.jpg</fanart>
+	
+]]></listrepeat>
+<expres>#EXTINF:-1,NL(.*?)\n(.*)</expres>
+<page>http://biwsat.com:8080/get.php?username=trial02&amp;password=1116&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+  
 <item>
 <title>[B][COLOR black] SPORTS KANALEN (OPTIE 1)[/COLOR][/B]</title>
 <link>http://ignora.me</link>  
