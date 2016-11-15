@@ -18,26 +18,26 @@
 		<setting id="t-liganos" type="bool" label="Portuguese Liga Nos" default="true" />
 		<setting id="t-eredivisie" type="bool" label="Dutch Eredivisie" default="true" />
 		<setting id="t-bundesliga" type="bool" label="German Bundesliga" default="true" />
-		<setting id="t-russianpl" type="bool" label="Russian Premier League" default="false" />
-		<setting id="t-jupiler" type="bool" label="Belgian Jupiler League" default="false" />
-		<setting id="t-scotlandpl" type="bool" label="Scottish Premier League" default="false" />
-		<setting id="t-mls" type="bool" label="American Major League Soccer" default="false" />
-		<setting id="t-argentina" type="bool" label="Argentina Primera Division" default="false" />
-		<setting id="t-brasileirao" type="bool" label="Brazilian Brasileirão" default="false" />
-		<setting id="t-ukra" type="bool" label="Ucranian Premier League" default="false" />
-		<setting id="t-australia" type="bool" label="Australian A-League" default="false" />
-		<setting id="t-greece" type="bool" label="Greek Superleague Greece" default="false" />
-		<setting id="t-danish" type="bool" label="Danish Superliga" default="false" />
-		<setting id="t-norway" type="bool" label="Norwegian Tippeligaen" default="false" />
-		<setting id="t-china" type="bool" label="Chinese SuperLeague" default="false" />
-		<setting id="t-norway" type="bool" label="Norwegian Tippeligaen" default="false" />
-		<setting id="t-sweden1" type="bool" label="Swedish Allsvenskan" default="false" />
-		<setting id="t-echampionship" type="bool" label="English League Championship" default="false" />
-		<setting id="t-eleague1" type="bool" label="English League 1" default="false" />
-		<setting id="t-eleague2" type="bool" label="English League 2" default="false" />
-		<setting id="t-sadelante" type="bool" label="Spanish Adelante" default="false" />
-		<setting id="t-fleague2" type="bool" label="French Ligue 2" default="false" />
-		<setting id="t-ssuperettan" type="bool" label="Swedish Superettan" default="false" />
+		<setting id="t-russianpl" type="bool" label="Russian Premier League" default="true" />
+		<setting id="t-jupiler" type="bool" label="Belgian Jupiler League" default="true" />
+		<setting id="t-scotlandpl" type="bool" label="Scottish Premier League" default="true" />
+		<setting id="t-mls" type="bool" label="American Major League Soccer" default="true" />
+		<setting id="t-argentina" type="bool" label="Argentina Primera Division" default="true" />
+		<setting id="t-brasileirao" type="bool" label="Brazilian Brasileirão" default="true" />
+		<setting id="t-ukra" type="bool" label="Ucranian Premier League" default="true" />
+		<setting id="t-australia" type="bool" label="Australian A-League" default="true" />
+		<setting id="t-greece" type="bool" label="Greek Superleague Greece" default="true" />
+		<setting id="t-danish" type="bool" label="Danish Superliga" default="true" />
+		<setting id="t-norway" type="bool" label="Norwegian Tippeligaen" default="true" />
+		<setting id="t-china" type="bool" label="Chinese SuperLeague" default="true" />
+		<setting id="t-norway" type="bool" label="Norwegian Tippeligaen" default="true" />
+		<setting id="t-sweden1" type="bool" label="Swedish Allsvenskan" default="true" />
+		<setting id="t-echampionship" type="bool" label="English League Championship" default="true" />
+		<setting id="t-eleague1" type="bool" label="English League 1" default="true" />
+		<setting id="t-eleague2" type="bool" label="English League 2" default="true" />
+		<setting id="t-sadelante" type="bool" label="Spanish Adelante" default="true" />
+		<setting id="t-fleague2" type="bool" label="French Ligue 2" default="true" />
+		<setting id="t-ssuperettan" type="bool" label="Swedish Superettan" default="true" />
 
 	</category>
 	<category label="32006">
