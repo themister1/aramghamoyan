@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<addon id="skin.HAYbox" version="1.0.1" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.HAYbox" version="1.0.10" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
   <requires>
-	<import addon="plugin.video.failarmy" />  
+	<import addon="script.screensaver.football.panel" />
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="Texture.xbt" effectslowdown="1" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>

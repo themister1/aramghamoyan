@@ -1517,9 +1517,9 @@ http://www.hometheater.co.il</description>
 	</assets>
 </addon>
 
-<addon id="skin.aram" version="1.0.1" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.aram" version="1.0.10" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
   <requires>
-	<import addon="plugin.video.failarmy" />
+	<import addon="script.screensaver.football.panel" />
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="Texture.xbt" effectslowdown="1" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
@@ -1533,9 +1533,9 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="skin.HAYbox" version="1.0.1" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
+<addon id="skin.HAYbox" version="1.0.10" name="HAYbox TV Skin" provider-name="Aram Ghamoyan">
   <requires>
-	<import addon="plugin.video.failarmy" />
+	<import addon="script.screensaver.football.panel" />
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="Texture.xbt" effectslowdown="1" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
